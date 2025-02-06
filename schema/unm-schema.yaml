@@ -1,0 +1,69 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: "Universal Narrative Model Schema"
+description: "A standardized JSON format for structuring narrative elements."
+type: object
+properties:
+  schema_version:
+    type: string
+    description: "1.0"
+  story:
+    type: object
+    properties:
+      id:
+        type: string
+      title:
+        type: string
+      genre:
+        type: string
+      logline:
+        type: string
+      created_at:
+        type: string
+        format: date-time
+      narratives:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+            title:
+              type: string
+            subtext:
+              type: object
+              properties:
+                perspectives:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                      throughline:
+                        type: string
+                      summary:
+                        type: string
+                      storytelling:
+                        type: string
+                    required: [id, throughline, summary, storytelling]
+                players:
+                  type: array
+                dynamics:
+                  type: array
+                storypoints:
+                  type: array
+                storybeats:
+                  type: array
+              required: [perspectives]
+            storytelling:
+              type: object
+              properties:
+                overviews:
+                  type: array
+                moments:
+                  type: array
+          required: [id, title, subtext, storytelling]
+    required: [id, title, genre, logline, created_at, narratives]
+required:
+  - schema_version
+  - story

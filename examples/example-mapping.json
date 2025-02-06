@@ -1,0 +1,16 @@
+{
+    "id": "storypoint_2345abcd",
+    "perspective": {
+      "throughline": "Obstacle Character",
+      "perspective_id": "perspective_ab12cd34"
+    },
+    "appreciation": "Focus",
+    "method": "Disbelief",
+    "custom_appreciation": "Alternative Viewpoint",
+    "custom_appreciation_namespace": {
+      "Dramatica": "Influence Character Symptom",
+      "Hero's Journey": "Call to Adventure",
+      "Save the Cat!": "Debate"
+    }
+  }
+  
