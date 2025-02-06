@@ -12,7 +12,7 @@ This dual-layer approach preserves the author's intent while allowing flexible p
 - **Interoperability:** Easily exchange narrative data between platforms.
 
 ## Repository Structure
-
+```
 universal-narrative-model/
 ├── README.md
 ├── LICENSE
@@ -30,6 +30,7 @@ universal-narrative-model/
 ├── tests/
 │   └── validate-schema.js
 └── .gitignore
+```
 
 
 ## Getting Started
