@@ -28,8 +28,6 @@ The Universal Narrative Model is **designed for flexibility**. Developers and st
 - Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 - Submit **extensions and feedback** via the Subtxt documentation repo.  
  
-For full schema details, visit the [GitHub repository](#) (add link when ready). 
-
 ---
 
 ## **Schema Overview**  
