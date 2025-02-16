@@ -13,11 +13,11 @@ This dual-layer approach preserves the author's intent while allowing flexible p
 
 ## Key Features  
 ✅ **Open-Source Standard** – Available for use, modification, and integration into various storytelling platforms.  
-✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components
-✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.  
-✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.
-✅ **Computational Refinements** – Incorporates algorithmic improvements for more accurate event sequencing.
-✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica, Hero’s Journey, and Save the Cat!
+✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components.  
+✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.    
+✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.  
+✅ **Computational Refinements** – Incorporates algorithmic improvements for more accurate event sequencing.  
+✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica, Hero’s Journey, and Save the Cat!  
 ✅ **Interoperability:** Easily exchange narrative data between platforms.
 
 ## Getting Started

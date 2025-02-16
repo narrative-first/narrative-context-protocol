@@ -7,7 +7,7 @@ To modernize narrative analysis and improve computational modeling, UNM introduc
 |--------------------------|--------------------------|--------------------------------------------------------|
 | Change vs. Steadfast     | Relinquished vs. Maintained | More accurately describes the transformation process. |
 | Mental Sex/Problem-solving Style               | Narrative Alignment      | Aligns with modern neuroscience for decision-making.  |
-| Story Limit               | Narrative Field      | Aligns with modern neuroscience for decision-making.  |
+| Story Limit               | Narrative Field      | Clarifies relationship between time and space in a narrative.  |
 | Signposts                | Transits                 | Frames storytelling as a dynamic interaction between objective and subjective realities.       |
 
 ### Terminology Specific to Serotonin-aligned Narratives
