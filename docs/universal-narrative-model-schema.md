@@ -437,10 +437,10 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "method": {
   "type": "string",
   "enum": [
-    "Environmental Framing",
-    "Physical Processing",
-    "Cognitive Processing",
-    "Attitudinal Framing",
+    "External Framing",
+    "External Processing",
+    "Internal Processing",
+    "Interal Framing",
     "Past",
     "Understanding",
     "Conceptualizing",
