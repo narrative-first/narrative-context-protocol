@@ -32,24 +32,134 @@
                         "type": "object",
                         "properties": {
                           "id": { "type": "string" },
-                          "throughline": { "type": "string" },
+                          "pov": { 
+                            "type": "string",
+                            "enum": ["i", "you", "we", "they"]
+                          },                          
                           "summary": { "type": "string" },
                           "storytelling": { "type": "string" }
                         },
-                        "required": ["id", "throughline", "summary", "storytelling"]
+                        "required": ["id", "pov", "summary", "storytelling"]
                       }
                     },
                     "players": {
                       "type": "array"
                     },
                     "dynamics": {
-                      "type": "array"
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "dynamic": { 
+                              "type": "string",
+                              "enum": ["resolve", "growth", "approach", "alignment", "fabric", "driver", "outcome", "judgment"]
+                            },
+                            "vector": { 
+                              "type": "string",
+                              "enum": ["relinquished", "maintained", "stop", "start", "do-er", "be-er", "dopamine", "serotonin", "spacetime", "timespace", "action", "decision", "success", "failure", "good", "bad"]
+                            },
+                            "summary": { "type": "string" },
+                            "storytelling": { "type": "string" }
+                          },
+                          "required": ["id", "dynamic", "vector", "summary", "storytelling"]
+                        }
                     },
                     "storypoints": {
-                      "type": "array"
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "appreciation": { 
+                              "type": "string",
+                              "enum": ["form", "field", "facet", "force", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
+                            },
+                            "method": { 
+                              "type": "string",
+                              "enum": ["external_framing","external_processing","internal_processing","internal_framing","past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","altruism","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","stipulation","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","rejection","deviation","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","presumption"]
+                            },
+                            "illustration": { "type": "string" },
+                            "summary": { "type": "string" },
+                            "storytelling": { "type": "string" },
+                            "perspectives": {
+                                "type": "array",
+                                "properties": {
+                                    "id": { "type": "string" }
+                                },
+                                "required": ["id"]
+                            }
+                          },
+                          "required": ["id", "appreciation", "method", "illustration", "summary", "storytelling", "perspectives"]
+                        }
                     },
                     "storybeats": {
-                      "type": "array"
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": { "type": "string" },
+                            "appreciation": { 
+                              "type": "string",
+                              "enum": ["transit", "progression", "event"]
+                            },
+                            "sequence": {
+                                "oneOf": [
+                                    {
+                                        "type": "integer",
+                                        "minimum": 1,
+                                        "maximum": 4,
+                                        "description": "For Transits (1-4)"
+                                    },
+                                    {
+                                        "type": "integer",
+                                        "minimum": 1,
+                                        "maximum": 16,
+                                        "description": "For Progressions (1-16)"
+                                    },
+                                    {
+                                        "type": "integer",
+                                        "minimum": 1,
+                                        "maximum": 64,
+                                        "description": "For Events (1-64)"
+                                    }
+                                ]
+                            },
+                            "method": { 
+                              "type": "string",
+                              "enum": ["past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","altruism","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","stipulation","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","rejection","deviation","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","presumption"]
+                            },
+                            "illustration": { "type": "string" },
+                            "summary": { "type": "string" },
+                            "storytelling": { "type": "string" },
+                            "tones": {
+                                "type": "object",
+                                    "properties": {
+                                        "abstraction": {
+                                        "type": "string",
+                                        "enum": ["situation", "action", "justification", "opinion"]
+                                        },
+                                        "spatial": {
+                                        "type": "string",
+                                        "enum": ["potential", "resistance", "current", "power"]
+                                        },
+                                        "temporal": {
+                                        "type": "string",
+                                        "enum": ["expression", "experimentation", "integration", "transcendence"]
+                                        }
+                                    },
+                                    "required": ["abstraction", "spatial", "temporal"]
+                            },
+                            "perspectives": {
+                                "type": "array",
+                                "properties": {
+                                    "id": { "type": "string" }
+                                },
+                                "required": ["id"]
+                            }
+                          },
+                          "required": ["id", "appreciation", "sequence", "method", "illustration", "summary", "storytelling", "tones", "perspectives"]
+                        }
                     }
                   },
                   "required": ["perspectives"]
