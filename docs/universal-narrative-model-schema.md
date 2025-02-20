@@ -121,24 +121,27 @@ This is how the story is structured and told, with organizational and stylistic 
   "perspectives": [
     {
       "id": "perspective_abc123",
-      "name": "Main Character",
-      "description": "The perspective through which the audience primarily experiences the story.",
-      "throughline": "Main Character"
+      "name": "Dr. Michael Hayes",
+      "storytelling": "The perspective through which the audience primarily experiences the story.",
+      "pov": "i"
     }
   ],
   "players": [
     {
-      "id": "player_def456",
-      "name": "Dr. Michael Hayes",
-      "role": "Main Character",
-      "summary": "A psychologist haunted by his past.",
-      "motivations": [
-        {
-          "method": "Avoidance",
-          "illustration": "Michael avoids confronting past failures.",
-          "storytelling": "In therapy sessions, he changes topics when pressed."
-        }
-      ]
+        "id": "player_def456",
+        "name": "Dr. Michael Hayes",
+        "role": "the world's leading psychologist",
+        "visual": "A distinguished man in his late 50s, with silver-streaked hair and piercing blue eyes. He wears a well-tailored suit but often appears slightly disheveled, as if sleep eludes him.",
+        "audio": "His voice is calm and measured, carrying the weight of experience but occasionally betraying a hint of hesitation when discussing personal matters.",
+        "bio": "Dr. Michael Hayes is a renowned psychologist known for his groundbreaking research on trauma and memory. Despite his professional success, he struggles with the ghosts of his past—mistakes he can never take back and patients he couldn’t save. As he delves deeper into the minds of others, he finds himself unable to escape his own unresolved grief.",
+        "storytelling": "A psychologist haunted by his past.",
+        "motivations": [
+            {
+            "method": "Avoid",
+            "illustration": "avoiding confronting past failures",
+            "storytelling": "In therapy sessions, he changes topics when pressed."
+            }
+        ]
     }
   ]
 }
@@ -162,8 +165,8 @@ This is how the story is structured and told, with organizational and stylistic 
       "summary": "The protagonist confronts the rogue AI.",
       "synopsis": "Alex tracks the AI to its hidden base for a final confrontation.",
       "storybeats": [
-        { "order": 0, "storybeat_id": "storybeat_123456" },
-        { "order": 1, "storybeat_id": "storybeat_654321" }
+        { "sequence": 0, "storybeat_id": "storybeat_123456" },
+        { "sequence": 1, "storybeat_id": "storybeat_654321" }
       ]
     }
   ]
@@ -190,7 +193,7 @@ The lens through which the audience experiences the story’s **meaning**.
 "perspectives": [
   {
     "id": "perspective_ab12cd34",
-    "throughline": "Main Character",
+    "pov": "i",
     "summary": "Michael Radford",
     "storytelling": "Michael Radford has spent his life convincing himself that control is the key to survival, but every step forward only tightens the noose around him. When his instincts betray him at the worst possible moment, he’s forced to confront the truth—his carefully built defenses aren’t protecting him, they’re suffocating him."
   }
@@ -203,21 +206,19 @@ Characters within the **narrative structure**, with motivations tied to **subtex
 ```json
 "players": [
   {
-    "id": "player_98abcd76",
+    "id": "player_def456",
     "name": "Dr. Michael Hayes",
-    "role": "Main Character",
-    "summary": "A psychologist haunted by his past.",
-    "storytelling": "Michael projects confidence while hiding his fears.",
-    "perspective": {
-        "throughline": "Objective Story",
-        "perspective_id": "perspective_jrFBh12cd34"
-    },
+    "role": "the world's leading psychologist",
+    "visual": "A distinguished man in his late 50s, with silver-streaked hair and piercing blue eyes. He wears a well-tailored suit but often appears slightly disheveled, as if sleep eludes him.",
+    "audio": "His voice is calm and measured, carrying the weight of experience but occasionally betraying a hint of hesitation when discussing personal matters.",
+    "bio": "Dr. Michael Hayes is a renowned psychologist known for his groundbreaking research on trauma and memory. Despite his professional success, he struggles with the ghosts of his past—mistakes he can never take back and patients he couldn’t save. As he delves deeper into the minds of others, he finds himself unable to escape his own unresolved grief.",
+    "storytelling": "A psychologist haunted by his past.",
     "motivations": [
-      {
-        "method": "Avoidance",
-        "illustration": "Michael avoids discussing his past by focusing on his patient.",
-        "storytelling": "In therapy sessions, Michael steers conversations away from himself."
-      }
+        {
+        "method": "Avoid",
+        "illustration": "avoiding confronting past failures",
+        "storytelling": "In therapy sessions, he changes topics when pressed."
+        }
     ]
   }
 ]
@@ -233,8 +234,7 @@ High-level narrative forces like **Story Outcome** and **Story Judgment**.
     "dynamic": "Story Outcome",
     "vector": "Success",
     "summary": "The story resolves with Michael embracing his past.",
-    "storytelling": "Michael finally opens up, allowing his own progress.",
-    "perspective_id": "perspective_ab12cd34"
+    "storytelling": "Michael finally opens up, allowing his own progress."
   }
 ]
 ```
@@ -246,15 +246,16 @@ Structured **spatial aspects** that define and shape the narrative.
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "perspective": {
-        "throughline": "Main Character",
-        "perspective_id": "perspective_ab12cd34"
-    },
-    "appreciation": "Issue",
-    "method": "Rationalization",
+    "appreciation": "facet",
+    "method": "rationalization",
     "illustration": "justifying bad behavior",
-    "summary": "The character avoids self-examination by rationalizing past behavior.",
-    "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family."
+    "summary": "Michael avoids self-examination by rationalizing past behavior.",
+    "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
+    "perspectives": [
+        {
+            "perspective_id": "persp_def456"
+        }
+    ]
   }
 ]
 ```
@@ -263,15 +264,15 @@ Structured **spatial aspects** that define and shape the narrative.
 **Temporal aspects** that illustrate the progression _through_ the narrative. Each beat captures a **significant temporal shift** and exists within a defined **scope**.
 
 #### **Special Keys for Storybeats**
-- **`scope`** – Defines the narrative level the beat belongs to:
+- **`appreciation`** – Defines the narrative level the beat belongs to:
   - `"transit"` → **Broad thematic shifts** (1-4)
   - `"progression"` → **Structural developments** (1-16)
   - `"event"` → **Fine-grained events** (1-64)
-- **`number`** – Canonical ordering within the **scope**.
+- **`sequence`** – Canonical ordering within the **scope**.
 - **`tones`** – Classifies the narrative function in three dimensions:
-  - **Abstraction** → `"situation"`, `"action"`, `"justification"`, `"opinion"`
-  - **Spatial** → `"potential"`, `"resistance"`, `"current"`, `"power"`
-  - **Temporal** → `"expression"`, `"experimentation"`, `"integration"`, `"transcendence"`
+  - **abstraction** → `"situation"`, `"action"`, `"justification"`, `"opinion"`
+  - **spatial** → `"potential"`, `"resistance"`, `"current"`, `"power"`
+  - **temporal** → `"expression"`, `"experimentation"`, `"integration"`, `"transcendence"`
 
 These ensure **consistency across all stories** while allowing room for creative variation.
 
@@ -279,13 +280,9 @@ These ensure **consistency across all stories** while allowing room for creative
 "storybeats": [
   {
     "id": "storybeat_9876bcde",
-    "perspective": {
-        "throughline": "Main Character",
-        "perspective_id": "perspective_JkUUy58re34"
-    },
-    "appreciation": "Transit",
+    "appreciation": "transit",
     "sequence": 4,
-    "method": "Past",
+    "method": "past",
     "illustration": "reliving the past",
     "summary": "Michael can no longer escape his past.",
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
@@ -294,7 +291,9 @@ These ensure **consistency across all stories** while allowing room for creative
         "spatial": "power",
         "temporal": "transcendence"
     },
-    "perspective_id": "perspective_ab12cd34"
+    "perspectives": [
+        "perspective_ab12cd34"
+    ]
   }
 ]
 ```
@@ -332,9 +331,9 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
     "summary": "The protagonist arrives in the dystopian city and gets their first taste of the underworld.",
     "synopsis": "After landing in Neo-Tokyo, Alex is forced to navigate a world of hackers, crime syndicates, and AI-controlled law enforcement.",
     "storybeats": [
-      { "order": 0, "storybeat_id": "storybeat_123456" },
-      { "order": 1, "storybeat_id": "storybeat_789012" },
-      { "order": 2, "storybeat_id": "storybeat_345678" }
+      { "sequence": 0, "storybeat_id": "storybeat_123456" },
+      { "sequence": 1, "storybeat_id": "storybeat_789012" },
+      { "sequence": 2, "storybeat_id": "storybeat_345678" }
     ]
   },
   {
@@ -342,8 +341,8 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
     "summary": "A tense confrontation with the antagonist reveals a shocking truth.",
     "synopsis": "Alex finally meets the rogue AI and realizes it may not be the villain they were led to believe.",
     "storybeats": [
-      { "order": 0, "storybeat_id": "storybeat_987654" },
-      { "order": 1, "storybeat_id": "storybeat_654321" }
+      { "sequence": 0, "storybeat_id": "storybeat_987654" },
+      { "sequence": 1, "storybeat_id": "storybeat_654321" }
     ]
   }
 ]
@@ -383,47 +382,48 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "appreciation": {
   "type": "string",
   "enum": [
-    "Domain",
-    "Concern",
-    "Issue",
-    "Problem",
-    "Solution",
-    "Focus",
-    "Direction",
-    "Condition",
-    "Adjustment",
-    "Resistance",
-    "Flow",
-    "Unique Ability",
-    "Critical Flaw",
-    "Catalyst",
-    "Inhibitor",
-    "Benchmark",
-    "Story Goal",
-    "Story Requirements",
-    "Story Prerequisites",
-    "Story Preconditions",
-    "Story Costs",
-    "Story Dividends",
-    "Story Forewarnings",
-    "Story Consequence",
-    "Story Intention",
-    "Story Habituation",
-    "Story Internalization",
-    "Story Socialization",
-    "Story Pressure",
-    "Story Excitement",
-    "Story Ennui",
-    "Story Overwhelm",
-    "Pivotal Element",
-    "Initial Story Driver",
-    "Second Story Driver",
-    "Midpoint Story Driver",
-    "Fourth Story Driver",
-    "Concluding Story Driver",
-    "Transit",
-    "Progression",
-    "Event"
+    "form",
+    "field",
+    "facet",
+    "force",
+    "problem",
+    "solution",
+    "focus",
+    "direction",
+    "condition",
+    "adjustment",
+    "resistance",
+    "flow",
+    "unique_ability",
+    "critical_flaw",
+    "catalyst",
+    "inhibitor",
+    "benchmark",
+    "story_goal",
+    "story_requirements",
+    "story_prerequisites",
+    "story_preconditions",
+    "story_costs",
+    "story_dividends",
+    "story_forewarnings",
+    "story_consequence",
+    "story_intention",
+    "story_habituation",
+    "story_internalization",
+    "story_socialization",
+    "story_pressure",
+    "story_excitement",
+    "story_ennui",
+    "story_overwhelm",
+    "pivotal_element",
+    "initial_story_driver",
+    "second_story_driver",
+    "midpoint_story_driver",
+    "fourth_story_driver",
+    "concluding_story_driver",
+    "transit",
+    "progression",
+    "event"
     ],
   "description": "A core narrative Appreciation, based on the Universal Narrative Model."
 }
@@ -437,154 +437,154 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "method": {
   "type": "string",
   "enum": [
-    "External Framing",
-    "External Processing",
-    "Internal Processing",
-    "Interal Framing",
-    "Past",
-    "Understanding",
-    "Conceptualizing",
-    "Memory",
-    "Progress",
-    "Doing",
-    "Being",
-    "Preconscious",
-    "Future",
-    "Obtaining",
-    "Becoming",
-    "Subconscious",
-    "Present",
-    "Learning",
-    "Conceiving",
-    "Conscious",
-    "Fate",
-    "Prediction",
-    "Interdiction",
-    "Destiny",
-    "Instinct",
-    "Senses",
-    "Interpretation",
-    "Conditioning",
-    "Fact",
-    "Security",
-    "Threat",
-    "Fantasy",
-    "Wisdom",
-    "Skill",
-    "Experience",
-    "Enlightenment",
-    "Openness",
-    "Delay",
-    "Choice",
-    "Preconception",
-    "Approach",
-    "Self Interest",
-    "Altruism",
-    "Attitude",
-    "Work",
-    "Attraction",
-    "Repulsion",
-    "Attempt",
-    "Qualification",
-    "Strategy",
-    "Analysis",
-    "Stipulation",
-    "Truth",
-    "Evidence",
-    "Suspicion",
-    "Falsehood",
-    "State of Being",
-    "Situation",
-    "Circumstances",
-    "Sense of Self",
-    "Value",
-    "Confidence",
-    "Worry",
-    "Worth",
-    "Knowing",
-    "Able",
-    "Driven",
-    "Thinking",
-    "Closure",
-    "Hope",
-    "Dream",
-    "Denial",
-    "Rationalization",
-    "Commitment",
-    "Responsibility",
-    "Obligation",
-    "Investigation",
-    "Appraisal",
-    "Reappraisal",
-    "Doubt",
-    "Permission",
-    "Need",
-    "Expediency",
-    "Deficiency",
-    "Ability",
-    "Acceptance",
-    "Accurate",
-    "Actuality",
-    "Avoid",
-    "Aware",
-    "Cause",
-    "Certainty",
-    "Change",
-    "Chaos",
-    "Conscience",
-    "Consider",
-    "Control",
-    "Deduction",
-    "Desire",
-    "Determination",
-    "Disbelief",
-    "Effect",
-    "Ending",
-    "Equity",
-    "Evaluation",
-    "Expectation",
-    "Faith",
-    "Feeling",
-    "Help",
-    "Hinder",
-    "Hunch",
-    "Inaction",
-    "Induction",
-    "Inequity",
-    "Inertia",
-    "Knowledge",
-    "Logic",
-    "Rejection",
-    "Deviation",
-    "Oppose",
-    "Order",
-    "Perception",
-    "Possibility",
-    "Potentiality",
-    "Proaction",
-    "Probability",
-    "Process",
-    "Production",
-    "Projection",
-    "Protection",
-    "Proven",
-    "Pursuit",
-    "Re-evaluation",
-    "Reaction",
-    "Reconsider",
-    "Reduction",
-    "Result",
-    "Self-aware",
-    "Speculation",
-    "Support",
-    "Temptation",
-    "Test",
-    "Theory",
-    "Thought",
-    "Trust",
-    "Abandon",
-    "Continuing",
-    "Presumption"
+    "external_framing",
+    "external_processing",
+    "internal_processing",
+    "internal_framing",
+    "past",
+    "understanding",
+    "conceptualizing",
+    "memory",
+    "progress",
+    "doing",
+    "being",
+    "preconscious",
+    "future",
+    "obtaining",
+    "becoming",
+    "subconscious",
+    "present",
+    "learning",
+    "conceiving",
+    "conscious",
+    "fate",
+    "prediction",
+    "interdiction",
+    "destiny",
+    "instinct",
+    "senses",
+    "interpretation",
+    "conditioning",
+    "fact",
+    "security",
+    "threat",
+    "fantasy",
+    "wisdom",
+    "skill",
+    "experience",
+    "enlightenment",
+    "openness",
+    "delay",
+    "choice",
+    "preconception",
+    "approach",
+    "self_interest",
+    "altruism",
+    "attitude",
+    "work",
+    "attraction",
+    "repulsion",
+    "attempt",
+    "qualification",
+    "strategy",
+    "analysis",
+    "stipulation",
+    "truth",
+    "evidence",
+    "suspicion",
+    "falsehood",
+    "state_of_being",
+    "situation",
+    "circumstances",
+    "sense_of_self",
+    "value",
+    "confidence",
+    "worry",
+    "worth",
+    "knowing",
+    "able",
+    "driven",
+    "thinking",
+    "closure",
+    "hope",
+    "dream",
+    "denial",
+    "rationalization",
+    "commitment",
+    "responsibility",
+    "obligation",
+    "investigation",
+    "appraisal",
+    "reappraisal",
+    "doubt",
+    "permission",
+    "need",
+    "expediency",
+    "deficiency",
+    "ability",
+    "acceptance",
+    "accurate",
+    "actuality",
+    "avoid",
+    "aware",
+    "cause",
+    "certainty",
+    "change",
+    "chaos",
+    "conscience",
+    "consider",
+    "control",
+    "deduction",
+    "desire",
+    "determination",
+    "disbelief",
+    "effect",
+    "ending",
+    "equity",
+    "evaluation",
+    "expectation",
+    "faith",
+    "feeling",
+    "help",
+    "hinder",
+    "hunch",
+    "inaction",
+    "induction",
+    "inequity",
+    "inertia",
+    "knowledge",
+    "logic",
+    "rejection",
+    "deviation",
+    "oppose",
+    "order",
+    "perception",
+    "possibility",
+    "potentiality",
+    "proaction",
+    "probability",
+    "process",
+    "production",
+    "projection",
+    "protection",
+    "proven",
+    "pursuit",
+    "re_evaluation",
+    "reaction",
+    "reconsider",
+    "reduction",
+    "result",
+    "self_aware",
+    "speculation",
+    "support",
+    "temptation",
+    "test",
+    "theory",
+    "thought",
+    "trust",
+    "abandon",
+    "continuing",
+    "presumption"
   ],
   "description": "A Method by which the Appreciation is explored in the narrative."
 }
@@ -599,15 +599,15 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "dynamic": {
   "type": "string",
   "enum": [
-    "Main Character Resolve",
-    "Obstacle Character Resolve",
-    "Main Character Growth",
-    "Main Character Approach",
-    "Narrative Alignment",
-    "Narrative Field",
-    "Story Driver",
-    "Story Outcome",
-    "Story Judgment"
+    "i_perspective_resolve",
+    "you_perspective_resolve",
+    "growth",
+    "approach",
+    "alignment",
+    "fabric",
+    "driver",
+    "outcome",
+    "judgment"
     ],
   "description": "An indication of a Dynamic applied to the Universal Narrative Model."
 }
@@ -621,27 +621,79 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "vector": {
   "type": "string",
   "enum": [
-    "Relinquished",
-    "Maintained",
-    "Stop",
-    "Start",
-    "Do-er",
-    "Be-er",
-    "Dopamine",
-    "Serotonin",
-    "Action",
-    "Decision",
-    "Spacetime",
-    "Timespace",
-    "Success",
-    "Failure",
-    "Good",
-    "Bad"
+    "relinquished",
+    "maintained",
+    "stop",
+    "start",
+    "do_er",
+    "be_er",
+    "dopamine",
+    "serotonin",
+    "action",
+    "decision",
+    "spacetime",
+    "timespace",
+    "success",
+    "failure",
+    "good",
+    "bad"
   ],
   "description": "A Vector by which a Dynamic is explored in the narrative."
 }
 ```
 **💡 Expansion:** Third-party implementations can add their own `custom_vector` fields.
+
+---
+
+### Storypoints
+
+```json
+"storypoints": {
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": { "type": "string" },
+      "appreciation": { 
+        "type": "string",
+        "enum": ["form", "field", "facet", "force", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
+      },
+      "method": { 
+        "type": "string",
+        "enum": [
+          "external_framing", "external_processing", "internal_processing", "internal_framing", "past", "understanding", "conceptualizing", "memory",
+          "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
+          "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
+          "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "altruism", "attitude",
+          "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "stipulation", "truth", "evidence", "suspicion", "falsehood",
+          "state_of_being", "situation", "circumstances", "sense_of_self", "value", "confidence", "worry", "worth", "knowing", "able", "driven", "thinking",
+          "closure", "hope", "dream", "denial", "rationalization", "commitment", "responsibility", "obligation", "investigation", "appraisal", "reappraisal",
+          "doubt", "permission", "need", "expediency", "deficiency", "ability", "acceptance", "accurate", "actuality", "avoid", "aware", "cause", "certainty",
+          "change", "chaos", "conscience", "consider", "control", "deduction", "desire", "determination", "disbelief", "effect", "ending", "equity", "evaluation",
+          "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
+          "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
+          "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
+          "temptation", "test", "theory", "thought", "trust", "abandon", "continuing", "presumption"
+        ]
+      },
+      "illustration": { "type": "string" },
+      "summary": { "type": "string" },
+      "storytelling": { "type": "string" },
+      "perspectives": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "perspective_id": { "type": "string" }
+          },
+          "required": ["perspective_id"]
+        }
+      }
+    },
+    "required": ["id", "appreciation", "method", "illustration", "summary", "storytelling", "perspectives"]
+  }
+}
+```
 
 ---
 
@@ -678,10 +730,6 @@ Each Storybeat has **three tonal layers**:
       "id": {
         "type": "string",
         "pattern": "^storybeat_[a-f0-9-]{36}$"
-      },
-      "perspective_id": {
-        "type": ["string", "null"],
-        "pattern": "^perspective_[a-f0-9-]{36}$"
       },
       "appreciation": {
         "type": "string",
@@ -738,15 +786,27 @@ Each Storybeat has **three tonal layers**:
           }
         },
         "required": ["abstraction", "spatial", "temporal"]
+      },
+      "perspectives": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+            "perspective_id": {
+                "type": "string"
+            }
+            },
+            "required": []
+        }
       }
     },
     "required": [
       "id",
-      "perspective",
       "appreciation",
       "sequence",
       "method",
       "tones",
+      "perspectives"
     ]
   }
 }
