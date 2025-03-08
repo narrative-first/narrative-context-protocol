@@ -582,7 +582,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "theory",
     "thought",
     "trust",
-    "abandon",
+    "free",
     "continuing",
     "presumption"
   ],
@@ -623,6 +623,8 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "enum": [
     "relinquished",
     "maintained",
+    "released",
+    "sustained",
     "stop",
     "start",
     "do_er",
@@ -673,7 +675,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
           "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
           "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
           "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-          "temptation", "test", "theory", "thought", "trust", "abandon", "continuing", "presumption"
+          "temptation", "test", "theory", "thought", "trust", "free", "continuing", "presumption"
         ]
       },
       "illustration": { "type": "string" },
@@ -890,7 +892,7 @@ While every standard is open to customization, we focus on customizing an Apprec
 {
     "id": "storypoint_2345abcd",
     "perspective": {
-        "throughline": "Obstacle Character",
+        "throughline": "Catalyst Provocateur",
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Focus",
@@ -900,7 +902,7 @@ While every standard is open to customization, we focus on customizing an Apprec
 ```
 
 **Why?**  
-- The combination of the `"Obstacle Character"` Perspective and the `"Focus"` Appreciation fits within the **UNM standard** and serves as an anchor across all systems. There is no ambiguity as to what this Storypoint refers to within the narrative. 
+- The combination of the `"Catalust Provocateur"` Perspective and the `"Focus"` Appreciation fits within the **UNM standard** and serves as an anchor across all systems. There is no ambiguity as to what this Storypoint refers to within the narrative. 
 - `"Alternative Viewpoint"` is the **user’s preferred alternative**, which **does not conflict** with the standard model.  
 
 ::callout
@@ -920,7 +922,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
 {
     "id": "storypoint_2345abcd",
     "perspective": {
-        "throughline": "Obstacle Character",
+        "throughline": "Catalyst Provocateur",
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Focus",
@@ -935,7 +937,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
 ```
 **Why?** 
 
-- `"Focus"`, along with `"Obstacle Character"` remains the **official Perspective and Appreciation**.  
+- `"Focus"`, along with `"Catalyst Provocateur"` remains the **official Perspective and Appreciation**.  
 - `"Alternative Tension"` is the **custom term** for internal use.  
 - `"Dramatica": "Influence Character Symptom"` ensures **compatibility with Dramatica**.  
 - `"Hero's Journey": "Call to Adventure"` provides a **direct mapping to Joseph Campbell’s model**.  

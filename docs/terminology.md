@@ -7,17 +7,19 @@ To modernize narrative analysis and improve computational modeling, UNM introduc
 |--------------------------|--------------------------|--------------------------------------------------------|
 | Change vs. Steadfast     | Relinquished vs. Maintained | More accurately describes the transformation process. |
 | Mental Sex/Problem-solving Style               | Narrative Alignment      | Aligns with modern neuroscience for decision-making.  |
-| Story Limit               | Narrative Field      | Clarifies relationship between time and space in a narrative.  |
+| Story Limit               | Narrative Fabric      | Clarifies relationship between time and space in a narrative.  |
 | Signposts                | Transits                 | Frames storytelling as a dynamic interaction between objective and subjective realities.       |
-
-### Terminology Specific to Serotonin-aligned Narratives
-
-| **Previous Term**         | **UNM Equivalent**         | **Why the Change?**                                      |
-|--------------------------|--------------------------|--------------------------------------------------------|
 | Universe        | External Framing        | Clarifies that conflict arises from external conditions shaping the context, making it easier to see how setting influences problems. |
 | Physics        | External Processing      | Shifts focus to dynamic action and interaction, ensuring the source of conflict is understood as movement and change rather than just activity. |
 | Psychology     | Internal Processing      | Makes it immediately clear that conflict stems from patterns of thought and decision-making rather than an abstract mental state. |
 | Mind           | Internal Framing         | Highlights how attitudes and beliefs create conflict by shaping perception, rather than treating them as fixed traits. | 
+
+
+### Terminology Specific to Serotonin-aligned Narratives
+
+| **Dramatica Term**         | **Serotonin-aligned Term**         | **Why the Change?**                                      |
+|--------------------------|--------------------------|--------------------------------------------------------|
+| Change vs. Steadfast     | Released vs. Sustained | More accurately describes the transformation process. |
 | Problem                            | Condition                          | Reflects a more neutral framing of narrative inequities. |
 | Solution                           | Adjustment                         | Recognizes shifts in perspective rather than binary resolution. |
 | Focus                              | Resistance                         | Highlights opposition to a problem rather than mere attention. |
@@ -36,7 +38,7 @@ These updates ensure that UNM remains **flexible, precise, and compatible with A
 ## Why These Changes Matter  
 - The **Relinquished vs. Maintained Dynamic** clarifies the state differential that exists between the beginning and end of a narrative.  
 - **Narrative Alignment** ensures decision-making is framed in **cognitive processing terms** rather than what appears to be binary distinctions.  
-- **Narrative Field** ensures the concept of space relating to time is more readily understood at the base level of the Storyform.
+- **Narrative Fabric** ensures the concept of space relating to time is more readily understood at the base level of the Storyform.
 - **Structural enhancements** help integrate **AI modeling and interactive storytelling frameworks**.  
 
 

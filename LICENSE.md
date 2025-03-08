@@ -1,16 +1,10 @@
-# Universal Narrative Model (UNM) License  
-
-© 2025 Narrative First.  
-
-The Universal Narrative Model (UNM) is an open-source framework originally derived from research and development conducted within Narrative First (Subtxt) prior to the UCM/UNM (originally Universal Character Model). While certain refinements were made during collaboration with USC’s Entertainment Technology Center (ETC), the core methodology and structure of UNM existed prior to this partnership.  
-
-Under an agreement with ETC, Narrative First has been granted an exclusive, perpetual license to maintain and distribute UNM as an open standard.  
-
-This project is licensed under the MIT License (see below).
-
 # MIT License  
 
-Copyright (c) 2025 Narrative First  
+**Universal Narrative Model™ (UNM™)** is a trademark of the **Entertainment Technology Center (ETC)** at the **University of Southern California (USC)**.
+
+The ETC at USC has delegated official stewardship of the UNM™ specification, repository, and ongoing maintenance and development to **Narrative First, Inc.™**. For inquiries, collaboration, or further information, please contact:  **unm@narrativefirst.com**
+
+The **Universal Narrative Model schema and file format** are openly distributed under the **MIT License**, ensuring free and unrestricted adoption, modification, and use by the community.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
 

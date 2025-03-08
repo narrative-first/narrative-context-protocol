@@ -32,7 +32,7 @@
                         "type": "object",
                         "properties": {
                           "id": { "type": "string" },
-                          "pov": { 
+                          "author_structural_pov": { 
                             "type": "string",
                             "enum": ["i", "you", "we", "they"]
                           },                          
@@ -212,7 +212,32 @@
                   "type": "object",
                   "properties": {
                     "overviews": { "type": "array" },
-                    "moments": { "type": "array" }
+                    "moments": { 
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": { "type": "string" },
+                            "summary": { "type": "string" },
+                            "synopsis": { "type": "string" },
+                            "audience_experiential_pov": {
+                              "type": "string",
+                              "enum": ["first-person", "third-person-plural"]
+                            },
+                            "storybeats": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "sequence": { "type": "integer" },
+                                  "storybeat_id": { "type": "string" }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               },

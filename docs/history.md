@@ -1,29 +1,21 @@
-# Evolution & Development of the Universal Narrative Model (UNM)  
+# Evolution & Development of the Universal Narrative Model (UNM)
 
-## Origins  
-The **Universal Narrative Model (UNM)** was developed as a next-generation narrative framework, designed to enhance **narrative consistency, scalability, and AI-driven applications**.  
+The Universal Narrative Model (UNM) was developed as a next-generation narrative file format, designed to enhance narrative consistency, scalability, and AI-driven storytelling capabilities.
 
-While UNM acknowledges early contributions from various narrative theorists, its methodology has been significantly refined through **new computational modeling, algorithmic improvements, and modern AI-compatible structures**.  
+Building upon established narrative theories and pioneering technologies from Write Brothers, Inc.® and Narrative First, Inc.™, Version 1.0 of the UNM directly mirrors the API framework utilized in the Subtxt application, reflecting a seamless integration of theory and practical application.
 
-## Key Innovations  
-🔹 **Algorithmic Refinements** – UNM improves upon prior narrative models by enhancing event sequencing and structural alignment.  
-🔹 **AI & Computational Storytelling** – UNM is optimized for **AI-assisted storytelling**, ensuring scalability for modern creative workflows.  
-🔹 **Open-Source & Industry Adoption** – Unlike previous proprietary models, UNM is designed to be an **open standard for universal accessibility**. 
+## Evolution & Development of the Dramatica Theory of Story
 
-## ETC’s Role in the Development of UNM  
+The Subtxt Narrative Framework evolved significantly from the foundational Dramatica theory of story, further refining its core concepts and making them more accessible and practical in an AI-enhanced storytelling environment. Subtxt expanded upon Dramatica by clarifying terminology, simplifying complex narrative dynamics, and restructuring theoretical elements to be readily integrated into modern AI workflows.
 
-The Universal Narrative Model (UNM) was conceived through discussions and early research at the **Entertainment Technology Center (ETC) at USC**, an organization dedicated to advancing storytelling through emerging technologies.  
+Key enhancements introduced by Subtxt include:
 
-While ETC played a foundational role in shaping the theoretical framework, the need for an **ongoing, actively maintained open standard** led to **Narrative First assuming stewardship of UNM**. Under Narrative First’s leadership, the model has undergone:  
+- **Improved Accessibility:** Streamlined narrative concepts and language to be intuitive for both human creators and AI models, allowing easier adoption across various industries.
 
-- **Algorithmic refinements** to improve story sequencing and computational accuracy.  
-- **Expanded AI integration** for scalable storytelling applications.  
-- **Industry-focused implementations**, ensuring practical use across film, gaming, and interactive narratives.  
+- **Enhanced Precision:** Refined algorithms and updated the original Dramatica processes, increasing narrative accuracy and consistency, especially critical for AI-driven content generation.
 
-This transition ensures that UNM remains a **dynamic, continuously evolving model** that is both academically sound and practically applicable in creative industries.
+- **AI Integration:** Developed specific structures and standards optimized for compatibility with Large Language Models (LLMs), enabling richer, more dynamic storytelling experiences.
 
-## Acknowledgment of Past Research 
+- **Open Standard Commitment:** Established the UNM as an openly accessible framework, promoting industry-wide adoption and collaboration, ensuring continuous improvement through community and technological contributions.
 
-UNM was developed with awareness of previous narrative theories but **stands as an independent framework**. While some early discussions involved contributors familiar with previous theories, the **model itself has evolved substantially through new methodologies** that are distinct from earlier structures.  
-
-For a full list of changes and updates, refer to [terminology.md](/terminology.md).  
+For a full list of changes and updates, refer to [terminology.md](/terminology.md).

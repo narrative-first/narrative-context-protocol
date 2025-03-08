@@ -8,7 +8,7 @@ We encourage contributions that enhance UNM’s structure, computational modelin
 
 ## Governance & Review Process  
 
-The Universal Narrative Model (UNM) was initially developed in partnership with the **Entertainment Technology Center (ETC) at USC**, leveraging their academic expertise in emerging storytelling methodologies.  
+The Universal Narrative Model (UNM) was developed in partnership with the **Entertainment Technology Center (ETC) at USC**, leveraging their academic expertise in emerging storytelling methodologies.  
 
 Today, **Narrative First is the official steward of UNM**, responsible for maintaining the open-source framework, overseeing contributions, and guiding its long-term development.  
 
@@ -31,4 +31,4 @@ We encourage contributions that enhance UNM’s structure, computational modelin
 - Contributions are accepted under the **MIT License**.  
 - All contributors must agree to **open accessibility and non-exclusivity**.  
 
-For more details, contact [Narrative First](https://narrativefirst.com).
+For more details, visit [Narrative First](https://narrativefirst.com).
