@@ -348,6 +348,35 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
 ]
 ```
 
+## Here you go, matching the style you provided:
+
+```json
+"audience_experiential_pov": {
+  "type": "string",
+  "enum": [
+    "first_person_central",
+    "first_person_peripheral",
+    "second_person",
+    "third_person_limited",
+    "third_person_objective",
+    "third_person_omniscient"
+  ]
+}
+```
+
+### Moment Properties
+
+#### Audience Experiential POV
+
+Essential for communicating how the Moment's synopsis and storytelling should be written.
+
+- **first_person_central:** Narrator is the main character, directly experiencing events ("I did this").
+- **first_person_peripheral:** Narrator is a secondary character observing another's story ("I saw him do this").
+- **second_person:** Directly addresses the reader, immersing them in the action ("You did this").
+- **third_person_limited:** Narration closely follows one character’s perspective and thoughts ("She thought this").
+- **third_person_objective:** Narration reports only observable actions without internal thoughts ("He did that").
+- **third_person_omniscient:** Narration shares thoughts and emotions from multiple characters ("He felt angry; meanwhile, she was plotting").
+
 ---
 
 ## Why This Split Matters

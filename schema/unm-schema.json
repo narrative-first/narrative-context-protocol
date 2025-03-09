@@ -220,9 +220,36 @@
                             "id": { "type": "string" },
                             "summary": { "type": "string" },
                             "synopsis": { "type": "string" },
+                            "setting": { "type": "string" },
+                            "timing": { "type": "string" },
+                            "imperatives": { "type": "string" },
+                            "fabric": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": ["space", "time"]
+                                  },
+                                  "limit": {
+                                    "type": "integer"
+                                  }
+                                },
+                                "required": ["type", "limit"],
+                                "additionalProperties": false
+                              }
+                            },
                             "audience_experiential_pov": {
                               "type": "string",
-                              "enum": ["first-person", "third-person-plural"]
+                              "enum": [
+                                "first_person_central",
+                                "first_person_peripheral",
+                                "second_person",
+                                "third_person_limited",
+                                "third_person_objective",
+                                "third_person_omniscient"
+                              ]
                             },
                             "storybeats": {
                               "type": "array",

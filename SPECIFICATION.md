@@ -143,7 +143,7 @@ Where the author positions the source of conflict to communicate the story's int
 "perspectives": [
   {
     "id": "perspective_ab12cd34",
-    "pov": "i",
+    "author_structural_pov": "i",
     "summary": "Michael Radford",
     "storytelling": "Michael Radford has spent his life convincing himself that control is the key to survival, but every step forward only tightens the noose around him. When his instincts betray him at the worst possible moment, he’s forced to confront the truth—his carefully built defenses aren’t protecting him, they’re suffocating him."
   }
@@ -288,7 +288,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "setting": "The pulsating streets of Neo-Tokyo, where holographic ads blend with the shadowy back alleys controlled by syndicate bosses.",
     "timing": "Late night, just hours after Alex's first unsettling discovery upon arriving in the city.",
     "imperatives": "- Establish the dark, chaotic atmosphere of Neo-Tokyo\n- Introduce key threats: cyber-criminals and AI enforcers\n- Show Alex's initial vulnerabilities and resourcefulness",
-    "audience_experience_pov": "third-person limited",
+    "audience_experiential_pov": "third-person limited",
     "fabric": [
       { "type": "space", "limit": 10 }
     ],
@@ -305,7 +305,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "setting": "A hidden data sanctuary deep beneath Neo-Tokyo, where reality merges seamlessly with the digital ether.",
     "timing": "The following evening, after Alex spends the day piecing together crucial fragments of intel collected overnight.",
     "imperatives": "- Build tension leading to the meeting with the AI\n- Reveal the AI's surprising nature and motives\n- Challenge Alex's established beliefs about allies and enemies",
-    "audience_experience_pov": "third-person limited",
+    "audience_experiential_pov": "third-person limited",
     "fabric": [
       { "type": "space", "limit": 20 }
     ],
