@@ -30,6 +30,64 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
   ]
 }
 ```
+—
+
+### Story 
+The highest-level object representing the entire story, containing its metadata and core narrative structures.  
+
+
+```json
+“story”: {
+  “id”: “story_123e4567”,
+  “title”: “The Journey Within”,
+  “genre”: “Psychological Drama”,
+  “logline”: “A psychologist struggling with his past helps a patient uncover a hidden trauma, only to confront his own.”,
+  “narratives”: [],
+  “created_at”: “2025-02-05T14:30:00Z”
+}
+```
+
+—
+
+### Narrative: Structuring Subtext & Storytelling  
+
+A single **story** may contain **one or more narratives** (e.g., “The Empire Strikes Back” has the Luke/Yoda Storyform and the Han/Leia Storyform, “Barbie” has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a **single central narrative** (e.g., “Anora”, “Anatomy of a Fall”, etc.). 
+
+A narrative consists of two core layers:  
+
+1. **Subtext:** The deep, underlying structure of the narrative that conveys the author’s intent.  
+2. **Storytelling:** The high-level, audience-facing presentation of the story.  
+
+This structure provides both depth (meaning) and flexibility (presentation) within a single, organized model, ensuring a clear distinction between **what the story means** (Subtext) and **how the story is told** (Storytelling).  
+
+—
+
+```json
+“story”: {
+  “id”: “story_123e4567”,
+  “title”: “The Journey Within”,
+  “narratives”: [
+    {
+        “id”: “narrative_AbnHJ147”,
+        “title”: “Central Form”,
+        “subtext”: {
+            “perspectives”: [],
+            “players”: [],
+            “storypoints”: [],
+            “storybeats”: [],
+            “dynamics”: []
+        },
+        “storytelling”: {
+            “overviews”: [],
+            “moments”: []
+        }
+    }
+  ]
+}
+```
+—
+
+Each layer of a narrative consists of several narrative aspects specialized for both author and audience.
 
 ---
 
