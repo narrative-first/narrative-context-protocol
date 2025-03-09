@@ -636,7 +636,9 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "fabric",
     "driver",
     "outcome",
-    "judgment"
+    "judgment",
+    "balance",
+    "vibes"
     ],
   "description": "An indication of a Dynamic applied to the Universal Narrative Model."
 }
@@ -668,6 +670,10 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "failure",
     "good",
     "bad"
+    "harmony",
+    "discord",
+    "high",
+    "low"
   ],
   "description": "A Vector by which a Dynamic is explored in the narrative."
 }
