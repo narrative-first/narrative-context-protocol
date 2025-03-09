@@ -36,7 +36,7 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
 The highest-level object representing the entire story, containing its metadata and core narrative structures.  
 
 ```json
-"story": {
+“story”: {
   “id”: “story_123e4567”,
   “title”: “The Journey Within”,
   “genre”: “Psychological Drama”,
@@ -62,26 +62,28 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 —
 
 ```json
-“story”: {
-  “id”: “story_123e4567”,
-  “title”: “The Journey Within”,
-  “narratives”: [
-    {
+{
+  “story”: {
+    “id”: “story_123e4567”,
+    “title”: “The Journey Within”,
+    “narratives”: [
+      {
         “id”: “narrative_AbnHJ147”,
         “title”: “Central Form”,
         “subtext”: {
-            “perspectives”: [],
-            “players”: [],
-            “storypoints”: [],
-            “storybeats”: [],
-            “dynamics”: []
+          “perspectives”: [],
+          “players”: [],
+          “storypoints”: [],
+          “storybeats”: [],
+          “dynamics”: []
         },
         “storytelling”: {
-            “overviews”: [],
-            “moments”: []
+          “overviews”: [],
+          “moments”: []
         }
-    }
-  ]
+      }
+    ]
+  }
 }
 ```
 —
