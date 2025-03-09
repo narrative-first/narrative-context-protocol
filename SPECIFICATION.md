@@ -35,9 +35,8 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
 ### Story 
 The highest-level object representing the entire story, containing its metadata and core narrative structures.  
 
-
 ```json
-“story”: {
+"story": {
   “id”: “story_123e4567”,
   “title”: “The Journey Within”,
   “genre”: “Psychological Drama”,
