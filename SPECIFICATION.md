@@ -37,13 +37,13 @@ The highest-level object representing the entire story, containing its metadata 
 
 ```json
 {
-  “story”: {
-    “id”: “story_123e4567”,
-    “title”: “The Journey Within”,
-    “genre”: “Psychological Drama”,
-    “logline”: “A psychologist struggling with his past helps a patient uncover a hidden trauma, only to confront his own.”,
-    “narratives”: [],
-    “created_at”: “2025-02-05T14:30:00Z”
+  "story": {
+    "id": "story_123e4567",
+    "title": "The Journey Within",
+    "genre": "Psychological Drama",
+    "logline": "A psychologist struggling with his past helps a patient uncover a hidden trauma, only to confront his own.",
+    "narratives": [],
+    "created_at": "2025-02-05T14:30:00Z"
   }
 }
 ```
@@ -62,23 +62,23 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 
 ```json
 {
-  “story”: {
-    “id”: “story_123e4567”,
-    “title”: “The Journey Within”,
-    “narratives”: [
+  "story": {
+    "id": "story_123e4567",
+    "title": "The Journey Within",
+    "narratives": [
       {
-        “id”: “narrative_AbnHJ147”,
-        “title”: “Central Form”,
-        “subtext”: {
-          “perspectives”: [],
-          “players”: [],
-          “storypoints”: [],
-          “storybeats”: [],
-          “dynamics”: []
+        "id": "narrative_AbnHJ147",
+        "title": "Central Form",
+        "subtext": {
+          "perspectives": [],
+          "players": [],
+          "storypoints": [],
+          "storybeats": [],
+          "dynamics": []
         },
-        “storytelling”: {
-          “overviews”: [],
-          “moments”: []
+        "storytelling": {
+          "overviews": [],
+          "moments": []
         }
       }
     ]
@@ -87,7 +87,6 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 ```
 
 Each layer of a narrative consists of several narrative aspects specialized for both author and audience.
-
 
 ---
 
