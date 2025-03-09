@@ -36,6 +36,10 @@ With the UNM, the often informal process of giving and receiving notes transform
 ✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica®, Hero’s Journey, Save the Cat!, and more...  
 ✅ **Interoperability:** Easily exchange narrative data between platforms.
 
+## Getting Started
+
+Begin by reading the complete [Specification](/specification.md)
+
 ## Repository Structure
 ```
 universal-narrative-model/
