@@ -6,7 +6,7 @@ The **Universal Narrative Model (UNM)** provides an open, accessible standard fo
 
 At its heart, the UNM is **a flexible and portable file format** designed to facilitate sharing and collaboration across different storytelling mediums, platforms, and creative communities. In addition to making it easier for an author to transfer their work from one medium to the next, the UNM also provides an easily trackable "blockchain-for-subtext" approach to contribution and collaboration.
 
-Drawing inspiration from foundational narrative theories like Dramatica® (developed by Write Brothers, Inc.®) and innovative technologies from Subtxt™ and Subtxt Muse™ (developed by Narrative First, Inc.™), the UNM simplifies complex narrative relationships into a clear, community-driven format. Its goal is to educate, inspire, and empower storytellers across various mediums, including film, television, literature, interactive media, gaming, and AI-driven generative content.
+Drawing inspiration from foundational narrative theories and recent developments in technology, the UNM simplifies complex narrative relationships into a clear, community-driven format. Its goal is to educate, inspire, and empower storytellers across various mediums, including film, television, literature, interactive media, gaming, and AI-driven generative content.
 
 ---
 

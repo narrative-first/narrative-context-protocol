@@ -180,8 +180,6 @@ Characters whose actions and motivations reveal deeper thematic layers (subtext)
 ]
 ```
 
----
-
 ### **Storypoints** 
 
 Defined structural elements representing spatial aspects of a narrative. They establish the narrative's foundational arrangement and thematic relationships.
@@ -203,8 +201,6 @@ Defined structural elements representing spatial aspects of a narrative. They es
   }
 ]
 ```
-
----
 
 ### Storybeats
 
@@ -232,8 +228,6 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 ]
 ```
 
----
-
 ### Dynamics
 
 High-level narrative forces that reflect the author's intent, shaping the story's message and clearly communicating its Narrative Argument.
@@ -249,8 +243,6 @@ High-level narrative forces that reflect the author's intent, shaping the story'
   }
 ]
 ```
-
----
 
 ### Overviews
 
@@ -272,8 +264,6 @@ Surface-level narrative elements that quickly orient the audience, such as Logli
   }
 ]
 ```
-
----
 
 ### Moments
   
