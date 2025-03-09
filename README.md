@@ -1,12 +1,14 @@
 # Universal Narrative Model (UNM)
 
-## The Foundation of Logical Consistency and Emotional Fulfillment in Storytelling
+**An Open Framework for Crafting Logical Consistency and Emotional Fulfillment in Storytelling**
 
-The **Universal Narrative Model (UNM)** is the definitive open-source standard for crafting Storyforms that ensure both logical consistency and emotional fulfillment in narrative structures. Developed by the **Entertainment Technology Center at the University of Southern California (ETC@USC)**, the UNM provides a structured yet flexible framework crucial for modern storytelling across film, television, literature, interactive media, gaming, and AI-driven generative content.
+The **Universal Narrative Model (UNM)** provides an open, accessible standard for understanding and constructing Storyforms--narrative structures designed to achieve logical consistency and emotional resonance. Originally developed as an open-initiative project with the **Entertainment Technology Center** at the **University of Southern California**, the UNM offers a transparent framework inspired by established narrative theories and modern storytelling methodologies.
 
-At its core, the UNM is a **portable file format** specifically designed for transporting narrative structures seamlessly across different platforms and applications. While the UNM identifies the spatial components of narrative structure, the transformation of these components into temporal storytelling elements (or story "beats") is achieved through algorithms and methodologies originally pioneered by **Write Brothers, Inc.** and further advanced by **Narrative First, Inc.**
+At its heart, the UNM is **a flexible and portable file format** designed to facilitate sharing and collaboration across different storytelling mediums, platforms, and creative communities. In addition to making it easier for an author to transfer their work from one medium to the next, the UNM also provides an easily trackable "blockchain-for-subtext" approach to contribution and collaboration.
 
-Rooted in foundational concepts derived from **Dramatica®**, the UNM advances storytelling into the future with innovative AI-enhanced methodologies introduced by **Subtxt™**.
+Drawing inspiration from foundational narrative theories like Dramatica® (developed by Write Brothers, Inc.®) and innovative technologies from Subtxt™ and Subtxt Muse™ (developed by Narrative First, Inc.™), the UNM simplifies complex narrative relationships into a clear, community-driven format. Its goal is to educate, inspire, and empower storytellers across various mediums, including film, television, literature, interactive media, gaming, and AI-driven generative content.
+
+---
 
 ## Purpose and Philosophy
 
@@ -14,30 +16,25 @@ As storytelling mediums evolve rapidly, maintaining a structured yet adaptable n
 
 By clearly delineating narrative structure (Subtext) from presentation (Storytelling), the UNM preserves authorial intent while enabling adaptable delivery across diverse storytelling platforms.
 
-## Relationship Between Technologies and the UNM
+---
 
-| Component                     | Developed By                          | Purpose                                                                                                         |
-| ----------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Dramatica®**                | Write Brothers, Inc.®                  | Provides the foundational theory for story structure and logical consistency.                                   |
-| **Subtxt™**                   | Narrative First, Inc.™                 | Advances Dramatica with AI-enhanced methodologies, integrating practical experience with mastery of the theory. |
-| **Universal Narrative Model™**| Entertainment Technology Center (USC) | Establishes an advocacy and open standard for transporting Storyforms across various storytelling mediums.      |
+### Authorship, AI, and Creative Intent
 
-The UNM remains intentionally open for continuous adoption, modification, and refinement, fostering innovation, collaboration, and widespread industry adoption.
+As AI-driven storytelling rapidly evolves, crucial questions emerge about authorship, originality, and rights. The UNM addresses these concerns transparently, embedding authorial intent within its structure, ensuring creators' original decisions remain clearly documented and respected.
+
+By borrowing concepts familiar to collaborative software development—such as transparent tracking of narrative revisions and collaborative decision-making—the UNM preserves the integrity and clarity of each author's contributions. This open and collaborative approach safeguards authorship while fostering creativity and innovation.
+
+With the UNM, the often informal process of giving and receiving notes transforms into a clearly documented system. **Creators' decisions are recorded, attributed, and protected, preserving the integrity and originality of their contributions.** By maintaining authorial intent at its core, the UNM framework not only safeguards authorship but also provides a robust and respectful foundation for collaborative storytelling in an increasingly AI-driven creative environment.
+
+---
 
 ## Key Features  
 ✅ **Open-Source Standard** – Available for use, modification, and integration into various storytelling platforms.  
 ✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components.  
-✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction. 
-✅ **Justification-Based Framework** – UNM allows for a structured approach to story construction, but the specific implementation of its **Justification process** is left to individual adopters.     
+✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.     
 ✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.  
-✅ **Computational Refinements** – Incorporates algorithmic improvements for more accurate event sequencing.  
-✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica, Hero’s Journey, and Save the Cat!  
+✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica®, Hero’s Journey, Save the Cat!, and more...  
 ✅ **Interoperability:** Easily exchange narrative data between platforms.
-
-## Getting Started
-- **Schema:** Review [schema/unm-schema.json](schema/unm-schema.json) or its YAML version.
-- **Examples:** See [examples/example-story.json](examples/example-story.json) for a full narrative example.
-- **Validation:** Use the [validation guide](docs/validation-guide.md) and [test script](tests/validate-schema.js) to verify your JSON files.
 
 ## Repository Structure
 ```
@@ -45,7 +42,8 @@ universal-narrative-model/
 ├── README.md
 ├── SPECIFICATION.md
 ├── CONTRIBUTING.md
-├── LICENSE
+├── HISTORY.md
+├── LICENSE.md
 ├── schema/
 │   ├── unm-schema.json
 │   └── unm-schema.yaml
@@ -69,21 +67,6 @@ The UNM is released under the **MIT License** (see [LICENSE.md](LICENSE.md)) to 
 
 The development and refinement of UNM are **stewarded by Narrative First**, ensuring continuous innovation and industry alignment. Contributions and modifications are encouraged, and governance policies are outlined in [CONTRIBUTING.md](CONTRIBUTING.md).  
 
-## Attribution and Lineage
-
-The **Universal Narrative Model™ (UNM™)** is an open-standard schema for narrative structure developed by the **Entertainment Technology Center (ETC)** at the **University of Southern California (USC)** in collaboration with and stewarded by **Narrative First, Inc.**
-
-The UNM schema originated from Narrative First's proprietary application **Subtxt™**, itself an advancement and practical application of narrative concepts originally introduced by the **Dramatica® theory of story** (developed by Melanie Anne Phillips and Chris Huntley). Dramatica® is a registered trademark owned by Write Brothers, Inc.®
-
-While the **UNM schema** is openly licensed under the **MIT License** to promote widespread adoption and community innovation, the stewardship of the official specification and development remains exclusively with Narrative First, Inc.™
-
 For further information, collaboration, or licensing inquiries, contact: **unm@narrativefirst.com**
-
-## How to Contribute  
-
-We welcome contributions to refine and expand UNM! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting improvements, engaging in governance, and shaping the future of narrative structure.  
-
-## Contact  
-For inquiries, industry partnerships, or licensing discussions, reach out to [Narrative First](https://narrativefirst.com).  
 
 Happy storytelling!
