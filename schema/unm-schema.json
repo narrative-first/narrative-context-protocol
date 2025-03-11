@@ -77,11 +77,11 @@
                             "id": { "type": "string" },
                             "dynamic": { 
                               "type": "string",
-                              "enum": ["i_perspective_resolve", "you_perspective_resolve", "growth", "approach", "alignment", "fabric", "driver", "outcome", "judgment", "balance", "vibes"]
+                              "enum": ["i_perspective_resolve", "you_perspective_resolve", "growth", "approach", "alignment", "fabric", "driver", "ending", "attunement", "outcome", "judgment", "balance", "vibes"]
                             },
                             "vector": { 
                               "type": "string",
-                              "enum": ["relinquished", "maintained", "released", "sustained", "stop", "start", "do_er", "be_er", "dopamine", "serotonin", "spacetime", "timespace", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "high", "low"]
+                              "enum": ["relinquished", "maintained", "released", "sustained", "stop", "start", "do_er", "be_er", "dopamine", "serotonin", "spacetime", "timespace", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
                             },
                             "summary": { "type": "string" },
                             "storytelling": { "type": "string" }
@@ -266,7 +266,6 @@
                       }
                     }
                   }
-                }
               },
               "required": ["id", "title", "subtext", "storytelling"]
             }
