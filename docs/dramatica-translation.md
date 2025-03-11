@@ -1,4 +1,4 @@
-# Universal Narrative Model (UNM) - Terminology & Conceptual Differentiation  
+# Dramatica Translation  
 
 ## Key Terminology Changes  
 To modernize narrative analysis and improve computational modeling, UNM introduces **new terminology that clarifies previous narrative structures**.  
