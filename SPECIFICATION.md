@@ -194,7 +194,13 @@ In this section, we'll explore examples of each narrative aspect, offering a bri
 
 ### Perspectives
 
-Where the author positions the source of conflict to communicate the story's intended meaning, independent of first- or third-person narrative style.
+Perspectives are where the author positions the source of conflict to communicate the story’s intended meaning, independent of first- or third-person narrative style (those refer to storytelling, not subtext). These Perspectives shape how thematic conflicts are revealed, deepening the story by re-inforcing the author's intended message.
+
+For example, in _A Christmas Carol_, each of the four ghosts (Marley included) functions thematically as a Catalyst Provocateur for Scrooge, sequentially handing off their unique perspectives from one ghost to another. While each ghost brings a distinct angle—progress, past, present, and future—their collective thematic role remains consistent: to provoke Scrooge’s transformation. Each ghost provides a unique lens on his life, amplifying narrative resonance by exploring different facets of the same thematic conflict.
+
+Another example can be seen in *Inside Out 2*. Unlike the original *Inside Out*, where Joy alone carries the perspective of the Main Character, the sequel has both Joy and Riley sharing the same thematic perspective of Main Character. They seamlessly pass this viewpoint back and forth, allowing the audience to explore identical thematic issues through two distinct yet interconnected lenses. This shared perspective enriches the narrative by demonstrating how the same thematic conflicts can manifest uniquely in different characters, amplifying emotional resonance.
+
+The implications for interactive narratives are significant. In interactive storytelling environments, a player might naturally gravitate towards or even assume a Main Character perspective not originally intended by the author. By clearly defining and supporting multiple perspectives within the narrative structure, the author can accommodate and guide these emergent experiences, allowing for a more personalized and meaningful interaction without losing thematic coherence or depth.
 
 ```json
 "perspectives": [
