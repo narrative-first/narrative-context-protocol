@@ -38,7 +38,7 @@ With the UNM, the often informal process of giving and receiving notes transform
 
 ## Getting Started
 
-Begin by reading the complete [Specification](/specification.md)
+Begin by reading the complete [Specification](/SPECIFICATION.md)
 
 ## Repository Structure
 ```
@@ -55,11 +55,14 @@ universal-narrative-model/
 │   ├── example-story.json
 │   └── example-mapping.json
 ├── docs/
-│   ├── getting-started.md
-│   ├── universal-narrative-model-schema.md
-│   ├── api-integration.md
-│   └── validation-guide.md
-│   └── history.md
+│   ├── terminology/
+│       ├── 01.perspectives.md
+│       ├── 02.appreciations-of-narrative.md
+│       ├── 03.methods-of-conflict.md
+│       ├── 04.dynamics.md
+│       ├── 05.vectors.md
+│       ├── 10.dramatica-translation.md
+│   └── universal-narrative-model-schema.md
 ├── tests/
 │   └── validate-schema.js
 └── .gitignore
