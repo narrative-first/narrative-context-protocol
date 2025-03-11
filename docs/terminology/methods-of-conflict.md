@@ -3,8 +3,8 @@
 ```json
 [
     {
-        "method": "ability",
-        "kind": "Element",
+        "method": "Ability",
+        "kind": "force",
         "short_definition": "being suited to handle a task; the innate capacity to do or be",
         "synonyms": "innate capacity, capability, talent for, inherent proficiency",
         "parent_methods": [
@@ -17,7 +17,7 @@
     },
     {
         "method": "Able",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "being inherently capable of action or adaptation",
         "synonyms": "enabling, disabling, talent, knack, capability, capacity, faculty, competency, mastery",
         "parent_methods": [
@@ -32,7 +32,7 @@
     },
     {
         "method": "Acceptance",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a decision to allow",
         "synonyms": "acquiescence, tolerance, allowance for, consent, submission",
         "parent_methods": [
@@ -45,7 +45,7 @@
     },
     {
         "method": "Accurate",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "being within tolerances",
         "synonyms": "within tolerance, sufficient, adequate, acceptable, passable",
         "parent_methods": [
@@ -58,7 +58,7 @@
     },
     {
         "method": "Actuality",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an objective reality of the way things are",
         "synonyms": "the true state of things, objective reality, factuality, demonstrable existence, demonstrable reality",
         "parent_methods": [
@@ -71,7 +71,7 @@
     },
     {
         "method": "Altruism",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "doing or being based on what is best for others",
         "synonyms": "selflessness, altruism, benevolence, generosity, morality",
         "parent_methods": [
@@ -86,7 +86,7 @@
     },
     {
         "method": "Analysis",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "evaluation of the situation and\/or circumstances",
         "synonyms": "evaluation, examination, breakdown of situation, close investigation, scrutinization",
         "parent_methods": [
@@ -101,7 +101,7 @@
     },
     {
         "method": "Appraisal",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "an initial understanding",
         "synonyms": "first impression, preliminary understanding, initial approach, initial assimilation",
         "parent_methods": [
@@ -116,7 +116,7 @@
     },
     {
         "method": "Approach",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "one's methodology of doing or being",
         "synonyms": "method, procedure, style, manner, manner of doing, one's own way",
         "parent_methods": [
@@ -126,7 +126,7 @@
     },
     {
         "method": "Attempt",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "applying oneself to something not known to be within one's ability",
         "synonyms": "try, uncertain undertaking, speculative endeavor, dubious effort, endeavor, unlikely venture",
         "parent_methods": [
@@ -141,7 +141,7 @@
     },
     {
         "method": "Attitude",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "one's demeanor while doing or being",
         "synonyms": "demeanor, manner of approach, countenance, behavioral outlook, perspective on doing",
         "parent_methods": [
@@ -151,7 +151,7 @@
     },
     {
         "method": "Attraction",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "drawing or being drawn to something",
         "synonyms": "allure, enticement, charm, captivate, appeal, draw, lure",
         "parent_methods": [
@@ -166,7 +166,7 @@
     },
     {
         "method": "Avoid",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "stepping around, preventing or escaping from a problem rather than solving it",
         "synonyms": "evade, dodge, elude, escape, steer clear of, prevent",
         "parent_methods": [
@@ -179,7 +179,7 @@
     },
     {
         "method": "Aware",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "being conscious of things outside oneself",
         "synonyms": "outward perceptiveness, external sensitivity, consciousness of the external, responsive",
         "parent_methods": [
@@ -192,7 +192,7 @@
     },
     {
         "method": "Becoming",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "transforming one's nature",
         "synonyms": "embodying, manifesting, personifying, incarnating, transforming, genuinely adopting, authentic transformation, identity evolution, profound change",
         "parent_methods": [
@@ -207,7 +207,7 @@
     },
     {
         "method": "Being",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "temporarily adopting a lifestyle",
         "synonyms": "pretending, appearing, acting like, seeming as, fulfilling a role, adopting an identity, assuming a persona, outward presentation, projecting an image",
         "parent_methods": [
@@ -222,7 +222,7 @@
     },
     {
         "method": "Cause",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the specific circumstances that lead to an effect",
         "synonyms": "reason for, effector, source, agent, antecedent",
         "parent_methods": [
@@ -235,7 +235,7 @@
     },
     {
         "method": "Certainty",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a conclusion that something is absolutely true",
         "synonyms": "sureness, definiteness, having no doubts, total reliability, indisputability, irrefutability, unmistakability, certitude, conviction",
         "parent_methods": [
@@ -248,7 +248,7 @@
     },
     {
         "method": "Change",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an alteration of a state or process",
         "synonyms": "altering, altering force, modify, reshape, adjust, adapt",
         "parent_methods": [
@@ -261,7 +261,7 @@
     },
     {
         "method": "Chaos",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "random change or a lack of order",
         "synonyms": "randomness, anarchy, disorder, formlessness, noncohesion",
         "parent_methods": [
@@ -274,7 +274,7 @@
     },
     {
         "method": "Choice",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "making a decision",
         "synonyms": "decision, selection, determination, pick",
         "parent_methods": [
@@ -284,7 +284,7 @@
     },
     {
         "method": "Circumstances",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the relationship of oneself to the environment",
         "synonyms": "how things stand emotionally, emotional evaluation of the environment, value of existing conditions, relationship to others",
         "parent_methods": [
@@ -299,7 +299,7 @@
     },
     {
         "method": "Closure",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "bringing something to an end",
         "synonyms": "finishing, completion, resolution, recursive",
         "parent_methods": [
@@ -314,7 +314,7 @@
     },
     {
         "method": "Commitment",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a decision to stick with something regardless of the consequences",
         "synonyms": "dedication, devotion, steadfastness, zeal",
         "parent_methods": [
@@ -329,7 +329,7 @@
     },
     {
         "method": "Conceiving",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "coming up with an idea",
         "synonyms": "originating, inventing, devising, engendering, hatching ideas, formulating questions, generating insight, identifying needs, recognizing problems",
         "parent_methods": [
@@ -344,7 +344,7 @@
     },
     {
         "method": "Conceptualizing",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "visualizing how an idea might be implemented",
         "synonyms": "visualizing, imagining, envisioning, visualizing implementation, practical imagining, detailed planning, mental modeling, designing specifics",
         "parent_methods": [
@@ -359,7 +359,7 @@
     },
     {
         "method": "Conditioning",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "responses based on experience or training",
         "synonyms": "habituation, trained response, accustomed response, adaptive adjustments",
         "parent_methods": [
@@ -374,7 +374,7 @@
     },
     {
         "method": "Confidence",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "belief in the accuracy of an expectation",
         "synonyms": "hopeful prospects, positive expectations, faithful anticipation, optimism",
         "parent_methods": [
@@ -389,7 +389,7 @@
     },
     {
         "method": "Conscience",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "forgoing an immediate benefit because of future consequences",
         "synonyms": "forgoing for fear of consequences, forgo, forbearance, temperance, abstinence, restraining oneself",
         "parent_methods": [
@@ -402,7 +402,7 @@
     },
     {
         "method": "Conscious",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "considerations",
         "synonyms": "considerations, sensibilities, cognizant, ability to consider, sensible, informed contemplation, contemplation, deliberate judgment, thoughtful evaluation",
         "parent_methods": [
@@ -417,7 +417,7 @@
     },
     {
         "method": "Consider",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "weighing pros and cons",
         "synonyms": "deliberate, contemplate, ponder, weigh in the mind, mull",
         "parent_methods": [
@@ -430,7 +430,7 @@
     },
     {
         "method": "Continuing",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a process of sustained progression and ongoing engagement",
         "synonyms": "continual, ongoing, perpetual, ceaseless, unending, interminable, incessant, perennial",
         "parent_methods": [
@@ -443,7 +443,7 @@
     },
     {
         "method": "Control",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a method based on organization and constraint",
         "synonyms": "regulate, organized management, steer, conduct, guide, manipulate, focused organization",
         "parent_methods": [
@@ -456,7 +456,7 @@
     },
     {
         "method": "Deduction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a process of thought that determines certainty",
         "synonyms": "drawing a conclusion, process of elimination, demonstrative reasoning, narrowing to a single point",
         "parent_methods": [
@@ -469,7 +469,7 @@
     },
     {
         "method": "Deficiency",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "motivation based on lack",
         "synonyms": "inadequacy, insufficiency, deficit, unfulfilled need",
         "parent_methods": [
@@ -484,7 +484,7 @@
     },
     {
         "method": "Delay",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "putting off until later",
         "synonyms": "put off, retard, postpone, defer, suspend, prolong, procrastinate",
         "parent_methods": [
@@ -494,7 +494,7 @@
     },
     {
         "method": "Denial",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the refusal to let something go",
         "synonyms": "not accepting, refusal to end, unwillingness to let go, refusal to back down, stubbornness",
         "parent_methods": [
@@ -508,8 +508,8 @@
         ]
     },
     {
-        "method": "desire",
-        "kind": "Element",
+        "method": "Desire",
+        "kind": "force",
         "short_definition": "the motivation to change one's situation or circumstances",
         "synonyms": "drive, motivational goal, unfulfillment, source of discontent, essence of motivation",
         "parent_methods": [
@@ -522,7 +522,7 @@
     },
     {
         "method": "Destiny",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the future path an individual will take",
         "synonyms": "inescapable path, predetermined trajectory, set direction of the future, inevitable path, unavoidable trajectory",
         "parent_methods": [
@@ -537,7 +537,7 @@
     },
     {
         "method": "Determination",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a conclusion as to the cause behind a particular effect",
         "synonyms": "ascertaining causes, discovering causes, finding the reasons why, figuring out factors, discerning antecedents",
         "parent_methods": [
@@ -550,7 +550,7 @@
     },
     {
         "method": "Deviation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "not within tolerances",
         "synonyms": "not within tolerance, outside the lines, insufficiency, inadequacy, deficient to the purpose, non-accurate",
         "parent_methods": [
@@ -563,7 +563,7 @@
     },
     {
         "method": "Disbelief",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the belief that something is untrue",
         "synonyms": "refusal to accept, distrust, find unconvincing, find false, unpersuadability",
         "parent_methods": [
@@ -576,7 +576,7 @@
     },
     {
         "method": "Doing",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "engaging in a physical activity",
         "synonyms": "performing, executing, effecting action, acting, engaging physically, undertaking tasks, active involvement, physical participation",
         "parent_methods": [
@@ -586,7 +586,7 @@
     },
     {
         "method": "Doubt",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "questioning validity without investigating to be sure",
         "synonyms": "pessimism, uninformed misgivings, uncertainty, trepidation, distrust",
         "parent_methods": [
@@ -601,7 +601,7 @@
     },
     {
         "method": "Dream",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a desired future that requires unexpected developments",
         "synonyms": "aspire, desiring the unlikely, pulling for the doubtful, airy hope, glimmer, far fetched desire",
         "parent_methods": [
@@ -616,7 +616,7 @@
     },
     {
         "method": "Driven",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "being internally compelled toward change or fulfillment",
         "synonyms": "wanting, favoring, liking, coveting, preferring, wishing, aspiring, pushing, comparing, compelling",
         "parent_methods": [
@@ -631,7 +631,7 @@
     },
     {
         "method": "Effect",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the specific outcome forced by a cause",
         "synonyms": "result, consequence, outcome, culmination, the ensuing",
         "parent_methods": [
@@ -644,7 +644,7 @@
     },
     {
         "method": "Ending",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "coming to a conclusion",
         "synonyms": "conclusion, finish, completion, termination, close",
         "parent_methods": [
@@ -657,7 +657,7 @@
     },
     {
         "method": "Enlightenment",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "an understanding that transcends knowledge",
         "synonyms": "insight, illumination, intuitive discernment, transcendent comprehension",
         "parent_methods": [
@@ -672,7 +672,7 @@
     },
     {
         "method": "Equity",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a balance, fairness, or stability",
         "synonyms": "balance, fairness, parity, equilibrium, level, even",
         "parent_methods": [
@@ -685,7 +685,7 @@
     },
     {
         "method": "Evaluation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an appraisal of a situation and\/or circumstances",
         "synonyms": "appraisal, analysis, assessment, survey, examination",
         "parent_methods": [
@@ -698,7 +698,7 @@
     },
     {
         "method": "Evidence",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "information supporting a belief",
         "synonyms": "proof, indicator, supporting information, corroborating facts, grounds for belief, substantiation",
         "parent_methods": [
@@ -713,7 +713,7 @@
     },
     {
         "method": "Expectation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a conclusion as to the eventual effect of a particular cause",
         "synonyms": "anticipated results, eventual outcome, presumed prospects, probable denouement, likely consequences",
         "parent_methods": [
@@ -726,7 +726,7 @@
     },
     {
         "method": "Expediency",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "most efficient course considering repercussions",
         "synonyms": "advisability, convenience, prudent efficiency",
         "parent_methods": [
@@ -741,7 +741,7 @@
     },
     {
         "method": "Experience",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the gaining of familiarity",
         "synonyms": "familiarization, level of practice, seasoning, accumulated feelings, accumulated dealings with",
         "parent_methods": [
@@ -756,7 +756,7 @@
     },
     {
         "method": "External Framing",
-        "kind": "Class",
+        "kind": "form",
         "short_definition": "seeing problems and inequity through the lens of a fixed external state",
         "synonyms": "situation, state of affairs, predicament, environment, milieu, fixed context, external constraint, persistent condition, rigid circumstance",
         "parent_methods": [],
@@ -769,7 +769,7 @@
     },
     {
         "method": "External Processing",
-        "kind": "Class",
+        "kind": "form",
         "short_definition": "seeing problems and inequity through the lens of an external process of activity",
         "synonyms": "activity, enterprise, initiative, endeavor, operation, ongoing pursuit, external action, dynamic undertaking, compulsive process",
         "parent_methods": [],
@@ -782,7 +782,7 @@
     },
     {
         "method": "Fact",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "belief in something real",
         "synonyms": "belief in the genuine, ultimately real beliefs, truly real beliefs, authentic notion, authentic idea, correct knowledge, correct beliefs",
         "parent_methods": [
@@ -797,7 +797,7 @@
     },
     {
         "method": "Faith",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "accepting something as certain without proof",
         "synonyms": "acceptance without proof, steadfast belief, credence, unquestioned trust",
         "parent_methods": [
@@ -810,7 +810,7 @@
     },
     {
         "method": "Falsehood",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "that which has been shown to be erroneous",
         "synonyms": "erroneousness, untruth, erroneous notion, mistaken, astray, dishonest",
         "parent_methods": [
@@ -825,7 +825,7 @@
     },
     {
         "method": "Fantasy",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "belief in something unreal",
         "synonyms": "false belief, faith in the imaginary, delusion, erroneous conviction",
         "parent_methods": [
@@ -840,7 +840,7 @@
     },
     {
         "method": "Fate",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a future situation that will befall an individual",
         "synonyms": "inevitable events, unpreventable incidents, eventual events, destined occurrence, destined events, unavoidable situations",
         "parent_methods": [
@@ -855,7 +855,7 @@
     },
     {
         "method": "Feeling",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an emotional sense of how things are going",
         "synonyms": "empathy, emotional sensibility, affective outlook, sentiment, emotional assessment",
         "parent_methods": [
@@ -868,7 +868,7 @@
     },
     {
         "method": "Free",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a method characterized by liberation and expansive, spontaneous expression",
         "synonyms": "liberating, releasing, exploring freely, spontaneous expression, unrestricted action, breaking limits, pursuing openness, embracing freedom",
         "parent_methods": [
@@ -881,7 +881,7 @@
     },
     {
         "method": "Future",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "what will happen or what will be",
         "synonyms": "what is to come, what will be, prospect, prospective, forthcoming, anticipated outcomes, envisioned future, projected scenario, eventualities",
         "parent_methods": [
@@ -896,7 +896,7 @@
     },
     {
         "method": "Help",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a direct assistance to another's effort to achieve their goal",
         "synonyms": "aid, assist, support, bolster, abet",
         "parent_methods": [
@@ -909,7 +909,7 @@
     },
     {
         "method": "Hinder",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a direct detraction from another's effort to achieve their goal",
         "synonyms": "retard, obstruct, impede, fetter, undermine, block, burden, encumber, thwart",
         "parent_methods": [
@@ -922,7 +922,7 @@
     },
     {
         "method": "Hope",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a desired future if things go as expected",
         "synonyms": "desired expectation, optimistic anticipation, confident aspiration, promise, encouraging outlook",
         "parent_methods": [
@@ -937,7 +937,7 @@
     },
     {
         "method": "Hunch",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a conclusion based on intuition",
         "synonyms": "intuition, premonition, impression, suspicion",
         "parent_methods": [
@@ -950,7 +950,7 @@
     },
     {
         "method": "Inaction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "taking no action as a means of response",
         "synonyms": "passive reaction, inactive response, achieve through not doing",
         "parent_methods": [
@@ -963,7 +963,7 @@
     },
     {
         "method": "Induction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a means of determining possibility",
         "synonyms": "postulate, predicate, conjecture, infer, hypothesize, determine possibility",
         "parent_methods": [
@@ -976,7 +976,7 @@
     },
     {
         "method": "Inequity",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an unbalance or unfairness, or a lack of stability",
         "synonyms": "imbalance, unfair, disparity, unequal, uneven, disproportionate",
         "parent_methods": [
@@ -989,7 +989,7 @@
     },
     {
         "method": "Inertia",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a continuation of a state or process",
         "synonyms": "tendency to continue, a change resistant pattern, continuation, following an established direction",
         "parent_methods": [
@@ -1002,7 +1002,7 @@
     },
     {
         "method": "Instinct",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "intrinsic unconditioned responses",
         "synonyms": "involuntary drive, innate impulse, unconditioned response, automatic response, unconditioned motivation",
         "parent_methods": [
@@ -1017,7 +1017,7 @@
     },
     {
         "method": "Interdiction",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "an effort to change a pre-determined course",
         "synonyms": "altering the future, interfering with the predetermined, hindering the inevitable, escaping the predestined",
         "parent_methods": [
@@ -1032,7 +1032,7 @@
     },
     {
         "method": "Internal Framing",
-        "kind": "Class",
+        "kind": "form",
         "short_definition": "seeing problems and inequity through the lens of a fixed internal state",
         "synonyms": "attitude, fixation, position on an issue, fixed point of view, disposition, mental rigidity, entrenched belief, internal bias, static mindset",
         "parent_methods": [],
@@ -1045,7 +1045,7 @@
     },
     {
         "method": "Internal Processing",
-        "kind": "Class",
+        "kind": "form",
         "short_definition": "seeing problems and inequity through the lens of an internal process of thinking",
         "synonyms": "ways of thinking, thinking process, cognitive activity, psychological maneuvers, mental operations, internal scheming, mental machinations, psychic dynamics, manipulative reasoning",
         "parent_methods": [],
@@ -1058,7 +1058,7 @@
     },
     {
         "method": "Interpretation",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "determination of possible meaning",
         "synonyms": "construe, rendition, rendering meaning, elucidate, translating meaning",
         "parent_methods": [
@@ -1073,7 +1073,7 @@
     },
     {
         "method": "Investigation",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "gathering evidence to resolve questions of validity",
         "synonyms": "inquiry, research, probe, sleuthing, delving, query",
         "parent_methods": [
@@ -1088,7 +1088,7 @@
     },
     {
         "method": "Knowing",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "being in a state of assumed truth",
         "synonyms": "cognitive anchor, presumed reality, mental framework, maintained information, unquestioned perspective, accepted ideas, held truth, internalized knowledge",
         "parent_methods": [
@@ -1103,7 +1103,7 @@
     },
     {
         "method": "Knowledge",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "that which one holds to be true",
         "synonyms": "learnedness, held truths, authoritative certainty, generally agreed upon truths",
         "parent_methods": [
@@ -1116,7 +1116,7 @@
     },
     {
         "method": "Learning",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "gathering information or experience",
         "synonyms": "cultivating experience, acquiring information, collecting data, gathering knowledge, seeking insight, pursuing inquiry, engaging intellectually, process of discovery",
         "parent_methods": [
@@ -1131,7 +1131,7 @@
     },
     {
         "method": "Logic",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a rational sense of how things are related",
         "synonyms": "linear reasoning, rationality, structural sensibility, syllogistics",
         "parent_methods": [
@@ -1144,7 +1144,7 @@
     },
     {
         "method": "Memory",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "recollections",
         "synonyms": "remembering, recollections, reminiscence, recalling, retention, subjective past, emotional impressions, personal histories, internal narratives",
         "parent_methods": [
@@ -1159,7 +1159,7 @@
     },
     {
         "method": "Need",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "that which is required",
         "synonyms": "subjective necessity, urge, demand, imperative",
         "parent_methods": [
@@ -1174,7 +1174,7 @@
     },
     {
         "method": "Obligation",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "accepting a task or situation in exchange for someone's potential favors",
         "synonyms": "agreement, pledge, contract, accepted compulsion, emotional contract",
         "parent_methods": [
@@ -1189,7 +1189,7 @@
     },
     {
         "method": "Obtaining",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "achieving or possessing something",
         "synonyms": "controlling for oneself, possessing, having, keeping, attaining, acquiring, securing, achieving, gaining control",
         "parent_methods": [
@@ -1204,7 +1204,7 @@
     },
     {
         "method": "Openness",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "willingness to re-evaluate",
         "synonyms": "broad mindedness, tolerancy, willingness to reevaluate, receptiveness",
         "parent_methods": [
@@ -1219,7 +1219,7 @@
     },
     {
         "method": "Oppose",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an indirect detraction from another's effort",
         "synonyms": "object to, speak out against, argue against, protest, dispute, show disapproval of, detract from",
         "parent_methods": [
@@ -1232,7 +1232,7 @@
     },
     {
         "method": "Order",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an arrangement in which patterns are seen",
         "synonyms": "structure, patterned arrangement, organization, patterned formation, formation, configuration, patterned sequence",
         "parent_methods": [
@@ -1245,7 +1245,7 @@
     },
     {
         "method": "Past",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "what has already happened",
         "synonyms": "history, what has happened, former times, retrospective, historical reinterpretation, reassessment, reevaluation, reexamination of events, past revision",
         "parent_methods": [
@@ -1260,7 +1260,7 @@
     },
     {
         "method": "Perception",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the way things seem to be",
         "synonyms": "appearance, how things seem to be, discernment, a particular reading of things, a point of view on reality, a way of seeing",
         "parent_methods": [
@@ -1273,7 +1273,7 @@
     },
     {
         "method": "Permission",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "one's ability based on what is allowed",
         "synonyms": "constrained ability, limited capability, restricted capacity, hindered performance, allowed limitations, restrained utility",
         "parent_methods": [
@@ -1288,7 +1288,7 @@
     },
     {
         "method": "Possibility",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a determination that something might be true",
         "synonyms": "plausibility, viability, conceivable eventualities, open assessment",
         "parent_methods": [
@@ -1301,7 +1301,7 @@
     },
     {
         "method": "Potentiality",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a determination that something has the capacity to become true",
         "synonyms": "chance, precariousness, focusing on the uncertain, going with the improbable",
         "parent_methods": [
@@ -1314,7 +1314,7 @@
     },
     {
         "method": "Preconception",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "unwillingness to re-evaluate",
         "synonyms": "prejudice, closed mindedness, narrow mindedness, intolerancy, stubbornness, unwillingness to reevaluate",
         "parent_methods": [
@@ -1329,7 +1329,7 @@
     },
     {
         "method": "Preconscious",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "immediate responses",
         "synonyms": "unthinking responses, immediate responses, impulse, impulsive response, instinctive response, innate response, reflex, automatic behaviors, instinctual tendencies",
         "parent_methods": [
@@ -1344,7 +1344,7 @@
     },
     {
         "method": "Prediction",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a determination of a future state of affairs",
         "synonyms": "foresight, foreseeing, anticipation, envisioning one's future, prophecy, forecast, foretell, prognosticate",
         "parent_methods": [
@@ -1359,7 +1359,7 @@
     },
     {
         "method": "Present",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "the current situation and circumstances",
         "synonyms": "how things stand, the here and now, current situation, as of this moment, immediate circumstances, present conditions, current arrangement, existing reality",
         "parent_methods": [
@@ -1374,7 +1374,7 @@
     },
     {
         "method": "Presumption",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a rating of knowledge that has not been tested",
         "synonyms": "unverified, unconfirmed, unestablished, undemonstrated, untried, supposition, conjecture, assumption, unproven",
         "parent_methods": [
@@ -1387,7 +1387,7 @@
     },
     {
         "method": "Proaction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "taking initiative action to achieve one's goals",
         "synonyms": "to initiate action, execute, undertake, commit, implement",
         "parent_methods": [
@@ -1400,7 +1400,7 @@
     },
     {
         "method": "Probability",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a determination of likelihood",
         "synonyms": "likelihood, prospective, predictable, promising",
         "parent_methods": [
@@ -1413,7 +1413,7 @@
     },
     {
         "method": "Process",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the mechanism through which a cause leads to an effect ",
         "synonyms": "chain of interactions, manner of procedure, cause\/effect relation, progression, ongoing pull or tendency",
         "parent_methods": [
@@ -1426,7 +1426,7 @@
     },
     {
         "method": "Production",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a process of thought that determines potential",
         "synonyms": "determining potential, noticing possibilities, ruling out future impossibilities, discovering of potential",
         "parent_methods": [
@@ -1439,7 +1439,7 @@
     },
     {
         "method": "Progress",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "the way things are going",
         "synonyms": "flowing, advancing, proceeding, moving forward, developing step by step, graduated, staging, successive, procession, momentum, unfolding change, ongoing transformation, continuous movement",
         "parent_methods": [
@@ -1454,7 +1454,7 @@
     },
     {
         "method": "Projection",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an extension of probability into the future",
         "synonyms": "anticipation, how things will be, most likely, probable",
         "parent_methods": [
@@ -1467,7 +1467,7 @@
     },
     {
         "method": "Protection",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an effort to prevent one's concerns from being vulnerable to interference",
         "synonyms": "defense, safeguard, preservation, precaution",
         "parent_methods": [
@@ -1480,7 +1480,7 @@
     },
     {
         "method": "Proven",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a rating of knowledge based on corroboration",
         "synonyms": "verified, confirmed, corroborated, established, demonstrated, shown",
         "parent_methods": [
@@ -1493,7 +1493,7 @@
     },
     {
         "method": "Pursuit",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a directed effort to resolve a problem",
         "synonyms": "seek, go after, attempt to achieve, look for, directed effort",
         "parent_methods": [
@@ -1506,7 +1506,7 @@
     },
     {
         "method": "Qualification",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "critical criteria to be fulfilled",
         "synonyms": "fundamental criteria, necessary conditions, indispensable benchmarks, essential steps",
         "parent_methods": [
@@ -1521,7 +1521,7 @@
     },
     {
         "method": "Rationalization",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a logical alternative used to mask the real reason",
         "synonyms": "fabricated excuse, ulterior explanation, false justification, artificial reason",
         "parent_methods": [
@@ -1536,7 +1536,7 @@
     },
     {
         "method": "Re-evaluation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a reappraisal of a situation or circumstances",
         "synonyms": "reappraisal, further assessment, subsequent analysis, scrutiny of first impressions",
         "parent_methods": [
@@ -1549,7 +1549,7 @@
     },
     {
         "method": "Reaction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "actions made in response",
         "synonyms": "response, reply, acting from stimulus, goaded to action",
         "parent_methods": [
@@ -1562,7 +1562,7 @@
     },
     {
         "method": "Reappraisal",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a reconsideration of a conclusion",
         "synonyms": "reassess, rechecking, checking up, re-examining a conclusion, reevaluating a conclusion",
         "parent_methods": [
@@ -1577,7 +1577,7 @@
     },
     {
         "method": "Reconsider",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "questioning a conclusion based on additional information",
         "synonyms": "re-examining conclusions, rethinking, to mull over again, further deliberation, additional scrutiny",
         "parent_methods": [
@@ -1590,7 +1590,7 @@
     },
     {
         "method": "Reduction",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a process of thought that determines probability",
         "synonyms": "determining probability, comparisons of potentiality, measurement of likelihood, judging probabilities",
         "parent_methods": [
@@ -1603,7 +1603,7 @@
     },
     {
         "method": "Rejection",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a decision to oppose",
         "synonyms": "run counter to, non-acceptance, decline, repudiate, resist, refusal to compromise",
         "parent_methods": [
@@ -1616,7 +1616,7 @@
     },
     {
         "method": "Repulsion",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "pushing or being pushed away from",
         "synonyms": "unattractive, repellent, foreboding, unsavory, pushing away, forcing back",
         "parent_methods": [
@@ -1631,7 +1631,7 @@
     },
     {
         "method": "Responsibility",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the belief that one is best suited to accomplish a task",
         "synonyms": "assumed propriety, believed appropriateness, self designated aptness, accepted suitability",
         "parent_methods": [
@@ -1646,7 +1646,7 @@
     },
     {
         "method": "Result",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the ramifications of a specific effect",
         "synonyms": "ramifications of an effect, consequence, repercussion, impact, end product",
         "parent_methods": [
@@ -1659,7 +1659,7 @@
     },
     {
         "method": "Security",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "an evaluation of one's protections",
         "synonyms": "evaluation of safety, measure of safeguards, appraisal of one's protections, gauge of defenses",
         "parent_methods": [
@@ -1674,7 +1674,7 @@
     },
     {
         "method": "Self Interest",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "doing or being based on what is best for oneself",
         "synonyms": "self-serving, self-centered, narcissistic, selfishness, self-absorbed, egocentric",
         "parent_methods": [
@@ -1689,7 +1689,7 @@
     },
     {
         "method": "Self-aware",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "being conscious of one's own existence",
         "synonyms": "self-conscious, conscious of one's existence, self-perceiving, self-appreciating, self-cognizant",
         "parent_methods": [
@@ -1702,7 +1702,7 @@
     },
     {
         "method": "Sense of Self",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "one's perception of oneself",
         "synonyms": "perception of self, self image, self identity, self attribution",
         "parent_methods": [
@@ -1717,7 +1717,7 @@
     },
     {
         "method": "Senses",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "sensory observations",
         "synonyms": "perceptual data, raw sensations, sensory impressions, immediate impressions, perceptions",
         "parent_methods": [
@@ -1732,7 +1732,7 @@
     },
     {
         "method": "Situation",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the arrangement of one's environment",
         "synonyms": "how things stand rationally, a reasoned evaluation of environment, arranged context, environmental state, surroundings, predicament",
         "parent_methods": [
@@ -1747,7 +1747,7 @@
     },
     {
         "method": "Skill",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "practiced ability",
         "synonyms": "proficiency, aptitude, competence, adeptness, degree of expertise, practiced ability, honed ability",
         "parent_methods": [
@@ -1762,7 +1762,7 @@
     },
     {
         "method": "Speculation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an extension of possibilities into the future",
         "synonyms": "prognostication, surmising possibilities, conjecturing",
         "parent_methods": [
@@ -1775,7 +1775,7 @@
     },
     {
         "method": "State of Being",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "one's true nature",
         "synonyms": "essence, one's true self, true self, essential nature, core being",
         "parent_methods": [
@@ -1790,7 +1790,7 @@
     },
     {
         "method": "Stipulation",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "imposed limitations or conditions tacked on to an effort",
         "synonyms": "provision, prescribed specification, imposed stipulation, limiting parameters, imposed limitations",
         "parent_methods": [
@@ -1805,7 +1805,7 @@
     },
     {
         "method": "Strategy",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a plan to achieve one's purpose or a plan of response",
         "synonyms": "scheme, tactic, plan, ploy, decided approach",
         "parent_methods": [
@@ -1820,7 +1820,7 @@
     },
     {
         "method": "Subconscious",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "basic drives and desires",
         "synonyms": "libido, id, basic motivations, basic drives, anima, fundamental emotions, deep impulses, core emotional needs, unconscious drives",
         "parent_methods": [
@@ -1835,7 +1835,7 @@
     },
     {
         "method": "Support",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an indirect assistance given to another's efforts",
         "synonyms": "commend, extol, endorse, back, compliment, laud",
         "parent_methods": [
@@ -1848,7 +1848,7 @@
     },
     {
         "method": "Suspicion",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "questioning a belief based on evidence",
         "synonyms": "wary approach, partially justified apprehensiveness, informed doubt, doubt based on evidence, sensible caution",
         "parent_methods": [
@@ -1863,7 +1863,7 @@
     },
     {
         "method": "Temptation",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "the urge to embrace immediate benefits despite possible consequences",
         "synonyms": "indulge, embracing immediate benefits, intemperance, immoderation",
         "parent_methods": [
@@ -1876,7 +1876,7 @@
     },
     {
         "method": "Test",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "a trial to determine something's validity",
         "synonyms": "trial of validity, examination, audit, inspection, scrutinization",
         "parent_methods": [
@@ -1889,7 +1889,7 @@
     },
     {
         "method": "Theory",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an unbroken chain of relationships leading from a premise to a conclusion",
         "synonyms": "structured explanation, concrete hypothesis, systematized descriptive knowledge, description of linear connections",
         "parent_methods": [
@@ -1902,7 +1902,7 @@
     },
     {
         "method": "Thinking",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "being in a state of mental exploration",
         "synonyms": "cognitive fluidity, contemplating, pondering, musing, reflecting, mental exploration, daydreaming, mental drift",
         "parent_methods": [
@@ -1916,8 +1916,8 @@
         ]
     },
     {
-        "method": "thought",
-        "kind": "Element",
+        "method": "Thought",
+        "kind": "force",
         "short_definition": "the process of consideration",
         "synonyms": "the process of consideration, thinking, contemplation, mental attention, running over in your mind",
         "parent_methods": [
@@ -1930,7 +1930,7 @@
     },
     {
         "method": "Threat",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "an evaluation of one's vulnerabilities",
         "synonyms": "perceived danger, indication of peril, perceived vulnerability, warning, detected hazard",
         "parent_methods": [
@@ -1945,7 +1945,7 @@
     },
     {
         "method": "Trust",
-        "kind": "Element",
+        "kind": "force",
         "short_definition": "an acceptance of knowledge as proven without first testing its validity",
         "synonyms": "untried acceptance, untested belief in, accept implicitly, assumed dependability, unquestioned reliance on",
         "parent_methods": [
@@ -1958,7 +1958,7 @@
     },
     {
         "method": "Truth",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "that which has been proven correct",
         "synonyms": "honesty, correct information, correct notion, verity",
         "parent_methods": [
@@ -1973,7 +1973,7 @@
     },
     {
         "method": "Understanding",
-        "kind": "Type",
+        "kind": "field",
         "short_definition": "appreciating the meaning of something",
         "synonyms": "comprehending, grasping, appreciating, obtaining meaning, acquiring meaning, interpreting significance, empathetic insight, holistic perception",
         "parent_methods": [
@@ -1988,7 +1988,7 @@
     },
     {
         "method": "Value",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "the objective usefulness or desirability of something in general",
         "synonyms": "utility, objective appraisal, general usefulness",
         "parent_methods": [
@@ -2003,7 +2003,7 @@
     },
     {
         "method": "Wisdom",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "understanding how to apply knowledge",
         "synonyms": "mental mastery, integrated understanding, seasoned understanding, comprehension, astute cogency",
         "parent_methods": [
@@ -2018,7 +2018,7 @@
     },
     {
         "method": "Work",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "applying oneself to something known to be within one's ability",
         "synonyms": "appropriate undertaking, suitable task, manageable labor, a performable activity",
         "parent_methods": [
@@ -2033,7 +2033,7 @@
     },
     {
         "method": "Worry",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "concern for the future",
         "synonyms": "anxiety, concern, apprehension, misgivings",
         "parent_methods": [
@@ -2048,7 +2048,7 @@
     },
     {
         "method": "Worth",
-        "kind": "Variation",
+        "kind": "facet",
         "short_definition": "a rating of usefulness or desirability to oneself",
         "synonyms": "subjective value, individual appraisal, personal importance",
         "parent_methods": [
