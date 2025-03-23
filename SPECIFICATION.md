@@ -251,6 +251,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
+    "context": "main character",
     "appreciation": "facet",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
