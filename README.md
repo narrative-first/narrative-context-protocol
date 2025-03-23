@@ -52,6 +52,8 @@ universal-narrative-model/
 │   ├── unm-schema.json
 │   └── unm-schema.yaml
 ├── examples/
+│   ├── anora.json
+│   ├── the-shawshank-redemption.json
 │   ├── example-story.json
 │   └── example-mapping.json
 ├── docs/

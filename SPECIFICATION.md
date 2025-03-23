@@ -274,6 +274,7 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 "storybeats": [
   {
     "id": "storybeat_9876bcde",
+    "context": "main character",
     "appreciation": "transit",
     "sequence": 4,
     "method": "past",
