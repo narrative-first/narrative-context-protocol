@@ -1,0 +1,228 @@
+{
+    "story": {
+        "id": "af3b3394-1405-4236-befc-b8c869ef6059",
+        "title": "Anora",
+        "genre": "the genre",
+        "logline": "the logline",
+        "created_at": "2025-01-03T20:55:13.000000Z"
+    },
+    "narratives": [
+        {
+            "id": "7904027e-291a-44cf-a46f-4a6305894601",
+            "title": "Anora",
+            "subtext": {
+                "perspectives": {
+                    "they": [
+                        {
+                            "id": "de74d6c4-7828-48fd-904f-b945ee2c5923",
+                            "author_structural_pov": "they",
+                            "summary": "Navigating the high-stakes world of Russian-oligarchy family dynamics",
+                            "storytelling": "The story revolves around Ani's whirlwind journey through the dangerous, high-stakes world of the Zakharov family. Vanya's reckless immaturity and the family's power plays collide with Ani's determination to carve out her own survival in the face of manipulation, threats, and violence. The conflict escalates as Ani fights to maintain her independence amidst the chaos of annulments, bribes, and emotional betrayals."
+                        }
+                    ],
+                    "i": [
+                        {
+                            "id": "c6d78240-f6dd-4b6f-8157-387a0fc26704",
+                            "author_structural_pov": "i",
+                            "summary": "Ani",
+                            "storytelling": "Ani is a young woman struggling to survive in a world that sees her as disposable. As she navigates her way through stripping, eloping with a reckless rich boy, and facing the power of his family, Ani confronts her own hopes and fears for the future. Her fight is grounded in the desire to be seen as more than just a commodity, but as a person with value and agency."
+                        }
+                    ],
+                    "you": [
+                        {
+                            "id": "2095e21f-1cdf-495f-a26d-ff2f084032e0",
+                            "author_structural_pov": "you",
+                            "summary": "Igor",
+                            "storytelling": "Igor, a loyal enforcer for the Zakharov family, embodies a chilling mix of pragmatism and intimidation. He challenges Aniâ€™s sense of agency with his cold demeanor and violent methods but also reveals unexpected moments of humanity that complicate her perception of him. Igor forces Ani to confront the harsh realities of survival in the Zakharov family's world."
+                        }
+                    ],
+                    "we": [
+                        {
+                            "id": "0444eba4-a912-4ac9-9b2d-c1287aec01d1",
+                            "author_structural_pov": "we",
+                            "summary": "Protector\/Protectee",
+                            "storytelling": "The bond between Ani and Igor evolves from distrust and aggression to a complicated dynamic of reluctant understanding. As the protector and the protectee, their relationship is fraught with tension, power imbalances, and moments of vulnerability. Ani and Igorâ€™s interactions explore the fine line between control and care, forcing both to confront their own prejudices and vulnerabilities."
+                        }
+                    ]
+                },
+                "players": [
+                    {
+                        "id": "812f9f71-29b6-49e0-983a-60ecce5809cc",
+                        "name": "Anora \"Ani\" Mikheeva",
+                        "role": "a high-priced stripper at the Headquarters strip club",
+                        "visual": "",
+                        "audio": "",
+                        "bio": "",
+                        "storytelling": "",
+                        "elements": [
+                            {
+                                "element": "Free",
+                                "storytelling": ""
+                            }
+                        ],
+                        "perspectives": {
+                            "perspective_id": "d80805bf-073b-4ea5-985c-ffa16e697d84"
+                        }
+                    },
+                    {
+                        "id": "aee134eb-a88e-4f5e-8aec-ec5c60b7006e",
+                        "name": "Igor",
+                        "role": "a Russian henchman hired by Toros to look after Vanya",
+                        "visual": "",
+                        "audio": "",
+                        "bio": "",
+                        "storytelling": "",
+                        "elements": [
+                            {
+                                "element": "Control",
+                                "storytelling": ""
+                            }
+                        ],
+                        "perspectives": {
+                            "perspective_id": "3fc05215-ab5c-4c1a-84d8-9a3dd672cb53"
+                        }
+                    }
+                ],
+                "storypoints": [
+                    {
+                        "id": "7b7a431e-0f5a-4a3e-a92d-2a22e4a5f23d",
+                        "context": "Premise",
+                        "appreciation": "Subjective Premise",
+                        "method": "Free",
+                        "illustration": "being in a disorganized group",
+                        "summary": "",
+                        "storytelling": "",
+                        "perspectives": {
+                            "perspective_id": "d2a170ac-4cf5-49d3-a770-761238800f64"
+                        }
+                    },
+                    {
+                        "id": "b0112475-0156-4778-a19a-e1dc271a4612",
+                        "context": "Premise",
+                        "appreciation": "Objective Premise",
+                        "method": "Self Interest",
+                        "illustration": "thinking about one's own interests",
+                        "summary": "",
+                        "storytelling": "",
+                        "perspectives": {
+                            "perspective_id": "89706d68-c599-4846-a821-e39d3c05753d"
+                        }
+                    },
+                    {
+                        "id": "ea9670d5-02fb-4199-8f6d-f7d8460d90fd",
+                        "context": "Premise",
+                        "appreciation": "Subjective Premise Balance",
+                        "method": "Control",
+                        "illustration": "living controlled by attachments",
+                        "summary": "",
+                        "storytelling": "",
+                        "perspectives": {
+                            "perspective_id": "be676cc8-2f9c-45b0-b57a-5f91691f676d"
+                        }
+                    },
+                    {
+                        "id": "a762d2bf-73e7-46cf-9980-4d1e18f2c6c5",
+                        "context": "Objective Story",
+                        "appreciation": "Story Intention",
+                        "method": "Obtaining",
+                        "illustration": "obtaining freedom",
+                        "summary": "",
+                        "storytelling": "The Story Intention of Obtaining manifests in Ani's relentless pursuit of agency and self-worth in a world that constantly seeks to strip her of both. Ani's journey is fraught with external and internal conflict as she battles the Zakharov family's manipulative power plays and Vanya's reckless immaturity, all while trying to secure her own survival and independence. Her struggle to \"obtain\" is not just about material survivalâ€”though that is a pressing concernâ€”but about achieving recognition as a person of value in a world that commodifies her. This intention drives her to make bold, often dangerous choices, such as eloping with Vanya or standing up to the family's threats, even when the odds are stacked against her. Ani's growth is marked by her increasing ability to assert her own desires and boundaries, refusing to be a pawn in the Zakharov family's games. The tension between her need to obtain control over her life and the forces trying to dominate her creates a gripping narrative of resilience and self-determination.",
+                        "perspectives": {
+                            "perspective_id": "31fe11ad-9699-4b5f-86da-7fce127eb974"
+                        }
+                    },
+                    {
+                        "id": "6a9120b5-abbc-47be-9eb7-064dedafcca6",
+                        "context": "Objective Story",
+                        "appreciation": "Story Overwhelm",
+                        "method": "Becoming",
+                        "illustration": "becoming someone else",
+                        "summary": "",
+                        "storytelling": "The sensation of overwhelm in this story stems from Ani's struggle with \"Becoming\"â€”the pressure to transform into someone she is not in order to survive the Zakharov family's manipulative world. As Ani fights to obtain her freedom, she is constantly forced to adapt, shapeshift, and play roles dictated by the powerful forces around her. The overwhelming nature of this conflict manifests in moments where Ani feels herself losing her identity, such as when she must feign loyalty to Vanya despite his recklessness or when she is coerced into navigating the family's dangerous schemes. Each compromise Ani makes to stay alive and protect herself chips away at her sense of self, leaving her questioning who she is becoming in the process. The weight of these transformationsâ€”being seen as a pawn, a trophy, or a threatâ€”clashes with her deep desire to be valued as an individual, creating a suffocating tension that drives her to the brink of emotional collapse. This internal battle between survival and selfhood defines her overwhelming journey.",
+                        "perspectives": {
+                            "perspective_id": "454be6be-413b-4b75-9488-528fdcdced82"
+                        }
+                    },
+                    {
+                        "id": "040258a2-b6d0-4f14-ad53-10c3ab02892f",
+                        "context": "Main Character",
+                        "appreciation": "Condition",
+                        "method": "Control",
+                        "illustration": "someone being controlled",
+                        "summary": "",
+                        "storytelling": "Ani's MC Condition of Control is reflected in her constant struggle to assert agency over her life in a world that seeks to dominate and define her. Her work as a stripper places her in an environment where others attempt to control her body and identity, while her relationship with the reckless rich boy introduces a new layer of manipulation as his family exerts their influence to maintain their power and status. Ani's journey is marked by her attempts to wrest control back from these external forces, often clashing with societal expectations and the oppressive systems around her. This condition also manifests internally, as Ani grapples with her own fears of losing control over her future and succumbing to the roles others impose on her. Her growth is driven by her ability to redefine controlâ€”not as domination, but as self-determinationâ€”ultimately finding strength in her own choices and reclaiming her sense of worth.",
+                        "perspectives": {
+                            "perspective_id": "1e4d10e2-9025-4015-ade6-7c42fcbe896d"
+                        }
+                    },
+                    {
+                        "id": "65bdce43-852e-4a5c-be4f-4ea623507257",
+                        "context": "Main Character",
+                        "appreciation": "Adjustment",
+                        "method": "Free",
+                        "illustration": "abandoning",
+                        "summary": "",
+                        "storytelling": "Ani's journey revolves around her struggle with the Condition of Control, as she is constantly manipulated by societal expectations, the rich boy she elopes with, and the oppressive power of his family. At first, Ani fights to assert her agency within these constraints, believing she can wrest control of her life by playing within the rules of those who dominate her. However, her transformative Revision to Abandon occurs when she realizes that true freedom cannot be achieved by clinging to the systems and relationships that seek to control her.This shift is catalyzed by a moment of profound betrayal or disillusionmentâ€”perhaps the rich boy's family uses her as a scapegoat for a scandal, or she discovers he views her as a trophy rather than an equal partner. In abandoning her need to control the narrative others have imposed on her, Ani chooses to walk away from the toxic dynamics entirely, even if it means starting over with nothing. This act of relinquishing control paradoxically grants her the agency she has been seeking, as she begins to define her worth on her own terms. By the end of the story, Ani finds a balance between self-reliance and vulnerability, embracing a life where she no longer seeks validation from those who once sought to dominate her.",
+                        "perspectives": {
+                            "perspective_id": "cee70951-e8fb-4147-9637-8dda6285d468"
+                        }
+                    },
+                    {
+                        "id": "8abcf5c1-1dce-49c4-ba4b-cac6611ed43a",
+                        "context": "Catalyst Provocateur",
+                        "appreciation": "Condition",
+                        "method": "Consider",
+                        "illustration": "considering someone's options",
+                        "summary": "",
+                        "storytelling": "Igorâ€™s OC Condition of \"Consider\" manifests in his unyielding focus on the Zakharov family's interests, refusing to entertain any perspective outside of their survival and dominance. His cold pragmatism and violent methods force Ani to confront her own tendency to avoid hard truths about her circumstances. Igorâ€™s refusal to consider alternativesâ€”whether itâ€™s sparing someoneâ€™s life or deviating from ordersâ€”creates a stark contrast to Aniâ€™s growing desire for agency and self-worth. However, his rare moments of humanity, such as a fleeting act of mercy or a begrudging acknowledgment of Aniâ€™s resilience, challenge her to see the complexity in even the most brutal figures. This dynamic pushes Ani to reconcile her own survival instincts with her longing to be more than a pawn, ultimately driving her to claim her agency in a world that demands submission. Igorâ€™s unwavering focus on the Zakharov familyâ€™s survival becomes the mirror through which Ani must decide what she is willing to fight forâ€”and at what cost.",
+                        "perspectives": {
+                            "perspective_id": "2c2a096a-e948-4da8-8e5c-51fd8d3a64ee"
+                        }
+                    },
+                    {
+                        "id": "11a36847-13c4-447e-ae7a-373eca54c5bb",
+                        "context": "Catalyst Provocateur",
+                        "appreciation": "Evolution",
+                        "method": "Consider",
+                        "illustration": "being considerate",
+                        "summary": "",
+                        "storytelling": "Igorâ€™s reaffirmed motivation of \"Consider\" manifests in a pivotal moment where his unexpected humanity shines through, forcing Ani to reevaluate her perception of him and, by extension, her own approach to survival. Despite his violent role within the Zakharov family, Igor demonstrates a profound, albeit quiet, consideration for Aniâ€™s plightâ€”perhaps by subtly ensuring her safety during a dangerous encounter or offering her a piece of advice that could save her life. This act of consideration, while consistent with his original motivation, challenges Ani to see beyond her hardened view of the world and recognize that even in the darkest corners, there are shades of complexity. Igorâ€™s actions push Ani to confront her own agency, urging her to consider not just how she survives, but how she defines her worth and humanity in a world that seeks to strip it away.",
+                        "perspectives": {
+                            "perspective_id": "3be4c7ae-fc4b-4888-a6b3-9730f0306c58"
+                        }
+                    },
+                    {
+                        "id": "4d9d77a4-ea43-40b3-b3e1-253905156b08",
+                        "context": "Main Character",
+                        "appreciation": "Pivotal Element",
+                        "method": "Free",
+                        "illustration": "being wild",
+                        "summary": "Ani argues that embracing a \"wild and crazy\" lifestyle is a powerful act of reclaiming agency and individuality in a dehumanizing world, challenging societal expectations and asserting her worth.",
+                        "storytelling": "Aniâ€™s argument centers on the idea that embracing a \"wild and crazy\" approach to life is sometimes the only way to assert oneâ€™s humanity in a world that dehumanizes and commodifies people. She contends that by taking risksâ€”whether itâ€™s stripping to survive, eloping with a reckless rich boy, or standing up to his powerful familyâ€”she is reclaiming her agency and refusing to be boxed into societyâ€™s expectations. Ani argues that living boldly, even chaotically, is a form of resistance against a system that sees her as disposable. Her actions, though unconventional, are a declaration that she is more than a product of her circumstances; she is a person with dreams, fears, and the right to define her own worth.Through her journey, Ani demonstrates that being \"wild and crazy\" is not about recklessness for its own sake, but about refusing to conform to a world that tries to strip her of her individuality. She uses her audacity to challenge the power structures around her, forcing others to see her as a person rather than a commodity. In doing so, Ani makes a compelling case that sometimes, the only way to surviveâ€”and thriveâ€”is to embrace the chaos and carve out a space where oneâ€™s voice and value cannot be ignored.",
+                        "perspectives": {
+                            "perspective_id": "29ec7f82-057c-4df2-a429-1df8f2f7d609"
+                        }
+                    },
+                    {
+                        "id": "3f5008c7-fd22-4903-adeb-1219bc77092c",
+                        "context": "Catalyst Provocateur",
+                        "appreciation": "Pivotal Element",
+                        "method": "Control",
+                        "illustration": "keeping a group under control",
+                        "summary": "Igor illustrates that in the brutal world of the Zakharov family's criminal empire, being considerate is a strategic strength that fosters loyalty and survival, challenging Ani's views on morality and power.",
+                        "storytelling": "Igor makes a compelling argument for the value of being considerate, even in a brutal and unforgiving world like the Zakharov family's criminal empire. He demonstrates that consideration is not a weakness but a calculated strength, one that can foster loyalty and ensure survival. For example, while his violent methods often leave Ani questioning her own agency, Igor occasionally shows unexpected kindnessâ€”perhaps sparing a life when it serves no purpose to take it or offering Ani advice that helps her navigate the treacherous dynamics of their world. These moments of humanity reveal that even in a world ruled by power and fear, being considerate can be a tool for influence and control. Igor argues, through his actions, that understanding others' needs and vulnerabilities can be just as effective as brute force, forcing Ani to reevaluate her assumptions about morality and survival.",
+                        "perspectives": {
+                            "perspective_id": "d2d13bd3-f669-4968-872b-0f8d16704b0a"
+                        }
+                    }
+                ],
+                "storybeats": []
+            },
+            "storytelling": {
+                "overviews": [],
+                "moments": []
+            }
+        }
+    ]
+}
