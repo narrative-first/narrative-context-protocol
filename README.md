@@ -1,12 +1,14 @@
 # Universal Narrative Model (UNM)
 
-**An Open Framework for Crafting Logical Consistency and Emotional Fulfillment in Storytelling**
+**An Open Protocol for Narrative Context Across Multi-Agent Systems**
 
-The **Universal Narrative Model (UNM)** provides an open, accessible standard for understanding and constructing Storyforms--narrative structures designed to achieve logical consistency and emotional resonance. Originally developed as an open-initiative project with the **Entertainment Technology Center** at the **University of Southern California**, the UNM offers a transparent framework inspired by established narrative theories and modern storytelling methodologies.
+The **Universal Narrative Model (UNM)** serves as an open and standardized framework—analogous to the Model Context Protocol (MCP)—specifically crafted for narrative content. Designed originally in collaboration with the **Entertainment Technology Center** at the **University of Southern California**, the UNM enables seamless preservation and transmission of narrative context and artistic voice across diverse storytelling platforms, mediums, and multi-agent systems.
 
-At its heart, the UNM is **a flexible and portable file format** designed to facilitate sharing and collaboration across different storytelling mediums, platforms, and creative communities. In addition to making it easier for an author to transfer their work from one medium to the next, the UNM also provides an easily trackable "blockchain-for-subtext" approach to contribution and collaboration.
+At its core, the UNM provides **a flexible and portable protocol** that ensures logical consistency and emotional depth in storytelling. By encoding narrative structures into universally understandable Storyforms, the UNM makes it possible for narratives to retain their original artistic intent, even when interacted with or expanded upon by multiple autonomous agents.
 
-Drawing inspiration from foundational narrative theories and recent developments in technology, the UNM simplifies complex narrative relationships into a clear, community-driven format. Its goal is to educate, inspire, and empower storytellers across various mediums, including film, television, literature, interactive media, gaming, and AI-driven generative content.
+In addition, the UNM functions like a "blockchain-for-subtext," tracking narrative contributions, collaboration, and creative integrations transparently and effectively. This ensures that the original voice and intent of artists remain intact, clear, and traceable—no matter how many agents or platforms engage with their work.
+
+Inspired by an established narrative theory and informed by contemporary technological advances, the UNM simplifies and standardizes complex narrative interactions. It empowers creators and communities across film, television, literature, interactive experiences, gaming, and AI-driven generative storytelling to collaborate effectively without compromising artistic authenticity or narrative coherence.
 
 ---
 
