@@ -1,6 +1,6 @@
 # SPECIFICATION
 
-The UNM schema separates narrative design into two complementary layers—**Subtext** and **Storytelling**:
+The NCP schema separates narrative design into two complementary layers—**Subtext** and **Storytelling**:
 
 - **Subtext** represents the deeper, intended meaning crafted by the author.
 - **Storytelling** is the adaptable, creative presentation of this meaning to an audience.
