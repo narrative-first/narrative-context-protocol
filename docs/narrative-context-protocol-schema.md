@@ -1,9 +1,9 @@
 ---
-title: Universal Narrative Model JSON Scheme
+title: Narrative Context Protocol
 description: A standardized JSON format for structuring narrative elements, enabling consistency, interoperability, and adaptability across storytelling platforms.
 ---
 
-The **Universal Narrative Model JSON Schema** provides a standardized format for defining and organizing story elements in a structured, interoperable way. This schema allows narratives to be stored, analyzed, and transferred between different storytelling tools while maintaining **clarity, flexibility, and the author's original intent**.
+The **Narrative Context Protocol** provides a standardized format for defining and organizing story elements in a structured, interoperable way. This schema allows narratives to be stored, analyzed, and transferred between different storytelling tools while maintaining **clarity, flexibility, and the author's original intent**.
 
 At its core, the schema divides a story into two layers: the **deep, structural meaning (Subtext)** and the **surface-level presentation (Storytelling)**. This split ensures that authors can preserve the underlying message of their work while allowing for various forms of high-level audience engagement.
 
@@ -11,9 +11,9 @@ At its core, the schema divides a story into two layers: the **deep, structural 
 
 ## **Schema Validation & Usage**  
 
-The JSON Schema is designed for **broad adoption** and can be validated using any **JSON Schema validation tool**. It can be used in:  
+The schema is designed for **broad adoption**. It can be used in:  
 
-- **Storytelling platforms** (Subtxt, AI-driven tools, screenwriting apps)  
+- **Storytelling platforms** (Subtxt/Dramatica, AI-driven tools, screenwriting apps)  
 - **APIs** that facilitate structured narrative generation  
 - **AI models** that generate structured story data  
 - **Interactive storytelling** systems (video games, branching narratives) 
@@ -22,11 +22,11 @@ The JSON Schema is designed for **broad adoption** and can be validated using an
 
 ## **Extending the Model**  
 
-The Universal Narrative Model is **designed for flexibility**. Developers and storytellers can:  
+Narrative Context Protocol is **designed for flexibility**. Developers and storytellers can:  
 
 - Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` fields.  
 - Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
-- Submit **extensions and feedback** via the Subtxt documentation repo.  
+- Submit **extensions and feedback** via issues and discussions in this repo.  
  
 ---
 
@@ -672,8 +672,8 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "bad"
     "harmony",
     "discord",
-    "high",
-    "low"
+    "higher",
+    "lower"
   ],
   "description": "A Vector by which a Dynamic is explored in the narrative."
 }
@@ -908,7 +908,7 @@ Each Storybeat has **three tonal layers**:
 
 ### Customizing & Cross-Framework Mapping  
 
-The **Universal Narrative Model JSON Schema** provides a **structured, standardized framework** for defining storytelling elements. However, we recognize that different storytelling paradigms may use **alternative terminology** or require **custom extensions**.  
+**Narrative Context Protocol** provides a **structured, standardized framework** for defining storytelling elements. However, we recognize that different storytelling paradigms may use **alternative terminology** or require **custom extensions**.  
 
 To maintain both **consistency and flexibility**, the schema introduces two mechanisms:  
 
@@ -937,7 +937,7 @@ While every standard is open to customization, we focus on customizing an Apprec
 ```
 
 **Why?**  
-- The combination of the `"Catalust Provocateur"` Perspective and the `"Focus"` Appreciation fits within the **UNM standard** and serves as an anchor across all systems. There is no ambiguity as to what this Storypoint refers to within the narrative. 
+- The combination of the `"Catalust Provocateur"` Perspective and the `"Focus"` Appreciation fits within **NCP** standards and serves as an anchor across all systems. There is no ambiguity as to what this Storypoint refers to within the narrative. 
 - `"Alternative Viewpoint"` is the **user’s preferred alternative**, which **does not conflict** with the standard model.  
 
 ::callout
@@ -974,7 +974,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
 
 - `"Focus"`, along with `"Catalyst Provocateur"` remains the **official Perspective and Appreciation**.  
 - `"Alternative Tension"` is the **custom term** for internal use.  
-- `"Dramatica": "Influence Character Symptom"` ensures **compatibility with Dramatica**.  
+- `"Dramatica": "Influence Character Symptom"` ensures **compatibility with original Dramatica theory concepts**.  
 - `"Hero's Journey": "Call to Adventure"` provides a **direct mapping to Joseph Campbell’s model**.  
 - `"Save the Cat!": "Debate"` aligns with **Blake Snyder’s methodology**. 
 
@@ -1037,7 +1037,7 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
 ---
 
 ## Validation & Best Practices
-To **preserve the integrity** of the Universal Narrative Model while allowing for flexibility, the following **validation rules** should be applied:  
+To **preserve the integrity** of NCP while allowing for flexibility, the following **validation rules** should be applied:  
 
 - Storypoints and Storybeats must always include a standard `perspective`, `appreciation`, `method`, even if mapped to an external framework.
 - In addition, Storybeats must include a `scope` and `number` to map across the temporal progression of the narrative.

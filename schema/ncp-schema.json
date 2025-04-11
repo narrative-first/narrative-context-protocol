@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Universal Narrative Model Schema",
-    "description": "A standardized JSON format for structuring narrative elements.",
+    "title": "Narrative Context Protcol Schema",
+    "description": "A standardized protocol for structuring narrative elements in a complete story for use in multi-agentic systems.",
     "type": "object",
     "properties": {
       "schema_version": {
