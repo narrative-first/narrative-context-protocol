@@ -153,11 +153,11 @@ This separation becomes even more critical in the AI era. Training models exclus
 
 ## Introduction to Terminology and Appreciating Conflict
 
-Moving forward, we'll explore the specific terminology that shapes the Universal Narrative Model (UNM). While these terms might seem intricate at first, their significance lies in precisely capturing the totality of how we appreciate narrative conflict—both logically and emotionally. Clear, consistent terminology is essential to effectively understanding, communicating, and resolving narrative tensions across diverse storytelling contexts.
+Moving forward, we'll explore the specific terminology that shapes Narrative Context Protocol (NCP). While these terms might seem intricate at first, their significance lies in precisely capturing the totality of how we appreciate narrative conflict—both logically and emotionally. Clear, consistent terminology is essential to effectively understanding, communicating, and resolving narrative tensions across diverse storytelling contexts.
 
 ### Canonical Standards and Customization
 
-The UNM provides standardized canonical terms to maintain consistency and clarity across narratives:
+NCP provides standardized canonical terms to maintain consistency and clarity across narratives:
 
 - **Appreciations**: Appreciations are how we interpret and appreciate narrative conflicts, formed by pairing a specific Perspective with either a Storypoint or a Storybeat. They help authors and audiences recognize the narrative's thematic depth and complexity.
 
@@ -169,7 +169,7 @@ The UNM provides standardized canonical terms to maintain consistency and clarit
 
 ---
 
-To support creative flexibility and compatibility with different narrative frameworks, the UNM accommodates:
+To support creative flexibility and compatibility with different narrative frameworks, NCP accommodates:
 - **Custom Terms**: Personalized terminology reflecting unique narrative preferences.
 - **Namespaces**: Mapping custom terminology to other narrative frameworks (e.g., Dramatica, Hero’s Journey, Save the Cat!).
 
@@ -181,7 +181,7 @@ To support creative flexibility and compatibility with different narrative frame
 
 ## Validation and Narrative Integrity
 
-To ensure integrity and consistency in narratives structured with the UNM:
+To ensure integrity and consistency in narratives structured with NCP:
 - Storypoints and Storybeats must include canonical terms.
 - Custom terms complement but do not replace canonical standards.
 - Storybeats require clearly defined scopes and sequences to maintain coherent temporal progression.
@@ -190,7 +190,7 @@ To ensure integrity and consistency in narratives structured with the UNM:
 
 ## Narrative Aspects: In-depth
 
-In this section, we'll explore examples of each narrative aspect, offering a brief overview of what each object contains. For a detailed understanding of specific keys and values, including enumerated values, please refer to the complete [universal-narrative-model-schema.md](/docs/universal-narrative-model-schema.md).
+In this section, we'll explore examples of each narrative aspect, offering a brief overview of what each object contains. For a detailed understanding of specific keys and values, including enumerated values, please refer to the complete [narrative-context-protocol-schema.md](/docs/narrative-context-protocol-schema.md).
 
 ### Perspectives
 
@@ -378,7 +378,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
 
 Now we come to one of the most intriguing parts of narrative structure—the Justification process. Think of this as the art of turning your story’s meaning and purpose into a clearly ordered timeline.
 
-In narrative design, the sequence of events isn’t just about what happens next—it's about why it happens next. This key insight lies at the heart of the Universal Narrative Model, setting it apart from frameworks like the Hero’s Journey or Save the Cat, where the sequence of beats such as "All is Lost" or "Dark Night of the Soul" can shift based on personal preference or intuition.
+In narrative design, the sequence of events isn’t just about what happens next—it's about why it happens next. This key insight lies at the heart of Narrative Context Protocol, setting it apart from frameworks like the Hero’s Journey or Save the Cat, where the sequence of beats such as "All is Lost" or "Dark Night of the Soul" can shift based on personal preference or intuition.
 
 Imagine your daily commute along Interstate 5 in Southern California. The experience of passing the 210 and then the 170 is drastically different depending on whether you’re heading into work or heading back home--yet, these are the same two events: passing the 210, and passing the 170. **The meaning behind your experience lies in what order these events occur.** Just like your commute, the meaning of your narrative can shift dramatically depending on the order of events.
 
