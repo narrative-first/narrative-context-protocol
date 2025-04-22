@@ -144,28 +144,38 @@
                               "type": "string",
                               "enum": ["transit", "progression", "event"]
                             },
-                            "sequence": {
-                                "oneOf": [
-                                    {
-                                        "type": "integer",
-                                        "minimum": 1,
-                                        "maximum": 4,
-                                        "description": "For Transits (1-4)"
-                                    },
-                                    {
-                                        "type": "integer",
-                                        "minimum": 1,
-                                        "maximum": 16,
-                                        "description": "For Progressions (1-16)"
-                                    },
-                                    {
-                                        "type": "integer",
-                                        "minimum": 1,
-                                        "maximum": 64,
-                                        "description": "For Events (1-64)"
-                                    }
-                                ]
-                            },
+                            "oneOf": [
+                              {
+                                "properties": {
+                                  "appreciation": { "const": "transit" },
+                                  "sequence": {
+                                    "type": "integer",
+                                    "minimum": 1,
+                                    "maximum": 4
+                                  }
+                                }
+                              },
+                              {
+                                "properties": {
+                                  "appreciation": { "const": "progression" },
+                                  "sequence": {
+                                    "type": "integer",
+                                    "minimum": 1,
+                                    "maximum": 16
+                                  }
+                                }
+                              },
+                              {
+                                "properties": {
+                                  "appreciation": { "const": "event" },
+                                  "sequence": {
+                                    "type": "integer",
+                                    "minimum": 1,
+                                    "maximum": 64
+                                  }
+                                }
+                              }
+                            ],
                             "method": { 
                               "type": "string",
                               "enum": ["past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","altruism","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","stipulation","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","rejection","deviation","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","presumption"]
