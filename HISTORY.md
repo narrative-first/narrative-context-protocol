@@ -10,7 +10,7 @@ By mapping relationships between characters, plot elements, and thematic concern
 
 Narrative Context Protocol (NCP) was developed as a next-generation schema for multi-agentic systems, designed to enhance narrative consistency, scalability, and AI-driven storytelling capabilities.
 
-**Version 1.0 of NCP** mirrors the robust API framework available within Narrative First’s Subtxt/Damatica platform. Engineered for narrative precision and innovative AI-driven storytelling, the Subtxt/Dramatica model encapsulates an objective, measurable approach to narrative structure.
+**Version 1.0 of NCP** mirrors the robust API framework available within Narrative First’s Subtxt/Dramatica platform. Engineered for narrative precision and innovative AI-driven storytelling, the Subtxt/Dramatica platform encapsulates an objective, measurable approach to narrative structure.
 
 Narrative First chose to openly share this schema, driven by the belief that storytelling should be accessible and transparent to everyone. By opening the "code" behind narrative structure, the goal is to foster creativity, collaboration, and innovation across all storytelling communities.
 
