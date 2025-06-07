@@ -27,7 +27,7 @@
                 "summary": "A dedicated detective haunted by unresolved cases.",
                 "storytelling": "John exudes a stoic demeanor, masking the inner turmoil of his past.",
                 "perspective": {
-                  "throughline": "Objective Story",
+                  "throughline": "Main Character",
                   "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
                 },
                 "motivations": [

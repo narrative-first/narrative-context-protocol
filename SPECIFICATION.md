@@ -236,7 +236,7 @@ Characters whose actions and motivations reveal deeper thematic layers (subtext)
     ],
     "perspectives": [
         {
-            "perspective_id": "persp_def456"
+            "perspective_id": "perspective_ab12cd34"
         }
     ]
   }
@@ -259,7 +259,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
     "perspectives": [
         {
-            "perspective_id": "persp_def456"
+            "perspective_id": "perspective_ab12cd34"
         }
     ]
   }
