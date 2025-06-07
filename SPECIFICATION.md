@@ -14,7 +14,7 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
-        "title": "Central Form",
+        "title": "Central Domain",
         "subtext": {
             "perspectives": [],
             "players": [],
@@ -68,7 +68,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
     "narratives": [
       {
         "id": "narrative_AbnHJ147",
-        "title": "Central Form",
+        "title": "Central Domain",
         "subtext": {
           "perspectives": [],
           "players": [],
@@ -100,7 +100,7 @@ Perspectives enable authors to explore thematic conflicts from specific authoria
 **Why?** Perspectives encourage authors to consciously examine their narratives through multiple lenses, enriching the story by revealing hidden tensions, motivations, and nuances from distinct viewpoints.
 
 ## Dynamics
-Dynamics represent narrative forces that shape the structural framework of a story. They encode the author's intended message or thematic meaning directly into the narrative structure itself. Understanding Dynamics helps authors clarify the purpose behind their craft.
+Dynamics represent narrative problems that shape the structural framework of a story. They encode the author's intended message or thematic meaning directly into the narrative structure itself. Understanding Dynamics helps authors clarify the purpose behind their craft.
 
 **Why?** Dynamics help authors intentionally guide their narrative towards meaningful conclusions, ensuring the story remains purposeful and resonant from beginning to end.
 
@@ -196,7 +196,7 @@ In this section, we'll explore examples of each narrative aspect, offering a bri
 
 Perspectives are where the author positions the source of conflict to communicate the story’s intended meaning, independent of first- or third-person narrative style (those refer to storytelling, not subtext). These Perspectives shape how thematic conflicts are revealed, deepening the story by re-inforcing the author's intended message.
 
-For example, in _A Christmas Carol_, each of the four ghosts (Marley included) functions thematically as a Catalyst Provocateur for Scrooge, sequentially handing off their unique perspectives from one ghost to another. While each ghost brings a distinct angle—progress, past, present, and future—their collective thematic role remains consistent: to provoke Scrooge’s transformation. Each ghost provides a unique lens on his life, amplifying narrative resonance by exploring different facets of the same thematic conflict.
+For example, in _A Christmas Carol_, each of the four ghosts (Marley included) functions thematically as a Catalyst Provocateur for Scrooge, sequentially handing off their unique perspectives from one ghost to another. While each ghost brings a distinct angle—progress, past, present, and future—their collective thematic role remains consistent: to provoke Scrooge’s transformation. Each ghost provides a unique lens on his life, amplifying narrative resonance by exploring different issues of the same thematic conflict.
 
 Another example can be seen in *Inside Out 2*. Unlike the original *Inside Out*, where Joy alone carries the perspective of the Main Character, the sequel has both Joy and Riley sharing the same thematic perspective of Main Character. They seamlessly pass this viewpoint back and forth, allowing the audience to explore identical thematic issues through two distinct yet interconnected lenses. This shared perspective enriches the narrative by demonstrating how the same thematic conflicts can manifest uniquely in different characters, amplifying emotional resonance.
 
@@ -252,7 +252,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
   {
     "id": "storypoint_2345abcd",
     "context": "main character",
-    "appreciation": "facet",
+    "appreciation": "issue",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
@@ -295,7 +295,7 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 
 ### Dynamics
 
-High-level narrative forces that reflect the author's intent, shaping the story's message and clearly communicating its Narrative Argument.
+High-level narrative problems that reflect the author's intent, shaping the story's message and clearly communicating its Narrative Argument.
 
 ```json
 "dynamics": [
@@ -394,11 +394,11 @@ This equation reflects the idea that a story’s core conflicts (its Dynamics) i
 
 ### The Process of Justification: A Structured Perspective
 
-At the heart of Justification is the way a story presents and resolves conflicts. A prime example is the interplay between the two primary opposing forces, governed by the **Dynamic of Resolve**, which determines whose resolve is ultimately **Relinquished** and whose is **Maintained**. This interplay illustrates how Justification structures the progression of a story based on meaning rather than arbitrary events.
+At the heart of Justification is the way a story presents and resolves conflicts. A prime example is the interplay between the two primary opposing problems, governed by the **Dynamic of Resolve**, which determines whose resolve is ultimately **Relinquished** and whose is **Maintained**. This interplay illustrates how Justification structures the progression of a story based on meaning rather than arbitrary events.
 
 **The Path of the Maintained Resolve**
 
-   - At the beginning, a force is introduced that challenges this character's worldview.
+   - At the beginning, a problem is introduced that challenges this character's worldview.
    - Every event and decision within the story reinforces their commitment to this perspective.
    - As the story escalates, pressure builds, leading to a final crisis where they must decide whether to **stay the course** or abandon their stance.
    - The audience sees a pattern of persistence in the face of increasing opposition, culminating in a moment where either their resolve holds or their world collapses around them.
@@ -412,7 +412,7 @@ At the heart of Justification is the way a story presents and resolves conflicts
    - When they reach the crisis, they recognize both paths but must choose—knowing there is no guarantee the new choice will work.
    - In the end, this character **chooses the path they have never tried before**, *relinquishing* their resolve, and stepping into the unknown.
 
-One character’s convictions are reinforced while the other’s are dismantled—each path structured by the forces that shape the story’s meaning. The interaction between these characters dictates the order of events, creating a framework where every moment is a necessary step in the logical progression of the narrative.
+One character’s convictions are reinforced while the other’s are dismantled—each path structured by the problems that shape the story’s meaning. The interaction between these characters dictates the order of events, creating a framework where every moment is a necessary step in the logical progression of the narrative.
 
 ### The Importance of Perspective: The Direction of Justification
 
@@ -428,9 +428,9 @@ Justification is a means of modeling not just the sequencing of events, but also
 
 Following the Justification Process, we explore how **Resolve**—whether maintained or relinquished—converts the temporal dynamics of conflict *back* into spatial considerations within a Storyform.
 
-| Resolve Type                     | Connected Forces                          |
+| Resolve Type                     | Connected Problems                          |
 | ----------------------------- | ------------------------------------- |
 | **Relinquished Resolve**                 | Problem & Solution                  |                                
 | **Maintained Resolve**                    | Focus & Direction                 | 
 
-A **Relinquished Resolve** connects the underlying Forces of **Problem** and **Solution** with the Character who holds that perspective. Conversely, a **Maintained Resolve** connects with the underlying forces of **Focus** and **Direction**. This key relationship binds the various perspectives of conflict throughout the story, ensuring that character development and plot progression remain intertwined, sustaining the thematic integrity of the narrative.
+A **Relinquished Resolve** connects the underlying Problems of **Problem** and **Solution** with the Character who holds that perspective. Conversely, a **Maintained Resolve** connects with the underlying problems of **Focus** and **Direction**. This key relationship binds the various perspectives of conflict throughout the story, ensuring that character development and plot progression remain intertwined, sustaining the thematic integrity of the narrative.

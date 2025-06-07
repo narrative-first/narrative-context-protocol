@@ -5,7 +5,7 @@ description: A standardized JSON format for structuring narrative elements, enab
 
 The **Narrative Context Protocol** provides a standardized format for defining and organizing story elements in a structured, interoperable way. This schema allows narratives to be stored, analyzed, and transferred between different storytelling tools while maintaining **clarity, flexibility, and the author's original intent**.
 
-At its core, the schema divides a story into two layers: the **deep, structural meaning (Subtext)** and the **surface-level presentation (Storytelling)**. This split ensures that authors can preserve the underlying message of their work while allowing for various forms of high-level audience engagement.
+At its core, the schema divides a story into two layers: the **deep, structural meaning (Subtext)** and the **surface-level presentation (Storytelling)**. This split ensures that authors can preserve the underlying message of their work while allowing for various domains of high-level audience engagement.
 
 ---
 
@@ -24,7 +24,7 @@ The schema is designed for **broad adoption**. It can be used in:
 
 Narrative Context Protocol is **designed for flexibility**. Developers and storytellers can:  
 
-- Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` fields.  
+- Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` concerns.  
 - Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 - Submit **extensions and feedback** via issues and discussions in this repo.  
  
@@ -76,7 +76,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
-        "title": "Central Form",
+        "title": "Central Domain",
         "subtext": {
             "perspectives": [],
             "players": [],
@@ -99,7 +99,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 ### **Subtext** – The deep, underlying message of the narrative that communicates the author's intent.  
 Subtext is composed of core structural components that define meaning beneath the surface:  
 - **Perspectives** – The lens through which story elements are experienced (e.g., `Objective Story`, `Main Character`).  
-- **Dynamics** – High-level narrative forces like `Story Outcome` (`Success` or `Failure`).
+- **Dynamics** – High-level narrative problems like `Story Outcome` (`Success` or `Failure`).
 - **Players** – Characters with defined roles and motivations that impact the story's underlying meaning.  
 - **Storypoints** – Key structural points, such as `Problem`, `Solution`, and `Story Goal`.  
 - **Storybeats** – Significant turning points that reflect shifts in narrative meaning, such as `Transit`, `Progression`, or `Event`.  
@@ -225,7 +225,7 @@ Characters within the **narrative structure**, with motivations tied to **subtex
 ```
 
 #### **Dynamics**  
-High-level narrative forces like **Story Outcome** and **Story Judgment**.
+High-level narrative problems like **Story Outcome** and **Story Judgment**.
 
 ```json
 "dynamics": [
@@ -246,7 +246,7 @@ Structured **spatial aspects** that define and shape the narrative.
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "appreciation": "facet",
+    "appreciation": "issue",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
@@ -395,8 +395,8 @@ The **Universal Narrative Model JSON Schema** provides a **canonical set of valu
 
 To maintain **compatibility** while allowing **customization**, we introduce:  
 
-- **Canonical Standards** – A predefined list of `appreciation`, `method`, `dynamic`, and `vector` values that form the foundation of the model and convey the meaning of the narrative.  
-- **Custom Mapping Fields** – Optional fields (`custom_appreciation`, `custom_method`, `custom_dynamic`, `custom_vector`) for alternative terms.  
+- **Canonical Standards** – A predefined list of `appreciation`, `method`, `dynamic`, and `vector` values that domain the foundation of the model and convey the meaning of the narrative.  
+- **Custom Mapping Concerns** – Optional concerns (`custom_appreciation`, `custom_method`, `custom_dynamic`, `custom_vector`) for alternative terms.  
 - **Namespacing for Third-Party Mappings** – The ability to link terminology from other frameworks via `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 
 **Base Set** 
@@ -411,10 +411,10 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "appreciation": {
   "type": "string",
   "enum": [
-    "form",
-    "field",
-    "facet",
-    "force",
+    "domain",
+    "concern",
+    "issue",
+    "problem",
     "problem",
     "solution",
     "focus",
@@ -457,7 +457,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "description": "A core narrative Appreciation, based on the Universal Narrative Model."
 }
 ```
-**💡 Expansion:** If users need additional Appreciations, they can use a `custom_appreciation` field.
+**💡 Expansion:** If users need additional Appreciations, they can use a `custom_appreciation` concern.
 
 ---
 
@@ -466,10 +466,10 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "method": {
   "type": "string",
   "enum": [
-    "external_framing",
-    "external_processing",
-    "internal_processing",
-    "internal_framing",
+    "universe",
+    "physics",
+    "psychology",
+    "mind",
     "past",
     "understanding",
     "conceptualizing",
@@ -618,7 +618,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "description": "A Method by which the Appreciation is explored in the narrative."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_method` fields.
+**💡 Expansion:** Third-party implementations can add their own `custom_method` concerns.
 
 ---
 
@@ -643,7 +643,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "description": "An indication of a Dynamic applied to the Universal Narrative Model."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_dynamic` fields.
+**💡 Expansion:** Third-party implementations can add their own `custom_dynamic` concerns.
 
 ---
 
@@ -678,7 +678,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "description": "A Vector by which a Dynamic is explored in the narrative."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_vector` fields.
+**💡 Expansion:** Third-party implementations can add their own `custom_vector` concerns.
 
 ---
 
@@ -693,12 +693,12 @@ To maintain **compatibility** while allowing **customization**, we introduce:
       "id": { "type": "string" },
       "appreciation": { 
         "type": "string",
-        "enum": ["form", "field", "facet", "force", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
+        "enum": ["domain", "concern", "issue", "problem", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
       },
       "method": { 
         "type": "string",
         "enum": [
-          "external_framing", "external_processing", "internal_processing", "internal_framing", "past", "understanding", "conceptualizing", "memory",
+          "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
           "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
           "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
           "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "altruism", "attitude",

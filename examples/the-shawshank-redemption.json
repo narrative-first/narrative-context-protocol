@@ -47,7 +47,7 @@
                             "id": "38830cab-af1c-4184-aa54-eb8d027e5621",
                             "author_structural_pov": "they",
                             "summary": "Sowing Hope in Shawshank's Brutality",
-                            "storytelling": "Within the oppressive environment of a high-security prison, a misjudged former banker navigates the brutality of institutional life. The system's corruption relies on exploitation and dehumanization, yet small acts of intelligence and camaraderie begin to inspire a resilience among inmates. In this bleak context, the struggle is centered on persisting hope and resisting the crushing force of the institution."
+                            "storytelling": "Within the oppressive environment of a high-security prison, a misjudged former banker navigates the brutality of institutional life. The system's corruption relies on exploitation and dehumanization, yet small acts of intelligence and camaraderie begin to inspire a resilience among inmates. In this bleak context, the struggle is centered on persisting hope and resisting the crushing problem of the institution."
                         }
                     ]
                 },
@@ -273,7 +273,7 @@
                         "method": "Oppose",
                         "illustration": "speaking out against something",
                         "summary": "Red speaks out against the prison system, showing the parole board he is rehabilitated and is granted parole.",
-                        "storytelling": "In the end, Red abandons his silent endorsement of the prison system and instead, speaks his mind and speaks out against the whole process. \"Rehabilitated? That's a bullshit word, so you just go on ahead and stamp that form there, sonny, and stop wasting my damn time. Truth is, I don't give a shit.\" By expressing his true feelings and thoughts on the matter he shows the parole board that he is truly rehabilitated and that he is no longer just saying what he thinks they want to hear. As a consequence, the board approves his parole and they escort Red out of Shawshank prison.",
+                        "storytelling": "In the end, Red abandons his silent endorsement of the prison system and instead, speaks his mind and speaks out against the whole process. \"Rehabilitated? That's a bullshit word, so you just go on ahead and stamp that domain there, sonny, and stop wasting my damn time. Truth is, I don't give a shit.\" By expressing his true feelings and thoughts on the matter he shows the parole board that he is truly rehabilitated and that he is no longer just saying what he thinks they want to hear. As a consequence, the board approves his parole and they escort Red out of Shawshank prison.",
                         "perspectives": {
                             "perspective_id": "82ef466e-d899-415e-b487-0148b8fb271a"
                         }
@@ -341,7 +341,7 @@
                     {
                         "id": "b0a46825-d91c-4c74-860e-d6266f4bae69",
                         "context": "Objective Story",
-                        "appreciation": "Facet",
+                        "appreciation": "Issue",
                         "method": "Delay",
                         "illustration": "playing a waiting game",
                         "summary": "The Shawshank Redemption explores the tension between Delay and Choice, as characters endure hardships and take control of their destinies.",
@@ -377,8 +377,8 @@
                     {
                         "id": "233b43b5-bc1c-48b9-a821-f4b1371e96f9",
                         "context": "Objective Story",
-                        "appreciation": "Form",
-                        "method": "External Framing",
+                        "appreciation": "Domain",
+                        "method": "Universe",
                         "illustration": "being unjustly imprisoned",
                         "summary": "In The Shawshank Redemption, the OS Domain of Universe creates a shared source of conflict for all the characters as they struggle to survive and maintain their dignity in a corrupt and oppressive prison system.",
                         "storytelling": "In The Shawshank Redemption, the OS Domain of Universe (being unjustly imprisoned) defines the source of conflict for everyone in the story as they all experience the effects of this unjust system and the harsh realities of prison life. Here are some examples of how this conflict affects various characters in the story:1. Andy Dufresne (Tim Robbins): As the protagonist, Andy is unjustly imprisoned for a crime he didn't commit. His conflict arises from trying to survive and maintain his dignity in a corrupt and brutal environment, while also seeking a way to prove his innocence.2. Ellis \"Red\" Redding (Morgan Freeman): Red is a long-time inmate and Andy's close friend. His conflict comes from his struggle to adapt to life inside the prison and his eventual realization that he has become institutionalized, making it difficult for him to imagine life outside the prison walls.3. Warden Samuel Norton (Bob Gunton): The warden represents the corrupt and oppressive system that governs the prison. His conflict arises from his desire to maintain control over the inmates and exploit them for his own gain, which ultimately leads to his downfall.4. Captain Byron Hadley (Clancy Brown): Hadley is the cruel and sadistic chief of the prison guards. His conflict comes from his need to assert his authority over the inmates through violence and intimidation, which ultimately backfires when Andy exposes the corruption within the prison.5. Tommy Williams (Gil Bellows): Tommy is a young inmate who befriends Andy and Red. His conflict arises from his desire to turn his life around and help Andy prove his innocence, but he faces the harsh reality of the prison system when he is killed to prevent him from revealing the truth.These examples illustrate how the OS Domain of Universe creates a shared source of conflict for all the characters in The Shawshank Redemption. Each character's individual struggles and experiences are connected to the larger theme of injustice and the impact of the prison system on their lives.",
@@ -389,7 +389,7 @@
                     {
                         "id": "d0ce3af2-e550-4f70-8a07-d0de99709709",
                         "context": "Objective Story",
-                        "appreciation": "Field",
+                        "appreciation": "Concern",
                         "method": "Future",
                         "illustration": "having no future",
                         "summary": "In \"The Shawshank Redemption,\" the Objective Story Concern of \"Future\" creates a cohesive narrative that explores the impact of having no future on the characters and their actions, ultimately leading to the resolution of the story's central proble",
@@ -401,8 +401,8 @@
                     {
                         "id": "2f0dac7b-0204-4413-98d6-936204ad624e",
                         "context": "Main Character",
-                        "appreciation": "Form",
-                        "method": "Internal Processing",
+                        "appreciation": "Domain",
+                        "method": "Psychology",
                         "illustration": "being institutionalized",
                         "summary": "Red, in _The Shawshank Redemption_, is a character deeply affected by the psychological aspect of institutionalization. He's been in prison for so long that it has become his norm, his comfort zone. ",
                         "storytelling": "Though he tries to act like it doesn't bother him, the truth is that being institutionalized has taken a toll on Red. He's been in prison for so long that he's forgotten what it's like to be outside, to be free. He's become accustomed to the routine and the people inside, and the thought of leaving is both terrifying and exhilarating.",
@@ -413,7 +413,7 @@
                     {
                         "id": "ebde34be-8fb5-4379-b0b2-2f0589fae7a1",
                         "context": "Main Character",
-                        "appreciation": "Field",
+                        "appreciation": "Concern",
                         "method": "Becoming",
                         "illustration": "becoming a changed man",
                         "summary": "Red is haunted by his past and struggles to take responsibility for his own rehabilitation in order to escape it.",
@@ -425,7 +425,7 @@
                     {
                         "id": "27f0790e-3fd5-4dce-b0f7-7aa93c9dd495",
                         "context": "Main Character",
-                        "appreciation": "Facet",
+                        "appreciation": "Issue",
                         "method": "Rationalization",
                         "illustration": "covering up something",
                         "summary": "Ellis 'Red' Redding rationalizes his life sentence for killing a man in a fit of rage by telling himself he is doing his time for the man he killed, but this only serves to keep him in Shawshank longer.",
@@ -437,11 +437,11 @@
                     {
                         "id": "89352861-db4d-42db-8aea-2abac24609d5",
                         "context": "Catalyst Provocateur",
-                        "appreciation": "Form",
-                        "method": "External Processing",
+                        "appreciation": "Domain",
+                        "method": "Physics",
                         "illustration": "fighting against someone",
                         "summary": "Andy's fight against the system and his playing of music to taunt the warden challenge Red's beliefs, forcing him to confront his own powerlessness and despair and to accept and embrace the idea that joy can be found even in the darkest of",
-                        "storytelling": "Andy Dufresne's fighting against the system challenges Ellis \"Red\" Redding's belief that it is possible to fight the system and win. Red must grapple with the idea that sometimes the system is too big and too powerful to fight. This conflict forces Red to confront his own sense of powerlessness and to accept the fact that sometimes the only way to survive is to go along with the system. Additionally, Andy's playing music over the loudspeakers to taunt the warden challenges Red's belief that it is possible to find a measure of peace and happiness even in the most difficult of circumstances. Red must grapple with the idea that sometimes the only way to endure the pain and the suffering is to find a way to enjoy it. This conflict forces Red to confront his own sense of despair and to embrace the idea that even in the darkest of times there can be moments of joy.",
+                        "storytelling": "Andy Dufresne's fighting against the system challenges Ellis \"Red\" Redding's belief that it is possible to fight the system and win. Red must grapple with the idea that sometimes the system is too big and too powerful to fight. This conflict problems Red to confront his own sense of powerlessness and to accept the fact that sometimes the only way to survive is to go along with the system. Additionally, Andy's playing music over the loudspeakers to taunt the warden challenges Red's belief that it is possible to find a measure of peace and happiness even in the most difficult of circumstances. Red must grapple with the idea that sometimes the only way to endure the pain and the suffering is to find a way to enjoy it. This conflict problems Red to confront his own sense of despair and to embrace the idea that even in the darkest of times there can be moments of joy.",
                         "perspectives": {
                             "perspective_id": "df334693-e7a1-41b7-b397-b14cec0c438b"
                         }
@@ -449,7 +449,7 @@
                     {
                         "id": "d257c97d-eff0-46cc-9932-d0fe796291a6",
                         "context": "Catalyst Provocateur",
-                        "appreciation": "Field",
+                        "appreciation": "Concern",
                         "method": "Obtaining",
                         "illustration": "finishing something",
                         "summary": "Andy's Obstacle Character Concern of Obtaining, demonstrated through his pursuit of a better prison library, self-respect, freedom, and justice, challenges Red's beliefs and ultimately inspires him to pursue a life outside of Shawshank.",
@@ -461,7 +461,7 @@
                     {
                         "id": "c9bad257-a461-4e32-b734-9bd4a27e3298",
                         "context": "Catalyst Provocateur",
-                        "appreciation": "Facet",
+                        "appreciation": "Issue",
                         "method": "Approach",
                         "illustration": "taunting",
                         "summary": "In The Shawshank Redemption, Andy Dufresne's (Tim Robbins) approach to life in prison challenges Red's (Morgan Freeman) more cynical attitude, inspiring him to change his own approach and attitude.",
@@ -485,8 +485,8 @@
                     {
                         "id": "bf983999-c08a-44c7-8c7f-09dff8261cca",
                         "context": "Relationship Story",
-                        "appreciation": "Form",
-                        "method": "Internal Framing",
+                        "appreciation": "Domain",
+                        "method": "Mind",
                         "illustration": "taking a position on something",
                         "summary": "Initially brought together by circumstance, their friendship is strengthened by their differing values, leading to trust, intimacy, and mutual recognition of the value of their friendship.",
                         "storytelling": "While being victims of circumstance initially brings them together, the taking of a position on incompatible values draws them into a long-lasting and meaningful friendship. In the beginning, the differential in their values pushes them apart--while simultaneously intriguing the two into productive debate. The clash of wills is a means of growth for the relationship as it creates a sense of trust and intimacy. It also allows them to have a discussion about why they feel they way they do, which can lead to much-needed recognition and validation. And when people feel they can rely on each other for support, they are more likely to feel close to one another and be willing to work through difficult issues. In the end, it is a mutual recognition that what is most important is taking a position on the value of their friendship that ultimately brings them together.",
@@ -497,7 +497,7 @@
                     {
                         "id": "cc3100ed-a8e8-416e-96ea-197a5f26054d",
                         "context": "Relationship Story",
-                        "appreciation": "Field",
+                        "appreciation": "Concern",
                         "method": "Subconscious",
                         "illustration": "being fond of someone",
                         "summary": "In The Shawshank Redemption, the Relationship Story Concern being Subconscious means that the growth of Andy and Red's friendship is based on trust, emotional support, and shared experiences, all of which are rooted in their subconscious desires.",
@@ -509,7 +509,7 @@
                     {
                         "id": "3181b8bf-c058-4809-a21f-6f50c311e681",
                         "context": "Relationship Story",
-                        "appreciation": "Facet",
+                        "appreciation": "Issue",
                         "method": "Hope",
                         "illustration": "being hopeful about something",
                         "summary": "",
@@ -524,8 +524,8 @@
                         "appreciation": "Condition",
                         "method": "Consider",
                         "illustration": "deliberating about something",
-                        "summary": "The RS Condition of Consider in The Shawshank Redemption serves as a motivating force that drives the growth of Andy and Red's friendship by encouraging them to continuously evaluate and appreciate each other's perspectives.",
-                        "storytelling": "In The Shawshank Redemption, the Relationship Story (RS) Condition being Consider means that the growth of Andy and Red's friendship is influenced by their continuous evaluation and weighing of each other's perspectives, particularly on hope and their outlook on life.At the beginning of their friendship, Red and Andy have different views on hope. Red sees hope as a dangerous thing, while Andy believes in the power of hope and dreams. The condition of Consider in their relationship pushes them to continuously evaluate and ponder each other's perspectives, which in turn, helps their friendship grow.As their friendship develops, they both engage in moments of Consider, where they listen to each other's stories, experiences, and beliefs. This process of considering each other's viewpoints allows them to understand and appreciate the other's perspective, even if they don't initially agree.For example, when Andy shares his dream of going to Zihuatanejo, Red initially dismisses it as unrealistic. However, as their friendship grows, Red starts to consider Andy's perspective on hope and the possibility of a better life outside the prison. This change in Red's thinking is a result of the motivating force of Consider in their relationship.Similarly, Andy learns from Red's experiences and wisdom, considering Red's perspective on surviving in the harsh environment of the prison. This mutual consideration helps them both navigate their lives in Shawshank and strengthens their bond.In conclusion, the RS Condition of Consider in The Shawshank Redemption serves as a motivating force that drives the growth of Andy and Red's friendship by encouraging them to continuously evaluate and appreciate each other's perspectives on hope and life.",
+                        "summary": "The RS Condition of Consider in The Shawshank Redemption serves as a motivating problem that drives the growth of Andy and Red's friendship by encouraging them to continuously evaluate and appreciate each other's perspectives.",
+                        "storytelling": "In The Shawshank Redemption, the Relationship Story (RS) Condition being Consider means that the growth of Andy and Red's friendship is influenced by their continuous evaluation and weighing of each other's perspectives, particularly on hope and their outlook on life.At the beginning of their friendship, Red and Andy have different views on hope. Red sees hope as a dangerous thing, while Andy believes in the power of hope and dreams. The condition of Consider in their relationship pushes them to continuously evaluate and ponder each other's perspectives, which in turn, helps their friendship grow.As their friendship develops, they both engage in moments of Consider, where they listen to each other's stories, experiences, and beliefs. This process of considering each other's viewpoints allows them to understand and appreciate the other's perspective, even if they don't initially agree.For example, when Andy shares his dream of going to Zihuatanejo, Red initially dismisses it as unrealistic. However, as their friendship grows, Red starts to consider Andy's perspective on hope and the possibility of a better life outside the prison. This change in Red's thinking is a result of the motivating problem of Consider in their relationship.Similarly, Andy learns from Red's experiences and wisdom, considering Red's perspective on surviving in the harsh environment of the prison. This mutual consideration helps them both navigate their lives in Shawshank and strengthens their bond.In conclusion, the RS Condition of Consider in The Shawshank Redemption serves as a motivating problem that drives the growth of Andy and Red's friendship by encouraging them to continuously evaluate and appreciate each other's perspectives on hope and life.",
                         "perspectives": {
                             "perspective_id": "3c8b0efe-992c-4584-84dc-a8f7470013ec"
                         }
@@ -536,8 +536,8 @@
                         "appreciation": "Adjustment",
                         "method": "Reconsider",
                         "illustration": "reconsidering someone's options",
-                        "summary": "The RS Revision of Reconsider in The Shawshank Redemption serves as a motivating force that drives the growth of the friendship between Andy and Red, ultimately strengthening their bond.",
-                        "storytelling": "In The Shawshank Redemption, the Relationship Story (RS) Revision being Reconsider means that the growth of the friendship between Andy and Red is influenced by the shared drive to reevaluate and renegotiate their initial beliefs and perspectives, ultimately strengthening their bond.As the friendship progresses, the shared drive towards Reconsider becomes a key factor in the growth of their bond. The relationship itself evolves as both parties within the friendship become more open to reevaluating their initial beliefs and attitudes, allowing for a deeper understanding and connection between them.For instance, the friendship experiences a significant growth when the shared drive to Reconsider leads to a mutual openness towards the idea of hope and the possibility of a better life outside the prison. This shift in perspective within the relationship brings them closer together, as they find common ground in their newfound beliefs.Moreover, the shared drive towards Reconsider also helps the friendship navigate the challenges and hardships they face within the prison environment. By continuously reevaluating and renegotiating their perspectives, the relationship becomes more resilient and adaptable, further strengthening their bond.In conclusion, the RS Revision of Reconsider in The Shawshank Redemption serves as a motivating force that drives the growth of the friendship between Andy and Red by encouraging a shared drive to reevaluate and renegotiate their initial beliefs and perspectives, ultimately strengthening their bond.",
+                        "summary": "The RS Revision of Reconsider in The Shawshank Redemption serves as a motivating problem that drives the growth of the friendship between Andy and Red, ultimately strengthening their bond.",
+                        "storytelling": "In The Shawshank Redemption, the Relationship Story (RS) Revision being Reconsider means that the growth of the friendship between Andy and Red is influenced by the shared drive to reevaluate and renegotiate their initial beliefs and perspectives, ultimately strengthening their bond.As the friendship progresses, the shared drive towards Reconsider becomes a key factor in the growth of their bond. The relationship itself evolves as both parties within the friendship become more open to reevaluating their initial beliefs and attitudes, allowing for a deeper understanding and connection between them.For instance, the friendship experiences a significant growth when the shared drive to Reconsider leads to a mutual openness towards the idea of hope and the possibility of a better life outside the prison. This shift in perspective within the relationship brings them closer together, as they find common ground in their newfound beliefs.Moreover, the shared drive towards Reconsider also helps the friendship navigate the challenges and hardships they face within the prison environment. By continuously reevaluating and renegotiating their perspectives, the relationship becomes more resilient and adaptable, further strengthening their bond.In conclusion, the RS Revision of Reconsider in The Shawshank Redemption serves as a motivating problem that drives the growth of the friendship between Andy and Red by encouraging a shared drive to reevaluate and renegotiate their initial beliefs and perspectives, ultimately strengthening their bond.",
                         "perspectives": {
                             "perspective_id": "88e4d56a-ed60-418a-825b-f465d1c722ab"
                         }
@@ -645,7 +645,7 @@
                         "method": "Memory",
                         "illustration": "recalling horrors",
                         "summary": "",
-                        "storytelling": "In the oppressive confines of Shawshank prison, the protagonist's memories of a life outside the walls clash with the harsh reality of institutional dehumanization, creating a poignant internal struggle. These recollections, tinged with both regret and hope, fuel his resistance against the system's crushing force, while also highlighting the contrasting perspectives of fellow inmates who have either succumbed to or resisted the erasure of their pasts. This tension between memory and present reality underscores the narrative's exploration of hope and resilience in the face of systemic brutality.",
+                        "storytelling": "In the oppressive confines of Shawshank prison, the protagonist's memories of a life outside the walls clash with the harsh reality of institutional dehumanization, creating a poignant internal struggle. These recollections, tinged with both regret and hope, fuel his resistance against the system's crushing problem, while also highlighting the contrasting perspectives of fellow inmates who have either succumbed to or resisted the erasure of their pasts. This tension between memory and present reality underscores the narrative's exploration of hope and resilience in the face of systemic brutality.",
                         "perspectives": {
                             "perspective_id": "a13b8c40-1858-4884-b976-bd56d1e55640"
                         }
@@ -653,8 +653,8 @@
                     {
                         "id": "709a19ad-b950-4fce-8b48-99cae45cb857",
                         "context": "Main Character",
-                        "appreciation": "Form",
-                        "method": "Internal Processing",
+                        "appreciation": "Domain",
+                        "method": "Psychology",
                         "illustration": "coping with something",
                         "summary": "",
                         "storytelling": "Red's internal conflict stems from his deeply ingrained sense of loyalty and protectiveness towards his fellow inmates, which often clashes with his pragmatic need to ensure his own survival within the harsh realities of prison life. While he has learned to navigate the system with a realist's perspective, his quiet hope for redemption and a better future creates a tension within him, as he struggles to reconcile his actions with his unspoken aspirations.",
@@ -665,7 +665,7 @@
                     {
                         "id": "d3cf7bef-2bda-43ef-bd92-60cc643b84d4",
                         "context": "Main Character",
-                        "appreciation": "Field",
+                        "appreciation": "Concern",
                         "method": "Becoming",
                         "illustration": "going through a transformation",
                         "summary": "",
@@ -677,11 +677,11 @@
                     {
                         "id": "a902a183-89ae-4c09-9ade-47fea9df0c48",
                         "context": "Main Character",
-                        "appreciation": "Facet",
+                        "appreciation": "Issue",
                         "method": "Rationalization",
                         "illustration": "making excuses for someone's actions",
                         "summary": "",
-                        "storytelling": "Ellis \"Red\" Redding has spent decades in Shawshank rationalizing his actions and his place in the world. He tells himself that his crime, though heinous, was the folly of a young man, and that his years of service in prison have paid his debt to society. Yet, when faced with the needs of othersâ€”like Andy Dufresne's relentless hope and plans for escapeâ€”Red feels the pull of obligation, a duty to support and protect those who still believe in something greater. This tension between his rationalized acceptance of his fate and the moral obligation to help others forces Red to confront the quiet hope for redemption he has buried deep within. It is in this conflict that Red must decide whether to remain a passive realist or to act on the faint glimmer of hope that perhaps, just perhaps, there is a life waiting for him beyond the prison walls.",
+                        "storytelling": "Ellis \"Red\" Redding has spent decades in Shawshank rationalizing his actions and his place in the world. He tells himself that his crime, though heinous, was the folly of a young man, and that his years of service in prison have paid his debt to society. Yet, when faced with the needs of othersâ€”like Andy Dufresne's relentless hope and plans for escapeâ€”Red feels the pull of obligation, a duty to support and protect those who still believe in something greater. This tension between his rationalized acceptance of his fate and the moral obligation to help others problems Red to confront the quiet hope for redemption he has buried deep within. It is in this conflict that Red must decide whether to remain a passive realist or to act on the faint glimmer of hope that perhaps, just perhaps, there is a life waiting for him beyond the prison walls.",
                         "perspectives": {
                             "perspective_id": "44fe01d8-e85b-42e5-9388-f7cd3bce304b"
                         }
@@ -693,7 +693,7 @@
                         "method": "Reconsider",
                         "illustration": "having to reconsider one's opinion about someone",
                         "summary": "",
-                        "storytelling": "Red's internal conflict arises as he begins to reconsider his long-held belief that hope is a dangerous thing within the confines of prison life. This drive to re-examine his conclusions about hope and redemption forces him to confront the possibility that his pragmatic realism might be a shield against vulnerability rather than a true reflection of his reality. As obstacles challenge his resolve, Red's reconsideration becomes a source of tension, pulling him between the safety of his established worldview and the risk of embracing a fragile, yet transformative, hope.",
+                        "storytelling": "Red's internal conflict arises as he begins to reconsider his long-held belief that hope is a dangerous thing within the confines of prison life. This drive to re-examine his conclusions about hope and redemption problems him to confront the possibility that his pragmatic realism might be a shield against vulnerability rather than a true reflection of his reality. As obstacles challenge his resolve, Red's reconsideration becomes a source of tension, pulling him between the safety of his established worldview and the risk of embracing a fragile, yet transformative, hope.",
                         "perspectives": {
                             "perspective_id": "03279f1f-fdae-4653-8bbe-120d6b3f8cdc"
                         }
@@ -753,7 +753,7 @@
                         "method": "Pursuit",
                         "illustration": "seeking something",
                         "summary": "",
-                        "storytelling": "Andy Dufresne's relentless pursuit of justice and autonomy, while admirable, introduces significant conflict as his calculated actions often place him at odds with the oppressive system he seeks to expose. His methodical approach, driven by a deep-seated determination, forces him to navigate a treacherous path where every step closer to his goal risks greater scrutiny and potential failure. This pursuit not only challenges Andy's resilience but also serves as a catalyst for his growth and the eventual unraveling of the injustices he faces.",
+                        "storytelling": "Andy Dufresne's relentless pursuit of justice and autonomy, while admirable, introduces significant conflict as his calculated actions often place him at odds with the oppressive system he seeks to expose. His methodical approach, driven by a deep-seated determination, problems him to navigate a treacherous path where every step closer to his goal risks greater scrutiny and potential failure. This pursuit not only challenges Andy's resilience but also serves as a catalyst for his growth and the eventual unraveling of the injustices he faces.",
                         "perspectives": {
                             "perspective_id": "23a9235f-2006-470d-a991-138fa1c4924c"
                         }
@@ -856,7 +856,7 @@
                         "method": "Memory",
                         "illustration": "calling to mind",
                         "summary": "Red and Andy's friendship in prison deepens through shared memories, reflecting a mutual longing for past freedoms.",
-                        "storytelling": "When Red and Andy first cross paths, there's an unspoken bond that forms as they trade stories about their former livesâ€”Red, the seasoned insider, and Andy, the infamous banker. Their chat about the rock-hammer isn't just shop talk; it's a dance of memories, each step revealing a bit more of the world they've left behind and the gritty reality they now share. It's in these moments, like when they're slathering tar on the prison roof, that their friendship deepens, rooted in a mutual yearning for the freedom of their pasts.",
+                        "storytelling": "When Red and Andy first cross paths, there's an unspoken bond that domains as they trade stories about their former livesâ€”Red, the seasoned insider, and Andy, the infamous banker. Their chat about the rock-hammer isn't just shop talk; it's a dance of memories, each step revealing a bit more of the world they've left behind and the gritty reality they now share. It's in these moments, like when they're slathering tar on the prison roof, that their friendship deepens, rooted in a mutual yearning for the freedom of their pasts.",
                         "perspectives": {
                             "perspective_id": "e86903e9-44ae-499b-ad04-02e437c75b41"
                         }
@@ -1480,7 +1480,7 @@
                         "method": "Sense of Self",
                         "illustration": "taking stock of who one is",
                         "summary": "Untitled",
-                        "storytelling": "Ultimately, Red makes the decision to break parole and escape with Andy. This choice challenges his sense of self as a law-abiding citizen and forces him to confront his rebellious tendencies. Red's excitement at the prospect of starting anew is tempered by the uncertainty of the journey ahead, but he embraces the opportunity for personal growth and self-discovery.",
+                        "storytelling": "Ultimately, Red makes the decision to break parole and escape with Andy. This choice challenges his sense of self as a law-abiding citizen and problems him to confront his rebellious tendencies. Red's excitement at the prospect of starting anew is tempered by the uncertainty of the journey ahead, but he embraces the opportunity for personal growth and self-discovery.",
                         "perspectives": {
                             "perspective_id": "8a7efcbe-b977-42e0-8ac9-4c37d5bc05da"
                         }
@@ -1961,7 +1961,7 @@
                         "method": "Closure",
                         "illustration": "learning one's true capacity",
                         "summary": "Andy's termination inspires Red to reassess life.",
-                        "storytelling": "As Andy is thrown into solitary confinement, his spirit remains unbroken, and he continues to work on his escape plan. This act of defiance and hope in the face of termination deeply impacts Red, who begins to question his own acceptance of his fate. Red's internal struggle intensifies as he realizes that Andy's unwavering determination forces him to confront his own beliefs and the possibility of change.",
+                        "storytelling": "As Andy is thrown into solitary confinement, his spirit remains unbroken, and he continues to work on his escape plan. This act of defiance and hope in the face of termination deeply impacts Red, who begins to question his own acceptance of his fate. Red's internal struggle intensifies as he realizes that Andy's unwavering determination problems him to confront his own beliefs and the possibility of change.",
                         "perspectives": {
                             "perspective_id": "19255a01-0304-4111-9963-0129f2d3f3e6"
                         }
