@@ -81,7 +81,7 @@
                             },
                             "vector": { 
                               "type": "string",
-                              "enum": ["relinquished", "maintained", "released", "sustained", "stop", "start", "do_er", "be_er", "dopamine", "serotonin", "spacetime", "timespace", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
+                              "enum": ["relinquished", "maintained", "released", "sustained", "stop", "start", "do_er", "be_er", "linear", "holistic", "options", "time", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
                             },
                             "summary": { "type": "string" },
                             "storytelling": { "type": "string" }
