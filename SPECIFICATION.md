@@ -407,7 +407,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
 
 Now we come to one of the most intriguing parts of narrative structure—the Justification process. Think of this as the art of turning your story’s meaning and purpose into a clearly ordered timeline.
 
-In narrative design, the sequence of events isn’t just about what happens next—it's about why it happens next. This key insight lies at the heart of Narrative Context Protocol, setting it apart from frameworks like the Hero’s Journey or Save the Cat, where the sequence of beats such as "All is Lost" or "Dark Night of the Soul" can shift based on personal preference or intuition.
+In narrative design, the sequence of events isn’t just about what happens next—it's about why it happens next. This key insight lies at the heart of the Dramatica theory of story, setting it apart from other narrative frameworks like the Hero’s Journey or Save the Cat, where the sequence of beats such as "All is Lost" or "Dark Night of the Soul" can shift based on personal preference or intuition.
 
 Imagine your daily commute along Interstate 5 in Southern California. The experience of passing the 210 and then the 170 is drastically different depending on whether you’re heading into work or heading back home--yet, these are the same two events: passing the 210, and passing the 170. **The meaning behind your experience lies in what order these events occur.** Just like your commute, the meaning of your narrative can shift dramatically depending on the order of events.
 
@@ -423,43 +423,45 @@ This equation reflects the idea that a story’s core conflicts (its Dynamics) i
 
 ### The Process of Justification: A Structured Perspective
 
-At the heart of Justification is the way a story presents and resolves conflicts. A prime example is the interplay between the two primary opposing problems, governed by the **Dynamic of Resolve**, which determines whose resolve is ultimately **Relinquished** and whose is **Maintained**. This interplay illustrates how Justification structures the progression of a story based on meaning rather than arbitrary events.
+At the heart of Justification is the way a story presents and resolves conflicts. A prime example is the interplay between the two primary opposing problems, governed by the **Dynamic of Main Character Resolve**, which determines who alters their nature in order to resolve conflict (a **Change** Resolve) and who retains their essential nature (a **Steadfast** Resolve) in order to resolve conflict. This interplay illustrates how Justification structures the progression of a story based on meaning rather than arbitrary events.
 
-**The Path of the Maintained Resolve**
+**The Path of the Steadfast Resolve**
 
    - At the beginning, a problem is introduced that challenges this character's worldview.
    - Every event and decision within the story reinforces their commitment to this perspective.
    - As the story escalates, pressure builds, leading to a final crisis where they must decide whether to **stay the course** or abandon their stance.
    - The audience sees a pattern of persistence in the face of increasing opposition, culminating in a moment where either their resolve holds or their world collapses around them.
-   - In the end, this character **chooses to stay the course**, *maintaining* their resolve and fully embracing their perspective despite all opposition.
+   - In the end, this character **chooses to stay the course**, *maintaining* their resolve and fully embracing their unique perspective despite all opposition.
 
-**The Path of the Relinquished Resolve**
+**The Path of the Change Resolve**
 
-   - This character begins where the Maintained Resolve character would stop—at a point of full conviction in their approach.
+   - This character begins where the Steadfast Resolve character would stop—at a point of full conviction in their approach.
    - Over time, blind spots emerge. What once worked no longer does, and cracks begin to show in their reasoning.
    - Through a process of breaking down these blinders, they gradually gain awareness of an alternative choice.
    - When they reach the crisis, they recognize both paths but must choose—knowing there is no guarantee the new choice will work.
-   - In the end, this character **chooses the path they have never tried before**, *relinquishing* their resolve, and stepping into the unknown.
+   - In the end, this character **chooses the path they have never tried before**, *relinquishing* their initial perspective, and step into the unknown as they alter their essential nature.
 
-One character’s convictions are reinforced while the other’s are dismantled—each path structured by the problems that shape the story’s meaning. The interaction between these characters dictates the order of events, creating a framework where every moment is a necessary step in the logical progression of the narrative.
-
-### The Importance of Perspective: The Direction of Justification
-
-Justification is a means of modeling not just the sequencing of events, but also how individual perspectives shifts over time. Think of a road trip:
-
-- Driving in one direction, you see landmarks in a particular order, forming a clear and consistent experience.
-- Returning along the same road, the experience is entirely different—you notice things that were previously overlooked, and the journey feels altered.
-- This change in perception mirrors how stories unfold: the meaning behind each event is dependent on the direction of Justification.
+One character’s convictions are reinforced while the other’s are dismantled—each path structured by the problems that shape the story’s meaning. The interaction between these two perspectives dictates the order of events within the narrative, creating a framework where every moment is a necessary step in the logical progression of the narrative.
 
 ---
 
-## The Importance of Pivotal Elements in Narrative Structure
+### The Importance of Pivotal Elements in Narrative Structure
 
-Following the Justification Process, we explore how **Resolve**—whether maintained or relinquished—converts the temporal dynamics of conflict *back* into spatial considerations within a Storyform.
+Following the Justification Process, we explore how **Main Character Resolve**—whether Change or Steadfast—converts the temporal dynamics of conflict *back* into spatial considerations within a Storyform.
 
 | Resolve Type                     | Connected Problems                          |
 | ----------------------------- | ------------------------------------- |
-| **Relinquished Resolve**                 | Problem & Solution                  |                                
-| **Maintained Resolve**                    | Focus & Direction                 | 
+| **Change Resolve**                 | Problem & Solution                  |                                
+| **Steadfast Resolve**                    | Symptom & Response                 | 
 
-A **Relinquished Resolve** connects the underlying Problems of **Problem** and **Solution** with the Character who holds that perspective. Conversely, a **Maintained Resolve** connects with the underlying problems of **Focus** and **Direction**. This key relationship binds the various perspectives of conflict throughout the story, ensuring that character development and plot progression remain intertwined, sustaining the thematic integrity of the narrative.
+A **Change Resolve** connects the underlying Problems of **Problem** and **Solution** within the Objective Story Throughline (overall plot) to the Character who holds that perspective. Conversely, a **Steadfast Resolve** connects its perspective with the underlying problems of **Symptom** and **Response** within the Objective Story Throughline. This key relationship binds the various perspectives of conflict throughout the story, ensuring that character development and plot progression remain intertwined, sustaining the thematic integrity of the narrative.
+
+## The Dramatica Platform and the Sequencing of Meaning
+
+The Justification process described above—where the interaction between Dynamics and Storypoints generates a purposeful sequence of Storybeats—is not something that can be accurately replicated through intuition or surface-level interpretation alone. At its core, this process is powered by a unique set of algorithms developed within the Dramatica theory of story, a model of narrative psychology that treats stories as systems of meaning, not merely collections of events.
+
+This is where the Subtxt/Dramatica platform (https://dramatica.com) plays a vital role. It is currently the only system capable of calculating the precise, meaningful order of events based on a complete Storyform. These calculations emerge from decades of theoretical development and a proprietary process of structural sequencing—not guesswork, templates, or beat sheets.
+
+While the Narrative Context Protocol (NCP) remains an open standard for expressing thematic relationships and Storyforms across platforms, it intentionally does not include the proprietary algorithms for event sequencing. These remain exclusive to the Dramatica platform to preserve the integrity and precision of the model’s application.
+
+We recognize the importance of accessibility in the creative process. Looking forward, we are exploring ways to make the Dramatica platform more broadly available—allowing writers and creators to form highly accurate Storyforms without requiring any subscription or barrier to entry. Our aim is to support the evolution of storytelling tools while honoring the precision and depth that Dramatica provides.
