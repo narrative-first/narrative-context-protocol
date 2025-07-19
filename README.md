@@ -38,6 +38,10 @@ With NCP, the often informal process of giving and receiving notes transforms in
 ✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica®, Hero’s Journey, Save the Cat!, and more...  
 ✅ **Interoperability:** Easily exchange narrative data between platforms.
 
+## Write Brothers and Narrative First
+
+In 2024, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwriter—joined forces with **Narrative First**. This merger combines decades of story-development expertise with cutting-edge AI narrative research to deliver the **Subtxt/Dramatica platform**, a state-of-the-art system for generative storytelling. The unified platform powers NCP implementations, ensuring structured stories and rich authorial metadata for AI workflows.
+
 ## Getting Started
 
 Begin by reading the complete [Specification](/SPECIFICATION.md)

@@ -13,7 +13,7 @@ At its core, the schema divides a story into two layers: the **deep, structural 
 
 The schema is designed for **broad adoption**. It can be used in:  
 
-- **Storytelling platforms** (Subtxt/Dramatica, AI-driven tools, screenwriting apps)  
+- **Storytelling platforms** (Subtxt/Dramatica platform, AI-driven tools, screenwriting apps)
 - **APIs** that facilitate structured narrative generation  
 - **AI models** that generate structured story data  
 - **Interactive storytelling** systems (video games, branching narratives) 
