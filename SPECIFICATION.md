@@ -14,7 +14,7 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
-        "title": "Central Domain",
+        "title": "The House Over There",
         "subtext": {
             "perspectives": [],
             "players": [],
@@ -39,7 +39,7 @@ The highest-level object representing the entire story, containing its metadata 
 {
   "story": {
     "id": "story_123e4567",
-    "title": "The Journey Within",
+    "title": "The House Over There",
     "genre": "Psychological Drama",
     "logline": "A psychologist struggling with his past helps a patient uncover a hidden trauma, only to confront his own.",
     "narratives": [],
