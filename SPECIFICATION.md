@@ -226,6 +226,7 @@ The implications for interactive narratives are significant. In interactive stor
   {
     "id": "perspective_ab12cd34",
     "author_structural_pov": "i",
+    "throughline": "Main Character",
     "summary": "Michael Radford",
     "storytelling": "Michael Radford has spent his life convincing himself that control is the key to survival, but every step forward only tightens the noose around him. When his instincts betray him at the worst possible moment, he’s forced to confront the truth—his carefully built defenses aren’t protecting him, they’re suffocating him."
   }
