@@ -48,14 +48,30 @@ The highest-level object representing the entire story, containing its metadata 
 }
 ```
 
+## Introducing the Storyform: An Objective Narrative Model
+
+Central to the Narrative Context Protocol (NCP) is the concept of abstracting the underlying meaning, or Subtext, of a story into an objective structure known as a Storyform. Originating from Dramatica theory, a Storyform captures the precise narrative dynamics and thematic intentions established by the author, free from subjective interpretations or personal biases inherent in individual readers.
+
+Every reader or viewer naturally experiences a story through their own subjective lens, leading to varied interpretations and often conflicting opinions. The Storyform circumvents this issue by representing the author’s intent in an objective, structured format. This clarity of narrative intent enables creators, analysts, and advanced AI systems to clearly identify thematic elements, narrative dynamics, and potential storytelling blind spots, thereby enriching the storytelling process and ensuring narrative consistency.
+
+### Core Components of a Storyform
+
+Each Storyform includes structured narrative components:
+	•	**Throughlines**: Representing distinct narrative perspectives (Objective Story, Main Character, Obstacle Character, Relationship Story).
+	•	**Dynamics**: Key narrative forces such as Resolve, Outcome, Judgment, and Cognitive Alignment.
+	•	**Storypoints**: Specific thematic considerations and narrative signposts, providing detailed markers of narrative intent.
+
+### Why the Storyform Matters in NCP
+
+NCP leverages the Storyform concept precisely because it remains the only narrative framework capable of objectively encapsulating an author’s true thematic and narrative intentions. By grounding story analysis and development in an objective model, NCP enables AI-driven tools to reliably identify, highlight, and address narrative strengths and weaknesses that might remain hidden through conventional subjective analysis. This approach significantly enhances storytelling effectiveness, consistency, and depth, facilitating richer audience engagement and clearer authorial communication.
+
+In summary, the Storyform within NCP provides a foundational, objective representation of Subtext, enabling creators and AI systems alike to construct, refine, and interpret narratives with unprecedented clarity and precision.
 
 ## Narrative: Structuring Subtext & Storytelling
 
-A single story may contain one or more narratives (e.g., _The Empire Strikes Back_ has the Luke/Yoda Storyform and the Han/Leia Storyform, _Barbie_ has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a single central narrative (e.g., _Anora_, _Anatomy of a Fall_, etc.).
+Narratives consists of two core layers:
 
-A narrative consists of two core layers:
-
-- **Subtext**: The deep, underlying structure of the narrative that conveys the author’s intent.
+- **Subtext**: The deep, underlying structure of the narrative that conveys the author’s intent (Storyform).
 - **Storytelling**: The high-level, audience-facing presentation of the story.
 
 This structure provides both depth (meaning) and flexibility (presentation) within a single, organized model, ensuring a clear distinction between what the story means (Subtext) and how the story is told (Storytelling).
@@ -68,7 +84,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
     "narratives": [
       {
         "id": "narrative_AbnHJ147",
-        "title": "Central Domain",
+        "title": "The House Over There",
         "subtext": {
           "perspectives": [],
           "players": [],
@@ -86,7 +102,9 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 }
 ```
 
-Each layer of a narrative consists of several narrative aspects specialized for both author and audience.
+A single story may contain one or more Storyforms (e.g., _The Empire Strikes Back_ has the Luke/Yoda Storyform and the Han/Leia Storyform, _Barbie_ has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a single central narrative (e.g., _Anora_, _Anatomy of a Fall_, etc.).
+
+Each layer of a single Storyform (the Subtext) consists of several narrative aspects specialized for both author and audience.
 
 ---
 
