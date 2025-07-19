@@ -113,7 +113,9 @@ Each layer of a single Storyform (the Subtext) consists of several narrative asp
 ### Perspectives
 Perspectives enable authors to explore thematic conflicts from specific authorial viewpoints. By associating particular Storypoints and Storybeats with distinct Perspectives, authors articulate how different thematic arguments or character-driven viewpoints uniquely influence the central narrative conflict, deepening thematic resonance and clarity.
 
-**Why?** Perspectives encourage authors to consciously examine their narratives through multiple lenses, enriching the story by revealing hidden tensions, motivations, and nuances from distinct viewpoints.
+Perspectives also facilitate tracking the narrative hand-off from one Player to another, emphasizing that Throughlines are essentially Perspectives and not permanently bound to a single character or entity. This allows for fluid storytelling, where narrative responsibilities or viewpoints can dynamically shift, as exemplified by characters like the multiple spirits collectively embodying the Influence Character Perspective in _A Christmas Carol_.
+
+**Why?** Perspectives encourage authors to consciously examine their narratives through multiple lenses, enriching the story by revealing hidden tensions, motivations, and nuances from distinct viewpoints, while supporting dynamic character interactions and thematic complexity.
 
 ## Dynamics
 Dynamics represent narrative problems that shape the structural framework of a story. They encode the author's intended message or thematic meaning directly into the narrative structure itself. Understanding Dynamics helps authors clarify the purpose behind their craft.
