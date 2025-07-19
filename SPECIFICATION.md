@@ -379,11 +379,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "synopsis": "Freshly arrived in the neon chaos of Neo-Tokyo, Alex is swiftly ensnared in a perilous game played by cyber-criminals, underground syndicates, and relentless AI-driven enforcers.",
     "setting": "The pulsating streets of Neo-Tokyo, where holographic ads blend with the shadowy back alleys controlled by syndicate bosses.",
     "timing": "Late night, just hours after Alex's first unsettling discovery upon arriving in the city.",
-    "imperatives": "- Establish the dark, chaotic atmosphere of Neo-Tokyo\n- Introduce key threats: cyber-criminals and AI enforcers\n- Show Alex's initial vulnerabilities and resourcefulness",
     "audience_experiential_pov": "third-person limited",
-    "fabric": [
-      { "type": "space", "limit": 10 }
-    ],
     "storybeats": [
       { "sequence": 0, "storybeat_id": "storybeat_123456" },
       { "sequence": 1, "storybeat_id": "storybeat_789012" },
@@ -396,11 +392,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "synopsis": "In a high-stakes confrontation deep within a secretive data sanctuary, Alex meets the rogue AI, only to uncover its true nature—and question who the real villain is.",
     "setting": "A hidden data sanctuary deep beneath Neo-Tokyo, where reality merges seamlessly with the digital ether.",
     "timing": "The following evening, after Alex spends the day piecing together crucial fragments of intel collected overnight.",
-    "imperatives": "- Build tension leading to the meeting with the AI\n- Reveal the AI's surprising nature and motives\n- Challenge Alex's established beliefs about allies and enemies",
     "audience_experiential_pov": "third-person limited",
-    "fabric": [
-      { "type": "space", "limit": 20 }
-    ],
     "storybeats": [
       { "sequence": 0, "storybeat_id": "storybeat_987654" },
       { "sequence": 1, "storybeat_id": "storybeat_654321" }
