@@ -170,8 +170,9 @@ This separation becomes even more critical in the AI era. Training models exclus
 ---
 
 ## Introduction to Terminology and Appreciating Conflict
+Moving forward, we’ll explore the specific terminology that shapes Narrative Context Protocol (NCP). Many of these terms are heavily influenced by—and in some cases directly drawn from—the established concepts within Dramatica theory. Although the NCP standard itself remains distinct and independent, we highly encourage anyone interested in deepening their understanding of these foundational concepts to visit [dramatica.com](https://dramatica.com).
 
-Moving forward, we'll explore the specific terminology that shapes Narrative Context Protocol (NCP). While these terms might seem intricate at first, their significance lies in precisely capturing the totality of how we appreciate narrative conflict—both logically and emotionally. Clear, consistent terminology is essential to effectively understanding, communicating, and resolving narrative tensions across diverse storytelling contexts.
+While these terms might seem intricate at first, their significance lies in precisely capturing the totality of how we appreciate narrative conflict—both logically and emotionally. Clear, consistent terminology is essential to effectively understanding, communicating, and resolving narrative tensions across diverse storytelling contexts.
 
 ### Canonical Standards and Customization
 
