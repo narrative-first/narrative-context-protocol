@@ -266,15 +266,22 @@ Example:
 ]
 ```
 
-### **Storypoints** 
+### Storypoints
 
 Defined structural elements representing spatial aspects of a narrative. They establish the narrative's foundational arrangement and thematic relationships.
+
+**Appreciations:** Storypoints are composed of various structural Appreciations, each capturing a specific narrative dimension or thematic aspect. Each Appreciation includes:
+
+* **Context:** Identifies the Throughline or Perspective to which the Storypoint belongs (e.g., main\_character, objective\_story).
+* **Method:** The specific Element from the Dramatica model that represents the underlying nature of conflict or thematic dimension (e.g., rationalization, pursuit, avoid).
+* **Illustration:** A semantic development or interpretation of the Method, providing narrative depth and context.
+* **Storytelling:** The tangible, observable expression within the narrative, illustrating how the Method manifests in concrete story events or character actions.
 
 ```json
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "context": "main character",
+    "context": "main_character",
     "appreciation": "issue",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
@@ -293,22 +300,23 @@ Defined structural elements representing spatial aspects of a narrative. They es
 
 Temporal elements that demonstrate how the narrative unfolds over time. Each beat marks a significant shift or progression in the story, framed within a clearly defined scope.
 
+In addition to Appreciation Methods, Storybeats are also defined by their numerical sequence, identifying precisely where they occur within the narrative structure:
+
+* **Signposts:** Numbered 1-4, representing major narrative milestones.
+* **Progressions:** Numbered 1-16, representing smaller narrative developments within the Signposts.
+* **Events:** Numbered 1-64, representing granular narrative moments or turning points.
+
 ```json
 "storybeats": [
   {
     "id": "storybeat_9876bcde",
-    "context": "main character",
-    "appreciation": "transit",
+    "context": "main_character",
+    "appreciation": "signpost",
     "sequence": 4,
-    "method": "past",
-    "illustration": "reliving the past",
-    "summary": "Michael can no longer escape his past.",
-    "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
-    "tones": {
-        "abstraction": "situation",
-        "spatial": "power",
-        "temporal": "transcendence"
-    },
+    "method": "being",
+    "illustration": "wearing a mask that no longer fits",
+    "summary": "Michael’s carefully constructed persona begins to crack.",
+    "storytelling": "For years Michael has hidden behind the role of the unflappable physician, reinventing himself so completely that even he forgets the man he used to be. But one patient’s off-hand remark slices through the façade, and suddenly the mask feels impossibly tight. His practiced bedside composure falters as memories seep through the cracks, exposing the fragile act he has been performing. In this moment he isn’t simply recalling his past—he’s forced to be the man he pretended he’d never become, trapped inside a persona that can no longer contain him.",
     "perspectives": [
         "perspective_ab12cd34"
     ]
@@ -320,12 +328,17 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 
 High-level narrative problems that reflect the author's intent, shaping the story's message and clearly communicating its Narrative Argument.
 
+Dynamics represent relational tensions existing between narrative Aspects within a Storyform. Unlike Storypoints or Storybeats, Dynamics are not attached to a specific Perspective. Instead, they consist of:
+
+* **Dynamic:** The specific high-level narrative tension or thematic direction (e.g., story\_outcome, main\_character\_resolve).
+* **Vector:** Indicates the direction or polarity of the Dynamic (e.g., success/failure, steadfast/change). Although often presented as binary choices, these vectors are primarily directional indicators rather than strict binaries.
+
 ```json
 "dynamics": [
   {
     "id": "dynamic_abcdef12",
-    "dynamic": "Story Outcome",
-    "vector": "Success",
+    "dynamic": "story_outcome",
+    "vector": "success",
     "summary": "The story resolves with Michael embracing his past.",
     "storytelling": "Michael finally opens up, allowing his own progress."
   }
@@ -352,6 +365,7 @@ Surface-level narrative elements that quickly orient the audience, such as Logli
   }
 ]
 ```
+
 
 ### Moments
   
