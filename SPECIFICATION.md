@@ -243,9 +243,6 @@ Characters whose actions and motivations reveal deeper thematic layers (subtext)
     "id": "player_def456",
     "name": "Dr. Michael Hayes",
     "role": "the world's leading psychologist",
-    "visual": "A distinguished man in his late 50s, with silver-streaked hair and piercing blue eyes. He wears a well-tailored suit but often appears slightly disheveled, as if sleep eludes him.",
-    "audio": "His voice is calm and measured, carrying the weight of experience but occasionally betraying a hint of hesitation when discussing personal matters.",
-    "bio": "Dr. Michael Hayes is a renowned psychologist known for his groundbreaking research on trauma and memory. Despite his professional success, he struggles with the ghosts of his past—mistakes he can never take back and patients he couldn’t save. As he delves deeper into the minds of others, he finds himself unable to escape his own unresolved grief.",
     "storytelling": "A psychologist haunted by his past.",
     "motivations": [
         {
