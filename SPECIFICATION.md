@@ -234,10 +234,16 @@ The implications for interactive narratives are significant. In interactive stor
 ```
 
 ### Players
+Characters whose actions and motivations reveal deeper thematic layers (subtext), moving beyond superficial characterization. Each Player must be linked explicitly to an Objective Story Throughline Perspective to maintain narrative coherence.
 
-Characters whose actions and motivations reveal deeper thematic layers (subtext), moving beyond superficial characterization. Each Player must be  linked explicitly to an **Objective Story Throughline Perspective** to maintain narrative coherence.
+#### Motivations
+Motivations represent the function a Player fulfills within the Objective Story Throughline. Each Motivation is explicitly tied to one of the 64 Elements defined within the Dramatica theory model. A Motivation’s Method identifies the specific Element driving narrative conflict (e.g., “Avoid,” “Pursuit,” “Logic”), its Illustration provides a semantic expression or refinement of that Method, and its Storytelling articulates how this Motivation manifests concretely within the narrative.
 
-```json
+Players can exhibit multiple Motivations, and certain combinations of Motivations form classically understood Archetypal Characters (Protagonist, Antagonist, Guardian, etc.). Typically, Motivations should not be repeated across different Players within the same Storyform, as this duplication can blur narrative functions and result in Players appearing to redundantly fulfill the same thematic roles.
+
+Example:
+
+```
 "players": [
   {
     "id": "player_def456",
@@ -246,14 +252,14 @@ Characters whose actions and motivations reveal deeper thematic layers (subtext)
     "storytelling": "A psychologist haunted by his past.",
     "motivations": [
         {
-        "method": "Avoid",
-        "illustration": "avoiding confronting past failures",
-        "storytelling": "In therapy sessions, he changes topics when pressed."
+          "method": "Avoid",
+          "illustration": "avoiding confronting past failures",
+          "storytelling": "In therapy sessions, he changes topics when pressed."
         }
     ],
     "perspectives": [
         {
-            "perspective_id": "persp_def456"
+          "perspective_id": "persp_def456"
         }
     ]
   }
