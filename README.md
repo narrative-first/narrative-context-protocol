@@ -51,6 +51,7 @@ Begin by reading the complete [Specification](/SPECIFICATION.md)
 narrative-context-protocol/
 ├── README.md
 ├── SPECIFICATION.md
+├── COPYRIGHT.md
 ├── CONTRIBUTING.md
 ├── HISTORY.md
 ├── LICENSE.md
