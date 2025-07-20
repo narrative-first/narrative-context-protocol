@@ -81,7 +81,7 @@
                             },
                             "vector": { 
                               "type": "string",
-                              "enum": ["relinquished", "maintained", "released", "sustained", "stop", "start", "do_er", "be_er", "dopamine", "serotonin", "spacetime", "timespace", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
+                              "enum": ["change", "steadfast", "released", "sustained", "stop", "start", "do_er", "be_er", "linear", "holistic", "options", "time", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
                             },
                             "summary": { "type": "string" },
                             "storytelling": { "type": "string" }
@@ -105,16 +105,16 @@
                                 "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
                                 "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
                                 "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
-                                "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "altruism", "attitude",
-                                "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "stipulation", "truth", "evidence", "suspicion", "falsehood",
+                                "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "selflessness", "attitude",
+                                "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "contingency", "truth", "evidence", "suspicion", "falsehood",
                                 "state_of_being", "situation", "circumstances", "sense_of_self", "value", "confidence", "worry", "worth", "knowing", "able", "driven", "thinking",
                                 "closure", "hope", "dream", "denial", "rationalization", "commitment", "responsibility", "obligation", "investigation", "appraisal", "reappraisal",
                                 "doubt", "permission", "need", "expediency", "deficiency", "ability", "acceptance", "accurate", "actuality", "avoid", "aware", "cause", "certainty",
                                 "change", "chaos", "conscience", "consider", "control", "deduction", "desire", "determination", "disbelief", "effect", "ending", "equity", "evaluation",
-                                "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
-                                "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
+                                "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "non-acceptance",
+                                "non-accurate", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
                                 "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-                                "temptation", "test", "theory", "thought", "trust", "free", "continuing", "presumption"
+                                "temptation", "test", "theory", "thought", "trust", "uncontrolled", "continuing", "unproven"
                             ]
                             },
                             "illustration": { "type": "string" },
@@ -178,7 +178,7 @@
                             ],
                             "method": { 
                               "type": "string",
-                              "enum": ["past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","altruism","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","stipulation","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","rejection","deviation","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","presumption"]
+                              "enum": ["past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","selflessness","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","contingency","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","non-acceptance","non-accurate","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","unproven"]
                             },
                             "illustration": { "type": "string" },
                             "summary": { "type": "string" },
