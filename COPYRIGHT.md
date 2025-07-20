@@ -14,7 +14,7 @@ This initial storytelling pitch is captured within the Narrative Context Protoco
 
 ## Initial Commit (Storytelling Moment - Alex Bennett):
 
-```
+```diff
 commit a1b2c3d4
 Author: Alex Bennett <alex.bennett@example.com>
 Date:   Thu Jul 17 10:15:42 2025 -0700
@@ -66,7 +66,7 @@ Because we already have a Storyform for this narrative (see our full example of 
 
 Here, we can begin to see Sam's contribution to the process, as well as how it affects Alex's original idea for the scene.
 
-```
+```diff
 commit d4c3b2a1
 Author: Sam Carter <sam.carter@example.com>
 Date:   Thu Jul 17 12:33:28 2025 -0700
@@ -137,7 +137,7 @@ Even Carl.
 
 Alright, so it's not the greatest idea—but you can see how it could still fit within the narrative structure.
 
-```
+```diff
 commit g5c3b2a1
 Author: Carl Knolls <carl.knolls@example.com>
 Date:   Thu Jul 17 14:47:28 2025 -0700
