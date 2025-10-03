@@ -4,285 +4,791 @@
     "description": "A standardized protocol for structuring narrative elements in a complete story for use in multi-agentic systems.",
     "type": "object",
     "properties": {
-      "schema_version": {
-        "type": "string",
-        "description": "1.0"
-      },
-      "story": {
-        "type": "object",
-        "properties": {
-          "id": { "type": "string" },
-          "title": { "type": "string" },
-          "genre": { "type": "string" },
-          "logline": { "type": "string" },
-          "created_at": { "type": "string", "format": "date-time" },
-          "narratives": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "id": { "type": "string" },
-                "title": { "type": "string" },
-                "subtext": {
-                  "type": "object",
-                  "properties": {
-                    "perspectives": {
-                      "type": "array",
-                      "items": {
+        "schema_version": {
+            "type": "string",
+            "description": "1.0"
+        },
+        "story": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "genre": {
+                    "type": "string"
+                },
+                "logline": {
+                    "type": "string"
+                },
+                "created_at": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "narratives": {
+                    "type": "array",
+                    "items": {
                         "type": "object",
                         "properties": {
-                          "id": { "type": "string" },
-                          "author_structural_pov": { 
-                            "type": "string",
-                            "enum": ["i", "you", "we", "they"]
-                          },                          
-                          "summary": { "type": "string" },
-                          "storytelling": { "type": "string" }
-                        },
-                        "required": ["id", "pov", "summary", "storytelling"]
-                      }
-                    },
-                    "players": {
-                      "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "name": { "type": "string" },
-                            "role": { "type": "string" },
-                            "visual": { "type": "string" },
-                            "audio": { "type": "string" },
-                            
-                            "summary": { "type": "string" },
-                            "storytelling": { "type": "string" },
-                            "perspectives": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                    "perspective_id": { "type": "string" }
-                                    },
-                                    "required": ["perspective_id"]
-                                }
-                            }
-                          },
-                          "required": ["id", "name", "role", "visual", "audio", "summary", "storytelling", "perspectives"]
-                        }
-                    },
-                    "dynamics": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "dynamic": { 
-                              "type": "string",
-                              "enum": ["i_perspective_resolve", "you_perspective_resolve", "growth", "approach", "alignment", "fabric", "driver", "ending", "attunement", "outcome", "judgment", "balance", "vibes"]
+                            "id": {
+                                "type": "string"
                             },
-                            "vector": { 
-                              "type": "string",
-                              "enum": ["change", "steadfast", "released", "sustained", "stop", "start", "do_er", "be_er", "linear", "holistic", "options", "time", "action", "decision", "success", "failure", "harmony", "discord", "good", "bad", "higher", "lower"]
+                            "title": {
+                                "type": "string"
                             },
-                            "summary": { "type": "string" },
-                            "storytelling": { "type": "string" }
-                          },
-                          "required": ["id", "dynamic", "vector", "summary", "storytelling"]
-                        }
-                    },
-                    "storypoints": {
-                        "type": "array",
-                        "items": {
-                        "type": "object",
-                        "properties": {
-                            "id": { "type": "string" },
-                            "appreciation": { 
-                            "type": "string",
-                            "enum": ["domain", "concern", "issue", "problem", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
-                            },
-                            "method": { 
-                            "type": "string",
-                            "enum": [
-                                "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
-                                "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
-                                "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
-                                "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "selflessness", "attitude",
-                                "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "contingency", "truth", "evidence", "suspicion", "falsehood",
-                                "state_of_being", "situation", "circumstances", "sense_of_self", "value", "confidence", "worry", "worth", "knowing", "able", "driven", "thinking",
-                                "closure", "hope", "dream", "denial", "rationalization", "commitment", "responsibility", "obligation", "investigation", "appraisal", "reappraisal",
-                                "doubt", "permission", "need", "expediency", "deficiency", "ability", "acceptance", "accurate", "actuality", "avoid", "aware", "cause", "certainty",
-                                "change", "chaos", "conscience", "consider", "control", "deduction", "desire", "determination", "disbelief", "effect", "ending", "equity", "evaluation",
-                                "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "non-acceptance",
-                                "non-accurate", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
-                                "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-                                "temptation", "test", "theory", "thought", "trust", "uncontrolled", "continuing", "unproven"
-                            ]
-                            },
-                            "illustration": { "type": "string" },
-                            "summary": { "type": "string" },
-                            "storytelling": { "type": "string" },
-                            "perspectives": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                    "perspective_id": { "type": "string" }
-                                    },
-                                    "required": ["perspective_id"]
-                                }
-                            }
-                        },
-                        "required": ["id", "appreciation", "method", "illustration", "summary", "storytelling", "perspectives"]
-                        }
-                    },
-                    "storybeats": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "id": { "type": "string" },
-                            "appreciation": { 
-                              "type": "string",
-                              "enum": ["transit", "progression", "event"]
-                            },
-                            "oneOf": [
-                              {
-                                "properties": {
-                                  "appreciation": { "const": "transit" },
-                                  "sequence": {
-                                    "type": "integer",
-                                    "minimum": 1,
-                                    "maximum": 4
-                                  }
-                                }
-                              },
-                              {
-                                "properties": {
-                                  "appreciation": { "const": "progression" },
-                                  "sequence": {
-                                    "type": "integer",
-                                    "minimum": 1,
-                                    "maximum": 16
-                                  }
-                                }
-                              },
-                              {
-                                "properties": {
-                                  "appreciation": { "const": "event" },
-                                  "sequence": {
-                                    "type": "integer",
-                                    "minimum": 1,
-                                    "maximum": 64
-                                  }
-                                }
-                              }
-                            ],
-                            "method": { 
-                              "type": "string",
-                              "enum": ["past","understanding","conceptualizing","memory","progress","doing","being","preconscious","future","obtaining","becoming","subconscious","present","learning","conceiving","conscious","fate","prediction","interdiction","destiny","instinct","senses","interpretation","conditioning","fact","security","threat","fantasy","wisdom","skill","experience","enlightenment","openness","delay","choice","preconception","approach","self_interest","selflessness","attitude","work","attraction","repulsion","attempt","qualification","strategy","analysis","contingency","truth","evidence","suspicion","falsehood","state_of_being","situation","circumstances","sense_of_self","value","confidence","worry","worth","knowing","able","driven","thinking","closure","hope","dream","denial","rationalization","commitment","responsibility","obligation","investigation","appraisal","reappraisal","doubt","permission","need","expediency","deficiency","ability","acceptance","accurate","actuality","avoid","aware","cause","certainty","change","chaos","conscience","consider","control","deduction","desire","determination","disbelief","effect","ending","equity","evaluation","expectation","faith","feeling","help","hinder","hunch","inaction","induction","inequity","inertia","knowledge","logic","non-acceptance","non-accurate","oppose","order","perception","possibility","potentiality","proaction","probability","process","production","projection","protection","proven","pursuit","re_evaluation","reaction","reconsider","reduction","result","self_aware","speculation","support","temptation","test","theory","thought","trust","abandon","continuing","unproven"]
-                            },
-                            "illustration": { "type": "string" },
-                            "summary": { "type": "string" },
-                            "storytelling": { "type": "string" },
-                            "tones": {
+                            "subtext": {
                                 "type": "object",
-                                    "properties": {
-                                        "abstraction": {
-                                        "type": "string",
-                                        "enum": ["situation", "action", "justification", "opinion"]
-                                        },
-                                        "spatial": {
-                                        "type": "string",
-                                        "enum": ["potential", "resistance", "current", "power"]
-                                        },
-                                        "temporal": {
-                                        "type": "string",
-                                        "enum": ["expression", "experimentation", "integration", "transcendence"]
+                                "properties": {
+                                    "perspectives": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "author_structural_pov": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "i",
+                                                        "you",
+                                                        "we",
+                                                        "they"
+                                                    ]
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "storytelling": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "pov",
+                                                "summary",
+                                                "storytelling"
+                                            ]
                                         }
                                     },
-                                    "required": ["abstraction", "spatial", "temporal"]
-                            },
-                            "perspectives": {
-                                "type": "array",
-                                "items": {
-                                    "type": "object",
-                                    "properties": {
-                                    "perspective_id": { "type": "string" }
+                                    "players": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "role": {
+                                                    "type": "string"
+                                                },
+                                                "visual": {
+                                                    "type": "string"
+                                                },
+                                                "audio": {
+                                                    "type": "string"
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "storytelling": {
+                                                    "type": "string"
+                                                },
+                                                "perspectives": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "perspective_id": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "perspective_id"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "name",
+                                                "role",
+                                                "visual",
+                                                "audio",
+                                                "summary",
+                                                "storytelling",
+                                                "perspectives"
+                                            ]
+                                        }
                                     },
-                                    "required": ["perspective_id"]
-                                }
-                            }
-                          },
-                          "required": ["id", "appreciation", "sequence", "method", "illustration", "summary", "storytelling", "tones", "perspectives"]
-                        }
-                    }
-                  },
-                  "required": ["perspectives", "players", "dynamics", "storypoints", "storybeats"]
-                },
-                "storytelling": {
-                  "type": "object",
-                  "properties": {
-                    "overviews": { "type": "array" },
-                    "moments": { 
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                            "id": { "type": "string" },
-                            "summary": { "type": "string" },
-                            "synopsis": { "type": "string" },
-                            "setting": { "type": "string" },
-                            "timing": { "type": "string" },
-                            "imperatives": { "type": "string" },
-                            "fabric": {
-                              "type": "array",
-                              "items": {
-                                "type": "object",
-                                "properties": {
-                                  "type": {
-                                    "type": "string",
-                                    "enum": ["space", "time"]
-                                  },
-                                  "limit": {
-                                    "type": "integer"
-                                  }
+                                    "dynamics": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "dynamic": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "main_character_resolve",
+                                                        "influence_character_resolve",
+                                                        "main_character_growth",
+                                                        "main_character_approach",
+                                                        "problem_solving_style",
+                                                        "story_limit",
+                                                        "story_driver",
+                                                        "story_outcome",
+                                                        "story_judgment"
+                                                    ]
+                                                },
+                                                "vector": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "change",
+                                                        "steadfast",
+                                                        "stop",
+                                                        "start",
+                                                        "do_er",
+                                                        "be_er",
+                                                        "linear",
+                                                        "holistic",
+                                                        "optionlock",
+                                                        "timelock",
+                                                        "action",
+                                                        "decision",
+                                                        "success",
+                                                        "failure",
+                                                        "good",
+                                                        "bad"
+                                                    ]
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "storytelling": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "dynamic",
+                                                "vector",
+                                                "summary",
+                                                "storytelling"
+                                            ]
+                                        }
+                                    },
+                                    "storypoints": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "appreciation": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "domain",
+                                                        "concern",
+                                                        "issue",
+                                                        "problem",
+                                                        "solution",
+                                                        "symptom",
+                                                        "response",
+                                                        "catalyst",
+                                                        "inhibitor",
+                                                        "unique_ability",
+                                                        "critical_flaw",
+                                                        "benchmark",
+                                                        "story_goal",
+                                                        "story_requirements",
+                                                        "story_prerequisites",
+                                                        "story_preconditions",
+                                                        "story_costs",
+                                                        "story_dividends",
+                                                        "story_forewarnings",
+                                                        "story_consequence",
+                                                        "pivotal_element",
+                                                        "initial_story_driver",
+                                                        "second_story_driver",
+                                                        "midpoint_story_driver",
+                                                        "fourth_story_driver",
+                                                        "concluding_story_driver",
+                                                        "signpost",
+                                                        "progression",
+                                                        "event"
+                                                    ]
+                                                },
+                                                "method": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "universe",
+                                                        "physics",
+                                                        "psychology",
+                                                        "mind",
+                                                        "past",
+                                                        "understanding",
+                                                        "conceptualizing",
+                                                        "memory",
+                                                        "progress",
+                                                        "doing",
+                                                        "being",
+                                                        "preconscious",
+                                                        "future",
+                                                        "obtaining",
+                                                        "becoming",
+                                                        "subconscious",
+                                                        "present",
+                                                        "learning",
+                                                        "conceiving",
+                                                        "conscious",
+                                                        "fate",
+                                                        "prediction",
+                                                        "interdiction",
+                                                        "destiny",
+                                                        "instinct",
+                                                        "senses",
+                                                        "interpretation",
+                                                        "conditioning",
+                                                        "fact",
+                                                        "security",
+                                                        "threat",
+                                                        "fantasy",
+                                                        "wisdom",
+                                                        "skill",
+                                                        "experience",
+                                                        "enlightenment",
+                                                        "openness",
+                                                        "delay",
+                                                        "choice",
+                                                        "preconception",
+                                                        "approach",
+                                                        "self_interest",
+                                                        "altruism",
+                                                        "attitude",
+                                                        "work",
+                                                        "attraction",
+                                                        "repulsion",
+                                                        "attempt",
+                                                        "qualification",
+                                                        "strategy",
+                                                        "analysis",
+                                                        "stipulation",
+                                                        "truth",
+                                                        "evidence",
+                                                        "suspicion",
+                                                        "falsehood",
+                                                        "state_of_being",
+                                                        "situation",
+                                                        "circumstances",
+                                                        "sense_of_self",
+                                                        "value",
+                                                        "confidence",
+                                                        "worry",
+                                                        "worth",
+                                                        "knowing",
+                                                        "able",
+                                                        "driven",
+                                                        "thinking",
+                                                        "closure",
+                                                        "hope",
+                                                        "dream",
+                                                        "denial",
+                                                        "rationalization",
+                                                        "commitment",
+                                                        "responsibility",
+                                                        "obligation",
+                                                        "investigation",
+                                                        "appraisal",
+                                                        "reappraisal",
+                                                        "doubt",
+                                                        "permission",
+                                                        "need",
+                                                        "expediency",
+                                                        "deficiency",
+                                                        "ability",
+                                                        "acceptance",
+                                                        "accurate",
+                                                        "actuality",
+                                                        "avoid",
+                                                        "aware",
+                                                        "cause",
+                                                        "certainty",
+                                                        "change",
+                                                        "chaos",
+                                                        "conscience",
+                                                        "consider",
+                                                        "control",
+                                                        "deduction",
+                                                        "desire",
+                                                        "determination",
+                                                        "disbelief",
+                                                        "effect",
+                                                        "ending",
+                                                        "equity",
+                                                        "evaluation",
+                                                        "expectation",
+                                                        "faith",
+                                                        "feeling",
+                                                        "help",
+                                                        "hinder",
+                                                        "hunch",
+                                                        "inaction",
+                                                        "induction",
+                                                        "inequity",
+                                                        "inertia",
+                                                        "knowledge",
+                                                        "logic",
+                                                        "rejection",
+                                                        "deviation",
+                                                        "oppose",
+                                                        "order",
+                                                        "perception",
+                                                        "possibility",
+                                                        "potentiality",
+                                                        "proaction",
+                                                        "probability",
+                                                        "process",
+                                                        "production",
+                                                        "projection",
+                                                        "protection",
+                                                        "proven",
+                                                        "pursuit",
+                                                        "re_evaluation",
+                                                        "reaction",
+                                                        "reconsider",
+                                                        "reduction",
+                                                        "result",
+                                                        "self_aware",
+                                                        "speculation",
+                                                        "support",
+                                                        "temptation",
+                                                        "test",
+                                                        "theory",
+                                                        "thought",
+                                                        "trust",
+                                                        "free",
+                                                        "continuing",
+                                                        "presumption"
+                                                    ]
+                                                },
+                                                "illustration": {
+                                                    "type": "string"
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "storytelling": {
+                                                    "type": "string"
+                                                },
+                                                "perspectives": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "perspective_id": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "perspective_id"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "appreciation",
+                                                "method",
+                                                "illustration",
+                                                "summary",
+                                                "storytelling",
+                                                "perspectives"
+                                            ]
+                                        }
+                                    },
+                                    "storybeats": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "appreciation": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "signpost",
+                                                        "progression",
+                                                        "event"
+                                                    ]
+                                                },
+                                                "sequence": {
+                                                    "oneOf": [
+                                                        {
+                                                            "type": "integer",
+                                                            "minimum": 1,
+                                                            "maximum": 4,
+                                                            "description": "For Signposts (1-4)"
+                                                        },
+                                                        {
+                                                            "type": "integer",
+                                                            "minimum": 1,
+                                                            "maximum": 16,
+                                                            "description": "For Progressions (1-16)"
+                                                        },
+                                                        {
+                                                            "type": "integer",
+                                                            "minimum": 1,
+                                                            "maximum": 64,
+                                                            "description": "For Events (1-64)"
+                                                        }
+                                                    ]
+                                                },
+                                                "method": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "past",
+                                                        "understanding",
+                                                        "conceptualizing",
+                                                        "memory",
+                                                        "progress",
+                                                        "doing",
+                                                        "being",
+                                                        "preconscious",
+                                                        "future",
+                                                        "obtaining",
+                                                        "becoming",
+                                                        "subconscious",
+                                                        "present",
+                                                        "learning",
+                                                        "conceiving",
+                                                        "conscious",
+                                                        "fate",
+                                                        "prediction",
+                                                        "interdiction",
+                                                        "destiny",
+                                                        "instinct",
+                                                        "senses",
+                                                        "interpretation",
+                                                        "conditioning",
+                                                        "fact",
+                                                        "security",
+                                                        "threat",
+                                                        "fantasy",
+                                                        "wisdom",
+                                                        "skill",
+                                                        "experience",
+                                                        "enlightenment",
+                                                        "openness",
+                                                        "delay",
+                                                        "choice",
+                                                        "preconception",
+                                                        "approach",
+                                                        "self_interest",
+                                                        "altruism",
+                                                        "attitude",
+                                                        "work",
+                                                        "attraction",
+                                                        "repulsion",
+                                                        "attempt",
+                                                        "qualification",
+                                                        "strategy",
+                                                        "analysis",
+                                                        "stipulation",
+                                                        "truth",
+                                                        "evidence",
+                                                        "suspicion",
+                                                        "falsehood",
+                                                        "state_of_being",
+                                                        "situation",
+                                                        "circumstances",
+                                                        "sense_of_self",
+                                                        "value",
+                                                        "confidence",
+                                                        "worry",
+                                                        "worth",
+                                                        "knowing",
+                                                        "able",
+                                                        "driven",
+                                                        "thinking",
+                                                        "closure",
+                                                        "hope",
+                                                        "dream",
+                                                        "denial",
+                                                        "rationalization",
+                                                        "commitment",
+                                                        "responsibility",
+                                                        "obligation",
+                                                        "investigation",
+                                                        "appraisal",
+                                                        "reappraisal",
+                                                        "doubt",
+                                                        "permission",
+                                                        "need",
+                                                        "expediency",
+                                                        "deficiency",
+                                                        "ability",
+                                                        "acceptance",
+                                                        "accurate",
+                                                        "actuality",
+                                                        "avoid",
+                                                        "aware",
+                                                        "cause",
+                                                        "certainty",
+                                                        "change",
+                                                        "chaos",
+                                                        "conscience",
+                                                        "consider",
+                                                        "control",
+                                                        "deduction",
+                                                        "desire",
+                                                        "determination",
+                                                        "disbelief",
+                                                        "effect",
+                                                        "ending",
+                                                        "equity",
+                                                        "evaluation",
+                                                        "expectation",
+                                                        "faith",
+                                                        "feeling",
+                                                        "help",
+                                                        "hinder",
+                                                        "hunch",
+                                                        "inaction",
+                                                        "induction",
+                                                        "inequity",
+                                                        "inertia",
+                                                        "knowledge",
+                                                        "logic",
+                                                        "rejection",
+                                                        "deviation",
+                                                        "oppose",
+                                                        "order",
+                                                        "perception",
+                                                        "possibility",
+                                                        "potentiality",
+                                                        "proaction",
+                                                        "probability",
+                                                        "process",
+                                                        "production",
+                                                        "projection",
+                                                        "protection",
+                                                        "proven",
+                                                        "pursuit",
+                                                        "re_evaluation",
+                                                        "reaction",
+                                                        "reconsider",
+                                                        "reduction",
+                                                        "result",
+                                                        "self_aware",
+                                                        "speculation",
+                                                        "support",
+                                                        "temptation",
+                                                        "test",
+                                                        "theory",
+                                                        "thought",
+                                                        "trust",
+                                                        "abandon",
+                                                        "continuing",
+                                                        "presumption"
+                                                    ]
+                                                },
+                                                "illustration": {
+                                                    "type": "string"
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "storytelling": {
+                                                    "type": "string"
+                                                },
+                                                "tones": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "abstraction": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "situation",
+                                                                "action",
+                                                                "justification",
+                                                                "opinion"
+                                                            ]
+                                                        },
+                                                        "spatial": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "potential",
+                                                                "resistance",
+                                                                "current",
+                                                                "power"
+                                                            ]
+                                                        },
+                                                        "temporal": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                                "expression",
+                                                                "experimentation",
+                                                                "integration",
+                                                                "transcendence"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "abstraction",
+                                                        "spatial",
+                                                        "temporal"
+                                                    ]
+                                                },
+                                                "perspectives": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "perspective_id": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "perspective_id"
+                                                        ]
+                                                    }
+                                                }
+                                            },
+                                            "required": [
+                                                "id",
+                                                "appreciation",
+                                                "sequence",
+                                                "method",
+                                                "illustration",
+                                                "summary",
+                                                "storytelling",
+                                                "tones",
+                                                "perspectives"
+                                            ]
+                                        }
+                                    }
                                 },
-                                "required": ["type", "limit"],
-                                "additionalProperties": false
-                              }
+                                "required": [
+                                    "perspectives",
+                                    "players",
+                                    "dynamics",
+                                    "storypoints",
+                                    "storybeats"
+                                ]
                             },
-                            "audience_experiential_pov": {
-                              "type": "string",
-                              "enum": [
-                                "first_person_central",
-                                "first_person_peripheral",
-                                "second_person",
-                                "third_person_limited",
-                                "third_person_objective",
-                                "third_person_omniscient"
-                              ]
-                            },
-                            "storybeats": {
-                              "type": "array",
-                              "items": {
+                            "storytelling": {
                                 "type": "object",
                                 "properties": {
-                                  "sequence": { "type": "integer" },
-                                  "storybeat_id": { "type": "string" }
+                                    "overviews": {
+                                        "type": "array"
+                                    },
+                                    "moments": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "summary": {
+                                                    "type": "string"
+                                                },
+                                                "synopsis": {
+                                                    "type": "string"
+                                                },
+                                                "setting": {
+                                                    "type": "string"
+                                                },
+                                                "timing": {
+                                                    "type": "string"
+                                                },
+                                                "imperatives": {
+                                                    "type": "string"
+                                                },
+                                                "fabric": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string",
+                                                                "enum": [
+                                                                    "space",
+                                                                    "time"
+                                                                ]
+                                                            },
+                                                            "limit": {
+                                                                "type": "integer"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "type",
+                                                            "limit"
+                                                        ],
+                                                        "additionalProperties": false
+                                                    }
+                                                },
+                                                "audience_experiential_pov": {
+                                                    "type": "string",
+                                                    "enum": [
+                                                        "first_person_central",
+                                                        "first_person_peripheral",
+                                                        "second_person",
+                                                        "third_person_limited",
+                                                        "third_person_objective",
+                                                        "third_person_omniscient"
+                                                    ]
+                                                },
+                                                "storybeats": {
+                                                    "type": "array",
+                                                    "items": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "sequence": {
+                                                                "type": "integer"
+                                                            },
+                                                            "storybeat_id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
-                              }
                             }
-                          }
-                        }
-                      }
+                        },
+                        "required": [
+                            "id",
+                            "title",
+                            "subtext",
+                            "storytelling"
+                        ]
                     }
-                  }
-              },
-              "required": ["id", "title", "subtext", "storytelling"]
-            }
-          }
-        },
-        "required": ["id", "title", "genre", "logline", "created_at", "narratives"]
-      }
+                }
+            },
+            "required": [
+                "id",
+                "title",
+                "genre",
+                "logline",
+                "created_at",
+                "narratives"
+            ]
+        }
     },
-    "required": ["schema_version", "story"]
-  }  
+    "required": [
+        "schema_version",
+        "story"
+    ]
+}

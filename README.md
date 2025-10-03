@@ -4,6 +4,8 @@
 
 **Narrative Context Protocol (NCP)** is an open, standardized JSON schema explicitly designed to transport and preserve authorial intent across diverse multi-agent storytelling systems. Developed through collaboration with the **Entertainment Technology Center** at the **University of Southern California**, NCP reliably captures and conveys narrative context, artistic voice, and thematic coherence across platforms, mediums, and autonomous agents.
 
+NCP is curated by **The Dramatica Co.**—the merger of **Write Bros. Inc.** and **Narrative First Inc.**—as the open-source edition of the Dramatica® storyform. By placing the canonical Dramatica structure in a permissive repository, the project ensures that anyone can study, implement, and extend the model without gatekeeping.
+
 At its core, NCP provides a **structured yet adaptable schema**, ensuring narratives retain their logical consistency and emotional depth, even when interpreted or extended by numerous interacting agents. By encoding narrative elements into clear, universally understood representations, NCP maintains the original intent of the author throughout dynamic, distributed narrative environments.
 
 Additionally, NCP acts like a "blockchain-for-subtext," transparently tracking narrative contributions, modifications, and creative expansions. This ensures the original artistic voice and intent remain clear and traceable, regardless of the complexity or number of agents involved.
@@ -31,11 +33,12 @@ With NCP, the often informal process of giving and receiving notes transforms in
 ---
 
 ## Key Features  
+✅ **Open Dramatica Storyform** – Direct access to the canonical Dramatica® model for community use.  
 ✅ **Open-Source Standard** – Available for use, modification, and integration into various storytelling platforms.  
 ✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components.  
 ✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.     
 ✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.  
-✅ **Extensible & Customizable:** Support for custom mappings to integrate with frameworks like Dramatica®, Hero’s Journey, Save the Cat!, and more...  
+✅ **Extensible & Customizable:** Ships with canonical Dramatica® terminology while supporting mappings to frameworks like the Hero’s Journey, Save the Cat!, and more...  
 ✅ **Interoperability:** Easily exchange narrative data between platforms.
 
 ## Write Brothers and Narrative First
@@ -81,8 +84,8 @@ narrative-context-protocol/
 
 NCP is released under the **MIT License** (see [LICENSE.md](LICENSE.md)) to maintain openness while ensuring proper attribution.  
 
-The development and refinement of NCP are **stewarded by Narrative First**, ensuring continuous innovation and industry alignment. Contributions and modifications are encouraged, and governance policies are outlined in [CONTRIBUTING.md](CONTRIBUTING.md).  
+The development and refinement of NCP are **stewarded by The Dramatica Co.**, aligning the open-source model with the official Dramatica® tooling roadmap. Contributions and modifications are encouraged, and governance policies are outlined in [CONTRIBUTING.md](CONTRIBUTING.md).  
 
-For further information, collaboration, or licensing inquiries, contact: **support@narrativefirst.com**
+For further information, collaboration, or licensing inquiries, contact **The Dramatica Co.** at **support@narrativefirst.com**
 
 Happy storytelling!

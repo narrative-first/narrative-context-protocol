@@ -5,7 +5,7 @@ description: A standardized JSON format for structuring narrative elements, enab
 
 The **Narrative Context Protocol** provides a standardized format for defining and organizing story elements in a structured, interoperable way. This schema allows narratives to be stored, analyzed, and transferred between different storytelling tools while maintaining **clarity, flexibility, and the author's original intent**.
 
-At its core, the schema divides a story into two layers: the **deep, structural meaning (Subtext)** and the **surface-level presentation (Storytelling)**. This split ensures that authors can preserve the underlying message of their work while allowing for various domains of high-level audience engagement.
+At its core, the schema divides a story into two layers: the **deep, structural meaning (Subtext)** and the **surface-level presentation (Storytelling)**. This split ensures that authors can preserve the underlying message of their work while allowing for various forms of high-level audience engagement.
 
 ---
 
@@ -13,7 +13,7 @@ At its core, the schema divides a story into two layers: the **deep, structural 
 
 The schema is designed for **broad adoption**. It can be used in:  
 
-- **Storytelling platforms** (Subtxt/Dramatica platform, AI-driven tools, screenwriting apps)
+- **Storytelling platforms** (Subtxt/Dramatica, AI-driven tools, screenwriting apps)  
 - **APIs** that facilitate structured narrative generation  
 - **AI models** that generate structured story data  
 - **Interactive storytelling** systems (video games, branching narratives) 
@@ -24,7 +24,7 @@ The schema is designed for **broad adoption**. It can be used in:
 
 Narrative Context Protocol is **designed for flexibility**. Developers and storytellers can:  
 
-- Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` concerns.  
+- Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` fields.  
 - Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 - Submit **extensions and feedback** via issues and discussions in this repo.  
  
@@ -76,7 +76,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
-        "title": "Central Domain",
+        "title": "Central Form",
         "subtext": {
             "perspectives": [],
             "players": [],
@@ -99,10 +99,10 @@ This structure provides both depth (meaning) and flexibility (presentation) with
 ### **Subtext** – The deep, underlying message of the narrative that communicates the author's intent.  
 Subtext is composed of core structural components that define meaning beneath the surface:  
 - **Perspectives** – The lens through which story elements are experienced (e.g., `Objective Story`, `Main Character`).  
-- **Dynamics** – High-level narrative problems like `Story Outcome` (`Success` or `Failure`).
+- **Dynamics** – High-level narrative forces like `Story Outcome` (`Success` or `Failure`).
 - **Players** – Characters with defined roles and motivations that impact the story's underlying meaning.  
 - **Storypoints** – Key structural points, such as `Problem`, `Solution`, and `Story Goal`.  
-- **Storybeats** – Significant turning points that reflect shifts in narrative meaning, such as `Transit`, `Progression`, or `Event`.  
+- **Storybeats** – Significant turning points that reflect shifts in narrative meaning, such as `Signpost`, `Progression`, or `Event`.  
 
 ---
 
@@ -225,7 +225,7 @@ Characters within the **narrative structure**, with motivations tied to **subtex
 ```
 
 #### **Dynamics**  
-High-level narrative problems like **Story Outcome** and **Story Judgment**.
+High-level narrative forces like **Story Outcome** and **Story Judgment**.
 
 ```json
 "dynamics": [
@@ -246,7 +246,7 @@ Structured **spatial aspects** that define and shape the narrative.
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "appreciation": "issue",
+    "appreciation": "facet",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
@@ -265,7 +265,7 @@ Structured **spatial aspects** that define and shape the narrative.
 
 #### **Special Keys for Storybeats**
 - **`appreciation`** – Defines the narrative level the beat belongs to:
-  - `"transit"` → **Broad thematic shifts** (1-4)
+  - `"signpost"` → **Broad thematic shifts** (1-4)
   - `"progression"` → **Structural developments** (1-16)
   - `"event"` → **Fine-grained events** (1-64)
 - **`sequence`** – Canonical ordering within the **scope**.
@@ -280,7 +280,7 @@ These ensure **consistency across all stories** while allowing room for creative
 "storybeats": [
   {
     "id": "storybeat_9876bcde",
-    "appreciation": "transit",
+    "appreciation": "signpost",
     "sequence": 4,
     "method": "past",
     "illustration": "reliving the past",
@@ -395,8 +395,8 @@ The **Universal Narrative Model JSON Schema** provides a **canonical set of valu
 
 To maintain **compatibility** while allowing **customization**, we introduce:  
 
-- **Canonical Standards** – A predefined list of `appreciation`, `method`, `dynamic`, and `vector` values that domain the foundation of the model and convey the meaning of the narrative.  
-- **Custom Mapping Concerns** – Optional concerns (`custom_appreciation`, `custom_method`, `custom_dynamic`, `custom_vector`) for alternative terms.  
+- **Canonical Standards** – A predefined list of `appreciation`, `method`, `dynamic`, and `vector` values that form the foundation of the model and convey the meaning of the narrative.  
+- **Custom Mapping Fields** – Optional fields (`custom_appreciation`, `custom_method`, `custom_dynamic`, `custom_vector`) for alternative terms.  
 - **Namespacing for Third-Party Mappings** – The ability to link terminology from other frameworks via `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 
 **Base Set** 
@@ -415,18 +415,13 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "concern",
     "issue",
     "problem",
-    "problem",
     "solution",
-    "focus",
-    "direction",
-    "condition",
-    "adjustment",
-    "resistance",
-    "flow",
-    "unique_ability",
-    "critical_flaw",
+    "symptom",
+    "response",
     "catalyst",
     "inhibitor",
+    "unique_ability",
+    "critical_flaw",
     "benchmark",
     "story_goal",
     "story_requirements",
@@ -436,28 +431,20 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "story_dividends",
     "story_forewarnings",
     "story_consequence",
-    "story_intention",
-    "story_habituation",
-    "story_internalization",
-    "story_socialization",
-    "story_pressure",
-    "story_excitement",
-    "story_ennui",
-    "story_overwhelm",
     "pivotal_element",
     "initial_story_driver",
     "second_story_driver",
     "midpoint_story_driver",
     "fourth_story_driver",
     "concluding_story_driver",
-    "transit",
+    "signpost",
     "progression",
     "event"
     ],
   "description": "A core narrative Appreciation, based on the Universal Narrative Model."
 }
 ```
-**💡 Expansion:** If users need additional Appreciations, they can use a `custom_appreciation` concern.
+**💡 Expansion:** If users need additional Appreciations, they can use a `custom_appreciation` field.
 
 ---
 
@@ -508,7 +495,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "preconception",
     "approach",
     "self_interest",
-    "selflessness",
+    "altruism",
     "attitude",
     "work",
     "attraction",
@@ -517,7 +504,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "qualification",
     "strategy",
     "analysis",
-    "contingency",
+    "stipulation",
     "truth",
     "evidence",
     "suspicion",
@@ -583,8 +570,8 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "inertia",
     "knowledge",
     "logic",
-    "non-acceptance",
-    "non-accurate",
+    "rejection",
+    "deviation",
     "oppose",
     "order",
     "perception",
@@ -611,14 +598,14 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "theory",
     "thought",
     "trust",
-    "uncontrolled",
+    "free",
     "continuing",
-    "unproven"
+    "presumption"
   ],
   "description": "A Method by which the Appreciation is explored in the narrative."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_method` concerns.
+**💡 Expansion:** Third-party implementations can add their own `custom_method` fields.
 
 ---
 
@@ -628,22 +615,20 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 "dynamic": {
   "type": "string",
   "enum": [
-    "i_perspective_resolve",
-    "you_perspective_resolve",
-    "growth",
-    "approach",
-    "alignment",
-    "fabric",
-    "driver",
-    "outcome",
-    "judgment",
-    "balance",
-    "vibes"
-    ],
-  "description": "An indication of a Dynamic applied to the Universal Narrative Model."
+    "main_character_resolve",
+    "influence_character_resolve",
+    "main_character_growth",
+    "main_character_approach",
+    "problem_solving_style",
+    "story_limit",
+    "story_driver",
+    "story_outcome",
+    "story_judgment"
+  ],
+  "description": "An indication of a Dynamic applied to the Dramatica storyform."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_dynamic` concerns.
+**💡 Expansion:** Third-party implementations can add their own `custom_dynamic` fields.
 
 ---
 
@@ -654,31 +639,25 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "enum": [
     "change",
     "steadfast",
-    "released",
-    "sustained",
     "stop",
     "start",
     "do_er",
     "be_er",
     "linear",
     "holistic",
+    "optionlock",
+    "timelock",
     "action",
     "decision",
-    "options",
-    "time",
     "success",
     "failure",
     "good",
     "bad"
-    "harmony",
-    "discord",
-    "higher",
-    "lower"
   ],
-  "description": "A Vector by which a Dynamic is explored in the narrative."
+  "description": "A vector illustrating how a Dynamic manifests within the story."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_vector` concerns.
+**💡 Expansion:** Third-party implementations can add their own `custom_vector` fields.
 
 ---
 
@@ -693,7 +672,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
       "id": { "type": "string" },
       "appreciation": { 
         "type": "string",
-        "enum": ["domain", "concern", "issue", "problem", "problem", "solution", "focus", "direction", "condition", "adjustment", "resistance", "flow", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
+        "enum": ["domain", "concern", "issue", "problem", "solution", "symptom", "response", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
       },
       "method": { 
         "type": "string",
@@ -701,16 +680,16 @@ To maintain **compatibility** while allowing **customization**, we introduce:
           "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
           "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
           "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
-          "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "selflessness", "attitude",
-          "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "contingency", "truth", "evidence", "suspicion", "falsehood",
+          "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "altruism", "attitude",
+          "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "stipulation", "truth", "evidence", "suspicion", "falsehood",
           "state_of_being", "situation", "circumstances", "sense_of_self", "value", "confidence", "worry", "worth", "knowing", "able", "driven", "thinking",
           "closure", "hope", "dream", "denial", "rationalization", "commitment", "responsibility", "obligation", "investigation", "appraisal", "reappraisal",
           "doubt", "permission", "need", "expediency", "deficiency", "ability", "acceptance", "accurate", "actuality", "avoid", "aware", "cause", "certainty",
           "change", "chaos", "conscience", "consider", "control", "deduction", "desire", "determination", "disbelief", "effect", "ending", "equity", "evaluation",
-          "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "non-acceptance",
-          "non-accurate", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
+          "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
+          "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
           "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-          "temptation", "test", "theory", "thought", "trust", "uncontrolled", "continuing", "unproven"
+          "temptation", "test", "theory", "thought", "trust", "free", "continuing", "presumption"
         ]
       },
       "illustration": { "type": "string" },
@@ -743,7 +722,7 @@ In a Storybeat, `appreciation` determines the range of `number`:
 
 | **Appreciation** | **Allowed Range** |
 |------------|-----------------|
-| **Transit** | `1-4` |
+| **Signpost** | `1-4` |
 | **Progression** | `1-16` |
 | **Event** | `1-64` |
 
@@ -770,7 +749,7 @@ Each Storybeat has **three tonal layers**:
       },
       "appreciation": {
         "type": "string",
-        "enum": ["transit", "progression", "event"]
+        "enum": ["signpost", "progression", "event"]
       },
       "sequence": {
         "oneOf": [
@@ -778,7 +757,7 @@ Each Storybeat has **three tonal layers**:
             "type": "integer",
             "minimum": 1,
             "maximum": 4,
-            "description": "For Transits (1-4)"
+            "description": "For Signposts (1-4)"
           },
           {
             "type": "integer",
@@ -853,7 +832,7 @@ Each Storybeat has **three tonal layers**:
 
 #### Example Storybeat Validation
 
-**Valid Transit**
+**Valid Signpost**
 
 ```json
 {
@@ -862,7 +841,7 @@ Each Storybeat has **three tonal layers**:
     "throughline": "Main Character",
     "perspective_id": "perspective_ab12cd34"
   },
-  "appreciation": "Transit",
+  "appreciation": "Signpost",
   "sequence": 3,
   "method": "Memory",
   "illustration": "looking back at choices made",
@@ -875,11 +854,11 @@ Each Storybeat has **three tonal layers**:
   }
 }
 ```
-✅ **Passes validation** because `number: 3` is within the **1-4 range** for `Transit`.
+✅ **Passes validation** because `number: 3` is within the **1-4 range** for `Signpost`.
 
 ---
 
-**Invalid Transit**
+**Invalid Signpost**
 
 ```json
 {
@@ -888,7 +867,7 @@ Each Storybeat has **three tonal layers**:
     "throughline": "Main Character",
     "perspective_id": "perspective_ab12cd34"
   },
-  "appreciation": "Transit",
+  "appreciation": "Signpost",
   "sequence": 7,  
   "method": "Memory",
   "illustration": "looking back at choices made",
@@ -902,7 +881,7 @@ Each Storybeat has **three tonal layers**:
   "perspective_id": "perspective_xyz789"
 }
 ```
-❌ **Fails validation** because `number: 7` is **outside the allowed range (1-4)** for `Transit`.
+❌ **Fails validation** because `number: 7` is **outside the allowed range (1-4)** for `Signpost`.
 
 ---
 
@@ -927,7 +906,7 @@ While every standard is open to customization, we focus on customizing an Apprec
 {
     "id": "storypoint_2345abcd",
     "perspective": {
-        "throughline": "Catalyst Provocateur",
+        "throughline": "Influence Character",
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Focus",
@@ -957,7 +936,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
 {
     "id": "storypoint_2345abcd",
     "perspective": {
-        "throughline": "Catalyst Provocateur",
+        "throughline": "Influence Character",
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Focus",
@@ -972,7 +951,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
 ```
 **Why?** 
 
-- `"Focus"`, along with `"Catalyst Provocateur"` remains the **official Perspective and Appreciation**.  
+- `"Focus"`, along with `"Influence Character"` remains the **official Perspective and Appreciation**.  
 - `"Alternative Tension"` is the **custom term** for internal use.  
 - `"Dramatica": "Influence Character Symptom"` ensures **compatibility with original Dramatica theory concepts**.  
 - `"Hero's Journey": "Call to Adventure"` provides a **direct mapping to Joseph Campbell’s model**.  
@@ -1010,7 +989,7 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
         "throughline": "Main Character",
         "perspective_id": "perspective_ab12cd34"
     },
-    "appreciation": "Transit",
+    "appreciation": "Signpost",
     "sequence": 3,
     "method": "Preconscious",
     "illustration": "reacting spontaneously",
@@ -1126,7 +1105,7 @@ To see the schema in action, here’s a **full example JSON document**:
                 "throughline": "Main Character",
                 "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
               },
-              "appreciation": "Transit",
+              "appreciation": "Signpost",
               "sequence": 2,
               "method": "Preconscious",
               "illustration": "being impulsive",
