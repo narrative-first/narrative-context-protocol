@@ -1,110 +1,112 @@
 {
     "schema_version": "1.1.0",
     "story": {
-      "id": "story_123e4567-e89b-12d3-a456-426614174000",
-      "title": "Echoes of the Past",
-      "genre": "Mystery Thriller",
-      "logline": "A hardened detective uncovers clues linking a cold case to his own haunting history.",
-      "created_at": "2025-12-01T12:34:56Z",
-      "narratives": [
-        {
-          "id": "narrative_001",
-          "title": "Central Narrative",
-          "subtext": {
-            "perspectives": [
-              {
-                "id": "perspective_12345678-1234-1234-1234-123456789012",
-                "throughline": "Main Character",
-                "summary": "John Marlowe",
-                "storytelling": "John is a seasoned detective whose past is as mysterious as the cases he solves."
-              }
-            ],
-            "players": [
-              {
-                "id": "player_abcdef12-3456-7890-abcd-ef1234567890",
-                "name": "Detective John Marlowe",
-                "role": "Main Character",
-                "summary": "A dedicated detective haunted by unresolved cases.",
-                "storytelling": "John exudes a stoic demeanor, masking the inner turmoil of his past.",
-                "perspective": {
-                  "throughline": "Objective Story",
-                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+        "id": "story_123e4567-e89b-12d3-a456-426614174000",
+        "title": "Echoes of the Past",
+        "genre": "Mystery Thriller",
+        "logline": "A hardened detective uncovers clues linking a cold case to his own haunting history.",
+        "created_at": "2025-12-01T12:34:56Z",
+        "narratives": [
+            {
+                "id": "narrative_001",
+                "title": "Central Narrative",
+                "subtext": {
+                    "perspectives": [
+                        {
+                            "id": "perspective_12345678-1234-1234-1234-123456789012",
+                            "throughline": "Main Character",
+                            "summary": "John Marlowe",
+                            "storytelling": "John is a seasoned detective whose past is as mysterious as the cases he solves."
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "player_abcdef12-3456-7890-abcd-ef1234567890",
+                            "name": "Detective John Marlowe",
+                            "role": "Main Character",
+                            "summary": "A dedicated detective haunted by unresolved cases.",
+                            "storytelling": "John exudes a stoic demeanor, masking the inner turmoil of his past.",
+                            "perspective": {
+                                "throughline": "Objective Story",
+                                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                            },
+                            "motivations": [
+                                {
+                                    "method": "Determination",
+                                    "illustration": "John relentlessly pursues leads despite personal risks.",
+                                    "storytelling": "His unwavering resolve is evident in every case he tackles."
+                                }
+                            ]
+                        }
+                    ],
+                    "dynamics": [
+                        {
+                            "id": "dynamic_00112233-4455-6677-8899-aabbccddeeff",
+                            "dynamic": "Story Outcome",
+                            "vector": "Success",
+                            "summary": "The case concludes with John uncovering the truth.",
+                            "storytelling": "A climactic moment of revelation that ties together past and present.",
+                            "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                        }
+                    ],
+                    "storypoints": [
+                        {
+                            "id": "storypoint_11223344-5566-7788-99aa-bbccddeeff00",
+                            "perspective": {
+                                "throughline": "Main Character",
+                                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                            },
+                            "appreciation": "Main Character Symptom",
+                            "method": "Consider",
+                            "illustration": "John ponders over a crucial piece of evidence.",
+                            "summary": "A turning point in the investigation where personal history intersects with the case.",
+                            "storytelling": "The discovery of an old photograph sparks memories and hidden truths."
+                        }
+                    ],
+                    "storybeats": [
+                        {
+                            "id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+                            "perspective": {
+                                "throughline": "Main Character",
+                                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                            },
+                            "appreciation": "Signpost",
+                            "sequence": 2,
+                            "method": "Preconscious",
+                            "illustration": "John experiences a flashback triggered by a familiar scent.",
+                            "summary": "A moment where the past resurfaces, influencing his current investigation.",
+                            "storytelling": "A blend of present-day tension and haunting memories creates a surreal experience.",
+                            "tones": {
+                                "abstraction": "situation",
+                                "spatial": "resistance",
+                                "temporal": "expression"
+                            }
+                        }
+                    ]
                 },
-                "motivations": [
-                  {
-                    "method": "Determination",
-                    "illustration": "John relentlessly pursues leads despite personal risks.",
-                    "storytelling": "His unwavering resolve is evident in every case he tackles."
-                  }
-                ]
-              }
-            ],
-            "dynamics": [
-              {
-                "id": "dynamic_00112233-4455-6677-8899-aabbccddeeff",
-                "dynamic": "Story Outcome",
-                "vector": "Success",
-                "summary": "The case concludes with John uncovering the truth.",
-                "storytelling": "A climactic moment of revelation that ties together past and present.",
-                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-              }
-            ],
-            "storypoints": [
-              {
-                "id": "storypoint_11223344-5566-7788-99aa-bbccddeeff00",
-                "perspective": {
-                  "throughline": "Main Character",
-                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-                },
-                "appreciation": "Main Character Focus",
-                "method": "Consider",
-                "illustration": "John ponders over a crucial piece of evidence.",
-                "summary": "A turning point in the investigation where personal history intersects with the case.",
-                "storytelling": "The discovery of an old photograph sparks memories and hidden truths."
-              }
-            ],
-            "storybeats": [
-              {
-                "id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-                "perspective": {
-                  "throughline": "Main Character",
-                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-                },
-                "appreciation": "Signpost",
-                "sequence": 2,
-                "method": "Preconscious",
-                "illustration": "John experiences a flashback triggered by a familiar scent.",
-                "summary": "A moment where the past resurfaces, influencing his current investigation.",
-                "storytelling": "A blend of present-day tension and haunting memories creates a surreal experience.",
-                "tones": {
-                  "abstraction": "situation",
-                  "spatial": "resistance",
-                  "temporal": "expression"
+                "storytelling": {
+                    "overviews": [
+                        {
+                            "id": "overview_001",
+                            "summary": "A dark and atmospheric mystery unfolds in a rain-soaked city.",
+                            "storytelling": "The narrative juxtaposes gritty realism with introspective flashbacks."
+                        }
+                    ],
+                    "moments": [
+                        {
+                            "id": "moment_001",
+                            "summary": "The inciting discovery",
+                            "synopsis": "John uncovers an old case file that hints at deeper connections to his own past.",
+                            "storybeats": [
+                                {
+                                    "order": 0,
+                                    "storybeat_id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+                                }
+                            ]
+                        }
+                    ]
                 }
-              }
-            ]
-          },
-          "storytelling": {
-            "overviews": [
-              {
-                "id": "overview_001",
-                "summary": "A dark and atmospheric mystery unfolds in a rain-soaked city.",
-                "storytelling": "The narrative juxtaposes gritty realism with introspective flashbacks."
-              }
-            ],
-            "moments": [
-              {
-                "id": "moment_001",
-                "summary": "The inciting discovery",
-                "synopsis": "John uncovers an old case file that hints at deeper connections to his own past.",
-                "storybeats": [
-                  { "order": 0, "storybeat_id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" }
-                ]
-              }
-            ]
-          }
-        }
-      ]
+            }
+        ]
     }
-  }
-  
+}

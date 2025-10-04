@@ -246,7 +246,7 @@ Structured **spatial aspects** that define and shape the narrative.
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "appreciation": "facet",
+    "appreciation": "issue",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
@@ -598,7 +598,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
     "theory",
     "thought",
     "trust",
-    "free",
+    "uncontrolled",
     "continuing",
     "presumption"
   ],
@@ -689,7 +689,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
           "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
           "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
           "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-          "temptation", "test", "theory", "thought", "trust", "free", "continuing", "presumption"
+          "temptation", "test", "theory", "thought", "trust", "uncontrolled", "continuing", "presumption"
         ]
       },
       "illustration": { "type": "string" },
@@ -909,7 +909,7 @@ While every standard is open to customization, we focus on customizing an Apprec
         "throughline": "Influence Character",
         "perspective_id": "perspective_ab12cd34"
     },
-    "appreciation": "Focus",
+    "appreciation": "Symptom",
     "method": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint"
 }
@@ -939,7 +939,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
         "throughline": "Influence Character",
         "perspective_id": "perspective_ab12cd34"
     },
-    "appreciation": "Focus",
+    "appreciation": "Symptom",
     "method": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint",
     "custom_appreciation_namespace": {

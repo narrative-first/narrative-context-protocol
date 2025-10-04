@@ -252,7 +252,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
   {
     "id": "storypoint_2345abcd",
     "context": "main character",
-    "appreciation": "facet",
+    "appreciation": "issue",
     "method": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",

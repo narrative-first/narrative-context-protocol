@@ -43,7 +43,7 @@ With NCP, the often informal process of giving and receiving notes transforms in
 
 ## Write Brothers and Narrative First
 
-In 2024, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwriter—joined forces with **Narrative First**. This merger combines decades of story-development expertise with cutting-edge AI narrative research to deliver the **Subtxt/Dramatica platform**, a state-of-the-art system for generative storytelling. The unified platform powers NCP implementations, ensuring structured stories and rich authorial metadata for AI workflows.
+In 2025, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwriter—joined forces with **Narrative First**. This merger combines decades of story-development expertise with cutting-edge AI narrative research to deliver the **Subtxt/Dramatica platform**, a state-of-the-art system for generative storytelling. The unified platform powers NCP implementations, ensuring structured stories and rich authorial metadata for AI workflows.
 
 ## Getting Started
 
