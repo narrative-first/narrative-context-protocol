@@ -70,7 +70,7 @@ narrative-context-protocol/
 │   ├── terminology/
 │       ├── 01.perspectives.md
 │       ├── 02.appreciations-of-narrative.md
-│       ├── 03.methods-of-conflict.md
+│       ├── 03.narrative-functions.md
 │       ├── 04.dynamics.md
 │       ├── 05.vectors.md
 │       ├── 10.dramatica-translation.md

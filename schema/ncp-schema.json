@@ -227,7 +227,7 @@
                                                         "event"
                                                     ]
                                                 },
-                                                "method": {
+                                                "narrative_function": {
                                                     "type": "string",
                                                     "enum": [
                                                         "universe",
@@ -407,7 +407,7 @@
                                             "required": [
                                                 "id",
                                                 "appreciation",
-                                                "method",
+                                                "narrative_function",
                                                 "illustration",
                                                 "summary",
                                                 "storytelling",
@@ -453,7 +453,7 @@
                                                         }
                                                     ]
                                                 },
-                                                "method": {
+                                                "narrative_function": {
                                                     "type": "string",
                                                     "enum": [
                                                         "past",
@@ -667,7 +667,7 @@
                                                 "id",
                                                 "appreciation",
                                                 "sequence",
-                                                "method",
+                                                "narrative_function",
                                                 "illustration",
                                                 "summary",
                                                 "storytelling",

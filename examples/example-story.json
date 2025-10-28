@@ -32,7 +32,7 @@
                             },
                             "motivations": [
                                 {
-                                    "method": "Determination",
+                                    "narrative_function": "Determination",
                                     "illustration": "John relentlessly pursues leads despite personal risks.",
                                     "storytelling": "His unwavering resolve is evident in every case he tackles."
                                 }
@@ -57,7 +57,7 @@
                                 "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
                             },
                             "appreciation": "Main Character Symptom",
-                            "method": "Consider",
+                            "narrative_function": "Consider",
                             "illustration": "John ponders over a crucial piece of evidence.",
                             "summary": "A turning point in the investigation where personal history intersects with the case.",
                             "storytelling": "The discovery of an old photograph sparks memories and hidden truths."
@@ -72,7 +72,7 @@
                             },
                             "appreciation": "Signpost",
                             "sequence": 2,
-                            "method": "Preconscious",
+                            "narrative_function": "Preconscious",
                             "illustration": "John experiences a flashback triggered by a familiar scent.",
                             "summary": "A moment where the past resurfaces, influencing his current investigation.",
                             "storytelling": "A blend of present-day tension and haunting memories creates a surreal experience.",

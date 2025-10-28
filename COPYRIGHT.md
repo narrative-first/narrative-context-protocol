@@ -79,14 +79,14 @@ index a6b8d3f..e1f7c9d 100644
 +            {
 +              "context": "objective_story",
 +              "appreciation": "symptom",
-+              "method": "pursuit",                       
++              "narrative_function": "pursuit",                       
 +              "illustration": "relentless pursuit of imaginary betrayals",
 +              "storytelling": "Miriam’s obsessive hunt for a non-existent traitor spreads paranoia."
 +            },
 +            {
 +              "context": "objective_story",
 +              "appreciation": "response",
-+              "method": "avoid",                       
++              "narrative_function": "avoid",                       
 +              "illustration": "steering suspicion away",
 +              "storytelling": "Employees and Alex actively deflect suspicion, creating a tense atmosphere."
 +            }
@@ -115,7 +115,7 @@ index e1f7c9d..r2k8b7e 100644
                "id": "04fc7292-abf6-4754-8d0f-d0fe66c5dd05",
                "context": "objective_story",
                "appreciation": "response",
-               "method": "avoid",
+               "narrative_function": "avoid",
 -              "illustration": "steering something",
 -              "summary": "Prisoners actively steer suspicion away from themselves, creating a pervasive atmosphere of mistrust and caution.",
 -              "storytelling": "Norton's escalating paranoia compels prisoners to cautiously cover their tracks and deflect suspicion onto others. Red carefully avoids implicating himself and his crew by calmly redirecting Norton's attention elsewhere, maintaining a subtle but constant effort to stay off the Warden's radar.",                     

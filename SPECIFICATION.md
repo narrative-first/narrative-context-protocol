@@ -161,7 +161,7 @@ NCP provides standardized canonical terms to maintain consistency and clarity ac
 
 - **Appreciations**: Appreciations are how we interpret and appreciate narrative conflicts, formed by pairing a specific Perspective with either a Storypoint or a Storybeat. They help authors and audiences recognize the narrative's thematic depth and complexity.
 
-- **Methods**: Methods are small narrative engines that actively process and navigate through conflicts. Each Appreciation reveals one or more Methods, clarifying how characters and narratives actively engage with and respond to thematic tensions.
+- **Narrative Functions**: Narrative Functions are the engines of conflict. A narrative function is a process that shapes the story's meaning. Each Appreciation reveals one or more Narrative Functions, clarifying how characters and narratives actively engage with and respond to thematic tensions.
 
 - **Dynamics**: Dynamics represent relationships between narrative elements rather than individual, isolated components. They usually present themselves as binary choices, allowing clear narrative direction and purpose. This binary nature complements the more nuanced, multi-dimensional nature of Storypoints and Storybeats.
 
@@ -229,7 +229,7 @@ Characters whose actions and motivations reveal deeper thematic layers (subtext)
     "storytelling": "A psychologist haunted by his past.",
     "motivations": [
         {
-        "method": "Avoid",
+        "narrative_function": "Avoid",
         "illustration": "avoiding confronting past failures",
         "storytelling": "In therapy sessions, he changes topics when pressed."
         }
@@ -253,7 +253,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
     "id": "storypoint_2345abcd",
     "context": "main character",
     "appreciation": "issue",
-    "method": "rationalization",
+    "narrative_function": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
@@ -277,7 +277,7 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
     "context": "main character",
     "appreciation": "signpost",
     "sequence": 4,
-    "method": "past",
+    "narrative_function": "past",
     "illustration": "reliving the past",
     "summary": "Michael can no longer escape his past.",
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",

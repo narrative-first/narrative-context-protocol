@@ -24,8 +24,8 @@ The schema is designed for **broad adoption**. It can be used in:
 
 Narrative Context Protocol is **designed for flexibility**. Developers and storytellers can:  
 
-- Add **custom Appreciations, Methods, Dynamics, and Vectors** using `custom_appreciation`, `custom_method`, `custom_dynamic`, and `custom_vector` fields.  
-- Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
+- Add **custom Appreciations, Narrative Functions, Dynamics, and Vectors** using `custom_appreciation`, `custom_narrative_function`, `custom_dynamic`, and `custom_vector` fields.  
+- Map terms from other storytelling frameworks using `custom_appreciation_namespace`, `custom_narrative_function_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 - Submit **extensions and feedback** via issues and discussions in this repo.  
  
 ---
@@ -137,7 +137,7 @@ This is how the story is structured and told, with organizational and stylistic 
         "storytelling": "A psychologist haunted by his past.",
         "motivations": [
             {
-            "method": "Avoid",
+            "narrative_function": "Avoid",
             "illustration": "avoiding confronting past failures",
             "storytelling": "In therapy sessions, he changes topics when pressed."
             }
@@ -215,7 +215,7 @@ Characters within the **narrative structure**, with motivations tied to **subtex
     "storytelling": "A psychologist haunted by his past.",
     "motivations": [
         {
-        "method": "Avoid",
+        "narrative_function": "Avoid",
         "illustration": "avoiding confronting past failures",
         "storytelling": "In therapy sessions, he changes topics when pressed."
         }
@@ -247,7 +247,7 @@ Structured **spatial aspects** that define and shape the narrative.
   {
     "id": "storypoint_2345abcd",
     "appreciation": "issue",
-    "method": "rationalization",
+    "narrative_function": "rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
@@ -282,7 +282,7 @@ These ensure **consistency across all stories** while allowing room for creative
     "id": "storybeat_9876bcde",
     "appreciation": "signpost",
     "sequence": 4,
-    "method": "past",
+    "narrative_function": "past",
     "illustration": "reliving the past",
     "summary": "Michael can no longer escape his past.",
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
@@ -391,17 +391,17 @@ Essential for communicating how the Moment's synopsis and storytelling should be
 
 ## **Canonical Standards & Custom Mapping**  
 
-The **Universal Narrative Model JSON Schema** provides a **canonical set of values** for `appreciation`, `method`, `dynamic`, and `vector` ensuring consistency across different implementations. However, we recognize that different storytelling frameworks (such as **Dramatica, Hero’s Journey, or Save the Cat!**) may use alternative terminology to describe similar concepts.  
+The **Universal Narrative Model JSON Schema** provides a **canonical set of values** for `appreciation`, `narrative_function`, `dynamic`, and `vector` ensuring consistency across different implementations. However, we recognize that different storytelling frameworks (such as **Dramatica, Hero’s Journey, or Save the Cat!**) may use alternative terminology to describe similar concepts.  
 
 To maintain **compatibility** while allowing **customization**, we introduce:  
 
-- **Canonical Standards** – A predefined list of `appreciation`, `method`, `dynamic`, and `vector` values that form the foundation of the model and convey the meaning of the narrative.  
-- **Custom Mapping Fields** – Optional fields (`custom_appreciation`, `custom_method`, `custom_dynamic`, `custom_vector`) for alternative terms.  
-- **Namespacing for Third-Party Mappings** – The ability to link terminology from other frameworks via `custom_appreciation_namespace`, `custom_method_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
+- **Canonical Standards** – A predefined list of `appreciation`, `narrative_function`, `dynamic`, and `vector` values that form the foundation of the model and convey the meaning of the narrative.  
+- **Custom Mapping Fields** – Optional fields (`custom_appreciation`, `custom_narrative_function`, `custom_dynamic`, `custom_vector`) for alternative terms.  
+- **Namespacing for Third-Party Mappings** – The ability to link terminology from other frameworks via `custom_appreciation_namespace`, `custom_narrative_function_namespace`, `custom_dynamic_namespace`, and `custom_vector_namespace`.  
 
 **Base Set** 
 
-**Validation Rule:** Any `appreciation`, `method`, `dynamic`, or `vector` **must match** one of the below unless explicitly mapped via the **custom mapping system** for compliance with the Universal Narrative Model:
+**Validation Rule:** Any `appreciation`, `narrative_function`, `dynamic`, or `vector` **must match** one of the below unless explicitly mapped via the **custom mapping system** for compliance with the Universal Narrative Model:
 
 ---
 
@@ -448,9 +448,9 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 
 ---
 
-### Methods
+### Narrative Functions
 ```json
-"method": {
+"narrative_function": {
   "type": "string",
   "enum": [
     "universe",
@@ -605,7 +605,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
   "description": "A Method by which the Appreciation is explored in the narrative."
 }
 ```
-**💡 Expansion:** Third-party implementations can add their own `custom_method` fields.
+**💡 Expansion:** Third-party implementations can add their own `custom_narrative_function` fields.
 
 ---
 
@@ -674,7 +674,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
         "type": "string",
         "enum": ["domain", "concern", "issue", "problem", "solution", "symptom", "response", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
       },
-      "method": { 
+      "narrative_function": { 
         "type": "string",
         "enum": [
           "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
@@ -706,7 +706,7 @@ To maintain **compatibility** while allowing **customization**, we introduce:
         }
       }
     },
-    "required": ["id", "appreciation", "method", "illustration", "summary", "storytelling", "perspectives"]
+    "required": ["id", "appreciation", "narrative_function", "illustration", "summary", "storytelling", "perspectives"]
   }
 }
 ```
@@ -773,7 +773,7 @@ Each Storybeat has **three tonal layers**:
           }
         ]
       },
-      "method": {
+      "narrative_function": {
         "type": "string"
       },
       "illustration": {
@@ -820,7 +820,7 @@ Each Storybeat has **three tonal layers**:
       "id",
       "appreciation",
       "sequence",
-      "method",
+      "narrative_function",
       "tones",
       "perspectives"
     ]
@@ -843,7 +843,7 @@ Each Storybeat has **three tonal layers**:
   },
   "appreciation": "Signpost",
   "sequence": 3,
-  "method": "Memory",
+  "narrative_function": "Memory",
   "illustration": "looking back at choices made",
   "summary": "A moment of hesitation as the protagonist considers the past.",
   "storytelling": "In the rain, Alex stares at the old photo, lost in thought.",
@@ -869,7 +869,7 @@ Each Storybeat has **three tonal layers**:
   },
   "appreciation": "Signpost",
   "sequence": 7,  
-  "method": "Memory",
+  "narrative_function": "Memory",
   "illustration": "looking back at choices made",
   "summary": "A moment of hesitation as the protagonist considers the past.",
   "storytelling": "In the rain, Alex stares at the old photo, lost in thought.",
@@ -896,7 +896,7 @@ To maintain both **consistency and flexibility**, the schema introduces two mech
 
 ---
 
-## Custom Appreciations, Methods, Dynamics, and Vectors
+## Custom Appreciations, Narrative Functions, Dynamics, and Vectors
 While every standard is open to customization, we focus on customizing an Appreciation here as an example.
 
 `custom_appreciation` allows users to introduce **a preferred appreciation label** without replacing the canonical standard.  
@@ -910,7 +910,7 @@ While every standard is open to customization, we focus on customizing an Apprec
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Symptom",
-    "method": "Disbelief",
+    "narrative_function": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint"
 }
 ```
@@ -940,7 +940,7 @@ To **ensure interoperability** across storytelling models, users can map appreci
         "perspective_id": "perspective_ab12cd34"
     },
     "appreciation": "Symptom",
-    "method": "Disbelief",
+    "narrative_function": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint",
     "custom_appreciation_namespace": {
         "Dramatica": "Influence Character Symptom",
@@ -977,7 +977,7 @@ icon: i-heroicons-information-circle
 ---
 
 ## Other Customization and Namespacing
-Just as Appreciations of Storypoints can be customized and mapped, the same applies to **Methods**, **Dynamics**, and **Vectors** across both Storypoints, Storybeats, and Dynamics. The key requirement is to maintain the keys found in the Standard Set for the applicable component, and then expanding with both the **custom term** and **custom term namespace**.  
+Just as Appreciations of Storypoints can be customized and mapped, the same applies to **Narrative Functions**, **Dynamics**, and **Vectors** across both Storypoints, Storybeats, and Dynamics. The key requirement is to maintain the keys found in the Standard Set for the applicable component, and then expanding with both the **custom term** and **custom term namespace**.  
 
 ### Storybeat Example
 
@@ -991,7 +991,7 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
     },
     "appreciation": "Signpost",
     "sequence": 3,
-    "method": "Preconscious",
+    "narrative_function": "Preconscious",
     "illustration": "reacting spontaneously",
     "summary": "Michael’s carefully constructed world crumbles as his instincts betray him, pushing him into a moment of raw, unfiltered reaction that costs him everything he’s fought for.",
     "storytelling": "Michael doesn’t think—he just reacts. The argument erupts, his voice raw as he hurls words he can’t take back, exposing the fear he’s buried beneath years of control. The moment shatters, leaving only silence, a slammed door, and the sinking realization that he’s just lost everything.",
@@ -1001,11 +1001,11 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
         "temporal": "expression"
     },
     "custom_appreciation": "Main Character Signpost 3",
-    "custom_method": "Impulsive Responses",
+    "custom_narrative_function": "Impulsive Responses",
     "custom_appreciation_namespace": {
       "Dramatica": "Main Character Signpost 3"
     },
-    "custom_method_namespace": {
+    "custom_narrative_function_namespace": {
       "Dramatica": "Impulsive Responses",
       "Save the Cat!": "Dark Night of the Soul"
     }
@@ -1018,7 +1018,7 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
 ## Validation & Best Practices
 To **preserve the integrity** of NCP while allowing for flexibility, the following **validation rules** should be applied:  
 
-- Storypoints and Storybeats must always include a standard `perspective`, `appreciation`, `method`, even if mapped to an external framework.
+- Storypoints and Storybeats must always include a standard `perspective`, `appreciation`, `narrative_function`, even if mapped to an external framework.
 - In addition, Storybeats must include a `scope` and `number` to map across the temporal progression of the narrative.
 - Dynammics must include a standard `dynamic` and `vector`.
 - If `custom_appreciation` is used, `appreciation` must still be present.**  
@@ -1065,7 +1065,7 @@ To see the schema in action, here’s a **full example JSON document**:
               },
               "motivations": [
                 {
-                  "method": "Determination",
+                  "narrative_function": "Determination",
                   "illustration": "John relentlessly pursues leads despite the personal cost.",
                   "storytelling": "Intense close-ups and internal monologues reveal his unwavering resolve."
                 }
@@ -1090,12 +1090,12 @@ To see the schema in action, here’s a **full example JSON document**:
                 "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
               },
               "appreciation": "Main Character Focus",
-              "method": "Consider",
+              "narrative_function": "Consider",
               "illustration": "ruminating over the case",
               "summary": "John discovers evidence that hints at a personal connection to the old unsolved case.",
               "storytelling": "A shattered piece of glass at the scene becomes a recurring symbol of hidden truths.",
               "custom_appreciation": "Mystery Element",
-              "custom_method": "Clue Analysis"
+              "custom_narrative_function": "Clue Analysis"
             }
           ],
           "storybeats": [
@@ -1107,7 +1107,7 @@ To see the schema in action, here’s a **full example JSON document**:
               },
               "appreciation": "Signpost",
               "sequence": 2,
-              "method": "Preconscious",
+              "narrative_function": "Preconscious",
               "illustration": "being impulsive",
               "summary": "Haunted by the past, John relives the traumatic events that shaped his career.",
               "storytelling": "Intercut scenes merge present-day investigation with vivid flashbacks of earlier failures.",
@@ -1117,11 +1117,11 @@ To see the schema in action, here’s a **full example JSON document**:
                 "temporal": "expression"
               },
               "custom_appreciation": "Main Character Signpost 3",
-              "custom_method": "Impulsive Responses",
+              "custom_narrative_function": "Impulsive Responses",
               "custom_appreciation_namespace": {
                 "Dramatica": "Main Character Signpost 3"
               },
-              "custom_method_namespace": {
+              "custom_narrative_function_namespace": {
                 "Dramatica": "Impulsive Responses"
               }
             }
