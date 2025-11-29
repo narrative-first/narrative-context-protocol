@@ -348,7 +348,11 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
 ]
 ```
 
-## Here you go, matching the style you provided:
+### Moment Properties
+
+#### Audience Experiential POV
+
+Essential for communicating how the Moment's synopsis and storytelling should be written.
 
 ```json
 "audience_experiential_pov": {
@@ -363,12 +367,6 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
   ]
 }
 ```
-
-### Moment Properties
-
-#### Audience Experiential POV
-
-Essential for communicating how the Moment's synopsis and storytelling should be written.
 
 - **first_person_central:** Narrator is the main character, directly experiencing events ("I did this").
 - **first_person_peripheral:** Narrator is a secondary character observing another's story ("I saw him do this").
