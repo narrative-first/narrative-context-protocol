@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ajv = new Ajv();
-const schemaPath = path.join(__dirname, '../schema/unm-schema.json');
+const schemaPath = path.join(__dirname, '../schema/ncp-schema.json');
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
 
 // Load the example narrative file

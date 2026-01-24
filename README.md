@@ -4,6 +4,8 @@
 
 **Narrative Context Protocol (NCP)** is an open, standardized JSON schema explicitly designed to transport and preserve authorial intent across diverse multi-agent storytelling systems. Developed through collaboration with the **Entertainment Technology Center** at the **University of Southern California**, NCP reliably captures and conveys narrative context, artistic voice, and thematic coherence across platforms, mediums, and autonomous agents.
 
+This repository publishes the open Dramatica storyform schema for film, television, theatre, novels, games, and interactive experiences. Treat it as the canonical reference for holding narrative context (the author’s intent) across mediums and for building your own tools—there is no standalone app here.
+
 NCP is curated by **The Dramatica Co.**—the merger of **Write Bros. Inc.** and **Narrative First Inc.**—as the open-source edition of the Dramatica® storyform. By placing the canonical Dramatica structure in a permissive repository, the project ensures that anyone can study, implement, and extend the model without gatekeeping.
 
 At its core, NCP provides a **structured yet adaptable schema**, ensuring narratives retain their logical consistency and emotional depth, even when interpreted or extended by numerous interacting agents. By encoding narrative elements into clear, universally understood representations, NCP maintains the original intent of the author throughout dynamic, distributed narrative environments.

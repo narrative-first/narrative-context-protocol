@@ -165,8 +165,8 @@ This is how the story is structured and told, with organizational and stylistic 
       "summary": "The protagonist confronts the rogue AI.",
       "synopsis": "Alex tracks the AI to its hidden base for a final confrontation.",
       "storybeats": [
-        { "sequence": 0, "storybeat_id": "storybeat_123456" },
-        { "sequence": 1, "storybeat_id": "storybeat_654321" }
+        { "sequence": 0, "storybeat_id": "beat_123456" },
+        { "sequence": 1, "storybeat_id": "beat_654321" }
       ]
     }
   ]
@@ -246,8 +246,8 @@ Structured **spatial aspects** that define and shape the narrative.
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "appreciation": "issue",
-    "narrative_function": "rationalization",
+    "appreciation": "Main Character Issue",
+    "narrative_function": "Rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
@@ -264,35 +264,31 @@ Structured **spatial aspects** that define and shape the narrative.
 **Temporal aspects** that illustrate the progression _through_ the narrative. Each beat captures a **significant temporal shift** and exists within a defined **scope**.
 
 #### **Special Keys for Storybeats**
-- **`appreciation`** – Defines the narrative level the beat belongs to:
+- **`scope`** – Defines the narrative level the beat belongs to:
   - `"signpost"` → **Broad thematic shifts** (1-4)
   - `"progression"` → **Structural developments** (1-16)
   - `"event"` → **Fine-grained events** (1-64)
 - **`sequence`** – Canonical ordering within the **scope**.
-- **`tones`** – Classifies the narrative function in three dimensions:
-  - **abstraction** → `"situation"`, `"action"`, `"justification"`, `"opinion"`
-  - **spatial** → `"potential"`, `"resistance"`, `"current"`, `"power"`
-  - **temporal** → `"expression"`, `"experimentation"`, `"integration"`, `"transcendence"`
+- **`signpost`** – Optional grouping (1-4) for signpost-level beats.
+- **`throughline`** – Optional label for grouping beats by throughline.
 
 These ensure **consistency across all stories** while allowing room for creative variation.
 
 ```json
 "storybeats": [
   {
-    "id": "storybeat_9876bcde",
-    "appreciation": "signpost",
+    "id": "beat_9876bcde",
+    "scope": "signpost",
     "sequence": 4,
-    "narrative_function": "past",
-    "illustration": "reliving the past",
+    "signpost": 4,
+    "throughline": "Main Character",
+    "narrative_function": "Past",
     "summary": "Michael can no longer escape his past.",
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
-    "tones": {
-        "abstraction": "situation",
-        "spatial": "power",
-        "temporal": "transcendence"
-    },
     "perspectives": [
-        "perspective_ab12cd34"
+        {
+            "perspective_id": "perspective_ab12cd34"
+        }
     ]
   }
 ]
@@ -310,11 +306,13 @@ This section represents the **presentation, style, and organization** of the sto
 "overviews": [
   {
     "id": "overview_12345abc",
+    "label": "logline",
     "storytelling": "A thrilling cat-and-mouse chase through the neon-lit streets of a futuristic city.",
     "summary": "A cyberpunk crime thriller about a rogue AI and the detective trying to stop it."
   },
   {
     "id": "overview_67890def",
+    "label": "genre_dynamics",
     "storytelling": "Blending classic noir with futuristic dystopia, the story challenges conventional crime tropes.",
     "summary": "A fusion of cyberpunk and detective noir."
   }
@@ -330,19 +328,25 @@ Organizational and supreficial **narrative units**—Acts, Scenes, Sequences, Ch
     "id": "moment_abcdef12",
     "summary": "The protagonist arrives in the dystopian city and gets their first taste of the underworld.",
     "synopsis": "After landing in Neo-Tokyo, Alex is forced to navigate a world of hackers, crime syndicates, and AI-controlled law enforcement.",
+    "setting": "The neon-soaked arrival terminal and its surrounding alleys.",
+    "timing": "Night, moments after landing.",
+    "imperatives": "Introduce the city, establish the stakes, and show the protagonist's vulnerability.",
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "storybeat_123456" },
-      { "sequence": 1, "storybeat_id": "storybeat_789012" },
-      { "sequence": 2, "storybeat_id": "storybeat_345678" }
+      { "sequence": 0, "storybeat_id": "beat_123456" },
+      { "sequence": 1, "storybeat_id": "beat_789012" },
+      { "sequence": 2, "storybeat_id": "beat_345678" }
     ]
   },
   {
     "id": "moment_ghijkl34",
     "summary": "A tense confrontation with the antagonist reveals a shocking truth.",
     "synopsis": "Alex finally meets the rogue AI and realizes it may not be the villain they were led to believe.",
+    "setting": "A sealed data vault beneath the city.",
+    "timing": "The following evening after a day of investigations.",
+    "imperatives": "Build tension, reveal the AI's motives, and destabilize prior assumptions.",
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "storybeat_987654" },
-      { "sequence": 1, "storybeat_id": "storybeat_654321" }
+      { "sequence": 0, "storybeat_id": "beat_987654" },
+      { "sequence": 1, "storybeat_id": "beat_654321" }
     ]
   }
 ]
@@ -389,7 +393,7 @@ Essential for communicating how the Moment's synopsis and storytelling should be
 
 ## **Canonical Standards & Custom Mapping**  
 
-The **Universal Narrative Model JSON Schema** provides a **canonical set of values** for `appreciation`, `narrative_function`, `dynamic`, and `vector` ensuring consistency across different implementations. However, we recognize that different storytelling frameworks (such as **Dramatica, Hero’s Journey, or Save the Cat!**) may use alternative terminology to describe similar concepts.  
+The **Narrative Context Protocol JSON Schema** provides a **canonical set of values** for `appreciation`, `narrative_function`, `dynamic`, and `vector` ensuring consistency across different implementations. However, we recognize that different storytelling frameworks (such as **Dramatica, Hero’s Journey, or Save the Cat!**) may use alternative terminology to describe similar concepts.  
 
 To maintain **compatibility** while allowing **customization**, we introduce:  
 
@@ -399,211 +403,19 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 
 **Base Set** 
 
-**Validation Rule:** Any `appreciation`, `narrative_function`, `dynamic`, or `vector` **must match** one of the below unless explicitly mapped via the **custom mapping system** for compliance with the Universal Narrative Model:
+**Validation Rule:** Any `appreciation`, `narrative_function`, `dynamic`, or `vector` **must match** the canonical lists referenced below unless explicitly mapped via the **custom mapping system** for compliance with the Narrative Context Protocol:
 
 ---
 
 ### Appreciations
 
-```json
-"appreciation": {
-  "type": "string",
-  "enum": [
-    "domain",
-    "concern",
-    "issue",
-    "problem",
-    "solution",
-    "symptom",
-    "response",
-    "catalyst",
-    "inhibitor",
-    "unique_ability",
-    "critical_flaw",
-    "benchmark",
-    "story_goal",
-    "story_requirements",
-    "story_prerequisites",
-    "story_preconditions",
-    "story_costs",
-    "story_dividends",
-    "story_forewarnings",
-    "story_consequence",
-    "pivotal_element",
-    "initial_story_driver",
-    "second_story_driver",
-    "midpoint_story_driver",
-    "fourth_story_driver",
-    "concluding_story_driver",
-    "signpost",
-    "progression",
-    "event"
-    ],
-  "description": "A core narrative Appreciation, based on the Universal Narrative Model."
-}
-```
-**💡 Expansion:** If users need additional Appreciations, they can use a `custom_appreciation` field.
+Canonical Appreciations are maintained in `docs/terminology/02.appreciations-of-narrative.md` as name + short_definition.
 
 ---
 
 ### Narrative Functions
-```json
-"narrative_function": {
-  "type": "string",
-  "enum": [
-    "universe",
-    "physics",
-    "psychology",
-    "mind",
-    "past",
-    "understanding",
-    "conceptualizing",
-    "memory",
-    "progress",
-    "doing",
-    "being",
-    "preconscious",
-    "future",
-    "obtaining",
-    "becoming",
-    "subconscious",
-    "present",
-    "learning",
-    "conceiving",
-    "conscious",
-    "fate",
-    "prediction",
-    "interdiction",
-    "destiny",
-    "instinct",
-    "senses",
-    "interpretation",
-    "conditioning",
-    "fact",
-    "security",
-    "threat",
-    "fantasy",
-    "wisdom",
-    "skill",
-    "experience",
-    "enlightenment",
-    "openness",
-    "delay",
-    "choice",
-    "preconception",
-    "approach",
-    "self_interest",
-    "altruism",
-    "attitude",
-    "work",
-    "attraction",
-    "repulsion",
-    "attempt",
-    "qualification",
-    "strategy",
-    "analysis",
-    "stipulation",
-    "truth",
-    "evidence",
-    "suspicion",
-    "falsehood",
-    "state_of_being",
-    "situation",
-    "circumstances",
-    "sense_of_self",
-    "value",
-    "confidence",
-    "worry",
-    "worth",
-    "knowing",
-    "able",
-    "driven",
-    "thinking",
-    "closure",
-    "hope",
-    "dream",
-    "denial",
-    "rationalization",
-    "commitment",
-    "responsibility",
-    "obligation",
-    "investigation",
-    "appraisal",
-    "reappraisal",
-    "doubt",
-    "permission",
-    "need",
-    "expediency",
-    "deficiency",
-    "ability",
-    "acceptance",
-    "accurate",
-    "actuality",
-    "avoid",
-    "aware",
-    "cause",
-    "certainty",
-    "change",
-    "chaos",
-    "conscience",
-    "consider",
-    "control",
-    "deduction",
-    "desire",
-    "determination",
-    "disbelief",
-    "effect",
-    "ending",
-    "equity",
-    "evaluation",
-    "expectation",
-    "faith",
-    "feeling",
-    "help",
-    "hinder",
-    "hunch",
-    "inaction",
-    "induction",
-    "inequity",
-    "inertia",
-    "knowledge",
-    "logic",
-    "rejection",
-    "deviation",
-    "oppose",
-    "order",
-    "perception",
-    "possibility",
-    "potentiality",
-    "proaction",
-    "probability",
-    "process",
-    "production",
-    "projection",
-    "protection",
-    "proven",
-    "pursuit",
-    "re_evaluation",
-    "reaction",
-    "reconsider",
-    "reduction",
-    "result",
-    "self_aware",
-    "speculation",
-    "support",
-    "temptation",
-    "test",
-    "theory",
-    "thought",
-    "trust",
-    "uncontrolled",
-    "continuing",
-    "presumption"
-  ],
-  "description": "A Method by which the Appreciation is explored in the narrative."
-}
-```
-**💡 Expansion:** Third-party implementations can add their own `custom_narrative_function` fields.
+
+Canonical Narrative Functions are maintained in `docs/terminology/03.narrative-functions.md` as name + semantic_definition.
 
 ---
 
@@ -670,25 +482,21 @@ To maintain **compatibility** while allowing **customization**, we introduce:
       "id": { "type": "string" },
       "appreciation": { 
         "type": "string",
-        "enum": ["domain", "concern", "issue", "problem", "solution", "symptom", "response", "catalyst", "inhibitor", "unique_ability", "critical_flaw", "benchmark"]
+        "description": "Canonical Appreciation (see docs/terminology/02.appreciations-of-narrative.md)."
       },
       "narrative_function": { 
         "type": "string",
-        "enum": [
-          "universe", "physics", "psychology", "mind", "past", "understanding", "conceptualizing", "memory",
-          "progress", "doing", "being", "preconscious", "future", "obtaining", "becoming", "subconscious", "present", "learning", "conceiving", "conscious",
-          "fate", "prediction", "interdiction", "destiny", "instinct", "senses", "interpretation", "conditioning", "fact", "security", "threat", "fantasy",
-          "wisdom", "skill", "experience", "enlightenment", "openness", "delay", "choice", "preconception", "approach", "self_interest", "altruism", "attitude",
-          "work", "attraction", "repulsion", "attempt", "qualification", "strategy", "analysis", "stipulation", "truth", "evidence", "suspicion", "falsehood",
-          "state_of_being", "situation", "circumstances", "sense_of_self", "value", "confidence", "worry", "worth", "knowing", "able", "driven", "thinking",
-          "closure", "hope", "dream", "denial", "rationalization", "commitment", "responsibility", "obligation", "investigation", "appraisal", "reappraisal",
-          "doubt", "permission", "need", "expediency", "deficiency", "ability", "acceptance", "accurate", "actuality", "avoid", "aware", "cause", "certainty",
-          "change", "chaos", "conscience", "consider", "control", "deduction", "desire", "determination", "disbelief", "effect", "ending", "equity", "evaluation",
-          "expectation", "faith", "feeling", "help", "hinder", "hunch", "inaction", "induction", "inequity", "inertia", "knowledge", "logic", "rejection",
-          "deviation", "oppose", "order", "perception", "possibility", "potentiality", "proaction", "probability", "process", "production", "projection",
-          "protection", "proven", "pursuit", "re_evaluation", "reaction", "reconsider", "reduction", "result", "self_aware", "speculation", "support",
-          "temptation", "test", "theory", "thought", "trust", "uncontrolled", "continuing", "presumption"
-        ]
+        "description": "Canonical Narrative Function (see docs/terminology/03.narrative-functions.md)."
+      },
+      "custom_appreciation": { "type": "string" },
+      "custom_appreciation_namespace": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      },
+      "custom_narrative_function": { "type": "string" },
+      "custom_narrative_function_namespace": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
       },
       "illustration": { "type": "string" },
       "summary": { "type": "string" },
@@ -714,24 +522,15 @@ To maintain **compatibility** while allowing **customization**, we introduce:
 ### Storybeats
 The following standardized values ensure consistency and interoperability in story structure:
 
-#### Scope-Based Number Ranges
+#### Scope-Based Sequence Ranges
 
-In a Storybeat, `appreciation` determines the range of `number`:
+In a Storybeat, `scope` determines the intended range of `sequence`:
 
-| **Appreciation** | **Allowed Range** |
+| **Scope** | **Typical Range** |
 |------------|-----------------|
 | **Signpost** | `1-4` |
 | **Progression** | `1-16` |
 | **Event** | `1-64` |
-
-#### Canonical Tone Categories
-
-Each Storybeat has **three tonal layers**:
-| **Tone Type**  | **Enum Options** |
-|---------------|-----------------|
-| **Abstraction** | `"situation"`, `"action"`, `"justification"`, `"opinion"` |
-| **Spatial** | `"potential"`, `"resistance"`, `"current"`, `"power"` |
-| **Temporal** | `"expression"`, `"experimentation"`, `"integration"`, `"transcendence"` |
 
 #### Full Example: Canonical Storybeats
 
@@ -743,63 +542,37 @@ Each Storybeat has **three tonal layers**:
     "properties": {
       "id": {
         "type": "string",
-        "pattern": "^storybeat_[a-f0-9-]{36}$"
+        "pattern": "^(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*)$"
       },
-      "appreciation": {
+      "scope": {
         "type": "string",
         "enum": ["signpost", "progression", "event"]
       },
       "sequence": {
-        "oneOf": [
-          {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 4,
-            "description": "For Signposts (1-4)"
-          },
-          {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 16,
-            "description": "For Progressions (1-16)"
-          },
-          {
-            "type": "integer",
-            "minimum": 1,
-            "maximum": 64,
-            "description": "For Events (1-64)"
-          }
-        ]
+        "type": "integer",
+        "minimum": 1
+      },
+      "signpost": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 4
+      },
+      "throughline": {
+        "type": "string"
       },
       "narrative_function": {
         "type": "string"
       },
-      "illustration": {
-        "type": "string"
+      "custom_narrative_function": { "type": "string" },
+      "custom_narrative_function_namespace": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
       },
       "summary": {
         "type": "string"
       },
       "storytelling": {
         "type": "string"
-      },
-      "tones": {
-        "type": "object",
-        "properties": {
-          "abstraction": {
-            "type": "string",
-            "enum": ["situation", "action", "justification", "opinion"]
-          },
-          "spatial": {
-            "type": "string",
-            "enum": ["potential", "resistance", "current", "power"]
-          },
-          "temporal": {
-            "type": "string",
-            "enum": ["expression", "experimentation", "integration", "transcendence"]
-          }
-        },
-        "required": ["abstraction", "spatial", "temporal"]
       },
       "perspectives": {
         "type": "array",
@@ -810,16 +583,17 @@ Each Storybeat has **three tonal layers**:
                 "type": "string"
             }
             },
-            "required": []
+            "required": ["perspective_id"]
         }
       }
     },
     "required": [
       "id",
-      "appreciation",
+      "scope",
       "sequence",
       "narrative_function",
-      "tones",
+      "summary",
+      "storytelling",
       "perspectives"
     ]
   }
@@ -834,25 +608,22 @@ Each Storybeat has **three tonal layers**:
 
 ```json
 {
-  "id": "storybeat_abc123",
-  "perspective": {
-    "throughline": "Main Character",
-    "perspective_id": "perspective_ab12cd34"
-  },
-  "appreciation": "Signpost",
+  "id": "beat_abc123",
+  "scope": "signpost",
   "sequence": 3,
   "narrative_function": "Memory",
-  "illustration": "looking back at choices made",
+  "signpost": 3,
+  "throughline": "Main Character",
   "summary": "A moment of hesitation as the protagonist considers the past.",
   "storytelling": "In the rain, Alex stares at the old photo, lost in thought.",
-  "tones": {
-    "abstraction": "justification",
-    "spatial": "potential",
-    "temporal": "expression"
-  }
+  "perspectives": [
+    {
+      "perspective_id": "perspective_ab12cd34"
+    }
+  ]
 }
 ```
-✅ **Passes validation** because `number: 3` is within the **1-4 range** for `Signpost`.
+✅ **Passes validation** because `sequence: 3` is within the **1-4 range** for `signpost`.
 
 ---
 
@@ -860,26 +631,22 @@ Each Storybeat has **three tonal layers**:
 
 ```json
 {
-  "id": "storybeat_abc123",
-  "perspective": {
-    "throughline": "Main Character",
-    "perspective_id": "perspective_ab12cd34"
-  },
-  "appreciation": "Signpost",
+  "id": "beat_abc123",
+  "scope": "signpost",
   "sequence": 7,  
   "narrative_function": "Memory",
-  "illustration": "looking back at choices made",
+  "signpost": 3,
+  "throughline": "Main Character",
   "summary": "A moment of hesitation as the protagonist considers the past.",
   "storytelling": "In the rain, Alex stares at the old photo, lost in thought.",
-  "tones": {
-    "abstraction": "justification",
-    "spatial": "potential",
-    "temporal": "expression"
-  },
-  "perspective_id": "perspective_xyz789"
+  "perspectives": [
+    {
+      "perspective_id": "perspective_xyz789"
+    }
+  ]
 }
 ```
-❌ **Fails validation** because `number: 7` is **outside the allowed range (1-4)** for `Signpost`.
+❌ **Fails validation** because `sequence: 7` is **outside the typical range (1-4)** for `signpost` scope.
 
 ---
 
@@ -903,11 +670,12 @@ While every standard is open to customization, we focus on customizing an Apprec
 ```json
 {
     "id": "storypoint_2345abcd",
-    "perspective": {
-        "throughline": "Influence Character",
-        "perspective_id": "perspective_ab12cd34"
-    },
-    "appreciation": "Symptom",
+    "perspectives": [
+        {
+            "perspective_id": "perspective_ab12cd34"
+        }
+    ],
+    "appreciation": "Main Character Symptom",
     "narrative_function": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint"
 }
@@ -933,11 +701,12 @@ To **ensure interoperability** across storytelling models, users can map appreci
 ```json
 {
     "id": "storypoint_2345abcd",
-    "perspective": {
-        "throughline": "Influence Character",
-        "perspective_id": "perspective_ab12cd34"
-    },
-    "appreciation": "Symptom",
+    "perspectives": [
+        {
+            "perspective_id": "perspective_ab12cd34"
+        }
+    ],
+    "appreciation": "Main Character Symptom",
     "narrative_function": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint",
     "custom_appreciation_namespace": {
@@ -975,34 +744,27 @@ icon: i-heroicons-information-circle
 ---
 
 ## Other Customization and Namespacing
-Just as Appreciations of Storypoints can be customized and mapped, the same applies to **Narrative Functions**, **Dynamics**, and **Vectors** across both Storypoints, Storybeats, and Dynamics. The key requirement is to maintain the keys found in the Standard Set for the applicable component, and then expanding with both the **custom term** and **custom term namespace**.  
+Just as Appreciations of Storypoints can be customized and mapped, the same applies to **Narrative Functions**, **Dynamics**, and **Vectors** across Storypoints, Storybeats, and Dynamics. The key requirement is to maintain the canonical fields for the applicable component, then expand with both the **custom term** and **custom term namespace**.  
 
 ### Storybeat Example
 
 ```json
 "storybeats": [
   {
-    "id": "storybeat_9876bcde",
-    "perspective": {
-        "throughline": "Main Character",
-        "perspective_id": "perspective_ab12cd34"
-    },
-    "appreciation": "Signpost",
+    "id": "beat_9876bcde",
+    "scope": "signpost",
     "sequence": 3,
+    "signpost": 3,
+    "throughline": "Main Character",
     "narrative_function": "Preconscious",
-    "illustration": "reacting spontaneously",
     "summary": "Michael’s carefully constructed world crumbles as his instincts betray him, pushing him into a moment of raw, unfiltered reaction that costs him everything he’s fought for.",
     "storytelling": "Michael doesn’t think—he just reacts. The argument erupts, his voice raw as he hurls words he can’t take back, exposing the fear he’s buried beneath years of control. The moment shatters, leaving only silence, a slammed door, and the sinking realization that he’s just lost everything.",
-    "tones": {
-        "abstraction": "justification",
-        "spatial": "potential",
-        "temporal": "expression"
-    },
-    "custom_appreciation": "Main Character Signpost 3",
+    "perspectives": [
+      {
+        "perspective_id": "perspective_ab12cd34"
+      }
+    ],
     "custom_narrative_function": "Impulsive Responses",
-    "custom_appreciation_namespace": {
-      "Dramatica": "Main Character Signpost 3"
-    },
     "custom_narrative_function_namespace": {
       "Dramatica": "Impulsive Responses",
       "Save the Cat!": "Dark Night of the Soul"
@@ -1016,10 +778,10 @@ Just as Appreciations of Storypoints can be customized and mapped, the same appl
 ## Validation & Best Practices
 To **preserve the integrity** of NCP while allowing for flexibility, the following **validation rules** should be applied:  
 
-- Storypoints and Storybeats must always include a standard `perspective`, `appreciation`, `narrative_function`, even if mapped to an external framework.
-- In addition, Storybeats must include a `scope` and `number` to map across the temporal progression of the narrative.
-- Dynammics must include a standard `dynamic` and `vector`.
-- If `custom_appreciation` is used, `appreciation` must still be present.**  
+- Storypoints must always include canonical `appreciation` and `narrative_function` values, even if mapped to an external framework.
+- Storybeats must include `scope`, `sequence`, and canonical `narrative_function` values to map across the temporal progression of the narrative.
+- Dynamics must include a standard `dynamic` and `vector`.
+- If `custom_appreciation` is used, `appreciation` must still be present.  
 - `custom_appreciation_namespace` should be used when interoperability with external frameworks is desired.
 
 ---
@@ -1030,7 +792,7 @@ To see the schema in action, here’s a **full example JSON document**:
 
 ```json
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "story": {
     "id": "story_123e4567-e89b-12d3-a456-426614174000",
     "title": "Echoes of the Past",
@@ -1045,7 +807,7 @@ To see the schema in action, here’s a **full example JSON document**:
           "perspectives": [
             {
               "id": "perspective_12345678-1234-1234-1234-123456789012",
-              "throughline": "Main Character",
+              "author_structural_pov": "i",
               "summary": "Michael Radford",
               "storytelling": "Michael Radford has spent his life convincing himself that control is the key to survival, but every step forward only tightens the noose around him. When his instincts betray him at the worst possible moment, he’s forced to confront the truth—his carefully built defenses aren’t protecting him, they’re suffocating him."
             }
@@ -1055,17 +817,13 @@ To see the schema in action, here’s a **full example JSON document**:
               "id": "player_abcdef12-3456-7890-abcd-ef1234567890",
               "name": "Detective John Marlowe",
               "role": "Main Character",
+              "visual": "A rumpled trench coat and tired eyes that miss nothing.",
+              "audio": "Measured speech with an edge of impatience.",
               "summary": "A seasoned detective battling personal demons and a haunting past.",
               "storytelling": "John projects a stoic and determined front, masking his inner turmoil.",
-              "perspective": {
-                "throughline": "Objective Story",
-                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-              },
-              "motivations": [
+              "perspectives": [
                 {
-                  "narrative_function": "Determination",
-                  "illustration": "John relentlessly pursues leads despite the personal cost.",
-                  "storytelling": "Intense close-ups and internal monologues reveal his unwavering resolve."
+                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
                 }
               ]
             }
@@ -1073,20 +831,20 @@ To see the schema in action, here’s a **full example JSON document**:
           "dynamics": [
             {
               "id": "dynamic_00112233-4455-6677-8899-aabbccddeeff",
-              "dynamic": "Story Outcome",
-              "vector": "Success",
+              "dynamic": "story_outcome",
+              "vector": "success",
               "summary": "The investigation culminates with John finding redemption as truth prevails.",
-              "storytelling": "A crescendo of revelations ties together the character’s journey and the case.",
-              "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+              "storytelling": "A crescendo of revelations ties together the character’s journey and the case."
             }
           ],
           "storypoints": [
             {
               "id": "storypoint_11223344-5566-7788-99aa-bbccddeeff00",
-              "perspective": {
-                "throughline": "Main Character",
-                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-              },
+              "perspectives": [
+                {
+                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                }
+              ],
               "appreciation": "Main Character Focus",
               "narrative_function": "Consider",
               "illustration": "ruminating over the case",
@@ -1098,27 +856,20 @@ To see the schema in action, here’s a **full example JSON document**:
           ],
           "storybeats": [
             {
-              "id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-              "perspective": {
-                "throughline": "Main Character",
-                "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
-              },
-              "appreciation": "Signpost",
+              "id": "beat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+              "scope": "signpost",
               "sequence": 2,
+              "signpost": 2,
+              "throughline": "Main Character",
               "narrative_function": "Preconscious",
-              "illustration": "being impulsive",
               "summary": "Haunted by the past, John relives the traumatic events that shaped his career.",
               "storytelling": "Intercut scenes merge present-day investigation with vivid flashbacks of earlier failures.",
-              "tones": {
-                "abstraction": "situation",
-                "spatial": "resistance",
-                "temporal": "expression"
-              },
-              "custom_appreciation": "Main Character Signpost 3",
+              "perspectives": [
+                {
+                  "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                }
+              ],
               "custom_narrative_function": "Impulsive Responses",
-              "custom_appreciation_namespace": {
-                "Dramatica": "Main Character Signpost 3"
-              },
               "custom_narrative_function_namespace": {
                 "Dramatica": "Impulsive Responses"
               }
@@ -1129,11 +880,13 @@ To see the schema in action, here’s a **full example JSON document**:
           "overviews": [
             {
               "id": "overview_001",
+              "label": "logline",
               "summary": "A dark investigation in a rain-soaked city where every shadow holds a secret.",
               "storytelling": "A gritty, atmospheric narrative blending film noir with modern mystery."
             },
             {
               "id": "overview_002",
+              "label": "genre_dynamics",
               "summary": "A psychological dive into trauma and redemption.",
               "storytelling": "The story juxtaposes stark reality with introspective moments, engaging the audience emotionally."
             }
@@ -1143,10 +896,13 @@ To see the schema in action, here’s a **full example JSON document**:
               "id": "moment_001",
               "summary": "The inciting discovery.",
               "synopsis": "John stumbles upon a crucial piece of evidence that challenges everything he believed about the case.",
+              "setting": "A dim archive room at the precinct.",
+              "timing": "After hours, late night.",
+              "imperatives": "Introduce the evidence, seed the personal connection, and raise immediate stakes.",
               "storybeats": [
                 {
-                  "order": 0,
-                  "storybeat_id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+                  "sequence": 0,
+                  "storybeat_id": "beat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
                 }
               ]
             },
@@ -1154,10 +910,13 @@ To see the schema in action, here’s a **full example JSON document**:
               "id": "moment_002",
               "summary": "The tense confrontation.",
               "synopsis": "In a high-stakes interrogation, John confronts a suspect whose ambiguous alibi deepens the mystery.",
+              "setting": "An interrogation room lit by a single overhead lamp.",
+              "timing": "The next morning.",
+              "imperatives": "Escalate conflict, undermine assumptions, and tease a larger conspiracy.",
               "storybeats": [
                 {
-                  "order": 0,
-                  "storybeat_id": "storybeat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+                  "sequence": 0,
+                  "storybeat_id": "beat_aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
                 }
               ]
             }

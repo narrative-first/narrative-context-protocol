@@ -177,6 +177,8 @@ To support creative flexibility and compatibility with different narrative frame
 - Always retain canonical standards alongside custom terms.
 - Utilize namespaces for clear mapping to external frameworks.
 
+Canonical lists are maintained in `docs/terminology/02.appreciations-of-narrative.md` and `docs/terminology/03.narrative-functions.md`.
+
 ---
 
 ## Validation and Narrative Integrity
@@ -251,9 +253,8 @@ Defined structural elements representing spatial aspects of a narrative. They es
 "storypoints": [
   {
     "id": "storypoint_2345abcd",
-    "context": "main character",
-    "appreciation": "issue",
-    "narrative_function": "rationalization",
+    "appreciation": "Main Character Issue",
+    "narrative_function": "Rationalization",
     "illustration": "justifying bad behavior",
     "summary": "Michael avoids self-examination by rationalizing past behavior.",
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
@@ -273,21 +274,18 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 ```json
 "storybeats": [
   {
-    "id": "storybeat_9876bcde",
-    "context": "main character",
-    "appreciation": "signpost",
+    "id": "beat_9876bcde",
+    "scope": "signpost",
     "sequence": 4,
-    "narrative_function": "past",
-    "illustration": "reliving the past",
+    "signpost": 4,
+    "throughline": "Main Character",
+    "narrative_function": "Past",
     "summary": "Michael can no longer escape his past.",
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
-    "tones": {
-        "abstraction": "situation",
-        "spatial": "power",
-        "temporal": "transcendence"
-    },
     "perspectives": [
-        "perspective_ab12cd34"
+        {
+            "perspective_id": "perspective_ab12cd34"
+        }
     ]
   }
 ]
@@ -301,8 +299,8 @@ High-level narrative forces that reflect the author's intent, shaping the story'
 "dynamics": [
   {
     "id": "dynamic_abcdef12",
-    "dynamic": "Story Outcome",
-    "vector": "Success",
+    "dynamic": "story_outcome",
+    "vector": "success",
     "summary": "The story resolves with Michael embracing his past.",
     "storytelling": "Michael finally opens up, allowing his own progress."
   }
@@ -343,14 +341,14 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "setting": "The pulsating streets of Neo-Tokyo, where holographic ads blend with the shadowy back alleys controlled by syndicate bosses.",
     "timing": "Late night, just hours after Alex's first unsettling discovery upon arriving in the city.",
     "imperatives": "- Establish the dark, chaotic atmosphere of Neo-Tokyo\n- Introduce key threats: cyber-criminals and AI enforcers\n- Show Alex's initial vulnerabilities and resourcefulness",
-    "audience_experiential_pov": "third-person limited",
+    "audience_experiential_pov": "third_person_limited",
     "fabric": [
       { "type": "space", "limit": 10 }
     ],
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "storybeat_123456" },
-      { "sequence": 1, "storybeat_id": "storybeat_789012" },
-      { "sequence": 2, "storybeat_id": "storybeat_345678" }
+      { "sequence": 0, "storybeat_id": "beat_123456" },
+      { "sequence": 1, "storybeat_id": "beat_789012" },
+      { "sequence": 2, "storybeat_id": "beat_345678" }
     ]
   },
   {
@@ -360,13 +358,13 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "setting": "A hidden data sanctuary deep beneath Neo-Tokyo, where reality merges seamlessly with the digital ether.",
     "timing": "The following evening, after Alex spends the day piecing together crucial fragments of intel collected overnight.",
     "imperatives": "- Build tension leading to the meeting with the AI\n- Reveal the AI's surprising nature and motives\n- Challenge Alex's established beliefs about allies and enemies",
-    "audience_experiential_pov": "third-person limited",
+    "audience_experiential_pov": "third_person_limited",
     "fabric": [
       { "type": "space", "limit": 20 }
     ],
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "storybeat_987654" },
-      { "sequence": 1, "storybeat_id": "storybeat_654321" }
+      { "sequence": 0, "storybeat_id": "beat_987654" },
+      { "sequence": 1, "storybeat_id": "beat_654321" }
     ]
   }
 ]

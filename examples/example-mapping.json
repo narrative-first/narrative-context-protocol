@@ -1,16 +1,16 @@
 {
     "id": "storypoint_2345abcd",
-    "perspective": {
-      "throughline": "Influence Character",
-      "perspective_id": "perspective_ab12cd34"
-    },
-    "appreciation": "Symptom",
+    "perspectives": [
+        {
+            "perspective_id": "perspective_ab12cd34"
+        }
+    ],
+    "appreciation": "Main Character Symptom",
     "narrative_function": "Disbelief",
     "custom_appreciation": "Alternative Viewpoint",
     "custom_appreciation_namespace": {
-      "Dramatica": "Influence Character Symptom",
-      "Hero's Journey": "Call to Adventure",
-      "Save the Cat!": "Debate"
+        "Dramatica": "Influence Character Symptom",
+        "Hero's Journey": "Call to Adventure",
+        "Save the Cat!": "Debate"
     }
-  }
-  
+}

@@ -16,7 +16,7 @@ Narrative First chose to openly share this schema, driven by the belief that sto
 
 ## The NCP Project at ETC/USC
 
-Narrative Context Protocol (UNM) is driven by an extraordinary team of visionaries and narrative experts dedicated to revolutionizing storytelling through technology and innovation. Funded by USC’s Entertainment Technology Center (ETC), the project benefits from the strategic leadership of Executive Producer Paul Bennun, whose extensive experience at the intersection of entertainment and technology shapes the project's ambitious vision.
+Narrative Context Protocol (NCP) is driven by an extraordinary team of visionaries and narrative experts dedicated to revolutionizing storytelling through technology and innovation. Funded by USC’s Entertainment Technology Center (ETC), the project benefits from the strategic leadership of Executive Producer Paul Bennun, whose extensive experience at the intersection of entertainment and technology shapes the project's ambitious vision.
 
 Project Lead George Gerba, renowned for his pioneering approach to narrative technologies, oversees the implementation and evolution of NCP, ensuring the protocol remains both groundbreaking and practical for contemporary narrative artists.
 
