@@ -26,7 +26,8 @@
                 },
                 "created_at": {
                     "type": "string",
-                    "format": "date-time"
+                    "description": "ISO-8601 UTC timestamp (e.g., 2025-12-01T12:34:56Z).",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
                 },
                 "narratives": {
                     "type": "array",
@@ -334,18 +335,68 @@
                                                     }
                                                 }
                                             },
-                                            "required": [
-                                                "id",
-                                                "scope",
-                                                "sequence",
-                                                "narrative_function",
-                                                "summary",
-                                                "storytelling",
-                                                "perspectives"
-                                            ]
-                                        }
+                                        "required": [
+                                            "id",
+                                            "scope",
+                                            "sequence",
+                                            "narrative_function",
+                                            "summary",
+                                            "storytelling",
+                                            "perspectives"
+                                        ],
+                                        "allOf": [
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "scope": {
+                                                            "const": "signpost"
+                                                        }
+                                                    }
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "sequence": {
+                                                            "maximum": 4
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "scope": {
+                                                            "const": "progression"
+                                                        }
+                                                    }
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "sequence": {
+                                                            "maximum": 16
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "if": {
+                                                    "properties": {
+                                                        "scope": {
+                                                            "const": "event"
+                                                        }
+                                                    }
+                                                },
+                                                "then": {
+                                                    "properties": {
+                                                        "sequence": {
+                                                            "maximum": 64
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
                                     }
-                                },
+                                }
+                            },
                                 "required": [
                                     "perspectives",
                                     "players",

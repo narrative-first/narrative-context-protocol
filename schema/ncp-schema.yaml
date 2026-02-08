@@ -1,4 +1,4 @@
-"$schema": http://json-schema.org/draft-07/schema#
+$schema: http://json-schema.org/draft-07/schema#
 title: Narrative Context Protocol Schema
 description: A standardized protocol for structuring narrative elements in a complete
     story for use in multi-agentic systems.
@@ -7,7 +7,7 @@ properties:
     schema_version:
         type: string
         description: Semver string (e.g., 1.2.0).
-        pattern: "^\\d+\\.\\d+\\.\\d+$"
+        pattern: ^\d+\.\d+\.\d+$
     story:
         type: object
         properties:
@@ -21,7 +21,8 @@ properties:
                 type: string
             created_at:
                 type: string
-                format: date-time
+                description: ISO-8601 UTC timestamp (e.g., 2025-12-01T12:34:56Z).
+                pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$
             narratives:
                 type: array
                 items:
@@ -162,9 +163,9 @@ properties:
                                             id:
                                                 type: string
                                             appreciation:
-                                                "$ref": "#/$defs/canonical_appreciation"
+                                                $ref: '#/$defs/canonical_appreciation'
                                             narrative_function:
-                                                "$ref": "#/$defs/canonical_narrative_function"
+                                                $ref: '#/$defs/canonical_narrative_function'
                                             illustration:
                                                 type: string
                                             summary:
@@ -206,7 +207,7 @@ properties:
                                         type: object
                                         properties:
                                             id:
-                                                "$ref": "#/$defs/stable_id"
+                                                $ref: '#/$defs/stable_id'
                                             scope:
                                                 type: string
                                                 enum:
@@ -227,7 +228,7 @@ properties:
                                                 description: Optional throughline
                                                     label for grouping.
                                             narrative_function:
-                                                "$ref": "#/$defs/canonical_narrative_function"
+                                                $ref: '#/$defs/canonical_narrative_function'
                                             summary:
                                                 type: string
                                             storytelling:
@@ -255,6 +256,31 @@ properties:
                                         - summary
                                         - storytelling
                                         - perspectives
+                                        allOf:
+                                        -   if:
+                                                properties:
+                                                    scope:
+                                                        const: signpost
+                                            then:
+                                                properties:
+                                                    sequence:
+                                                        maximum: 4
+                                        -   if:
+                                                properties:
+                                                    scope:
+                                                        const: progression
+                                            then:
+                                                properties:
+                                                    sequence:
+                                                        maximum: 16
+                                        -   if:
+                                                properties:
+                                                    scope:
+                                                        const: event
+                                            then:
+                                                properties:
+                                                    sequence:
+                                                        maximum: 64
                             required:
                             - perspectives
                             - players
@@ -272,7 +298,7 @@ properties:
                                             id:
                                                 type: string
                                             label:
-                                                "$ref": "#/$defs/normalized_label"
+                                                $ref: '#/$defs/normalized_label'
                                             summary:
                                                 type: string
                                             storytelling:
@@ -340,7 +366,7 @@ properties:
                                                         sequence:
                                                             type: integer
                                                         storybeat_id:
-                                                            "$ref": "#/$defs/stable_id"
+                                                            $ref: '#/$defs/stable_id'
                                                     required:
                                                     - sequence
                                                     - storybeat_id
@@ -368,13 +394,13 @@ properties:
 required:
 - schema_version
 - story
-"$defs":
+$defs:
     stable_id:
         type: string
-        pattern: "^(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*)$"
+        pattern: ^(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*)$
     normalized_label:
         type: string
-        pattern: "^[a-z][a-z0-9_]*$"
+        pattern: ^[a-z][a-z0-9_]*$
         description: Normalized snake_case label (e.g., logline, genre_dynamics).
     canonical_appreciation:
         type: string

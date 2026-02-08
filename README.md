@@ -10,7 +10,7 @@ NCP is curated by **The Dramatica Co.**—the merger of **Write Bros. Inc.** and
 
 At its core, NCP provides a **structured yet adaptable schema**, ensuring narratives retain their logical consistency and emotional depth, even when interpreted or extended by numerous interacting agents. By encoding narrative elements into clear, universally understood representations, NCP maintains the original intent of the author throughout dynamic, distributed narrative environments.
 
-Additionally, NCP acts like a "blockchain-for-subtext," transparently tracking narrative contributions, modifications, and creative expansions. This ensures the original artistic voice and intent remain clear and traceable, regardless of the complexity or number of agents involved.
+NCP is transport-focused: it standardizes how storyform context is represented so different tools can exchange the same structural intent without semantic drift.
 
 Built upon proven narrative theories and driven by emerging advancements in AI storytelling, NCP simplifies and standardizes complex narrative exchanges. It empowers storytellers, technologists, and creative communities in film, gaming, literature, interactive media, and generative AI environments to collaborate freely—without sacrificing coherence, authenticity, or the original author's vision.
 
@@ -51,6 +51,32 @@ In 2025, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwr
 
 Begin by reading the complete [Specification](/SPECIFICATION.md)
 
+Install validation dependencies and run fixture checks:
+
+```bash
+npm install
+npm run validate:schema
+```
+
+`examples/legacy/` contains migration samples and is intentionally excluded from canonical validation.
+`examples/example-mapping.json` is a mapping fragment example, not a full schema document.
+Use [/VALIDATION.md](/VALIDATION.md) for validating your own NCP files and CI setup.
+
+## For Adopters (Self-Serve)
+
+If you found this repository and want to validate your own NCP JSON, do this:
+
+1. Clone this repo and run:
+```bash
+npm install
+```
+2. Validate your file directly against the canonical schema:
+```bash
+npm run validate:file -- /path/to/your-ncp.json
+```
+3. If validation fails, fix the reported fields and run the same command again.
+4. If you maintain your own repository, copy the CI pattern from `/VALIDATION.md` so every PR validates NCP automatically.
+
 ## Repository Structure
 ```
 narrative-context-protocol/
@@ -64,18 +90,23 @@ narrative-context-protocol/
 │   ├── ncp-schema.json
 │   └── ncp-schema.yaml
 ├── examples/
+│   ├── example-story.json
 │   ├── anora.json
 │   ├── the-shawshank-redemption.json
-│   ├── example-story.json
-│   └── example-mapping.json
+│   ├── example-mapping.json
+│   ├── invalid/
+│   │   └── signpost-sequence-out-of-range.json
+│   └── legacy/
+│       ├── anora-legacy.json
+│       └── the-shawshank-redemption-legacy.json
 ├── docs/
 │   ├── terminology/
-│       ├── 01.perspectives.md
-│       ├── 02.appreciations-of-narrative.md
-│       ├── 03.narrative-functions.md
-│       ├── 04.dynamics.md
-│       ├── 05.vectors.md
-│       ├── 10.dramatica-translation.md
+│   │   ├── 01.perspectives.md
+│   │   ├── 02.appreciations-of-narrative.md
+│   │   ├── 03.narrative-functions.md
+│   │   ├── 04.dynamics.md
+│   │   ├── 05.vectors.md
+│   │   └── 10.dramatica-translation.md
 │   └── narrative-context-protocol-schema.md
 ├── tests/
 │   └── validate-schema.js

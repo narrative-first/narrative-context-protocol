@@ -26,4 +26,4 @@ Together, this dedicated group is charting a forward-looking path, passionately 
 
 ⸻
 
-For a full list of changes and updates, refer to [terminology.md](/terminology.md).
+For canonical terminology updates, refer to the files under [/docs/terminology/](/docs/terminology/).
