@@ -6,6 +6,12 @@ The **Narrative Context Protocol (NCP)** is the open-source Dramatica storyform 
 ## How to Contribute
 We welcome contributions that improve the schema, examples, documentation, and validation tooling. Proposed changes should maintain cross-medium applicability and keep JSON/YAML definitions in sync.
 
+### Example Fixture Policy
+- Keep schema-valid interchange fixtures in `/examples/` (and `/examples/invalid/` for expected-failure tests).
+- Keep historical or migration-only payloads in `/examples/legacy/`.
+- Update `tests/validate-schema.js` whenever fixture coverage changes.
+- Run `npm run validate:schema` before opening a PR.
+
 ## Governance & Review
 NCP was developed in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California** and is stewarded by **Narrative First** (The Dramatica Co.). Core maintainers lead reviews and incorporate community and partner feedback.
 

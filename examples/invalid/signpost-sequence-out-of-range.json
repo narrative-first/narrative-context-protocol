@@ -1,0 +1,105 @@
+{
+    "schema_version": "1.2.0",
+    "story": {
+        "id": "story_invalid_001",
+        "title": "Invalid Signpost Sequence",
+        "genre": "Test",
+        "logline": "Used to assert that signpost sequences are bounded.",
+        "created_at": "2026-02-07T00:00:00Z",
+        "narratives": [
+            {
+                "id": "narrative_invalid_001",
+                "title": "Validation Case",
+                "subtext": {
+                    "perspectives": [
+                        {
+                            "id": "perspective_invalid_001",
+                            "author_structural_pov": "i",
+                            "summary": "Test POV",
+                            "storytelling": "Test perspective"
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "player_invalid_001",
+                            "name": "Test Player",
+                            "role": "Main Character",
+                            "visual": "",
+                            "audio": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_invalid_001"
+                                }
+                            ]
+                        }
+                    ],
+                    "dynamics": [
+                        {
+                            "id": "dynamic_invalid_001",
+                            "dynamic": "story_outcome",
+                            "vector": "success",
+                            "summary": "",
+                            "storytelling": ""
+                        }
+                    ],
+                    "storypoints": [
+                        {
+                            "id": "storypoint_invalid_001",
+                            "appreciation": "Story Goal",
+                            "narrative_function": "Obtaining",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_invalid_001"
+                                }
+                            ]
+                        }
+                    ],
+                    "storybeats": [
+                        {
+                            "id": "beat_invalid_001",
+                            "scope": "signpost",
+                            "sequence": 7,
+                            "narrative_function": "Past",
+                            "summary": "This should fail.",
+                            "storytelling": "Signpost sequence exceeds allowed max.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_invalid_001"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "storytelling": {
+                    "overviews": [
+                        {
+                            "label": "logline",
+                            "summary": "",
+                            "storytelling": ""
+                        }
+                    ],
+                    "moments": [
+                        {
+                            "summary": "",
+                            "synopsis": "",
+                            "setting": "",
+                            "timing": "",
+                            "imperatives": "",
+                            "storybeats": [
+                                {
+                                    "sequence": 0,
+                                    "storybeat_id": "beat_invalid_001"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

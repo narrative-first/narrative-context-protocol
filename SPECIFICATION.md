@@ -147,7 +147,7 @@ Clearly differentiating between Subtext and Storytelling enhances narrative clar
 | Represents authorial intent  | Shapes audience experience      |
 | Ensures structural coherence | Allows stylistic and expressive flexibility |
 
-This separation becomes even more critical in the AI era. Training models exclusively on storytelling—whether through transcripts, closed captions, or script dialogue—beyond being unethical--is fundamentally unproductive. Such training is ineffective because it captures only the surface-level "flavoring" of a story, not its underlying thematic essence. The true value resides in the structural coherence provided by subtext, the very heart of the narrative.
+This separation becomes even more critical in AI workflows. Training exclusively on storytelling artifacts captures surface expression, but often misses transferable structural intent. Subtext is the layer designed for durable interchange.
 
 ---
 
@@ -217,7 +217,7 @@ The implications for interactive narratives are significant. In interactive stor
 
 ### Players
 
-Characters whose actions and motivations reveal deeper thematic layers (subtext), moving beyond superficial characterization. Each Player must be  linked explicitly to an **Objective Story Throughline Perspective** to maintain narrative coherence.
+Characters whose actions and motivations reveal deeper thematic layers (subtext), moving beyond superficial characterization. Each Player should be linked to one or more relevant Perspectives to maintain narrative coherence.
 
 ```json
 "players": [

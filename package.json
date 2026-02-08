@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "validate:schema": "node tests/validate-schema.js",
+    "validate:file": "node tests/validate-file.js"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}
