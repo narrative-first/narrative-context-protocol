@@ -179,13 +179,30 @@ To support creative flexibility and compatibility with different narrative frame
 
 Canonical lists are maintained in `docs/terminology/02.appreciations-of-narrative.md` and `docs/terminology/03.narrative-functions.md`.
 
+### Narrative Framing Lens (Holistic Storypoint Aliases)
+
+For holistic framing, NCP also recognizes the following Character-framing Appreciations as canonical-valid labels:
+
+- Character Intentions -> Story Goal
+- Character Repercussions -> Story Consequence
+- Character Adaptations -> Story Requirements
+- Character Affectations -> Story Prerequisites
+- Character Engagements -> Story Preconditions
+- Character Perks -> Story Dividends
+- Character Pressures -> Story Costs
+- Character Forebodings -> Story Forewarnings
+
+These labels preserve authorial framing voice while retaining compatibility with Story Goal/Story Consequence-centered canonical reduction.
+
 ---
 
 ## Validation and Narrative Integrity
 
 To ensure integrity and consistency in narratives structured with NCP:
-- Storypoints and Storybeats must include canonical terms.
-- Custom terms complement but do not replace canonical standards.
+- Storypoints and Storybeats must include canonical terms from schema enums.
+- Linear-focused and Character-framing Appreciations are both canonical-valid labels for holistic framing workflows.
+- Regardless of Appreciation framing, NCP normalization reduces these terms to canonical Story Goal / Story Consequence families for interoperability.
+- Linear stories should use linear-focused Appreciations; holistic stories may use either linear-focused or Character-framing Appreciations.
 - Storybeats require clearly defined scopes and sequences to maintain coherent temporal progression.
 
 ---

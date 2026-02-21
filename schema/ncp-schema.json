@@ -335,68 +335,68 @@
                                                     }
                                                 }
                                             },
-                                        "required": [
-                                            "id",
-                                            "scope",
-                                            "sequence",
-                                            "narrative_function",
-                                            "summary",
-                                            "storytelling",
-                                            "perspectives"
-                                        ],
-                                        "allOf": [
-                                            {
-                                                "if": {
-                                                    "properties": {
-                                                        "scope": {
-                                                            "const": "signpost"
+                                            "required": [
+                                                "id",
+                                                "scope",
+                                                "sequence",
+                                                "narrative_function",
+                                                "summary",
+                                                "storytelling",
+                                                "perspectives"
+                                            ],
+                                            "allOf": [
+                                                {
+                                                    "if": {
+                                                        "properties": {
+                                                            "scope": {
+                                                                "const": "signpost"
+                                                            }
+                                                        }
+                                                    },
+                                                    "then": {
+                                                        "properties": {
+                                                            "sequence": {
+                                                                "maximum": 4
+                                                            }
                                                         }
                                                     }
                                                 },
-                                                "then": {
-                                                    "properties": {
-                                                        "sequence": {
-                                                            "maximum": 4
+                                                {
+                                                    "if": {
+                                                        "properties": {
+                                                            "scope": {
+                                                                "const": "progression"
+                                                            }
                                                         }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "if": {
-                                                    "properties": {
-                                                        "scope": {
-                                                            "const": "progression"
-                                                        }
-                                                    }
-                                                },
-                                                "then": {
-                                                    "properties": {
-                                                        "sequence": {
-                                                            "maximum": 16
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "if": {
-                                                    "properties": {
-                                                        "scope": {
-                                                            "const": "event"
+                                                    },
+                                                    "then": {
+                                                        "properties": {
+                                                            "sequence": {
+                                                                "maximum": 16
+                                                            }
                                                         }
                                                     }
                                                 },
-                                                "then": {
-                                                    "properties": {
-                                                        "sequence": {
-                                                            "maximum": 64
+                                                {
+                                                    "if": {
+                                                        "properties": {
+                                                            "scope": {
+                                                                "const": "event"
+                                                            }
+                                                        }
+                                                    },
+                                                    "then": {
+                                                        "properties": {
+                                                            "sequence": {
+                                                                "maximum": 64
+                                                            }
                                                         }
                                                     }
                                                 }
-                                            }
-                                        ]
+                                            ]
+                                        }
                                     }
-                                }
-                            },
+                                },
                                 "required": [
                                     "perspectives",
                                     "players",
@@ -578,6 +578,14 @@
                 "Argument Resolution",
                 "Character Evolution",
                 "Character Orientation",
+                "Character Intentions",
+                "Character Repercussions",
+                "Character Adaptations",
+                "Character Affectations",
+                "Character Engagements",
+                "Character Perks",
+                "Character Pressures",
+                "Character Forebodings",
                 "Concluding Story Driver",
                 "Emotional Outcome",
                 "Essence",
