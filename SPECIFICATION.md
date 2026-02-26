@@ -1,7 +1,8 @@
 # SPECIFICATION
 
-The NCP schema separates narrative design into two complementary layers—**Subtext** and **Storytelling**:
+The NCP schema supports an optional pre-narrative ideation layer alongside two complementary narrative layers—**Subtext** and **Storytelling**:
 
+- **Ideation** captures exploratory concepts before a formal Storyform exists.
 - **Subtext** represents the deeper, intended meaning crafted by the author.
 - **Storytelling** is the adaptable, creative presentation of this meaning to an audience.
 
@@ -11,10 +12,17 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
 "story": {
   "id": "story_123e4567",
   "title": "The Journey Within",
+  "ideation": {
+    "character": [],
+    "theme": [],
+    "plot": [],
+    "genre": []
+  },
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
         "title": "Central Form",
+        "status": "candidate",
         "subtext": {
             "perspectives": [],
             "players": [],
@@ -42,9 +50,45 @@ The highest-level object representing the entire story, containing its metadata 
     "title": "The Journey Within",
     "genre": "Psychological Drama",
     "logline": "A psychologist struggling with his past helps a patient uncover a hidden trauma, only to confront his own.",
+    "ideation": {
+      "character": [],
+      "theme": [],
+      "plot": [],
+      "genre": []
+    },
     "narratives": [],
     "created_at": "2025-02-05T14:30:00Z"
   }
+}
+```
+
+## Pre-Narrative Ideation Layer (Beginner Mode)
+
+`story.ideation` is an optional, beginner-friendly concept space for authors who are still forming ideas and are not ready for full Storyform structure.
+
+- It lives inside `story`, above and outside formal narratives.
+- It contains four domains: `character`, `theme`, `plot`, and `genre`.
+- Each domain is an array of lightweight nodes requiring only `id` and `summary`.
+- Nodes remain open/extensible so creators and LLM workflows can attach additional metadata without breaking schema compatibility.
+
+This layer informs narratives as projects mature, while keeping strict structural meaning in `narratives[].subtext` and `narratives[].storytelling`.
+
+For open-source adopters, this creates a shared on-ramp: communities can exchange early creative concepts in a common format without forcing immediate commitment to full Dramatica Storyform structure, while still preserving interoperability with canonical narrative objects.
+
+```json
+"ideation": {
+  "character": [
+    {
+      "id": "idea_char_001",
+      "summary": "A protector whose need for control masks grief.",
+      "title": "Lead Character Seed",
+      "notes": "Could split into multiple variants later.",
+      "tags": ["character_arc", "inner_conflict"]
+    }
+  ],
+  "theme": [],
+  "plot": [],
+  "genre": []
 }
 ```
 
@@ -52,6 +96,8 @@ The highest-level object representing the entire story, containing its metadata 
 ## Narrative: Structuring Subtext & Storytelling
 
 A single story may contain one or more narratives (e.g., _The Empire Strikes Back_ has the Luke/Yoda Storyform and the Han/Leia Storyform, _Barbie_ has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a single central narrative (e.g., _Anora_, _Anatomy of a Fall_, etc.).
+
+Each narrative may optionally declare a `status` of `candidate`, `draft`, or `complete` to distinguish exploratory forms from finalized structure. If omitted, consumers may treat it as complete.
 
 A narrative consists of two core layers:
 
@@ -69,6 +115,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
       {
         "id": "narrative_AbnHJ147",
         "title": "Central Form",
+        "status": "draft",
         "subtext": {
           "perspectives": [],
           "players": [],

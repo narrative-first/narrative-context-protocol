@@ -6,7 +6,7 @@
     "properties": {
         "schema_version": {
             "type": "string",
-            "description": "Semver string (e.g., 1.2.0).",
+            "description": "Semver string (e.g., 1.3.0).",
             "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "story": {
@@ -29,6 +29,42 @@
                     "description": "ISO-8601 UTC timestamp (e.g., 2025-12-01T12:34:56Z).",
                     "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
                 },
+                "ideation": {
+                    "type": "object",
+                    "description": "Optional pre-narrative ideation threads for exploratory and beginner workflows.",
+                    "properties": {
+                        "character": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/ideation_node"
+                            }
+                        },
+                        "theme": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/ideation_node"
+                            }
+                        },
+                        "plot": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/ideation_node"
+                            }
+                        },
+                        "genre": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/$defs/ideation_node"
+                            }
+                        }
+                    },
+                    "required": [
+                        "character",
+                        "theme",
+                        "plot",
+                        "genre"
+                    ]
+                },
                 "narratives": {
                     "type": "array",
                     "items": {
@@ -39,6 +75,15 @@
                             },
                             "title": {
                                 "type": "string"
+                            },
+                            "status": {
+                                "type": "string",
+                                "description": "Optional narrative lifecycle state. When omitted, consumers may treat as complete.",
+                                "enum": [
+                                    "candidate",
+                                    "draft",
+                                    "complete"
+                                ]
                             },
                             "subtext": {
                                 "type": "object",
@@ -569,6 +614,34 @@
             "type": "string",
             "pattern": "^[a-z][a-z0-9_]*$",
             "description": "Normalized snake_case label (e.g., logline, genre_dynamics)."
+        },
+        "ideation_node": {
+            "type": "object",
+            "description": "Lightweight ideation node for pre-narrative concept capture.",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "summary": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "id",
+                "summary"
+            ]
         },
         "canonical_appreciation": {
             "type": "string",

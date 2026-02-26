@@ -1,0 +1,54 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_invalid_status_001",
+        "title": "Invalid Narrative Status",
+        "genre": "Test",
+        "logline": "Used to assert that narrative status is constrained to canonical values.",
+        "created_at": "2026-02-26T00:00:00Z",
+        "ideation": {
+            "character": [
+                {
+                    "id": "idea_char_invalid_status_001",
+                    "summary": "A placeholder character concept."
+                }
+            ],
+            "theme": [
+                {
+                    "id": "idea_theme_invalid_status_001",
+                    "summary": "A placeholder theme concept."
+                }
+            ],
+            "plot": [
+                {
+                    "id": "idea_plot_invalid_status_001",
+                    "summary": "A placeholder plot concept."
+                }
+            ],
+            "genre": [
+                {
+                    "id": "idea_genre_invalid_status_001",
+                    "summary": "A placeholder genre concept."
+                }
+            ]
+        },
+        "narratives": [
+            {
+                "id": "narrative_invalid_status_001",
+                "title": "Status Failure Case",
+                "status": "exploring",
+                "subtext": {
+                    "perspectives": [],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": []
+                }
+            }
+        ]
+    }
+}

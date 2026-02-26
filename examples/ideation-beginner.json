@@ -1,0 +1,70 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_ideation_001",
+        "title": "Paper Lanterns",
+        "genre": "Coming-of-Age Fantasy",
+        "logline": "A gifted teen cartographer discovers maps that rewrite memory and must decide what to preserve.",
+        "created_at": "2026-02-26T00:00:00Z",
+        "ideation": {
+            "character": [
+                {
+                    "id": "idea_character_001",
+                    "summary": "A precise, anxious mapmaker who fears forgetting her family history.",
+                    "title": "Lead Character"
+                },
+                {
+                    "id": "idea_character_002",
+                    "summary": "A reckless friend who values reinvention over continuity.",
+                    "title": "Counterpoint Character",
+                    "notes": "Could become influence character or antagonist depending on narrative direction."
+                }
+            ],
+            "theme": [
+                {
+                    "id": "idea_theme_001",
+                    "summary": "Memory as inheritance versus memory as burden.",
+                    "tags": [
+                        "identity",
+                        "legacy"
+                    ]
+                }
+            ],
+            "plot": [
+                {
+                    "id": "idea_plot_001",
+                    "summary": "A hidden atlas offers to erase pain by redrawing the past."
+                },
+                {
+                    "id": "idea_plot_002",
+                    "summary": "Competing map factions chase contradictory versions of the same city."
+                }
+            ],
+            "genre": [
+                {
+                    "id": "idea_genre_001",
+                    "summary": "Magical realism with adventure pacing and introspective tone.",
+                    "title": "Genre Direction"
+                }
+            ]
+        },
+        "narratives": [
+            {
+                "id": "narrative_candidate_001",
+                "title": "Potential Narrative A",
+                "status": "candidate",
+                "subtext": {
+                    "perspectives": [],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": []
+                }
+            }
+        ]
+    }
+}

@@ -9,6 +9,7 @@ const validate = ajv.compile(schema);
 
 const validFixtures = [
   '../examples/example-story.json',
+  '../examples/ideation-beginner.json',
   '../examples/anora.json',
   '../examples/the-shawshank-redemption.json'
 ];

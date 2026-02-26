@@ -24,7 +24,7 @@ node tests/validate-schema.js
 
 The test runner validates:
 
-- Valid fixtures: `/examples/example-story.json`, `/examples/anora.json`, `/examples/the-shawshank-redemption.json`
+- Valid fixtures: `/examples/example-story.json`, `/examples/ideation-beginner.json`, `/examples/anora.json`, `/examples/the-shawshank-redemption.json`
 - Invalid fixtures: `/examples/invalid/*.json`
 
 Legacy exports are kept in `/examples/legacy/` for migration reference only.
@@ -33,13 +33,19 @@ Legacy exports are kept in `/examples/legacy/` for migration reference only.
 
 ```json
 {
-    "schema_version": "1.2.0",
+    "schema_version": "1.3.0",
     "story": {
         "id": "story_123e4567-e89b-12d3-a456-426614174000",
         "title": "Echoes of the Past",
         "genre": "Mystery Thriller",
         "logline": "A hardened detective uncovers clues linking a cold case to his own haunting history.",
         "created_at": "2025-12-01T12:34:56Z",
+        "ideation": {
+            "character": [],
+            "theme": [],
+            "plot": [],
+            "genre": []
+        },
         "narratives": []
     }
 }
@@ -54,14 +60,61 @@ Required `story` fields:
 
 - `id`, `title`, `logline`, `created_at`, `narratives`
 
+Optional `story` fields:
+
+- `genre` (concise story label)
+- `ideation` (pre-narrative beginner/exploratory concept threads)
+
+## Ideation Model (Optional Beginner Layer)
+
+`story.ideation` is optional. If present, it must contain all four arrays:
+
+- `character`
+- `theme`
+- `plot`
+- `genre`
+
+Each ideation array item is a lightweight node with required:
+
+- `id`
+- `summary`
+
+Documented optional keys:
+
+- `title`
+- `notes`
+- `tags` (array of strings)
+
+Additional metadata is allowed on ideation nodes to support free-flowing ideation and tool-specific enrichment.
+
+### Human-Readable Difference: Character vs Theme vs Plot vs Genre
+
+Use the four ideation domains as different lenses on the same early concept:
+
+- `character`: Who this is about. Capture people, roles, motivations, contradictions, relationships, and potential arcs.
+- `theme`: What this means. Capture the central argument, moral tension, philosophical question, or value conflict.
+- `plot`: What happens. Capture causally linked events, conflicts, turning points, and possible outcomes.
+- `genre`: How it should feel. Capture audience expectation, tone, pacing language, and style conventions.
+
+Quick heuristic:
+
+- If it is a person or point-of-view carrier, put it in `character`.
+- If it is a meaning claim or tension of values, put it in `theme`.
+- If it is an event chain or conflict progression, put it in `plot`.
+- If it is a framing/experience contract with the audience, put it in `genre`.
+
 ## Narrative Layers
 
 Each item in `story.narratives[]` contains:
 
+- `id`
+- `title`
+- `status` (optional: `candidate`, `draft`, `complete`)
 - `subtext`
 - `storytelling`
 
 Both objects are required.
+If `status` is omitted, consumers may treat the narrative as `complete`.
 
 ## Subtext Model
 

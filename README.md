@@ -22,6 +22,8 @@ As storytelling mediums evolve rapidly, maintaining a structured yet adaptable n
 
 By clearly delineating narrative structure (Subtext) from presentation (Storytelling), NCP preserves authorial intent while enabling adaptable delivery across diverse storytelling platforms.
 
+NCP also includes an optional `story.ideation` layer (`character`, `theme`, `plot`, `genre`) so creators can capture early concepts before committing to full storyform structure.
+
 ---
 
 ### Authorship, AI, and Creative Intent
@@ -38,6 +40,7 @@ With NCP, the often informal process of giving and receiving notes transforms in
 ✅ **Open Dramatica Storyform** – Direct access to the canonical Dramatica® model for community use.  
 ✅ **Open-Source Standard** – Available for use, modification, and integration into various storytelling platforms.  
 ✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components.  
+✅ **Beginner Ideation Layer** – Optional free-flow concept nodes for `character`, `theme`, `plot`, and `genre` before formal narrative authoring.  
 ✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.     
 ✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.  
 ✅ **Extensible & Customizable:** Ships with canonical Dramatica® terminology while supporting mappings to frameworks like the Hero’s Journey, Save the Cat!, and more...  
@@ -91,10 +94,14 @@ narrative-context-protocol/
 │   └── ncp-schema.yaml
 ├── examples/
 │   ├── example-story.json
+│   ├── ideation-beginner.json
 │   ├── anora.json
 │   ├── the-shawshank-redemption.json
 │   ├── example-mapping.json
 │   ├── invalid/
+│   │   ├── ideation-missing-domain.json
+│   │   ├── ideation-node-missing-summary.json
+│   │   ├── narrative-status-invalid.json
 │   │   └── signpost-sequence-out-of-range.json
 │   └── legacy/
 │       ├── anora-legacy.json
