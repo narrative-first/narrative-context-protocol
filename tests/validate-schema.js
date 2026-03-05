@@ -11,7 +11,8 @@ const validFixtures = [
   '../examples/example-story.json',
   '../examples/ideation-beginner.json',
   '../examples/anora.json',
-  '../examples/the-shawshank-redemption.json'
+  '../examples/the-shawshank-redemption.json',
+  '../examples/complete-storyform-template.json'
 ];
 
 const invalidDir = path.join(__dirname, '../examples/invalid');

@@ -1,0 +1,1423 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_complete_storyform_template",
+        "title": "Complete Storyform Template",
+        "genre": "",
+        "logline": "Blank template with canonical appreciations (excluding Event/Progression) and signpost-only storybeats.",
+        "created_at": "2026-03-01T00:00:00Z",
+        "narratives": [
+            {
+                "id": "narrative_complete_storyform_template",
+                "title": "Complete Storyform",
+                "status": "candidate",
+                "subtext": {
+                    "perspectives": [
+                        {
+                            "id": "perspective_main_character",
+                            "author_structural_pov": "i",
+                            "summary": "",
+                            "storytelling": ""
+                        },
+                        {
+                            "id": "perspective_influence_character",
+                            "author_structural_pov": "you",
+                            "summary": "",
+                            "storytelling": ""
+                        },
+                        {
+                            "id": "perspective_relationship_story",
+                            "author_structural_pov": "we",
+                            "summary": "",
+                            "storytelling": ""
+                        },
+                        {
+                            "id": "perspective_objective_story",
+                            "author_structural_pov": "they",
+                            "summary": "",
+                            "storytelling": ""
+                        }
+                    ],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [
+                        {
+                            "id": "storypoint_0001",
+                            "appreciation": "Argument Approach",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0002",
+                            "appreciation": "Argument Objective",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0003",
+                            "appreciation": "Argument Resolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0004",
+                            "appreciation": "Character Evolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0005",
+                            "appreciation": "Character Orientation",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0006",
+                            "appreciation": "Character Intentions",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0007",
+                            "appreciation": "Character Repercussions",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0008",
+                            "appreciation": "Character Adaptations",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0009",
+                            "appreciation": "Character Affectations",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0010",
+                            "appreciation": "Character Engagements",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0011",
+                            "appreciation": "Character Perks",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0012",
+                            "appreciation": "Character Pressures",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0013",
+                            "appreciation": "Character Forebodings",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0014",
+                            "appreciation": "Concluding Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0015",
+                            "appreciation": "Emotional Outcome",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0016",
+                            "appreciation": "Essence",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0017",
+                            "appreciation": "Fourth Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0018",
+                            "appreciation": "Influence Character Adjustment",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0019",
+                            "appreciation": "Influence Character Approach",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0020",
+                            "appreciation": "Influence Character Baseline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0021",
+                            "appreciation": "Influence Character Benchmark",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0022",
+                            "appreciation": "Influence Character Concern",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0023",
+                            "appreciation": "Influence Character Condition",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0024",
+                            "appreciation": "Influence Character Critical Flaw",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0025",
+                            "appreciation": "Influence Character Domain",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0026",
+                            "appreciation": "Influence Character Evolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0027",
+                            "appreciation": "Influence Character Flow",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0028",
+                            "appreciation": "Influence Character Introduction",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0029",
+                            "appreciation": "Influence Character Issue",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0030",
+                            "appreciation": "Influence Character Pivotal Element",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0031",
+                            "appreciation": "Influence Character Problem",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0032",
+                            "appreciation": "Influence Character Resistance",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0033",
+                            "appreciation": "Influence Character Resolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0034",
+                            "appreciation": "Influence Character Resolve",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0035",
+                            "appreciation": "Influence Character Response",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0036",
+                            "appreciation": "Influence Character Signpost 1",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0037",
+                            "appreciation": "Influence Character Signpost 2",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0038",
+                            "appreciation": "Influence Character Signpost 3",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0039",
+                            "appreciation": "Influence Character Signpost 4",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0040",
+                            "appreciation": "Influence Character Solution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0041",
+                            "appreciation": "Influence Character Symptom",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0042",
+                            "appreciation": "Influence Character Throughline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0043",
+                            "appreciation": "Influence Character Unique Ability",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0044",
+                            "appreciation": "Initial Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0045",
+                            "appreciation": "Main Character Adjustment",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0046",
+                            "appreciation": "Main Character Approach",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0047",
+                            "appreciation": "Main Character Baseline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0048",
+                            "appreciation": "Main Character Benchmark",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0049",
+                            "appreciation": "Main Character Concern",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0050",
+                            "appreciation": "Main Character Condition",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0051",
+                            "appreciation": "Main Character Critical Flaw",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0052",
+                            "appreciation": "Main Character Domain",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0053",
+                            "appreciation": "Main Character Evolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0054",
+                            "appreciation": "Main Character Flow",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0055",
+                            "appreciation": "Main Character Growth",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0056",
+                            "appreciation": "Main Character Introduction",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0057",
+                            "appreciation": "Main Character Issue",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0058",
+                            "appreciation": "Main Character Pivotal Element",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0059",
+                            "appreciation": "Main Character Problem",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0060",
+                            "appreciation": "Main Character Problem-solving Style",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0061",
+                            "appreciation": "Main Character Resistance",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0062",
+                            "appreciation": "Main Character Resolution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0063",
+                            "appreciation": "Main Character Resolve",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0064",
+                            "appreciation": "Main Character Response",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0065",
+                            "appreciation": "Main Character Signpost 1",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0066",
+                            "appreciation": "Main Character Signpost 2",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0067",
+                            "appreciation": "Main Character Signpost 3",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0068",
+                            "appreciation": "Main Character Signpost 4",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0069",
+                            "appreciation": "Main Character Solution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0070",
+                            "appreciation": "Main Character Symptom",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0071",
+                            "appreciation": "Main Character Throughline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0072",
+                            "appreciation": "Main Character Unique Ability",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0073",
+                            "appreciation": "Midpoint Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0074",
+                            "appreciation": "Nature",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0075",
+                            "appreciation": "Objective Premise Method",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0076",
+                            "appreciation": "Objective Story Adjustment",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0077",
+                            "appreciation": "Objective Story Benchmark",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0078",
+                            "appreciation": "Objective Story Catalyst",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0079",
+                            "appreciation": "Objective Story Concern",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0080",
+                            "appreciation": "Objective Story Condition",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0081",
+                            "appreciation": "Objective Story Domain",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0082",
+                            "appreciation": "Objective Story Flow",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0083",
+                            "appreciation": "Objective Story Inhibitor",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0084",
+                            "appreciation": "Objective Story Issue",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0085",
+                            "appreciation": "Objective Story Problem",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0086",
+                            "appreciation": "Objective Story Resistance",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0087",
+                            "appreciation": "Objective Story Response",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0088",
+                            "appreciation": "Objective Story Signpost 1",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0089",
+                            "appreciation": "Objective Story Signpost 2",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0090",
+                            "appreciation": "Objective Story Signpost 3",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0091",
+                            "appreciation": "Objective Story Signpost 4",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0092",
+                            "appreciation": "Objective Story Solution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0093",
+                            "appreciation": "Objective Story Symptom",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0094",
+                            "appreciation": "Objective Story Throughline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0095",
+                            "appreciation": "Reach",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0096",
+                            "appreciation": "Relationship Story Adjustment",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0097",
+                            "appreciation": "Relationship Story Benchmark",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0098",
+                            "appreciation": "Relationship Story Catalyst",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0099",
+                            "appreciation": "Relationship Story Concern",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0100",
+                            "appreciation": "Relationship Story Condition",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0101",
+                            "appreciation": "Relationship Story Domain",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0102",
+                            "appreciation": "Relationship Story Flow",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0103",
+                            "appreciation": "Relationship Story Growth",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0104",
+                            "appreciation": "Relationship Story Inhibitor",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0105",
+                            "appreciation": "Relationship Story Issue",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0106",
+                            "appreciation": "Relationship Story Problem",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0107",
+                            "appreciation": "Relationship Story Resistance",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0108",
+                            "appreciation": "Relationship Story Response",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0109",
+                            "appreciation": "Relationship Story Signpost 1",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0110",
+                            "appreciation": "Relationship Story Signpost 2",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0111",
+                            "appreciation": "Relationship Story Signpost 3",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0112",
+                            "appreciation": "Relationship Story Signpost 4",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0113",
+                            "appreciation": "Relationship Story Solution",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0114",
+                            "appreciation": "Relationship Story Symptom",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0115",
+                            "appreciation": "Relationship Story Throughline",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0116",
+                            "appreciation": "Second Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0117",
+                            "appreciation": "Story Consequence",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0118",
+                            "appreciation": "Story Constraints",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0119",
+                            "appreciation": "Story Costs",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0120",
+                            "appreciation": "Story Dilemma",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0121",
+                            "appreciation": "Story Dividends",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0122",
+                            "appreciation": "Story Driver",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0123",
+                            "appreciation": "Story Ending",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0124",
+                            "appreciation": "Story Ennui",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0125",
+                            "appreciation": "Story Excitement",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0126",
+                            "appreciation": "Story Forewarnings",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0127",
+                            "appreciation": "Story Goal",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0128",
+                            "appreciation": "Story Habituations",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0129",
+                            "appreciation": "Story Intention",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0130",
+                            "appreciation": "Story Internalizations",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0131",
+                            "appreciation": "Story Judgment",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0132",
+                            "appreciation": "Story Limit",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0133",
+                            "appreciation": "Story Outcome",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0134",
+                            "appreciation": "Story Overwhelm",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0135",
+                            "appreciation": "Story Preconditions",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0136",
+                            "appreciation": "Story Prerequisites",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0137",
+                            "appreciation": "Story Pressure",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0138",
+                            "appreciation": "Story Reach",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0139",
+                            "appreciation": "Story Requirements",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0140",
+                            "appreciation": "Story Socializations",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0141",
+                            "appreciation": "Subjective Premise Balance Element",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0142",
+                            "appreciation": "Subjective Premise Element",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_0143",
+                            "appreciation": "Tendency",
+                            "illustration": "",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": []
+                        }
+                    ],
+                    "storybeats": [
+                        {
+                            "id": "beat_objective_story_signpost_1",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "signpost": 1,
+                            "throughline": "Objective Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_objective_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_objective_story_signpost_2",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "signpost": 2,
+                            "throughline": "Objective Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_objective_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_objective_story_signpost_3",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "signpost": 3,
+                            "throughline": "Objective Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_objective_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_objective_story_signpost_4",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "signpost": 4,
+                            "throughline": "Objective Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_objective_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_main_character_signpost_1",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "signpost": 1,
+                            "throughline": "Main Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_main_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_main_character_signpost_2",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "signpost": 2,
+                            "throughline": "Main Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_main_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_main_character_signpost_3",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "signpost": 3,
+                            "throughline": "Main Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_main_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_main_character_signpost_4",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "signpost": 4,
+                            "throughline": "Main Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_main_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_influence_character_signpost_1",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "signpost": 1,
+                            "throughline": "Influence Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_influence_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_influence_character_signpost_2",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "signpost": 2,
+                            "throughline": "Influence Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_influence_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_influence_character_signpost_3",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "signpost": 3,
+                            "throughline": "Influence Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_influence_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_influence_character_signpost_4",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "signpost": 4,
+                            "throughline": "Influence Character",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_influence_character"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_relationship_story_signpost_1",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "signpost": 1,
+                            "throughline": "Relationship Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_relationship_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_relationship_story_signpost_2",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "signpost": 2,
+                            "throughline": "Relationship Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_relationship_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_relationship_story_signpost_3",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "signpost": 3,
+                            "throughline": "Relationship Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_relationship_story"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_relationship_story_signpost_4",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "signpost": 4,
+                            "throughline": "Relationship Story",
+                            "summary": "",
+                            "storytelling": "",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "perspective_relationship_story"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": []
+                }
+            }
+        ]
+    }
+}

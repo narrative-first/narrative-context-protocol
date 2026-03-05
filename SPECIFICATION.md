@@ -246,7 +246,7 @@ These labels preserve authorial framing voice while retaining compatibility with
 ## Validation and Narrative Integrity
 
 To ensure integrity and consistency in narratives structured with NCP:
-- Storypoints and Storybeats must include canonical terms from schema enums.
+- Storypoints and Storybeats must use canonical terms from schema enums when `narrative_function` is provided.
 - Linear-focused and Character-framing Appreciations are both canonical-valid labels for holistic framing workflows.
 - Regardless of Appreciation framing, NCP normalization reduces these terms to canonical Story Goal / Story Consequence families for interoperability.
 - Linear stories should use linear-focused Appreciations; holistic stories may use either linear-focused or Character-framing Appreciations.

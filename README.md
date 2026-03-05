@@ -65,6 +65,10 @@ npm run validate:schema
 `examples/example-mapping.json` is a mapping fragment example, not a full schema document.
 Use [/VALIDATION.md](/VALIDATION.md) for validating your own NCP files and CI setup.
 
+## Templates
+
+- [Complete Storyform template](/examples/complete-storyform-template.json): blank-slate NCP fixture with canonical Storypoint Appreciations excluding `Event` and `Progression` labels, plus Signpost-only Storybeats (no Progression/Event Storybeats). `narrative_function` is intentionally omitted so teams can fill in only what they need.
+
 ## For Adopters (Self-Serve)
 
 If you found this repository and want to validate your own NCP JSON, do this:
@@ -97,6 +101,7 @@ narrative-context-protocol/
 │   ├── ideation-beginner.json
 │   ├── anora.json
 │   ├── the-shawshank-redemption.json
+│   ├── complete-storyform-template.json
 │   ├── example-mapping.json
 │   ├── invalid/
 │   │   ├── ideation-missing-domain.json

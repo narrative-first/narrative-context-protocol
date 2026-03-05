@@ -105,6 +105,8 @@ Quick heuristic:
 
 ## Narrative Layers
 
+Each item in `story.narratives[]` is a Dramatica storyform: a single, complete argument structure within the story, expressed through `subtext` and `storytelling` layers.
+
 Each item in `story.narratives[]` contains:
 
 - `id`
@@ -181,9 +183,11 @@ Custom extension fields:
 
 Required keys per item:
 
-- `id`, `appreciation`, `narrative_function`, `illustration`, `summary`, `storytelling`, `perspectives`
+- `id`, `appreciation`, `illustration`, `summary`, `storytelling`, `perspectives`
 
-`appreciation` and `narrative_function` are validated against canonical enums in the schema.
+Optional canonical key:
+
+- `narrative_function` (validated against canonical enum when provided)
 
 Custom extension fields:
 
@@ -194,12 +198,13 @@ Custom extension fields:
 
 Required keys per item:
 
-- `id`, `scope`, `sequence`, `narrative_function`, `summary`, `storytelling`, `perspectives`
+- `id`, `scope`, `sequence`, `summary`, `storytelling`, `perspectives`
 
 Optional keys:
 
 - `signpost` (1-4)
 - `throughline`
+- `narrative_function` (validated against canonical enum when provided)
 - `custom_narrative_function`, `custom_narrative_function_namespace`
 
 `scope` controls allowed `sequence` range (enforced in schema):

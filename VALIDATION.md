@@ -33,8 +33,10 @@ npm run validate:schema
 This validates:
 
 - `/examples/example-story.json`
+- `/examples/ideation-beginner.json`
 - `/examples/anora.json`
 - `/examples/the-shawshank-redemption.json`
+- `/examples/complete-storyform-template.json`
 - Expected failures in `/examples/invalid/*.json`
 
 ## Validate Your Own NCP File(s)

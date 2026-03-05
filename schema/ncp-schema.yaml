@@ -52,6 +52,7 @@ properties:
                 type: array
                 items:
                     type: object
+                    description: A narrative is a Dramatica storyform: a single, complete argument structure within the story, expressed through subtext and storytelling layers.
                     properties:
                         id:
                             type: string
@@ -228,7 +229,6 @@ properties:
                                         required:
                                         - id
                                         - appreciation
-                                        - narrative_function
                                         - illustration
                                         - summary
                                         - storytelling
@@ -284,7 +284,6 @@ properties:
                                         - id
                                         - scope
                                         - sequence
-                                        - narrative_function
                                         - summary
                                         - storytelling
                                         - perspectives

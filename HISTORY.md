@@ -5,6 +5,7 @@
 - Added an optional `story.ideation` object for pre-narrative concept development, with required domains `character`, `theme`, `plot`, and `genre` whenever `ideation` is present.
 - Added lightweight shared ideation node validation requiring `id` and `summary`, with open metadata for beginner and LLM-assisted workflows.
 - Added optional `narratives[].status` with canonical values `candidate`, `draft`, and `complete` to represent potential or in-progress narratives without splitting data into separate arrays.
+- Made `subtext.storypoints[].narrative_function` and `subtext.storybeats[].narrative_function` optional so blank-slate templates can omit narrative function assignment until later authoring.
 - Preserved backward compatibility for existing stories by keeping `story.ideation` optional and retaining `story.genre` as a concise top-level story label.
 
 ## Recent Canonical Terminology Updates
