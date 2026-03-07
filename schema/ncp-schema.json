@@ -63,7 +63,8 @@
                         "theme",
                         "plot",
                         "genre"
-                    ]
+                    ],
+                    "additionalProperties": false
                 },
                 "narratives": {
                     "type": "array",
@@ -89,17 +90,17 @@
                             "subtext": {
                                 "type": "object",
                                 "properties": {
-                                    "perspectives": {
-                                        "type": "array",
-                                        "items": {
-                                            "type": "object",
-                                            "properties": {
-                                                "id": {
-                                                    "type": "string"
-                                                },
-                                                "author_structural_pov": {
-                                                    "type": "string",
-                                                    "enum": [
+                                "perspectives": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "$ref": "#/$defs/perspective_id"
+                                            },
+                                            "author_structural_pov": {
+                                                "type": "string",
+                                                "enum": [
                                                         "i",
                                                         "you",
                                                         "we",
@@ -118,7 +119,8 @@
                                                 "author_structural_pov",
                                                 "summary",
                                                 "storytelling"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     },
                                     "players": {
@@ -127,7 +129,7 @@
                                             "type": "object",
                                             "properties": {
                                                 "id": {
-                                                    "type": "string"
+                                                    "$ref": "#/$defs/player_id"
                                                 },
                                                 "name": {
                                                     "type": "string"
@@ -150,15 +152,7 @@
                                                 "perspectives": {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": "object",
-                                                        "properties": {
-                                                            "perspective_id": {
-                                                                "type": "string"
-                                                            }
-                                                        },
-                                                        "required": [
-                                                            "perspective_id"
-                                                        ]
+                                                        "$ref": "#/$defs/perspective_link"
                                                     }
                                                 }
                                             },
@@ -171,7 +165,8 @@
                                                 "summary",
                                                 "storytelling",
                                                 "perspectives"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     },
                                     "dynamics": {
@@ -248,7 +243,8 @@
                                                 "vector",
                                                 "summary",
                                                 "storytelling"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     },
                                     "storypoints": {
@@ -277,15 +273,7 @@
                                                 "perspectives": {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": "object",
-                                                        "properties": {
-                                                            "perspective_id": {
-                                                                "type": "string"
-                                                            }
-                                                        },
-                                                        "required": [
-                                                            "perspective_id"
-                                                        ]
+                                                        "$ref": "#/$defs/perspective_link"
                                                     }
                                                 },
                                                 "custom_appreciation": {
@@ -314,7 +302,8 @@
                                                 "summary",
                                                 "storytelling",
                                                 "perspectives"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     },
                                     "storybeats": {
@@ -359,15 +348,7 @@
                                                 "perspectives": {
                                                     "type": "array",
                                                     "items": {
-                                                        "type": "object",
-                                                        "properties": {
-                                                            "perspective_id": {
-                                                                "type": "string"
-                                                            }
-                                                        },
-                                                        "required": [
-                                                            "perspective_id"
-                                                        ]
+                                                        "$ref": "#/$defs/perspective_link"
                                                     }
                                                 },
                                                 "custom_narrative_function": {
@@ -388,6 +369,7 @@
                                                 "storytelling",
                                                 "perspectives"
                                             ],
+                                            "additionalProperties": false,
                                             "allOf": [
                                                 {
                                                     "if": {
@@ -447,7 +429,8 @@
                                     "dynamics",
                                     "storypoints",
                                     "storybeats"
-                                ]
+                                ],
+                                "additionalProperties": false
                             },
                             "storytelling": {
                                 "type": "object",
@@ -458,10 +441,10 @@
                                             "type": "object",
                                             "properties": {
                                                 "id": {
-                                                    "type": "string"
+                                                    "$ref": "#/$defs/overview_id"
                                                 },
                                                 "label": {
-                                                    "$ref": "#/$defs/normalized_label"
+                                                    "$ref": "#/$defs/overview_label"
                                                 },
                                                 "summary": {
                                                     "type": "string"
@@ -471,10 +454,12 @@
                                                 }
                                             },
                                             "required": [
+                                                "id",
                                                 "label",
                                                 "summary",
                                                 "storytelling"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     },
                                     "moments": {
@@ -561,7 +546,8 @@
                                                         "required": [
                                                             "sequence",
                                                             "storybeat_id"
-                                                        ]
+                                                        ],
+                                                        "additionalProperties": false
                                                     }
                                                 }
                                             },
@@ -572,14 +558,16 @@
                                                 "timing",
                                                 "imperatives",
                                                 "storybeats"
-                                            ]
+                                            ],
+                                            "additionalProperties": false
                                         }
                                     }
                                 },
                                 "required": [
                                     "overviews",
                                     "moments"
-                                ]
+                                ],
+                                "additionalProperties": false
                             }
                         },
                         "required": [
@@ -587,7 +575,8 @@
                             "title",
                             "subtext",
                             "storytelling"
-                        ]
+                        ],
+                        "additionalProperties": false
                     }
                 }
             },
@@ -597,22 +586,65 @@
                 "logline",
                 "created_at",
                 "narratives"
-            ]
+            ],
+            "additionalProperties": false
         }
     },
     "required": [
         "schema_version",
         "story"
     ],
+    "additionalProperties": false,
     "$defs": {
-        "stable_id": {
+        "uuid": {
             "type": "string",
-            "pattern": "^(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*)$"
+            "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+            "description": "Generic UUID."
         },
-        "normalized_label": {
+        "stable_id": {
+            "description": "Generic UUID or canonical story_, narrative_, or beat_ identifier.",
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/uuid"
+                },
+                {
+                    "type": "string",
+                    "pattern": "^(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*$"
+                }
+            ]
+        },
+        "perspective_id": {
             "type": "string",
-            "pattern": "^[a-z][a-z0-9_]*$",
-            "description": "Normalized snake_case label (e.g., logline, genre_dynamics)."
+            "description": "Opaque identifier for a perspective. Plain UUIDs are fine; type prefixes are not required."
+        },
+        "player_id": {
+            "type": "string",
+            "description": "Opaque identifier for a player. Plain UUIDs are fine; type prefixes are not required."
+        },
+        "overview_id": {
+            "type": "string",
+            "description": "Opaque identifier for an overview. Plain UUIDs are fine; type prefixes are not required."
+        },
+        "perspective_link": {
+            "type": "object",
+            "properties": {
+                "perspective_id": {
+                    "$ref": "#/$defs/perspective_id"
+                }
+            },
+            "required": [
+                "perspective_id"
+            ],
+            "additionalProperties": false
+        },
+        "overview_label": {
+            "type": "string",
+            "enum": [
+                "Logline",
+                "Genre",
+                "Blended Throughlines"
+            ],
+            "description": "Canonical Title Case overview label emitted by exporters."
         },
         "ideation_node": {
             "type": "object",

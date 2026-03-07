@@ -1,0 +1,35 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_invalid_extra_key",
+        "title": "Perspective Extra Key",
+        "genre": "Test",
+        "logline": "Used to assert that closed perspective shapes reject extra keys.",
+        "created_at": "2026-03-06T00:00:00Z",
+        "narratives": [
+            {
+                "id": "narrative_invalid_extra_key",
+                "title": "Validation Case",
+                "subtext": {
+                    "perspectives": [
+                        {
+                            "id": "persp_invalid_extra_key",
+                            "author_structural_pov": "i",
+                            "summary": "Test POV",
+                            "storytelling": "Perspective records should stay authorial only.",
+                            "role": "Main Character"
+                        }
+                    ],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": []
+                }
+            }
+        ]
+    }
+}

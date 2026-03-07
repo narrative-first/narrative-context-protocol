@@ -2,6 +2,10 @@
 
 ## Recent Schema Updates
 
+- Closed the primary canonical narrative shapes so unexpected keys now fail validation unless a shape explicitly supports extension metadata.
+- Clarified that Perspective, Player, and Overview IDs are opaque strings. Plain UUIDs are acceptable and type prefixes are optional.
+- Canonicalized overview labels to the exact Title Case enum values `Logline`, `Genre`, and `Blended Throughlines`.
+- Clarified that import/normalization layers may still accept legacy overview labels such as `logline`, `genre`, `blended_throughlines`, `Premise Overview`, and `Four Throughlines Extraction`, but canonical export/validation now requires the Title Case enum.
 - Added an optional `story.ideation` object for pre-narrative concept development, with required domains `character`, `theme`, `plot`, and `genre` whenever `ideation` is present.
 - Added lightweight shared ideation node validation requiring `id` and `summary`, with open metadata for beginner and LLM-assisted workflows.
 - Added optional `narratives[].status` with canonical values `candidate`, `draft`, and `complete` to represent potential or in-progress narratives without splitting data into separate arrays.

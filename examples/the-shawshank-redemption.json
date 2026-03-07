@@ -13,25 +13,25 @@
                 "subtext": {
                     "perspectives": [
                         {
-                            "id": "perspective_shawshank_mc",
+                            "id": "persp_shawshank_mc",
                             "author_structural_pov": "i",
                             "summary": "Red",
                             "storytelling": "Red tracks the tension between resignation and hope from inside prison life."
                         },
                         {
-                            "id": "perspective_shawshank_ic",
+                            "id": "persp_shawshank_ic",
                             "author_structural_pov": "you",
                             "summary": "Andy",
                             "storytelling": "Andy pressures everyone around him to reconsider what freedom requires."
                         },
                         {
-                            "id": "perspective_shawshank_os",
+                            "id": "persp_shawshank_os",
                             "author_structural_pov": "they",
                             "summary": "Shawshank institution",
                             "storytelling": "The prison system enforces control through fear, corruption, and routine violence."
                         },
                         {
-                            "id": "perspective_shawshank_rs",
+                            "id": "persp_shawshank_rs",
                             "author_structural_pov": "we",
                             "summary": "Red and Andy",
                             "storytelling": "Their friendship transforms from transactional trust into shared conviction."
@@ -48,7 +48,7 @@
                             "storytelling": "Red interprets Andy's choices against his own institutionalized habits.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_mc"
+                                    "perspective_id": "persp_shawshank_mc"
                                 }
                             ]
                         },
@@ -62,7 +62,7 @@
                             "storytelling": "Andy steadily applies intelligence and persistence to impossible odds.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_ic"
+                                    "perspective_id": "persp_shawshank_ic"
                                 }
                             ]
                         }
@@ -93,7 +93,7 @@
                             "storytelling": "Andy sustains a future-oriented goal despite systemic opposition.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_os"
+                                    "perspective_id": "persp_shawshank_os"
                                 }
                             ]
                         },
@@ -106,7 +106,7 @@
                             "storytelling": "He resists hope because hope risks collapse.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_mc"
+                                    "perspective_id": "persp_shawshank_mc"
                                 }
                             ]
                         }
@@ -123,7 +123,7 @@
                             "storytelling": "Arrival at Shawshank establishes the prison's entrenched power structure.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_os"
+                                    "perspective_id": "persp_shawshank_os"
                                 }
                             ]
                         },
@@ -138,7 +138,7 @@
                             "storytelling": "Shared risk and private disclosures deepen relational stakes.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_shawshank_rs"
+                                    "perspective_id": "persp_shawshank_rs"
                                 }
                             ]
                         }
@@ -147,14 +147,14 @@
                 "storytelling": {
                     "overviews": [
                         {
-                            "id": "overview_shawshank_logline",
-                            "label": "logline",
+                            "id": "over_shawshank_logline",
+                            "label": "Logline",
                             "summary": "A prison drama where hope confronts institutional corruption.",
                             "storytelling": "Character choices accumulate into structural collapse of the prison's moral facade."
                         },
                         {
-                            "id": "overview_shawshank_genre",
-                            "label": "genre_dynamics",
+                            "id": "over_shawshank_genre",
+                            "label": "Genre",
                             "summary": "Humanist drama with procedural and psychological tension.",
                             "storytelling": "Quiet endurance and strategic action reshape the story's emotional horizon."
                         }

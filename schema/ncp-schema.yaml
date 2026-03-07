@@ -1,13 +1,12 @@
-$schema: http://json-schema.org/draft-07/schema#
+"$schema": http://json-schema.org/draft-07/schema#
 title: Narrative Context Protocol Schema
-description: A standardized protocol for structuring narrative elements in a complete
-    story for use in multi-agentic systems.
+description: A standardized protocol for structuring narrative elements in a complete story for use in multi-agentic systems.
 type: object
 properties:
     schema_version:
         type: string
         description: Semver string (e.g., 1.3.0).
-        pattern: ^\d+\.\d+\.\d+$
+        pattern: "^\\d+\\.\\d+\\.\\d+$"
     story:
         type: object
         properties:
@@ -22,7 +21,7 @@ properties:
             created_at:
                 type: string
                 description: ISO-8601 UTC timestamp (e.g., 2025-12-01T12:34:56Z).
-                pattern: ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$
+                pattern: "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
             ideation:
                 type: object
                 description: Optional pre-narrative ideation threads for exploratory and beginner workflows.
@@ -30,29 +29,30 @@ properties:
                     character:
                         type: array
                         items:
-                            $ref: '#/$defs/ideation_node'
+                            "$ref": "#/$defs/ideation_node"
                     theme:
                         type: array
                         items:
-                            $ref: '#/$defs/ideation_node'
+                            "$ref": "#/$defs/ideation_node"
                     plot:
                         type: array
                         items:
-                            $ref: '#/$defs/ideation_node'
+                            "$ref": "#/$defs/ideation_node"
                     genre:
                         type: array
                         items:
-                            $ref: '#/$defs/ideation_node'
+                            "$ref": "#/$defs/ideation_node"
                 required:
                 - character
                 - theme
                 - plot
                 - genre
+                additionalProperties: false
             narratives:
                 type: array
                 items:
                     type: object
-                    description: A narrative is a Dramatica storyform: a single, complete argument structure within the story, expressed through subtext and storytelling layers.
+                    description: 'A narrative is a Dramatica storyform: a single, complete argument structure within the story, expressed through subtext and storytelling layers.'
                     properties:
                         id:
                             type: string
@@ -74,7 +74,7 @@ properties:
                                         type: object
                                         properties:
                                             id:
-                                                type: string
+                                                "$ref": "#/$defs/perspective_id"
                                             author_structural_pov:
                                                 type: string
                                                 enum:
@@ -91,13 +91,14 @@ properties:
                                         - author_structural_pov
                                         - summary
                                         - storytelling
+                                        additionalProperties: false
                                 players:
                                     type: array
                                     items:
                                         type: object
                                         properties:
                                             id:
-                                                type: string
+                                                "$ref": "#/$defs/player_id"
                                             name:
                                                 type: string
                                             role:
@@ -113,12 +114,7 @@ properties:
                                             perspectives:
                                                 type: array
                                                 items:
-                                                    type: object
-                                                    properties:
-                                                        perspective_id:
-                                                            type: string
-                                                    required:
-                                                    - perspective_id
+                                                    "$ref": "#/$defs/perspective_link"
                                         required:
                                         - id
                                         - name
@@ -128,6 +124,7 @@ properties:
                                         - summary
                                         - storytelling
                                         - perspectives
+                                        additionalProperties: false
                                 dynamics:
                                     type: array
                                     items:
@@ -188,6 +185,7 @@ properties:
                                         - vector
                                         - summary
                                         - storytelling
+                                        additionalProperties: false
                                 storypoints:
                                     type: array
                                     items:
@@ -196,9 +194,9 @@ properties:
                                             id:
                                                 type: string
                                             appreciation:
-                                                $ref: '#/$defs/canonical_appreciation'
+                                                "$ref": "#/$defs/canonical_appreciation"
                                             narrative_function:
-                                                $ref: '#/$defs/canonical_narrative_function'
+                                                "$ref": "#/$defs/canonical_narrative_function"
                                             illustration:
                                                 type: string
                                             summary:
@@ -208,12 +206,7 @@ properties:
                                             perspectives:
                                                 type: array
                                                 items:
-                                                    type: object
-                                                    properties:
-                                                        perspective_id:
-                                                            type: string
-                                                    required:
-                                                    - perspective_id
+                                                    "$ref": "#/$defs/perspective_link"
                                             custom_appreciation:
                                                 type: string
                                             custom_appreciation_namespace:
@@ -233,13 +226,14 @@ properties:
                                         - summary
                                         - storytelling
                                         - perspectives
+                                        additionalProperties: false
                                 storybeats:
                                     type: array
                                     items:
                                         type: object
                                         properties:
                                             id:
-                                                $ref: '#/$defs/stable_id'
+                                                "$ref": "#/$defs/stable_id"
                                             scope:
                                                 type: string
                                                 enum:
@@ -253,14 +247,12 @@ properties:
                                                 type: integer
                                                 minimum: 1
                                                 maximum: 4
-                                                description: Optional signpost grouping
-                                                    (1-4).
+                                                description: Optional signpost grouping (1-4).
                                             throughline:
                                                 type: string
-                                                description: Optional throughline
-                                                    label for grouping.
+                                                description: Optional throughline label for grouping.
                                             narrative_function:
-                                                $ref: '#/$defs/canonical_narrative_function'
+                                                "$ref": "#/$defs/canonical_narrative_function"
                                             summary:
                                                 type: string
                                             storytelling:
@@ -268,12 +260,7 @@ properties:
                                             perspectives:
                                                 type: array
                                                 items:
-                                                    type: object
-                                                    properties:
-                                                        perspective_id:
-                                                            type: string
-                                                    required:
-                                                    - perspective_id
+                                                    "$ref": "#/$defs/perspective_link"
                                             custom_narrative_function:
                                                 type: string
                                             custom_narrative_function_namespace:
@@ -287,6 +274,7 @@ properties:
                                         - summary
                                         - storytelling
                                         - perspectives
+                                        additionalProperties: false
                                         allOf:
                                         -   if:
                                                 properties:
@@ -318,6 +306,7 @@ properties:
                             - dynamics
                             - storypoints
                             - storybeats
+                            additionalProperties: false
                         storytelling:
                             type: object
                             properties:
@@ -327,17 +316,19 @@ properties:
                                         type: object
                                         properties:
                                             id:
-                                                type: string
+                                                "$ref": "#/$defs/overview_id"
                                             label:
-                                                $ref: '#/$defs/normalized_label'
+                                                "$ref": "#/$defs/overview_label"
                                             summary:
                                                 type: string
                                             storytelling:
                                                 type: string
                                         required:
+                                        - id
                                         - label
                                         - summary
                                         - storytelling
+                                        additionalProperties: false
                                 moments:
                                     type: array
                                     items:
@@ -397,10 +388,11 @@ properties:
                                                         sequence:
                                                             type: integer
                                                         storybeat_id:
-                                                            $ref: '#/$defs/stable_id'
+                                                            "$ref": "#/$defs/stable_id"
                                                     required:
                                                     - sequence
                                                     - storybeat_id
+                                                    additionalProperties: false
                                         required:
                                         - summary
                                         - synopsis
@@ -408,31 +400,63 @@ properties:
                                         - timing
                                         - imperatives
                                         - storybeats
+                                        additionalProperties: false
                             required:
                             - overviews
                             - moments
+                            additionalProperties: false
                     required:
                     - id
                     - title
                     - subtext
                     - storytelling
+                    additionalProperties: false
         required:
         - id
         - title
         - logline
         - created_at
         - narratives
+        additionalProperties: false
 required:
 - schema_version
 - story
-$defs:
+additionalProperties: false
+"$defs":
+    uuid:
+        type: string
+        pattern: "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+        description: Generic UUID.
     stable_id:
+        description: Generic UUID or canonical story_, narrative_, or beat_ identifier.
+        anyOf:
+        -   "$ref": "#/$defs/uuid"
+        -   type: string
+            pattern: "^(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*$"
+    perspective_id:
         type: string
-        pattern: ^(?:[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}|(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*)$
-    normalized_label:
+        description: Opaque identifier for a perspective. Plain UUIDs are fine; type prefixes are not required.
+    player_id:
         type: string
-        pattern: ^[a-z][a-z0-9_]*$
-        description: Normalized snake_case label (e.g., logline, genre_dynamics).
+        description: Opaque identifier for a player. Plain UUIDs are fine; type prefixes are not required.
+    overview_id:
+        type: string
+        description: Opaque identifier for an overview. Plain UUIDs are fine; type prefixes are not required.
+    perspective_link:
+        type: object
+        properties:
+            perspective_id:
+                "$ref": "#/$defs/perspective_id"
+        required:
+        - perspective_id
+        additionalProperties: false
+    overview_label:
+        type: string
+        enum:
+        - Logline
+        - Genre
+        - Blended Throughlines
+        description: Canonical Title Case overview label emitted by exporters.
     ideation_node:
         type: object
         description: Lightweight ideation node for pre-narrative concept capture.

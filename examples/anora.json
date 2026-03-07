@@ -13,25 +13,25 @@
                 "subtext": {
                     "perspectives": [
                         {
-                            "id": "perspective_anora_mc",
+                            "id": "persp_anora_mc",
                             "author_structural_pov": "i",
                             "summary": "Ani",
                             "storytelling": "Ani fights to preserve dignity and agency while others attempt to define her future."
                         },
                         {
-                            "id": "perspective_anora_ic",
+                            "id": "persp_anora_ic",
                             "author_structural_pov": "you",
                             "summary": "Igor",
                             "storytelling": "Igor pressures Ani to accept a pragmatic view of survival inside a coercive system."
                         },
                         {
-                            "id": "perspective_anora_os",
+                            "id": "persp_anora_os",
                             "author_structural_pov": "they",
                             "summary": "Zakharov family conflict",
                             "storytelling": "Competing interests collide around money, image, and control of the marriage."
                         },
                         {
-                            "id": "perspective_anora_rs",
+                            "id": "persp_anora_rs",
                             "author_structural_pov": "we",
                             "summary": "Ani and Igor",
                             "storytelling": "Their relationship shifts from antagonism to uneasy mutual recognition."
@@ -48,7 +48,7 @@
                             "storytelling": "Ani resists being reduced to a bargaining chip.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_mc"
+                                    "perspective_id": "persp_anora_mc"
                                 }
                             ]
                         },
@@ -62,7 +62,7 @@
                             "storytelling": "Igor challenges Ani's assumptions about freedom and safety.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_ic"
+                                    "perspective_id": "persp_anora_ic"
                                 }
                             ]
                         }
@@ -93,7 +93,7 @@
                             "storytelling": "Ani's conflict focuses on tangible autonomy and legal freedom.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_os"
+                                    "perspective_id": "persp_anora_os"
                                 }
                             ]
                         },
@@ -106,7 +106,7 @@
                             "storytelling": "Her defensive control tactics escalate pressure and conflict.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_mc"
+                                    "perspective_id": "persp_anora_mc"
                                 }
                             ]
                         }
@@ -123,7 +123,7 @@
                             "storytelling": "The marriage appears to offer escape but quickly reveals hidden constraints.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_mc"
+                                    "perspective_id": "persp_anora_mc"
                                 }
                             ]
                         },
@@ -138,7 +138,7 @@
                             "storytelling": "Each negotiation reveals deeper asymmetries in power and intent.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_anora_os"
+                                    "perspective_id": "persp_anora_os"
                                 }
                             ]
                         }
@@ -147,14 +147,14 @@
                 "storytelling": {
                     "overviews": [
                         {
-                            "id": "overview_anora_logline",
-                            "label": "logline",
+                            "id": "over_anora_logline",
+                            "label": "Logline",
                             "summary": "A fast-moving relationship drama about power, class, and agency.",
                             "storytelling": "A character-driven narrative where each turning point reframes who has leverage."
                         },
                         {
-                            "id": "overview_anora_genre",
-                            "label": "genre_dynamics",
+                            "id": "over_anora_genre",
+                            "label": "Genre",
                             "summary": "Romantic drama with pressure-cooker social conflict.",
                             "storytelling": "The tone shifts from impulsive romance to coercive family confrontation."
                         }

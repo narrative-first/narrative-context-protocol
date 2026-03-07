@@ -262,6 +262,8 @@ In this section, we'll explore examples of each narrative aspect, offering a bri
 
 Perspectives are where the author positions the source of conflict to communicate the story’s intended meaning, independent of first- or third-person narrative style (those refer to storytelling, not subtext). These Perspectives shape how thematic conflicts are revealed, deepening the story by re-inforcing the author's intended message.
 
+Perspectives are closed authorial POV records. They do not carry character identity, role, or conflict metadata; those belong on Players, Storypoints, and Storybeats.
+
 For example, in _A Christmas Carol_, each of the four ghosts (Marley included) functions thematically as an Influence Character for Scrooge, sequentially handing off their unique perspectives from one ghost to another. While each ghost brings a distinct angle—progress, past, present, and future—their collective thematic role remains consistent: to provoke Scrooge’s transformation. Each ghost provides a unique lens on his life, amplifying narrative resonance by exploring different facets of the same thematic conflict.
 
 Another example can be seen in *Inside Out 2*. Unlike the original *Inside Out*, where Joy alone carries the perspective of the Main Character, the sequel has both Joy and Riley sharing the same thematic perspective of Main Character. They seamlessly pass this viewpoint back and forth, allowing the audience to explore identical thematic issues through two distinct yet interconnected lenses. This shared perspective enriches the narrative by demonstrating how the same thematic conflicts can manifest uniquely in different characters, amplifying emotional resonance.
@@ -271,7 +273,7 @@ The implications for interactive narratives are significant. In interactive stor
 ```json
 "perspectives": [
   {
-    "id": "perspective_ab12cd34",
+    "id": "123e4567-e89b-12d3-a456-426614174000",
     "author_structural_pov": "i",
     "summary": "Michael Radford",
     "storytelling": "Michael Radford has spent his life convincing himself that control is the key to survival, but every step forward only tightens the noose around him. When his instincts betray him at the worst possible moment, he’s forced to confront the truth—his carefully built defenses aren’t protecting him, they’re suffocating him."
@@ -281,28 +283,21 @@ The implications for interactive narratives are significant. In interactive stor
 
 ### Players
 
-Characters whose actions and motivations reveal deeper thematic layers (subtext), moving beyond superficial characterization. Each Player should be linked to one or more relevant Perspectives to maintain narrative coherence.
+Players own character identity within the narrative. They carry names, roles, sensory characterization, summaries, and the links to any Perspectives they express in the story.
 
 ```json
 "players": [
   {
-    "id": "player_def456",
+    "id": "123e4567-e89b-12d3-a456-426614174001",
     "name": "Dr. Michael Hayes",
-    "role": "the world's leading psychologist",
+    "role": "Main Character",
     "visual": "A distinguished man in his late 50s, with silver-streaked hair and piercing blue eyes. He wears a well-tailored suit but often appears slightly disheveled, as if sleep eludes him.",
     "audio": "His voice is calm and measured, carrying the weight of experience but occasionally betraying a hint of hesitation when discussing personal matters.",
-    "bio": "Dr. Michael Hayes is a renowned psychologist known for his groundbreaking research on trauma and memory. Despite his professional success, he struggles with the ghosts of his past—mistakes he can never take back and patients he couldn’t save. As he delves deeper into the minds of others, he finds himself unable to escape his own unresolved grief.",
-    "storytelling": "A psychologist haunted by his past.",
-    "motivations": [
-        {
-        "narrative_function": "Avoid",
-        "illustration": "avoiding confronting past failures",
-        "storytelling": "In therapy sessions, he changes topics when pressed."
-        }
-    ],
+    "summary": "A celebrated trauma specialist whose command over others cannot protect him from unresolved grief.",
+    "storytelling": "Michael presents authority and polish, but every personal question exposes how fragile that control really is.",
     "perspectives": [
         {
-            "perspective_id": "persp_def456"
+            "perspective_id": "123e4567-e89b-12d3-a456-426614174000"
         }
     ]
   }
@@ -324,7 +319,7 @@ Defined structural elements representing spatial aspects of a narrative. They es
     "storytelling": "Michael takes charge, justifying his actions as necessary in order to take care of the family.",
     "perspectives": [
         {
-            "perspective_id": "persp_def456"
+            "perspective_id": "123e4567-e89b-12d3-a456-426614174000"
         }
     ]
   }
@@ -348,7 +343,7 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
     "storytelling": "Michael has spent years outrunning his past, but in an instant, it catches up to him. His patient’s words land like a ghostly echo, dredging up memories he’s tried to bury, his composure cracking under the weight of old wounds. For the first time, he isn’t just remembering—he’s reliving it, trapped in a moment he thought he’d left behind.",
     "perspectives": [
         {
-            "perspective_id": "perspective_ab12cd34"
+            "perspective_id": "123e4567-e89b-12d3-a456-426614174000"
         }
     ]
   }
@@ -378,16 +373,22 @@ Surface-level narrative elements that quickly orient the audience, such as Logli
 ```json
 "overviews": [
   {
-    "id": "overview_12345abc",
-    "label": "logline",
+    "id": "123e4567-e89b-12d3-a456-426614174010",
+    "label": "Logline",
     "storytelling": "In a neon-lit cyberpunk metropolis, a determined detective races to outsmart a rogue AI before it reshapes humanity's future.",
     "summary": "A cyberpunk crime thriller about a rogue AI and the detective trying to stop it."
   },
   {
-    "id": "overview_67890def",
-    "label": "genre_dynamics",
+    "id": "123e4567-e89b-12d3-a456-426614174011",
+    "label": "Genre",
     "storytelling": "Cyber Noir: Merging shadowy detective intrigue with dystopian futurism to subvert classic crime narratives.",
     "summary": "A fusion of cyberpunk and detective noir."
+  },
+  {
+    "id": "123e4567-e89b-12d3-a456-426614174012",
+    "label": "Blended Throughlines",
+    "storytelling": "The detective's private guilt, the rogue AI's challenge, the city's institutional corruption, and the unstable alliance between hunter and hunted all converge into one unified audience-facing summary of the argument.",
+    "summary": "A single overview blending Main Character, Influence Character, Objective Story, and Relationship Story tensions."
   }
 ]
 ```

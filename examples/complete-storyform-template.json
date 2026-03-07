@@ -14,25 +14,25 @@
                 "subtext": {
                     "perspectives": [
                         {
-                            "id": "perspective_main_character",
+                            "id": "persp_main_character",
                             "author_structural_pov": "i",
                             "summary": "",
                             "storytelling": ""
                         },
                         {
-                            "id": "perspective_influence_character",
+                            "id": "persp_influence_character",
                             "author_structural_pov": "you",
                             "summary": "",
                             "storytelling": ""
                         },
                         {
-                            "id": "perspective_relationship_story",
+                            "id": "persp_relationship_story",
                             "author_structural_pov": "we",
                             "summary": "",
                             "storytelling": ""
                         },
                         {
-                            "id": "perspective_objective_story",
+                            "id": "persp_objective_story",
                             "author_structural_pov": "they",
                             "summary": "",
                             "storytelling": ""
@@ -1197,7 +1197,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_objective_story"
+                                    "perspective_id": "persp_objective_story"
                                 }
                             ]
                         },
@@ -1211,7 +1211,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_objective_story"
+                                    "perspective_id": "persp_objective_story"
                                 }
                             ]
                         },
@@ -1225,7 +1225,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_objective_story"
+                                    "perspective_id": "persp_objective_story"
                                 }
                             ]
                         },
@@ -1239,7 +1239,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_objective_story"
+                                    "perspective_id": "persp_objective_story"
                                 }
                             ]
                         },
@@ -1253,7 +1253,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_main_character"
+                                    "perspective_id": "persp_main_character"
                                 }
                             ]
                         },
@@ -1267,7 +1267,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_main_character"
+                                    "perspective_id": "persp_main_character"
                                 }
                             ]
                         },
@@ -1281,7 +1281,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_main_character"
+                                    "perspective_id": "persp_main_character"
                                 }
                             ]
                         },
@@ -1295,7 +1295,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_main_character"
+                                    "perspective_id": "persp_main_character"
                                 }
                             ]
                         },
@@ -1309,7 +1309,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_influence_character"
+                                    "perspective_id": "persp_influence_character"
                                 }
                             ]
                         },
@@ -1323,7 +1323,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_influence_character"
+                                    "perspective_id": "persp_influence_character"
                                 }
                             ]
                         },
@@ -1337,7 +1337,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_influence_character"
+                                    "perspective_id": "persp_influence_character"
                                 }
                             ]
                         },
@@ -1351,7 +1351,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_influence_character"
+                                    "perspective_id": "persp_influence_character"
                                 }
                             ]
                         },
@@ -1365,7 +1365,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_relationship_story"
+                                    "perspective_id": "persp_relationship_story"
                                 }
                             ]
                         },
@@ -1379,7 +1379,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_relationship_story"
+                                    "perspective_id": "persp_relationship_story"
                                 }
                             ]
                         },
@@ -1393,7 +1393,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_relationship_story"
+                                    "perspective_id": "persp_relationship_story"
                                 }
                             ]
                         },
@@ -1407,7 +1407,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_relationship_story"
+                                    "perspective_id": "persp_relationship_story"
                                 }
                             ]
                         }

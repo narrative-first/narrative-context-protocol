@@ -12,6 +12,7 @@ Use this page when implementing import/export, validation, and cross-tool interc
 
 - A shared envelope for transporting narrative context (`schema_version` + `story`).
 - A consistent separation of `subtext` and `storytelling` per narrative.
+- Closed canonical narrative shapes, so extra keys are rejected unless a shape explicitly allows extensions.
 - Canonical enums for `appreciation`, `narrative_function`, `dynamic`, and `vector`.
 - Optional custom mapping fields that preserve canonical meaning.
 
@@ -24,7 +25,7 @@ node tests/validate-schema.js
 
 The test runner validates:
 
-- Valid fixtures: `/examples/example-story.json`, `/examples/ideation-beginner.json`, `/examples/anora.json`, `/examples/the-shawshank-redemption.json`
+- Valid fixtures: `/examples/example-story.json`, `/examples/ideation-beginner.json`, `/examples/anora.json`, `/examples/the-shawshank-redemption.json`, `/examples/complete-storyform-template.json`
 - Invalid fixtures: `/examples/invalid/*.json`
 
 Legacy exports are kept in `/examples/legacy/` for migration reference only.
@@ -137,6 +138,9 @@ Required keys per item:
 - `summary`
 - `storytelling`
 
+IDs are opaque strings. Plain UUIDs are fine; type prefixes are optional.
+Perspectives are closed authorial POV records; do not place role, conflict, or character identity fields here.
+
 ### Players
 
 Required keys per item:
@@ -144,6 +148,8 @@ Required keys per item:
 - `id`, `name`, `role`, `visual`, `audio`, `summary`, `storytelling`, `perspectives`
 
 `perspectives` must be an array of objects, each with required `perspective_id`.
+Player identity belongs here, not on `perspectives`.
+IDs are opaque strings. Plain UUIDs are fine; type prefixes are optional.
 
 ### Dynamics
 
@@ -224,9 +230,17 @@ Optional keys:
 
 Required keys per item:
 
-- `label`, `summary`, `storytelling`
+- `id`, `label`, `summary`, `storytelling`
 
-`label` must be normalized snake_case (`^[a-z][a-z0-9_]*$`), e.g. `logline`, `genre_dynamics`.
+IDs are opaque strings. Plain UUIDs are fine; type prefixes are optional.
+`label` must be exactly one of:
+
+- `Logline`
+- `Genre`
+- `Blended Throughlines`
+
+Canonical exporters should emit those exact Title Case values.
+Importers/normalizers may accept legacy inputs such as `logline`, `genre`, `blended_throughlines`, `Premise Overview`, and `Four Throughlines Extraction`, but they should normalize those values before schema validation or export.
 
 ### Moments
 
@@ -279,7 +293,7 @@ Example (storypoint):
     "summary": "A recurring refusal to accept what is in front of them.",
     "storytelling": "The protagonist keeps dismissing direct warnings.",
     "perspectives": [
-        { "perspective_id": "perspective_ab12cd34" }
+        { "perspective_id": "123e4567-e89b-12d3-a456-426614174000" }
     ]
 }
 ```

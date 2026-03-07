@@ -13,7 +13,7 @@
                 "subtext": {
                     "perspectives": [
                         {
-                            "id": "perspective_invalid_001",
+                            "id": "persp_invalid_001",
                             "author_structural_pov": "i",
                             "summary": "Test POV",
                             "storytelling": "Test perspective"
@@ -30,7 +30,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_invalid_001"
+                                    "perspective_id": "persp_invalid_001"
                                 }
                             ]
                         }
@@ -54,7 +54,7 @@
                             "storytelling": "",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_invalid_001"
+                                    "perspective_id": "persp_invalid_001"
                                 }
                             ]
                         }
@@ -69,7 +69,7 @@
                             "storytelling": "Signpost sequence exceeds allowed max.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_invalid_001"
+                                    "perspective_id": "persp_invalid_001"
                                 }
                             ]
                         }
@@ -78,7 +78,8 @@
                 "storytelling": {
                     "overviews": [
                         {
-                            "label": "logline",
+                            "id": "over_invalid_001",
+                            "label": "Logline",
                             "summary": "",
                             "storytelling": ""
                         }

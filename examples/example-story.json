@@ -53,7 +53,7 @@
                 "subtext": {
                     "perspectives": [
                         {
-                            "id": "perspective_12345678-1234-1234-1234-123456789012",
+                            "id": "12345678-1234-1234-1234-123456789012",
                             "author_structural_pov": "i",
                             "summary": "John Marlowe",
                             "storytelling": "John is a seasoned detective whose past is as mysterious as the cases he solves."
@@ -61,7 +61,7 @@
                     ],
                     "players": [
                         {
-                            "id": "player_abcdef12-3456-7890-abcd-ef1234567890",
+                            "id": "abcdef12-3456-7890-abcd-ef1234567890",
                             "name": "Detective John Marlowe",
                             "role": "Main Character",
                             "visual": "A rumpled trench coat and tired eyes that miss nothing.",
@@ -70,7 +70,7 @@
                             "storytelling": "John exudes a stoic demeanor, masking the inner turmoil of his past.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                                    "perspective_id": "12345678-1234-1234-1234-123456789012"
                                 }
                             ]
                         }
@@ -94,7 +94,7 @@
                             "storytelling": "The discovery of an old photograph sparks memories and hidden truths.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                                    "perspective_id": "12345678-1234-1234-1234-123456789012"
                                 }
                             ]
                         }
@@ -111,7 +111,7 @@
                             "storytelling": "A blend of present-day tension and haunting memories creates a surreal experience.",
                             "perspectives": [
                                 {
-                                    "perspective_id": "perspective_12345678-1234-1234-1234-123456789012"
+                                    "perspective_id": "12345678-1234-1234-1234-123456789012"
                                 }
                             ]
                         }
@@ -120,14 +120,14 @@
                 "storytelling": {
                     "overviews": [
                         {
-                            "id": "overview_001",
-                            "label": "logline",
+                            "id": "12345678-1234-1234-1234-123456789010",
+                            "label": "Logline",
                             "summary": "A dark and atmospheric mystery unfolds in a rain-soaked city.",
                             "storytelling": "The narrative juxtaposes gritty realism with introspective flashbacks."
                         },
                         {
-                            "id": "overview_002",
-                            "label": "genre_dynamics",
+                            "id": "12345678-1234-1234-1234-123456789011",
+                            "label": "Genre",
                             "summary": "Mystery pacing with thriller turns built on memory and regret.",
                             "storytelling": "Each reveal tightens the emotional stakes as the genre shifts between introspection and pursuit."
                         }
