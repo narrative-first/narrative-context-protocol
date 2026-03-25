@@ -2,6 +2,9 @@
 
 ## Recent Schema Updates
 
+- Added optional `subtext.storybeats[].appreciation` as a derived interoperability field based on `throughline + scope + sequence`.
+- Clarified that Storybeat importers should derive the appreciation identity when the field is omitted so lighter-weight payloads remain compatible.
+- Clarified that canonical Storybeat objects do not expose a `signpost` key; any internal grouping should be derived from structural scope, sequence, and parent relationships.
 - Closed the primary canonical narrative shapes so unexpected keys now fail validation unless a shape explicitly supports extension metadata.
 - Clarified that Perspective, Player, and Overview IDs are opaque strings. Plain UUIDs are acceptable and type prefixes are optional.
 - Canonicalized overview labels to the exact Title Case enum values `Logline`, `Genre`, and `Blended Throughlines`.

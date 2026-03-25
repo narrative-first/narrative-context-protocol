@@ -145,9 +145,10 @@ Perspectives are closed authorial POV records; do not place role, conflict, or c
 
 Required keys per item:
 
-- `id`, `name`, `role`, `visual`, `audio`, `summary`, `storytelling`, `perspectives`
+- `id`, `name`, `role`, `visual`, `audio`, `summary`, `bio`, `storytelling`, `motivations`, `perspectives`
 
 `perspectives` must be an array of objects, each with required `perspective_id`.
+`motivations` must be an array of closed objects with required `narrative_function`, `illustration`, and `storytelling`.
 Player identity belongs here, not on `perspectives`.
 IDs are opaque strings. Plain UUIDs are fine; type prefixes are optional.
 
@@ -208,7 +209,7 @@ Required keys per item:
 
 Optional keys:
 
-- `signpost` (1-4)
+- `appreciation` (derived structural label such as `Objective Story Signpost 1`)
 - `throughline`
 - `narrative_function` (validated against canonical enum when provided)
 - `custom_narrative_function`, `custom_narrative_function_namespace`
@@ -218,6 +219,8 @@ Optional keys:
 - `signpost`: `1-4`
 - `progression`: `1-16`
 - `event`: `1-64`
+
+When `appreciation` is present on a Storybeat, it should restate the structural slot implied by `throughline + scope + sequence`. Canonical Storybeats do not expose a `signpost` key; consumers should derive any internal grouping from structure or parent relationships when the field is omitted.
 
 ## Storytelling Model
 

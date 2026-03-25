@@ -109,8 +109,26 @@ properties:
                                                 type: string
                                             summary:
                                                 type: string
+                                            bio:
+                                                type: string
                                             storytelling:
                                                 type: string
+                                            motivations:
+                                                type: array
+                                                items:
+                                                    type: object
+                                                    properties:
+                                                        narrative_function:
+                                                            "$ref": "#/$defs/canonical_narrative_function"
+                                                        illustration:
+                                                            type: string
+                                                        storytelling:
+                                                            type: string
+                                                    required:
+                                                    - narrative_function
+                                                    - illustration
+                                                    - storytelling
+                                                    additionalProperties: false
                                             perspectives:
                                                 type: array
                                                 items:
@@ -122,7 +140,9 @@ properties:
                                         - visual
                                         - audio
                                         - summary
+                                        - bio
                                         - storytelling
+                                        - motivations
                                         - perspectives
                                         additionalProperties: false
                                 dynamics:
@@ -234,6 +254,9 @@ properties:
                                         properties:
                                             id:
                                                 "$ref": "#/$defs/stable_id"
+                                            appreciation:
+                                                type: string
+                                                description: Optional derived structural label, typically throughline + scope + sequence (for example, Objective Story Signpost 1).
                                             scope:
                                                 type: string
                                                 enum:
@@ -243,11 +266,6 @@ properties:
                                             sequence:
                                                 type: integer
                                                 minimum: 1
-                                            signpost:
-                                                type: integer
-                                                minimum: 1
-                                                maximum: 4
-                                                description: Optional signpost grouping (1-4).
                                             throughline:
                                                 type: string
                                                 description: Optional throughline label for grouping.

@@ -45,7 +45,25 @@
                             "visual": "Longtime inmate with composed, observant bearing.",
                             "audio": "Measured narration and dry humor.",
                             "summary": "A pragmatic survivor who slowly reopens to hope.",
+                            "bio": "Red has survived prison by lowering expectations, trusting routine over the danger of hope.",
                             "storytelling": "Red interprets Andy's choices against his own institutionalized habits.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Support",
+                                    "illustration": "keeping the prison's routines and informal economy running smoothly for everyone involved",
+                                    "storytelling": "Red supports the existing system by helping it function day to day, even while privately recognizing its cruelty."
+                                },
+                                {
+                                    "narrative_function": "Help",
+                                    "illustration": "getting needed items and assistance for inmates who know how to ask",
+                                    "storytelling": "He helps people survive Shawshank by supplying favors, tools, and guidance."
+                                },
+                                {
+                                    "narrative_function": "Conscience",
+                                    "illustration": "hesitating whenever self-protection conflicts with what he knows is right",
+                                    "storytelling": "Red's conscience keeps pulling him toward decency, even when survival says to stay uninvolved."
+                                }
+                            ],
                             "perspectives": [
                                 {
                                     "perspective_id": "persp_shawshank_mc"
@@ -59,10 +77,55 @@
                             "visual": "Quiet, deliberate, and emotionally guarded.",
                             "audio": "Calm speech under pressure.",
                             "summary": "A principled outsider who refuses to surrender internal freedom.",
+                            "bio": "Andy enters Shawshank with disciplined intelligence and an unwavering commitment to a life beyond confinement.",
                             "storytelling": "Andy steadily applies intelligence and persistence to impossible odds.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Pursuit",
+                                    "illustration": "continually moving toward a concrete future outside prison walls",
+                                    "storytelling": "Andy never stops working toward freedom, even when every circumstance argues for resignation."
+                                },
+                                {
+                                    "narrative_function": "Consider",
+                                    "illustration": "constantly weighing how each risk, alliance, and setback could move him closer to escape",
+                                    "storytelling": "Andy studies each development carefully, turning possibilities over until he can use them."
+                                },
+                                {
+                                    "narrative_function": "Oppose",
+                                    "illustration": "resisting the prison's attempts to reduce him to obedience and despair",
+                                    "storytelling": "He opposes the institution at every level, refusing to let its logic define who he is."
+                                }
+                            ],
                             "perspectives": [
                                 {
                                     "perspective_id": "persp_shawshank_ic"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "player_shawshank_norton",
+                            "name": "Warden Samuel Norton",
+                            "role": "Objective Story Player",
+                            "visual": "Authoritarian prison warden with rigid posture and polished public authority.",
+                            "audio": "Controlled, sermon-like speech masking threat and hypocrisy.",
+                            "summary": "The administrator who protects the prison's corruption and punishes anything that threatens it.",
+                            "bio": "Norton uses institutional power, religious posturing, and fear to preserve the corrupt order that benefits him.",
+                            "storytelling": "The warden clings to control by denying threats, rewriting reality, and crushing anyone who exposes the truth.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Avoid",
+                                    "illustration": "evading exposure, accountability, and any disruption to his corrupt operation",
+                                    "storytelling": "Norton keeps steering away from scrutiny whenever the truth gets close."
+                                },
+                                {
+                                    "narrative_function": "Reconsider",
+                                    "illustration": "revising plans and tactics the moment Andy's resistance threatens his authority",
+                                    "storytelling": "He repeatedly reconsiders his strategy in order to regain control when events stop cooperating."
+                                }
+                            ],
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_shawshank_os"
                                 }
                             ]
                         }

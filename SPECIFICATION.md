@@ -162,7 +162,7 @@ Storypoints capture essential thematic concepts and core ideas integral to the n
 **Why?** Identifying Storypoints explicitly guides authors in maintaining narrative focus and coherence, allowing them to consistently reflect and reinforce core thematic elements throughout their story.
 
 ## Storybeats  
-Storybeats map the chronological progression of narrative events, clearly delineating significant moments and signposts. They emphasize shifts in thematic exploration and character development, ensuring effective pacing and sustained thematic momentum throughout the narrative.
+Storybeats map the chronological progression of narrative events, clearly delineating significant structural turns. They emphasize shifts in thematic exploration and character development, ensuring effective pacing and sustained thematic momentum throughout the narrative.
 
 **Why?** Storybeats help authors manage narrative flow and emotional impact, ensuring each event meaningfully contributes to character arcs and thematic progression, enhancing audience engagement and satisfaction.
 
@@ -294,7 +294,15 @@ Players own character identity within the narrative. They carry names, roles, se
     "visual": "A distinguished man in his late 50s, with silver-streaked hair and piercing blue eyes. He wears a well-tailored suit but often appears slightly disheveled, as if sleep eludes him.",
     "audio": "His voice is calm and measured, carrying the weight of experience but occasionally betraying a hint of hesitation when discussing personal matters.",
     "summary": "A celebrated trauma specialist whose command over others cannot protect him from unresolved grief.",
+    "bio": "Michael is a respected trauma specialist whose professional authority cannot resolve the private grief shaping his choices.",
     "storytelling": "Michael presents authority and polish, but every personal question exposes how fragile that control really is.",
+    "motivations": [
+      {
+        "narrative_function": "Control",
+        "illustration": "maintaining professional authority to suppress unresolved grief",
+        "storytelling": "Michael leans on structure and expertise whenever his personal life threatens to overwhelm him."
+      }
+    ],
     "perspectives": [
         {
             "perspective_id": "123e4567-e89b-12d3-a456-426614174000"
@@ -334,9 +342,9 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
 "storybeats": [
   {
     "id": "beat_9876bcde",
+    "appreciation": "Main Character Signpost 4",
     "scope": "signpost",
     "sequence": 4,
-    "signpost": 4,
     "throughline": "Main Character",
     "narrative_function": "Past",
     "summary": "Michael can no longer escape his past.",
@@ -349,6 +357,8 @@ Temporal elements that demonstrate how the narrative unfolds over time. Each bea
   }
 ]
 ```
+
+`appreciation` is supported on Storybeats as an optional derived interoperability field. When present, it should restate the structural slot identified by `throughline + scope + sequence`, such as `Objective Story Signpost 1` or `Main Character Event 12`. `signpost` is not part of the canonical Storybeat shape; consumers that need internal signpost grouping should derive it from structure or parent relationships instead.
 
 ### Dynamics
 

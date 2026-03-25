@@ -45,7 +45,20 @@
                             "visual": "A young dancer with a confident public persona.",
                             "audio": "Quick, sharp, and defensive when cornered.",
                             "summary": "A protagonist trying to hold onto self-worth under pressure.",
+                            "bio": "Ani is a young woman fighting to preserve her own sense of worth inside systems eager to commodify her.",
                             "storytelling": "Ani resists being reduced to a bargaining chip.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Pursuit",
+                                    "illustration": "pushing toward a version of life that belongs to her rather than to the people trying to buy or manage her",
+                                    "storytelling": "Ani keeps driving forward toward independence, even when every compromise asks her to settle."
+                                },
+                                {
+                                    "narrative_function": "Consider",
+                                    "illustration": "turning over the implications of each offer, promise, and threat around the marriage",
+                                    "storytelling": "Ani repeatedly weighs what each new development means for her freedom and self-respect."
+                                }
+                            ],
                             "perspectives": [
                                 {
                                     "perspective_id": "persp_anora_mc"
@@ -59,10 +72,50 @@
                             "visual": "Reserved enforcer with controlled body language.",
                             "audio": "Low, economical speech.",
                             "summary": "A pressure force pushing Ani toward a harsher worldview.",
+                            "bio": "Igor operates from within a coercive machine and has learned to survive through restraint and practical compromise.",
                             "storytelling": "Igor challenges Ani's assumptions about freedom and safety.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Help",
+                                    "illustration": "stepping in with practical assistance when Ani is cornered by the people controlling the situation",
+                                    "storytelling": "Igor helps in concrete ways, offering cover and small acts of protection inside a hostile system."
+                                },
+                                {
+                                    "narrative_function": "Conscience",
+                                    "illustration": "holding back from the most dehumanizing options even when they would be easier",
+                                    "storytelling": "Igor's sense of conscience keeps surfacing whenever the job demands he ignore Ani's humanity."
+                                }
+                            ],
                             "perspectives": [
                                 {
                                     "perspective_id": "persp_anora_ic"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "player_anora_vanya",
+                            "name": "Ivan 'Vanya' Zakharov",
+                            "role": "Objective Story Player",
+                            "visual": "A wealthy, impulsive young heir moving through the world with careless entitlement.",
+                            "audio": "Restless, immature speech that pivots quickly from charm to panic.",
+                            "summary": "The privileged son whose recklessness triggers the central conflict around the marriage.",
+                            "bio": "Vanya is the Russian heir whose impulsive relationship with Ani pulls her into the power struggle controlled by his family.",
+                            "storytelling": "Vanya chases pleasure until consequences appear, then tries to back away from what he started.",
+                            "motivations": [
+                                {
+                                    "narrative_function": "Avoid",
+                                    "illustration": "dodging the obligations and fallout created by his sudden marriage",
+                                    "storytelling": "Vanya tries to slip out of responsibility as soon as the relationship threatens his comfort."
+                                },
+                                {
+                                    "narrative_function": "Reconsider",
+                                    "illustration": "backtracking on grand romantic gestures once family pressure closes in",
+                                    "storytelling": "He quickly reconsiders his commitment when the reality of the situation becomes unavoidable."
+                                }
+                            ],
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anora_os"
                                 }
                             ]
                         }
