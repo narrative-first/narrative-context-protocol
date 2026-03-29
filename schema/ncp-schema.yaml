@@ -227,6 +227,14 @@ properties:
                                                 type: array
                                                 items:
                                                     "$ref": "#/$defs/perspective_link"
+                                            throughline:
+                                                type: string
+                                                description: Optional throughline label for grouping and round-trip stability when perspective refs are absent.
+                                                enum:
+                                                - Objective Story
+                                                - Main Character
+                                                - Influence Character
+                                                - Relationship Story
                                             custom_appreciation:
                                                 type: string
                                             custom_appreciation_namespace:

@@ -192,9 +192,46 @@ Required keys per item:
 
 - `id`, `appreciation`, `illustration`, `summary`, `storytelling`, `perspectives`
 
+Canonical appreciation names for storypoints include the lane, such as:
+
+- `Objective Story Problem`
+- `Main Character Symptom`
+- `Influence Character Issue`
+- `Relationship Story Catalyst`
+
+Optional canonical key:
+
+- `throughline` for structural bookkeeping/grouping and round-trip stability when `perspectives` refs are not yet available.
+
+Allowed canonical `throughline` values:
+
+- `Objective Story`
+- `Main Character`
+- `Influence Character`
+- `Relationship Story`
+
+Canonical outputs should use only full labels. Importers may still normalize shorthand input before persistence.
+
+Example canonical storypoint (lane retained without a perspective link yet):
+
+```json
+{
+  "id": "point_x",
+  "throughline": "Main Character",
+  "appreciation": "Main Character Problem",
+  "narrative_function": "Control",
+  "illustration": "",
+  "summary": "A structural placeholder while links are being built.",
+  "storytelling": "Lane can persist before POV linkage exists.",
+  "perspectives": []
+}
+```
+
 Optional canonical key:
 
 - `narrative_function` (validated against canonical enum when provided)
+
+`subtext.perspectives[]` are POV framing/setup nodes rather than a restatement of Dramatica storyform throughline labels. They should carry meaningful `summary` and `storytelling` content for framing perspective context.
 
 Custom extension fields:
 

@@ -1,0 +1,37 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_invalid_storypoint_extra_key",
+        "title": "Storypoint Extra Key",
+        "genre": "Drama",
+        "logline": "Canonical storypoints should reject unknown keys.",
+        "created_at": "2026-03-28T00:00:00Z",
+        "narratives": [
+            {
+                "id": "narrative_invalid_storypoint_extra_key",
+                "subtext": {
+                    "perspectives": [],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [
+                        {
+                            "id": "point_extra",
+                            "appreciation": "Main Character Problem",
+                            "narrative_function": "Control",
+                            "illustration": "",
+                            "summary": "Unexpected keys are rejected on canonical storypoints.",
+                            "storytelling": "If this passes, schema is allowing unknown keys.",
+                            "perspectives": [],
+                            "unexpected": "value"
+                        }
+                    ],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": []
+                }
+            }
+        ]
+    }
+}

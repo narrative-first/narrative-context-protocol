@@ -12,7 +12,9 @@ const validFixtures = [
   '../examples/ideation-beginner.json',
   '../examples/anora.json',
   '../examples/the-shawshank-redemption.json',
-  '../examples/complete-storyform-template.json'
+  '../examples/complete-storyform-template.json',
+  '../examples/storypoint-throughline-empty-perspectives.json',
+  '../examples/storypoint-throughline-both-refs.json'
 ];
 
 const invalidDir = path.join(__dirname, '../examples/invalid');
