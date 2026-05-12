@@ -2,6 +2,8 @@
 
 ## Recent Schema Updates
 
+- Added optional `story.settings[]` entries for reusable story-level Settings and optional `narratives[].storytelling.moments[].setting_id` references so Moments can point at a shared Setting while preserving free-text `setting`.
+- Added a canonical story settings example and refreshed validation fixtures so canonical Storybeats omit legacy `signpost` keys.
 - Added optional `subtext.storybeats[].appreciation` as a derived interoperability field based on `throughline + scope + sequence`.
 - Clarified that Storybeat importers should derive the appreciation identity when the field is omitted so lighter-weight payloads remain compatible.
 - Clarified that canonical Storybeat objects do not expose a `signpost` key; any internal grouping should be derived from structural scope, sequence, and parent relationships.
