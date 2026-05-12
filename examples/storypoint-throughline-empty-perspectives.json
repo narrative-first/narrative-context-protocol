@@ -9,6 +9,7 @@
         "narratives": [
             {
                 "id": "narrative_storypoint_throughline_empty_perspectives",
+                "title": "Throughline Placeholder Narrative",
                 "subtext": {
                     "perspectives": [],
                     "players": [],

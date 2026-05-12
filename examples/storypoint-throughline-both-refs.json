@@ -9,6 +9,7 @@
         "narratives": [
             {
                 "id": "narrative_storypoint_throughline_with_perspective",
+                "title": "Throughline Perspective Narrative",
                 "subtext": {
                     "perspectives": [
                         {

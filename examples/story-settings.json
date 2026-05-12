@@ -1,0 +1,44 @@
+{
+    "schema_version": "1.3.0",
+    "story": {
+        "id": "story_settings_demo",
+        "title": "Shared Settings Demo",
+        "logline": "A detective returns to the same archive twice and discovers that the room itself carries meaning.",
+        "created_at": "2026-05-12T20:10:00Z",
+        "settings": [
+            {
+                "id": "setting_precinct_archive",
+                "name": "Precinct Archive",
+                "description": "A dim archive room where unresolved cases gather institutional dust."
+            }
+        ],
+        "narratives": [
+            {
+                "id": "narrative_settings_demo",
+                "title": "Central Narrative",
+                "subtext": {
+                    "perspectives": [],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": [],
+                    "moments": [
+                        {
+                            "id": "moment_archive_return",
+                            "summary": "The detective returns to the archive.",
+                            "synopsis": "A second visit to the archive reframes the old evidence as a personal warning.",
+                            "setting": "The same archive room, now colder and less familiar.",
+                            "setting_id": "setting_precinct_archive",
+                            "timing": "After midnight.",
+                            "imperatives": "Show that the shared place has taken on new meaning.",
+                            "storybeats": []
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
