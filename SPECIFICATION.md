@@ -93,6 +93,22 @@ For open-source adopters, this creates a shared on-ramp: communities can exchang
 ```
 
 
+## Story Settings
+
+NCP supports optional reusable story-level Settings for places or environments that recur across Moments. `story.settings[]` defines the shared setting once, while each Moment keeps its own free-text `setting` and may optionally reference the shared entry with `setting_id`.
+
+This avoids repeating the same place details across multiple Moments without making every producer model setting identity. Producers that only need free-text Moment settings can omit `story.settings[]` and `setting_id`.
+
+```json
+"settings": [
+  {
+    "id": "setting_precinct_archive",
+    "name": "Precinct Archive",
+    "description": "A dimly lit archive room where old case files preserve institutional memory."
+  }
+]
+```
+
 ## Narrative: Structuring Subtext & Storytelling
 
 A single story may contain one or more narratives (e.g., _The Empire Strikes Back_ has the Luke/Yoda Storyform and the Han/Leia Storyform, _Barbie_ has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a single central narrative (e.g., _Anora_, _Anatomy of a Fall_, etc.).
@@ -414,6 +430,7 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
     "summary": "Infiltrating the neon-lit heart of a dystopian metropolis, Alex plunges into a shadowy realm teeming with digital outlaws.",
     "synopsis": "Freshly arrived in the neon chaos of Neo-Tokyo, Alex is swiftly ensnared in a perilous game played by cyber-criminals, underground syndicates, and relentless AI-driven enforcers.",
     "setting": "The pulsating streets of Neo-Tokyo, where holographic ads blend with the shadowy back alleys controlled by syndicate bosses.",
+    "setting_id": "setting_neo_tokyo_streets",
     "timing": "Late night, just hours after Alex's first unsettling discovery upon arriving in the city.",
     "imperatives": "- Establish the dark, chaotic atmosphere of Neo-Tokyo\n- Introduce key threats: cyber-criminals and AI enforcers\n- Show Alex's initial vulnerabilities and resourcefulness",
     "audience_experiential_pov": "third_person_limited",

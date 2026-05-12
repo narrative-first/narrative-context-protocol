@@ -104,6 +104,22 @@ Quick heuristic:
 - If it is an event chain or conflict progression, put it in `plot`.
 - If it is a framing/experience contract with the audience, put it in `genre`.
 
+## Story Settings
+
+`story.settings[]` is an optional story-level glossary for reusable places or environments. Each setting requires an `id` and `name`, with an optional `description`. Moments may keep their local free-text `setting` prose while also pointing at a shared setting with `setting_id`.
+
+Use this when multiple Moments occur in the same place and producers want a stable reference instead of repeating or string-matching setting descriptions.
+
+```json
+"settings": [
+    {
+        "id": "setting_precinct_archive",
+        "name": "Precinct Archive",
+        "description": "A dimly lit archive room where old case files preserve institutional memory."
+    }
+]
+```
+
 ## Narrative Layers
 
 Each item in `story.narratives[]` is a Dramatica storyform: a single, complete argument structure within the story, expressed through `subtext` and `storytelling` layers.
@@ -290,7 +306,9 @@ Required keys per item:
 
 Optional keys:
 
-- `id`, `act`, `order`, `maximum_steps`, `fabric`, `audience_experiential_pov`
+- `id`, `setting_id`, `act`, `order`, `maximum_steps`, `fabric`, `audience_experiential_pov`
+
+`setting` remains the Moment-specific free-text description. `setting_id` may reference a `story.settings[]` entry when the Moment occurs in a reusable story-level setting.
 
 `storybeats` inside a moment is an ordered reference list:
 
