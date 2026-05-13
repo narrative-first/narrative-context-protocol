@@ -111,7 +111,7 @@ This avoids repeating the same place details across multiple Moments without mak
 
 ## Narrative: Structuring Subtext & Storytelling
 
-A single story may contain one or more narratives (e.g., _The Empire Strikes Back_ has the Luke/Yoda Storyform and the Han/Leia Storyform, _Barbie_ has the Barbie/Ken Storyform and the Barbie/Gloria Storyform). Most stories, however, exhibit a single central narrative (e.g., _Anora_, _Anatomy of a Fall_, etc.).
+A single story may contain one or more narratives. For example, a synthetic rescue story might model the public evacuation crisis as one narrative and a smaller mentor-student story as another. Most stories, however, exhibit a single central narrative.
 
 Each narrative may optionally declare a `status` of `candidate`, `draft`, or `complete` to distinguish exploratory forms from finalized structure. If omitted, consumers may treat it as complete.
 

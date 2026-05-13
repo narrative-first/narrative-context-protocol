@@ -11,8 +11,7 @@ const validFixtures = [
   '../examples/example-story.json',
   '../examples/story-settings.json',
   '../examples/ideation-beginner.json',
-  '../examples/anora.json',
-  '../examples/the-shawshank-redemption.json',
+  '../examples/complete-space-adventure-storyform.json',
   '../examples/complete-storyform-template.json',
   '../examples/storypoint-throughline-empty-perspectives.json',
   '../examples/storypoint-throughline-both-refs.json'

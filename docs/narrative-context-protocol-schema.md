@@ -25,10 +25,10 @@ node tests/validate-schema.js
 
 The test runner validates:
 
-- Valid fixtures: `/examples/example-story.json`, `/examples/ideation-beginner.json`, `/examples/anora.json`, `/examples/the-shawshank-redemption.json`, `/examples/complete-storyform-template.json`
+- Valid fixtures: `/examples/example-story.json`, `/examples/ideation-beginner.json`, `/examples/complete-space-adventure-storyform.json`, `/examples/complete-storyform-template.json`
 - Invalid fixtures: `/examples/invalid/*.json`
 
-Legacy exports are kept in `/examples/legacy/` for migration reference only.
+Legacy exports are not part of canonical validation.
 
 ## Top-Level Shape
 
@@ -358,8 +358,8 @@ Example (storypoint):
 
 ## Legacy Data and Migration
 
-Some historical exports in `/examples/legacy/` predate the current interchange contract.
-They are useful references but are not guaranteed to validate against the canonical schema.
+Historical exports may predate the current interchange contract.
+Normalize those payloads against the current schema before treating them as canonical NCP.
 
 For migration strategy, see:
 

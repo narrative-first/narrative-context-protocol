@@ -8,7 +8,7 @@ We welcome contributions that improve the schema, examples, documentation, and v
 
 ### Example Fixture Policy
 - Keep schema-valid interchange fixtures in `/examples/` (and `/examples/invalid/` for expected-failure tests).
-- Keep historical or migration-only payloads in `/examples/legacy/`.
+- Prefer synthetic original fixtures for rich complete examples so public samples avoid licensed-story IP boundaries.
 - Update `tests/validate-schema.js` whenever fixture coverage changes.
 - Run `npm run validate:schema` before opening a PR.
 

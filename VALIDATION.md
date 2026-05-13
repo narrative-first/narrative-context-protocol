@@ -34,8 +34,7 @@ This validates:
 
 - `/examples/example-story.json`
 - `/examples/ideation-beginner.json`
-- `/examples/anora.json`
-- `/examples/the-shawshank-redemption.json`
+- `/examples/complete-space-adventure-storyform.json`
 - `/examples/complete-storyform-template.json`
 - Expected failures in `/examples/invalid/*.json`
 
@@ -104,4 +103,4 @@ jobs:
 - Pin the schema version (`schema_version`) in your payloads.
 - Validate NCP during pull requests and before release builds.
 - Keep canonical keys even when using custom mapping namespaces.
-- Treat `/examples/legacy/` as migration reference only, not canonical interchange fixtures.
+- Use the synthetic complete fixture when you need a rich reference example without crossing public IP boundaries.

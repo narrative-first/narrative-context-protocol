@@ -61,7 +61,6 @@ npm install
 npm run validate:schema
 ```
 
-`examples/legacy/` contains migration samples and is intentionally excluded from canonical validation.
 `examples/example-mapping.json` is a mapping fragment example, not a full schema document.
 Use [/VALIDATION.md](/VALIDATION.md) for validating your own NCP files and CI setup.
 
@@ -99,8 +98,7 @@ narrative-context-protocol/
 ├── examples/
 │   ├── example-story.json
 │   ├── ideation-beginner.json
-│   ├── anora.json
-│   ├── the-shawshank-redemption.json
+│   ├── complete-space-adventure-storyform.json
 │   ├── complete-storyform-template.json
 │   ├── example-mapping.json
 │   ├── invalid/
@@ -108,9 +106,6 @@ narrative-context-protocol/
 │   │   ├── ideation-node-missing-summary.json
 │   │   ├── narrative-status-invalid.json
 │   │   └── signpost-sequence-out-of-range.json
-│   └── legacy/
-│       ├── anora-legacy.json
-│       └── the-shawshank-redemption-legacy.json
 ├── docs/
 │   ├── terminology/
 │   │   ├── 01.perspectives.md

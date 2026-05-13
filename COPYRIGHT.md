@@ -104,12 +104,12 @@ commit g5c3b2a1
 Author: Carl Knolls <carl.knolls@example.com>
 Date:   Thu Jul 17 14:47:28 2025 -0700
 
-    feat(subtext): Developed OS Response further in Warden/Red scene
+    feat(subtext): Developed OS Response further in station scene
 
-diff --git a/shawshank-redemption-ncp.json b/shawshank-redemption-ncp.json
+diff --git a/aster-gate-ncp.json b/aster-gate-ncp.json
 index e1f7c9d..r2k8b7e 100644
---- a/shawshank-redemption-ncp.json
-+++ b/shawshank-redemption-ncp.json
+--- a/aster-gate-ncp.json
++++ b/aster-gate-ncp.json
 @@ -18,7 +18,19 @@
              {
                "id": "04fc7292-abf6-4754-8d0f-d0fe66c5dd05",
@@ -117,11 +117,11 @@ index e1f7c9d..r2k8b7e 100644
                "appreciation": "response",
                "narrative_function": "avoid",
 -              "illustration": "steering something",
--              "summary": "Prisoners actively steer suspicion away from themselves, creating a pervasive atmosphere of mistrust and caution.",
--              "storytelling": "Norton's escalating paranoia compels prisoners to cautiously cover their tracks and deflect suspicion onto others. Red carefully avoids implicating himself and his crew by calmly redirecting Norton's attention elsewhere, maintaining a subtle but constant effort to stay off the Warden's radar.",                     
+-              "summary": "Station crews actively steer suspicion away from the damaged relay team, creating a pervasive atmosphere of mistrust and caution.",
+-              "storytelling": "Pike's escalating suspicion compels crews to cautiously cover their tracks and deflect blame. Nessa redirects Pike's attention away from Brannic and the repair team, maintaining a subtle but constant effort to keep the evacuation route alive.",                     
 +              "illustration": "being obviously preventative",
-+              "summary": "Red comes off super-suspicious as he tries to deflect the Warden's attention away from him and Andy.",
-+              "storytelling": "In response, Red obviously implicates himself, while trying to prevent Norton from finding out what's going on. It has the reverse effect, and now Norton’s paranoia leads him straight to Red and Andy.",
++              "summary": "Nessa comes off super-suspicious as she tries to deflect Pike's attention away from Brannic.",
++              "storytelling": "In response, Nessa obviously implicates herself while trying to prevent Pike from finding the repair crew. It has the reverse effect, and Pike's suspicion leads him straight to the control spine.",
                "perspectives": [
              {
                "id": "edff489e-cd00-4520-b6ff-2f66dba28a2e"
