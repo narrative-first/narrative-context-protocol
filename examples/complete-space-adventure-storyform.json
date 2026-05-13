@@ -1,0 +1,1896 @@
+{
+    "schema_version": "1.2.0",
+    "story": {
+        "id": "story_anon_0001",
+        "title": "The Aster Gate",
+        "logline": "When the only transit gate out of a dying frontier system begins to collapse, a reckless pilot and her disgraced mentor must expose a sabotage plot and guide thousands through a route no one trusts.",
+        "created_at": "2026-01-01T00:00:00Z",
+        "ideation": {
+            "character": [
+                {
+                    "id": "ideation_character_aster_mara",
+                    "name": "Nessa Holt",
+                    "summary": "A courier pilot trying to prove she is more than the daughter of a man blamed for the last gate disaster."
+                },
+                {
+                    "id": "ideation_character_aster_orin",
+                    "name": "Brannic Orso",
+                    "summary": "A retired navigator who survived the first Aster Gate failure and carries guilt for sealing a route too early."
+                }
+            ],
+            "theme": [
+                {
+                    "id": "ideation_theme_aster_trust",
+                    "name": "Trust over proof",
+                    "summary": "Waiting for certainty can become its own kind of cowardice when people need action."
+                }
+            ],
+            "plot": [
+                {
+                    "id": "ideation_plot_aster_evacuation",
+                    "name": "The evacuation window",
+                    "summary": "Harbor Nine has six hours to move its population before the Aster Gate collapses into the relay corridor."
+                }
+            ],
+            "genre": [
+                {
+                    "id": "ideation_genre_aster_frontier",
+                    "name": "Frontier science adventure",
+                    "summary": "A contained rescue thriller built around travel lanes, failing infrastructure, civic pressure, and personal redemption."
+                }
+            ]
+        },
+        "narratives": [
+            {
+                "id": "narrative_anon_0001",
+                "title": "The Aster Gate",
+                "status": "complete",
+                "subtext": {
+                    "perspectives": [
+                        {
+                            "id": "persp_anon_0001",
+                            "author_structural_pov": "they",
+                            "summary": "Harbor Nine must evacuate before its only gate collapses.",
+                            "storytelling": "The colony council, convoy captains, miners, engineers, and families fight over priority, routes, fuel, and blame while the gate lanes decay around them. The shared conflict is practical and public: if they cannot coordinate, no one gets out."
+                        },
+                        {
+                            "id": "persp_anon_0002",
+                            "author_structural_pov": "i",
+                            "summary": "Nessa Holt believes action is the only way to outrun shame.",
+                            "storytelling": "Nessa keeps forcing decisions before she has earned anyone's trust because every delay feels like another verdict against her father. Her personal crisis is not whether the gate can be saved, but whether she can stop using speed as proof that she matters."
+                        },
+                        {
+                            "id": "persp_anon_0003",
+                            "author_structural_pov": "you",
+                            "summary": "Brannic Orso pressures Nessa to trust what she cannot fully prove.",
+                            "storytelling": "Brannic challenges Nessa by refusing to let her confuse courage with reaction. His scarred patience, old maps, and willingness to carry blame keep pushing her toward a quieter kind of bravery."
+                        },
+                        {
+                            "id": "persp_anon_0004",
+                            "author_structural_pov": "we",
+                            "summary": "Nessa and Brannic rebuild a broken pilot-mentor bond under emergency pressure.",
+                            "storytelling": "Their relationship begins as an argument between motion and restraint. It becomes a working partnership only when both admit that the old disaster shaped them and that neither can open the new route alone."
+                        }
+                    ],
+                    "players": [],
+                    "dynamics": [
+                        {
+                            "id": "dyn_anon_0001",
+                            "dynamic": "main_character_resolve",
+                            "vector": "change",
+                            "summary": "Nessa changes by choosing trust over performance.",
+                            "storytelling": "At first Nessa treats every danger as a chance to prove herself. In the climax she powers down her targeting array and follows Brannic's unverified drift pattern because saving the convoy matters more than being seen as right."
+                        },
+                        {
+                            "id": "dyn_anon_0002",
+                            "dynamic": "main_character_growth",
+                            "vector": "stop",
+                            "summary": "Nessa must stop reacting to every accusation.",
+                            "storytelling": "Her progress comes from stopping: stopping the unauthorized runs, stopping the public arguments, and finally stopping the ship long enough to hear the gate itself."
+                        },
+                        {
+                            "id": "dyn_anon_0003",
+                            "dynamic": "main_character_approach",
+                            "vector": "do_er",
+                            "summary": "Nessa is a do-er who solves fear by moving.",
+                            "storytelling": "She steals flight time, dives through debris, and drags answers out of broken hardware. Her action-first style saves lives, but it also gives the saboteur room to make her look reckless."
+                        },
+                        {
+                            "id": "dyn_anon_0004",
+                            "dynamic": "problem_solving_style",
+                            "vector": "linear",
+                            "summary": "Nessa thinks in linear cause and effect.",
+                            "storytelling": "She follows signal trails, fuel logs, and flight vectors until the pieces line up. Brannic's challenge is that the gate drift requires her to trust a pattern before the evidence becomes complete."
+                        },
+                        {
+                            "id": "dyn_anon_0005",
+                            "dynamic": "story_driver",
+                            "vector": "action",
+                            "summary": "Actions force the next crisis.",
+                            "storytelling": "A false beacon, a stolen gate key, a convoy jump, and a manual lock attempt each trigger the next escalation. The story advances because people act under pressure, not because they sit with a decision."
+                        },
+                        {
+                            "id": "dyn_anon_0006",
+                            "dynamic": "story_limit",
+                            "vector": "optionlock",
+                            "summary": "The evacuation is limited by options.",
+                            "storytelling": "Every route closes, every relay burns out, and every convoy slot narrows the colony's choices. The pressure is not a clock alone; it is the shrinking number of viable ways out."
+                        },
+                        {
+                            "id": "dyn_anon_0007",
+                            "dynamic": "story_outcome",
+                            "vector": "success",
+                            "summary": "The colony succeeds in opening a final safe route.",
+                            "storytelling": "Harbor Nine loses the old gate, but the refugees cross through a stabilized corridor and carry the route data needed to build a new network."
+                        },
+                        {
+                            "id": "dyn_anon_0008",
+                            "dynamic": "story_judgment",
+                            "vector": "good",
+                            "summary": "Nessa finds personal release.",
+                            "storytelling": "By the end, Nessa no longer needs the colony to clear her family name before she can act. She earns peace by saving people with the same unproven trust her father once needed."
+                        }
+                    ],
+                    "storypoints": [
+                        {
+                            "id": "point_anon_0001",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Domain",
+                            "narrative_function": "Physics",
+                            "illustration": "Aster 01: Objective Story Domain through Physics",
+                            "summary": "Objective Story Domain is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Physics: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0002",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Concern",
+                            "narrative_function": "Doing",
+                            "illustration": "Aster 02: Objective Story Concern through Doing",
+                            "summary": "Objective Story Concern is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Doing: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0003",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Issue",
+                            "narrative_function": "Skill",
+                            "illustration": "Aster 03: Objective Story Issue through Skill",
+                            "summary": "Objective Story Issue is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Skill: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0004",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Problem",
+                            "narrative_function": "Test",
+                            "illustration": "Aster 04: Objective Story Problem through Test",
+                            "summary": "Objective Story Problem is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Test: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0005",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Solution",
+                            "narrative_function": "Trust",
+                            "illustration": "Aster 05: Objective Story Solution through Trust",
+                            "summary": "Objective Story Solution is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Trust: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0006",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Symptom",
+                            "narrative_function": "Cause",
+                            "illustration": "Aster 06: Objective Story Symptom through Cause",
+                            "summary": "Objective Story Symptom is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Cause: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0007",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Response",
+                            "narrative_function": "Effect",
+                            "illustration": "Aster 07: Objective Story Response through Effect",
+                            "summary": "Objective Story Response is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Effect: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0008",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Catalyst",
+                            "narrative_function": "Wisdom",
+                            "illustration": "Aster 08: Objective Story Catalyst through Wisdom",
+                            "summary": "Objective Story Catalyst is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Wisdom: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0009",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Inhibitor",
+                            "narrative_function": "Thought",
+                            "illustration": "Aster 09: Objective Story Inhibitor through Thought",
+                            "summary": "Objective Story Inhibitor is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Thought: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0010",
+                            "throughline": "Objective Story",
+                            "appreciation": "Objective Story Benchmark",
+                            "narrative_function": "Learning",
+                            "illustration": "Aster 10: Objective Story Benchmark through Learning",
+                            "summary": "Objective Story Benchmark is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Learning: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0011",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Domain",
+                            "narrative_function": "Universe",
+                            "illustration": "Aster 11: Main Character Domain through Universe",
+                            "summary": "Main Character Domain is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Universe: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0012",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Concern",
+                            "narrative_function": "Progress",
+                            "illustration": "Aster 12: Main Character Concern through Progress",
+                            "summary": "Main Character Concern is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Progress: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0013",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Issue",
+                            "narrative_function": "Fantasy",
+                            "illustration": "Aster 13: Main Character Issue through Fantasy",
+                            "summary": "Main Character Issue is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Fantasy: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0014",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Problem",
+                            "narrative_function": "Test",
+                            "illustration": "Aster 14: Main Character Problem through Test",
+                            "summary": "Main Character Problem is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Test: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0015",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Solution",
+                            "narrative_function": "Trust",
+                            "illustration": "Aster 15: Main Character Solution through Trust",
+                            "summary": "Main Character Solution is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Trust: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0016",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Symptom",
+                            "narrative_function": "Unending",
+                            "illustration": "Aster 16: Main Character Symptom through Unending",
+                            "summary": "Main Character Symptom is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Unending: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0017",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Response",
+                            "narrative_function": "Ending",
+                            "illustration": "Aster 17: Main Character Response through Ending",
+                            "summary": "Main Character Response is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Ending: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0018",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Unique Ability",
+                            "narrative_function": "Fact",
+                            "illustration": "Aster 18: Main Character Unique Ability through Fact",
+                            "summary": "Main Character Unique Ability is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Fact: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0019",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Critical Flaw",
+                            "narrative_function": "Worth",
+                            "illustration": "Aster 19: Main Character Critical Flaw through Worth",
+                            "summary": "Main Character Critical Flaw is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Worth: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0020",
+                            "throughline": "Main Character",
+                            "appreciation": "Main Character Benchmark",
+                            "narrative_function": "Present",
+                            "illustration": "Aster 20: Main Character Benchmark through Present",
+                            "summary": "Main Character Benchmark is expressed through Nessa Holt's need to prove herself before she believes she deserves command.",
+                            "storytelling": "This component appears when Nessa Holt's need to prove herself before she believes she deserves command turns around Present: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0021",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Domain",
+                            "narrative_function": "Mind",
+                            "illustration": "Aster 21: Influence Character Domain through Mind",
+                            "summary": "Influence Character Domain is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Mind: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0022",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Concern",
+                            "narrative_function": "Preconscious",
+                            "illustration": "Aster 22: Influence Character Concern through Preconscious",
+                            "summary": "Influence Character Concern is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Preconscious: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0023",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Issue",
+                            "narrative_function": "Worth",
+                            "illustration": "Aster 23: Influence Character Issue through Worth",
+                            "summary": "Influence Character Issue is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Worth: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0024",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Problem",
+                            "narrative_function": "Unproven",
+                            "illustration": "Aster 24: Influence Character Problem through Unproven",
+                            "summary": "Influence Character Problem is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Unproven: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0025",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Solution",
+                            "narrative_function": "Proven",
+                            "illustration": "Aster 25: Influence Character Solution through Proven",
+                            "summary": "Influence Character Solution is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Proven: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0026",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Symptom",
+                            "narrative_function": "Cause",
+                            "illustration": "Aster 26: Influence Character Symptom through Cause",
+                            "summary": "Influence Character Symptom is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Cause: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0027",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Response",
+                            "narrative_function": "Effect",
+                            "illustration": "Aster 27: Influence Character Response through Effect",
+                            "summary": "Influence Character Response is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Effect: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0028",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Unique Ability",
+                            "narrative_function": "Value",
+                            "illustration": "Aster 28: Influence Character Unique Ability through Value",
+                            "summary": "Influence Character Unique Ability is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Value: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0029",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Critical Flaw",
+                            "narrative_function": "Fantasy",
+                            "illustration": "Aster 29: Influence Character Critical Flaw through Fantasy",
+                            "summary": "Influence Character Critical Flaw is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Fantasy: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0030",
+                            "throughline": "Influence Character",
+                            "appreciation": "Influence Character Benchmark",
+                            "narrative_function": "Conscious",
+                            "illustration": "Aster 30: Influence Character Benchmark through Conscious",
+                            "summary": "Influence Character Benchmark is expressed through Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives.",
+                            "storytelling": "This component appears when Brannic Orso's insistence that survival sometimes depends on trusting a pattern before proof arrives turns around Conscious: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0031",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Domain",
+                            "narrative_function": "Psychology",
+                            "illustration": "Aster 31: Relationship Story Domain through Psychology",
+                            "summary": "Relationship Story Domain is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Psychology: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0032",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Concern",
+                            "narrative_function": "Being",
+                            "illustration": "Aster 32: Relationship Story Concern through Being",
+                            "summary": "Relationship Story Concern is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Being: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0033",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Issue",
+                            "narrative_function": "Ability",
+                            "illustration": "Aster 33: Relationship Story Issue through Ability",
+                            "summary": "Relationship Story Issue is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Ability: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0034",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Problem",
+                            "narrative_function": "Non-accurate",
+                            "illustration": "Aster 34: Relationship Story Problem through Non-accurate",
+                            "summary": "Relationship Story Problem is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Non-accurate: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0035",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Solution",
+                            "narrative_function": "Accurate",
+                            "illustration": "Aster 35: Relationship Story Solution through Accurate",
+                            "summary": "Relationship Story Solution is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Accurate: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0036",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Symptom",
+                            "narrative_function": "Cause",
+                            "illustration": "Aster 36: Relationship Story Symptom through Cause",
+                            "summary": "Relationship Story Symptom is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Cause: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0037",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Response",
+                            "narrative_function": "Effect",
+                            "illustration": "Aster 37: Relationship Story Response through Effect",
+                            "summary": "Relationship Story Response is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Effect: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0038",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Catalyst",
+                            "narrative_function": "Knowledge",
+                            "illustration": "Aster 38: Relationship Story Catalyst through Knowledge",
+                            "summary": "Relationship Story Catalyst is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Knowledge: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0039",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Inhibitor",
+                            "narrative_function": "Enlightenment",
+                            "illustration": "Aster 39: Relationship Story Inhibitor through Enlightenment",
+                            "summary": "Relationship Story Inhibitor is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Enlightenment: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0040",
+                            "throughline": "Relationship Story",
+                            "appreciation": "Relationship Story Benchmark",
+                            "narrative_function": "Conceiving",
+                            "illustration": "Aster 40: Relationship Story Benchmark through Conceiving",
+                            "summary": "Relationship Story Benchmark is expressed through the damaged trust between Nessa and Brannic as they learn to fly the route together.",
+                            "storytelling": "This component appears when the damaged trust between Nessa and Brannic as they learn to fly the route together turns around Conceiving: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "point_anon_0041",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Goal",
+                            "narrative_function": "Doing",
+                            "illustration": "Aster 41: Story Goal through Doing",
+                            "summary": "Story Goal is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Doing: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0042",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Consequence",
+                            "narrative_function": "Being",
+                            "illustration": "Aster 42: Story Consequence through Being",
+                            "summary": "Story Consequence is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Being: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0043",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Costs",
+                            "narrative_function": "Preconscious",
+                            "illustration": "Aster 43: Story Costs through Preconscious",
+                            "summary": "Story Costs is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Preconscious: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0044",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Dividends",
+                            "narrative_function": "Progress",
+                            "illustration": "Aster 44: Story Dividends through Progress",
+                            "summary": "Story Dividends is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Progress: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0045",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Requirements",
+                            "narrative_function": "Learning",
+                            "illustration": "Aster 45: Story Requirements through Learning",
+                            "summary": "Story Requirements is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Learning: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0046",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Prerequisites",
+                            "narrative_function": "Conceiving",
+                            "illustration": "Aster 46: Story Prerequisites through Conceiving",
+                            "summary": "Story Prerequisites is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Conceiving: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0047",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Preconditions",
+                            "narrative_function": "Conscious",
+                            "illustration": "Aster 47: Story Preconditions through Conscious",
+                            "summary": "Story Preconditions is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Conscious: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_anon_0048",
+                            "throughline": "Objective Story",
+                            "appreciation": "Story Forewarnings",
+                            "narrative_function": "Present",
+                            "illustration": "Aster 48: Story Forewarnings through Present",
+                            "summary": "Story Forewarnings is expressed through the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network.",
+                            "storytelling": "This component appears when the colony-wide evacuation, the contested convoy order, and the sabotage hidden inside the gate network turns around Present: a beacon is questioned, a route is withheld, a rescue is prioritized, or an old failure becomes the evidence needed to move forward.",
+                            "perspectives": []
+                        }
+                    ],
+                    "storybeats": [
+                        {
+                            "id": "beat_anon_0001",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "appreciation": "pd_driver_1",
+                            "narrative_function": "Test",
+                            "summary": "The false beacon turns the evacuation from routine drill into public emergency.",
+                            "storytelling": "The false beacon turns the evacuation from routine drill into public emergency. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0002",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "appreciation": "pd_driver_2",
+                            "narrative_function": "Test",
+                            "summary": "Captain Talia Merrow orders every ship grounded until the beacon can be authenticated.",
+                            "storytelling": "Captain Talia Merrow orders every ship grounded until the beacon can be authenticated. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0003",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "appreciation": "pd_driver_3",
+                            "narrative_function": "Test",
+                            "summary": "Nessa breaks the hold order to pull a mining skiff out of a debris lane.",
+                            "storytelling": "Nessa breaks the hold order to pull a mining skiff out of a debris lane. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0004",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "appreciation": "pd_driver_4",
+                            "narrative_function": "Test",
+                            "summary": "Brannic identifies the drift signature as the same pattern that preceded the first gate collapse.",
+                            "storytelling": "Brannic identifies the drift signature as the same pattern that preceded the first gate collapse. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0005",
+                            "throughline": "Objective Story",
+                            "scope": "event",
+                            "sequence": 5,
+                            "appreciation": "pd_driver_5",
+                            "narrative_function": "Trust",
+                            "summary": "The council refuses Brannic's warning because his old testimony condemned the previous convoy.",
+                            "storytelling": "The council refuses Brannic's warning because his old testimony condemned the previous convoy. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0006",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "appreciation": "os_signpost_1",
+                            "narrative_function": "Understanding",
+                            "summary": "A priority convoy launches early and damages the outer relay.",
+                            "storytelling": "A priority convoy launches early and damages the outer relay. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0007",
+                            "throughline": "Objective Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Nessa finds a duplicate gate key hidden in a relief container.",
+                            "storytelling": "Nessa finds a duplicate gate key hidden in a relief container. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0008",
+                            "throughline": "Objective Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Corven Pike blames Nessa for the key theft in front of the station feed.",
+                            "storytelling": "Corven Pike blames Nessa for the key theft in front of the station feed. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0009",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "appreciation": "os_signpost_2",
+                            "narrative_function": "Learning",
+                            "summary": "Brannic tells Nessa that her father was following a route no one else could see.",
+                            "storytelling": "Brannic tells Nessa that her father was following a route no one else could see. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0010",
+                            "throughline": "Objective Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "The miners riot when they learn their families were moved down the departure list.",
+                            "storytelling": "The miners riot when they learn their families were moved down the departure list. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0011",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "appreciation": "os_signpost_3",
+                            "narrative_function": "Doing",
+                            "summary": "Nessa and Brannic test a silent lane behind the gate and nearly vanish in static.",
+                            "storytelling": "Nessa and Brannic test a silent lane behind the gate and nearly vanish in static. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0012",
+                            "throughline": "Objective Story",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "appreciation": "os_signpost_4",
+                            "narrative_function": "Obtaining",
+                            "summary": "Talia admits the council has been hiding how few route options remain.",
+                            "storytelling": "Talia admits the council has been hiding how few route options remain. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "beat_anon_0013",
+                            "throughline": "Main Character",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "appreciation": "mc_signpost_1",
+                            "narrative_function": "Present",
+                            "summary": "The saboteur redirects medical ships toward a dead corridor.",
+                            "storytelling": "The saboteur redirects medical ships toward a dead corridor. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0014",
+                            "throughline": "Main Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Nessa saves the medical convoy by copying Brannic's manual drift correction.",
+                            "storytelling": "Nessa saves the medical convoy by copying Brannic's manual drift correction. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0015",
+                            "throughline": "Main Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Brannic confesses that he sealed the old route before Nessa's father could return.",
+                            "storytelling": "Brannic confesses that he sealed the old route before Nessa's father could return. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0016",
+                            "throughline": "Main Character",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "appreciation": "mc_signpost_2",
+                            "narrative_function": "Past",
+                            "summary": "Nessa refuses to forgive him, then uses his maps anyway.",
+                            "storytelling": "Nessa refuses to forgive him, then uses his maps anyway. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0017",
+                            "throughline": "Main Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "The station loses gravity in the lower ring during boarding.",
+                            "storytelling": "The station loses gravity in the lower ring during boarding. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0018",
+                            "throughline": "Main Character",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "appreciation": "mc_signpost_3",
+                            "narrative_function": "Progress",
+                            "summary": "Talia gives Nessa temporary command of the civilian pilots.",
+                            "storytelling": "Talia gives Nessa temporary command of the civilian pilots. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0019",
+                            "throughline": "Main Character",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "appreciation": "mc_signpost_4",
+                            "narrative_function": "Future",
+                            "summary": "Pike offers the council a private escape lane in exchange for the gate key.",
+                            "storytelling": "Pike offers the council a private escape lane in exchange for the gate key. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0002"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0020",
+                            "throughline": "Influence Character",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "appreciation": "oc_signpost_1",
+                            "narrative_function": "Memory",
+                            "summary": "Nessa exposes Pike by tracing the duplicate key to his convoy ledger.",
+                            "storytelling": "Nessa exposes Pike by tracing the duplicate key to his convoy ledger. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0021",
+                            "throughline": "Influence Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Pike overloads the relay and strands Brannic inside the control spine.",
+                            "storytelling": "Pike overloads the relay and strands Brannic inside the control spine. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0022",
+                            "throughline": "Influence Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Brannic talks Nessa through the drift pattern while the signal breaks apart.",
+                            "storytelling": "Brannic talks Nessa through the drift pattern while the signal breaks apart. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0023",
+                            "throughline": "Influence Character",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "appreciation": "oc_signpost_2",
+                            "narrative_function": "Preconscious",
+                            "summary": "Nessa stops chasing a clean readout and listens for the repeating pulse.",
+                            "storytelling": "Nessa stops chasing a clean readout and listens for the repeating pulse. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0024",
+                            "throughline": "Influence Character",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "The first refugee wave crosses through the unstable Aster Gate.",
+                            "storytelling": "The first refugee wave crosses through the unstable Aster Gate. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0025",
+                            "throughline": "Influence Character",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "appreciation": "oc_signpost_3",
+                            "narrative_function": "Subconscious",
+                            "summary": "A shock front knocks Nessa's ship away from the lane.",
+                            "storytelling": "A shock front knocks Nessa's ship away from the lane. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0026",
+                            "throughline": "Influence Character",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "appreciation": "oc_signpost_4",
+                            "narrative_function": "Conscious",
+                            "summary": "Talia orders the convoy to hold formation instead of scattering.",
+                            "storytelling": "Talia orders the convoy to hold formation instead of scattering. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0003"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0027",
+                            "throughline": "Relationship Story",
+                            "scope": "signpost",
+                            "sequence": 1,
+                            "appreciation": "rs_signpost_1",
+                            "narrative_function": "Conceiving",
+                            "summary": "Nessa cuts her engines and lets the drift carry her into alignment.",
+                            "storytelling": "Nessa cuts her engines and lets the drift carry her into alignment. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0028",
+                            "throughline": "Relationship Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Brannic releases the manual lock from inside the spine.",
+                            "storytelling": "Brannic releases the manual lock from inside the spine. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0029",
+                            "throughline": "Relationship Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "The last convoy clears the gate as Harbor Nine tears free of its moorings.",
+                            "storytelling": "The last convoy clears the gate as Harbor Nine tears free of its moorings. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0030",
+                            "throughline": "Relationship Story",
+                            "scope": "signpost",
+                            "sequence": 2,
+                            "appreciation": "rs_signpost_2",
+                            "narrative_function": "Being",
+                            "summary": "Nessa returns for Brannic instead of taking the hero broadcast.",
+                            "storytelling": "Nessa returns for Brannic instead of taking the hero broadcast. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0031",
+                            "throughline": "Relationship Story",
+                            "scope": "event",
+                            "sequence": 1,
+                            "summary": "Pike is left with an empty private lane and no one willing to follow him.",
+                            "storytelling": "Pike is left with an empty private lane and no one willing to follow him. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0032",
+                            "throughline": "Relationship Story",
+                            "scope": "signpost",
+                            "sequence": 3,
+                            "appreciation": "rs_signpost_3",
+                            "narrative_function": "Becoming",
+                            "summary": "The refugees map a new route from Nessa and Brannic's shared coordinates.",
+                            "storytelling": "The refugees map a new route from Nessa and Brannic's shared coordinates. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "beat_anon_0033",
+                            "throughline": "Relationship Story",
+                            "scope": "signpost",
+                            "sequence": 4,
+                            "appreciation": "rs_signpost_4",
+                            "narrative_function": "Conceptualizing",
+                            "summary": "Nessa files her father's route under its real name and starts training new pilots.",
+                            "storytelling": "Nessa files her father's route under its real name and starts training new pilots. It ties the structural beat to a visible choice in the Aster Gate evacuation rather than leaving the field as generic fixture text.",
+                            "perspectives": [
+                                {
+                                    "perspective_id": "persp_anon_0004"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "storytelling": {
+                    "overviews": [
+                        {
+                            "id": "over_anon_0001",
+                            "label": "Blended Throughlines",
+                            "summary": "The colony evacuation, Nessa's shame, Brannic's challenge, and their repaired partnership all converge on one manual gate crossing.",
+                            "storytelling": "The public story asks whether Harbor Nine can coordinate enough to escape. Nessa's personal story asks whether she can stop performing competence and trust a pattern. Brannic's influence forces that trust into the open, while their relationship turns from accusation into shared navigation."
+                        },
+                        {
+                            "id": "over_anon_0002",
+                            "label": "Logline",
+                            "summary": "When the only transit gate out of a dying frontier system begins to collapse, a reckless pilot and her disgraced mentor must expose a sabotage plot and guide thousands through a route no one trusts.",
+                            "storytelling": "The story follows Harbor Nine during its final evacuation window as Nessa Holt, Brannic Orso, and Captain Talia Merrow fight both a collapsing gate and a sabotage plot designed to reserve escape for the powerful."
+                        },
+                        {
+                            "id": "over_anon_0003",
+                            "label": "Genre",
+                            "summary": "A frontier science-adventure rescue story with a civic thriller engine.",
+                            "storytelling": "The genre promise is ships, stations, impossible routes, and public danger, but the emotional charge comes from whether a pilot can trust a disgraced mentor before the system runs out of ways to survive."
+                        }
+                    ],
+                    "moments": [
+                        {
+                            "id": "moment_anon_0001",
+                            "act": 1,
+                            "order": 1,
+                            "summary": "The False Beacon",
+                            "synopsis": "A distress beacon wakes Harbor Nine and claims the Aster Gate is already tearing open. Nessa Holt is first to launch, but the signal repeats too perfectly, suggesting someone wants the station to panic before the real collapse begins.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0006",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0001",
+                                    "sequence": 99
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0002",
+                            "act": 1,
+                            "order": 2,
+                            "summary": "The Grounding Order",
+                            "synopsis": "Captain Talia Merrow grounds all civilian ships while the council argues over evacuation priority. Nessa sees families locked behind procedure and begins treating the official chain of command as another obstacle to outrun.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0006",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0001",
+                                    "sequence": 100
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0003",
+                            "act": 1,
+                            "order": 3,
+                            "summary": "The Mining Skiff",
+                            "synopsis": "A damaged skiff drifts into the debris lane outside the gate. Nessa breaks formation, rescues the miners, and gives Pike the first evidence he needs to paint her as reckless.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0013",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0006",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0004",
+                            "act": 1,
+                            "order": 4,
+                            "summary": "Brannic Names the Drift",
+                            "synopsis": "Brannic Orso recognizes the gate distortion from the disaster that ruined him. His warning forces the council to choose between listening to a disgraced navigator or protecting the official story of the old collapse.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0014",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0013",
+                                    "sequence": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0005",
+                            "act": 1,
+                            "order": 5,
+                            "summary": "The Duplicate Key",
+                            "synopsis": "A gate key turns up inside a relief container marked for medical supplies. Nessa and Talia realize someone has been preparing a private escape route while the public evacuation stalls.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0016",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0020",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0027",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0006",
+                            "act": 1,
+                            "order": 6,
+                            "summary": "The Early Convoy",
+                            "synopsis": "A priority convoy jumps without clearance and tears one of the outer relays loose. The mistake closes several safe routes, proving the evacuation is being destroyed by privilege as much as by physics.",
+                            "setting": "Harbor Nine command ring and outer relay lanes.",
+                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0021",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0028",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0014",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0016",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0020",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0027",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0002",
+                                    "sequence": 99
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0007",
+                            "act": 1,
+                            "order": 7,
+                            "summary": "Pike Points at Nessa",
+                            "synopsis": "Corven Pike uses the station feed to blame Nessa for the stolen key. Nessa nearly answers with another unauthorized flight, but Brannic stops her long enough to ask who benefits from making her look guilty.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0015",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0007",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0016",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0002",
+                                    "sequence": 100
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0008",
+                            "act": 2,
+                            "order": 8,
+                            "summary": "The Old Route",
+                            "synopsis": "Brannic shows Nessa the route her father tried to fly during the first collapse. Nessa hears, for the first time, that her father may have been following a real pattern rather than fleeing command.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0023",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0009",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0030",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0009",
+                            "act": 2,
+                            "order": 9,
+                            "summary": "Lower Ring Riot",
+                            "synopsis": "Miners discover their families were moved behind corporate passengers. Talia loses control of the boarding lines, and the public conflict becomes a fight over who counts as worth saving.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0009",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0010",
+                            "act": 2,
+                            "order": 10,
+                            "summary": "The Silent Lane Test",
+                            "synopsis": "Nessa and Brannic slip behind the gate to test the unlisted route. Their ship nearly disappears in static, but Nessa glimpses a repeating pulse that matches her father's final transmission.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0009",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0011",
+                            "act": 2,
+                            "order": 11,
+                            "summary": "The Hidden Count",
+                            "synopsis": "Talia admits the council has fewer exits than it claimed. The evacuation can no longer be managed as public reassurance; it has to become a desperate search for any viable lane.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0009",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0003",
+                                    "sequence": 99
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0012",
+                            "act": 2,
+                            "order": 12,
+                            "summary": "Medical Ships in the Dark",
+                            "synopsis": "The saboteur redirects medical ships toward a dead corridor. Nessa copies Brannic's manual correction and saves the convoy, proving she can act from trust rather than defiance.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0018",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0015",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0021",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0023",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0028",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0030",
+                                    "sequence": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0013",
+                            "act": 2,
+                            "order": 13,
+                            "summary": "Brannic Confesses",
+                            "synopsis": "Brannic admits he sealed the old route before Nessa's father could return. Nessa's anger finally has a target, but the confession also explains why Brannic has spent years preserving forbidden maps.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0008",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0003",
+                                    "sequence": 100
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0014",
+                            "act": 2,
+                            "order": 14,
+                            "summary": "Maps Without Forgiveness",
+                            "synopsis": "Nessa refuses to forgive Brannic and still takes his charts. The relationship shifts from emotional judgment to practical dependence, which is the only kind of trust they can manage under pressure.",
+                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0011",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0018",
+                                    "sequence": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0015",
+                            "act": 2,
+                            "order": 15,
+                            "summary": "Gravity Loss",
+                            "synopsis": "The lower ring loses gravity during family boarding. Talia gives Nessa command of civilian pilots because the station needs someone who will move faster than the council can vote.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0011",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0018",
+                                    "sequence": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0016",
+                            "act": 2,
+                            "order": 16,
+                            "summary": "The Private Lane Offer",
+                            "synopsis": "Pike offers the council a private lane in exchange for control of the key. His bargain exposes the moral shape of the crisis: survival bought by exclusion will destroy the colony even if ships escape.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0011",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0023",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0030",
+                                    "sequence": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0017",
+                            "act": 2,
+                            "order": 17,
+                            "summary": "Ledger Trace",
+                            "synopsis": "Nessa traces the duplicate key to Pike's convoy ledger. Instead of shouting her innocence, she follows the evidence step by step and lets the record corner him.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0022",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0025",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0011",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0029",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0032",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0004",
+                                    "sequence": 99
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0018",
+                            "act": 3,
+                            "order": 18,
+                            "summary": "Relay Overload",
+                            "synopsis": "Pike overloads the relay and traps Brannic inside the control spine. The sabotage stops being political and becomes immediate: the only person who understands the drift is now locked inside the failing machine.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0010",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0004",
+                                    "sequence": 100
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0019",
+                            "act": 3,
+                            "order": 19,
+                            "summary": "Broken Signal Lesson",
+                            "synopsis": "Brannic teaches Nessa through a signal that keeps cutting out. He cannot give her proof, only rhythm, memory, and the courage to recognize a pattern before it resolves.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0017",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0025",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0029",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0032",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0018",
+                                    "sequence": 3
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0004",
+                                    "sequence": 101
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0020",
+                            "act": 3,
+                            "order": 20,
+                            "summary": "Nessa Powers Down",
+                            "synopsis": "Nessa turns off the clean instruments and listens for the pulse. Her defining change is quiet rather than spectacular: she stops trying to prove herself and lets the ship drift into the route.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0012",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0021",
+                            "act": 3,
+                            "order": 21,
+                            "summary": "First Wave Crossing",
+                            "synopsis": "The first refugee wave follows Nessa through the unstable gate. The colony sees that the forbidden route works, and scattered factions begin acting like one convoy.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0019",
+                                    "sequence": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0022",
+                            "act": 3,
+                            "order": 22,
+                            "summary": "Shock Front",
+                            "synopsis": "A shock front knocks Nessa away from the lane. Her old instinct is to fight the controls, but the new route demands restraint while everyone watches.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0017",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0019",
+                                    "sequence": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0023",
+                            "act": 3,
+                            "order": 23,
+                            "summary": "Hold Formation",
+                            "synopsis": "Talia orders the convoy to hold instead of scatter. The public story turns when the fleet chooses trust over individual escape, buying Nessa the seconds she needs.",
+                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0012",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0019",
+                                    "sequence": 2
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0024",
+                            "act": 3,
+                            "order": 24,
+                            "summary": "Manual Lock",
+                            "synopsis": "Brannic releases the lock from inside the control spine. He accepts the risk he once avoided, giving Nessa the opening her father never received.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0012",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0019",
+                                    "sequence": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0025",
+                            "act": 3,
+                            "order": 25,
+                            "summary": "Harbor Nine Breaks",
+                            "synopsis": "The last convoy clears as Harbor Nine tears free of its moorings. The old home is lost, but the people escape with a shared route and a shared account of what happened.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0024",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0026",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0031",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0033",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0022",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0025",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0032",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0005",
+                                    "sequence": 99
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0026",
+                            "act": 3,
+                            "order": 26,
+                            "summary": "Return Run",
+                            "synopsis": "Nessa turns back for Brannic instead of taking the broadcast victory. She chooses relationship over reputation, proving her peace no longer depends on being publicly vindicated.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0024",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0026",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0033",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0005",
+                                    "sequence": 100
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0027",
+                            "act": 3,
+                            "order": 27,
+                            "summary": "Pike's Empty Lane",
+                            "synopsis": "Pike reaches his private lane and finds no one willing to follow. His failure is social before it is tactical: a route built for exclusion has no future colony inside it.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0012",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0005",
+                                    "sequence": 101
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0028",
+                            "act": 3,
+                            "order": 28,
+                            "summary": "Shared Coordinates",
+                            "synopsis": "Nessa and Brannic combine their data into a stable route map. The rescue becomes more than survival when their shared coordinates can help other frontier stations before they face the same collapse.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0012",
+                                    "sequence": 0
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0026",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0033",
+                                    "sequence": 2
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0032",
+                                    "sequence": 3
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0005",
+                                    "sequence": 102
+                                }
+                            ]
+                        },
+                        {
+                            "id": "moment_anon_0029",
+                            "act": 4,
+                            "order": 29,
+                            "summary": "The Real Name",
+                            "synopsis": "Nessa files her father's route under its original call sign. The record changes from accusation to inheritance, allowing her to carry the past without performing for it.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": []
+                        },
+                        {
+                            "id": "moment_anon_0030",
+                            "act": 4,
+                            "order": 30,
+                            "summary": "New Pilots",
+                            "synopsis": "Nessa begins training pilots on the route no one trusted. The story ends with a new discipline: fast action grounded in trust, memory, and responsibility to the people still waiting at the next gate.",
+                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                            "storybeats": [
+                                {
+                                    "storybeat_id": "beat_anon_0031",
+                                    "sequence": 1
+                                },
+                                {
+                                    "storybeat_id": "beat_anon_0033",
+                                    "sequence": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
