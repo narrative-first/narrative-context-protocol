@@ -118,7 +118,7 @@ index e1f7c9d..r2k8b7e 100644
                "narrative_function": "avoid",
 -              "illustration": "steering something",
 -              "summary": "Station crews actively steer suspicion away from the damaged relay team, creating a pervasive atmosphere of mistrust and caution.",
--              "storytelling": "Pike's escalating suspicion compels crews to cautiously cover their tracks and deflect blame. Nessa redirects Pike's attention away from Brannic and the repair team, maintaining a subtle but constant effort to keep the evacuation route alive.",                     
+-              "storytelling": "Pike's escalating suspicion compels crews to cautiously cover their tracks and deflect blame. Nessa redirects Pike's attention away from Brannic and the repair team, maintaining a subtle but constant effort to keep the evacuation route alive.",
 +              "illustration": "being obviously preventative",
 +              "summary": "Nessa comes off super-suspicious as she tries to deflect Pike's attention away from Brannic.",
 +              "storytelling": "In response, Nessa obviously implicates herself while trying to prevent Pike from finding the repair crew. It has the reverse effect, and Pike's suspicion leads him straight to the control spine.",
