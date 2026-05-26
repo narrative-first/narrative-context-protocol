@@ -19,6 +19,7 @@
 
 ## Recent Canonical Terminology Updates
 
+- Renamed the perspective storypoints `Main Character Evolution` and `Influence Character Evolution` to `MC Steadfast Expression` and `OC Steadfast Expression` to avoid collision with the `Character Evolution` Audience Experience Dynamic added in Fall 2025.
 - Added Character-framing Storypoint Appreciations as canonical-valid labels: Character Intentions, Character Repercussions, Character Adaptations, Character Affectations, Character Engagements, Character Perks, Character Pressures, and Character Forebodings.
 - Clarified that these labels normalize to the original linear-focused appreciation families for interoperability (centered on Story Goal and Story Consequence).
 - Clarified usage guidance: linear stories use linear-focused appreciations, while holistic stories may use either linear-focused or Character-framing appreciations.
