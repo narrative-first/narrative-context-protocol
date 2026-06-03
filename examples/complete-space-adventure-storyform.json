@@ -1179,717 +1179,834 @@
                             "summary": "A frontier science-adventure rescue story with a civic thriller engine.",
                             "storytelling": "The genre promise is ships, stations, impossible routes, and public danger, but the emotional charge comes from whether a pilot can trust a disgraced mentor before the system runs out of ways to survive."
                         }
-                    ],
-                    "moments": [
-                        {
-                            "id": "moment_anon_0001",
-                            "act": 1,
-                            "order": 1,
-                            "summary": "The False Beacon",
-                            "synopsis": "A distress beacon wakes Harbor Nine and claims the Aster Gate is already tearing open. Nessa Holt is first to launch, but the signal repeats too perfectly, suggesting someone wants the station to panic before the real collapse begins.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0006",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0001",
-                                    "sequence": 99
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0002",
-                            "act": 1,
-                            "order": 2,
-                            "summary": "The Grounding Order",
-                            "synopsis": "Captain Talia Merrow grounds all civilian ships while the council argues over evacuation priority. Nessa sees families locked behind procedure and begins treating the official chain of command as another obstacle to outrun.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0006",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0001",
-                                    "sequence": 100
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0003",
-                            "act": 1,
-                            "order": 3,
-                            "summary": "The Mining Skiff",
-                            "synopsis": "A damaged skiff drifts into the debris lane outside the gate. Nessa breaks formation, rescues the miners, and gives Pike the first evidence he needs to paint her as reckless.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0013",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0006",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0004",
-                            "act": 1,
-                            "order": 4,
-                            "summary": "Brannic Names the Drift",
-                            "synopsis": "Brannic Orso recognizes the gate distortion from the disaster that ruined him. His warning forces the council to choose between listening to a disgraced navigator or protecting the official story of the old collapse.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0014",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0013",
-                                    "sequence": 1
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0005",
-                            "act": 1,
-                            "order": 5,
-                            "summary": "The Duplicate Key",
-                            "synopsis": "A gate key turns up inside a relief container marked for medical supplies. Nessa and Talia realize someone has been preparing a private escape route while the public evacuation stalls.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0016",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0020",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0027",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0006",
-                            "act": 1,
-                            "order": 6,
-                            "summary": "The Early Convoy",
-                            "synopsis": "A priority convoy jumps without clearance and tears one of the outer relays loose. The mistake closes several safe routes, proving the evacuation is being destroyed by privilege as much as by physics.",
-                            "setting": "Harbor Nine command ring and outer relay lanes.",
-                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0021",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0028",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0014",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0016",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0020",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0027",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0002",
-                                    "sequence": 99
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0007",
-                            "act": 1,
-                            "order": 7,
-                            "summary": "Pike Points at Nessa",
-                            "synopsis": "Corven Pike uses the station feed to blame Nessa for the stolen key. Nessa nearly answers with another unauthorized flight, but Brannic stops her long enough to ask who benefits from making her look guilty.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0015",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0007",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0016",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0002",
-                                    "sequence": 100
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0008",
-                            "act": 2,
-                            "order": 8,
-                            "summary": "The Old Route",
-                            "synopsis": "Brannic shows Nessa the route her father tried to fly during the first collapse. Nessa hears, for the first time, that her father may have been following a real pattern rather than fleeing command.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0023",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0009",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0030",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0009",
-                            "act": 2,
-                            "order": 9,
-                            "summary": "Lower Ring Riot",
-                            "synopsis": "Miners discover their families were moved behind corporate passengers. Talia loses control of the boarding lines, and the public conflict becomes a fight over who counts as worth saving.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0009",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0010",
-                            "act": 2,
-                            "order": 10,
-                            "summary": "The Silent Lane Test",
-                            "synopsis": "Nessa and Brannic slip behind the gate to test the unlisted route. Their ship nearly disappears in static, but Nessa glimpses a repeating pulse that matches her father's final transmission.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0009",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0011",
-                            "act": 2,
-                            "order": 11,
-                            "summary": "The Hidden Count",
-                            "synopsis": "Talia admits the council has fewer exits than it claimed. The evacuation can no longer be managed as public reassurance; it has to become a desperate search for any viable lane.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0009",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0003",
-                                    "sequence": 99
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0012",
-                            "act": 2,
-                            "order": 12,
-                            "summary": "Medical Ships in the Dark",
-                            "synopsis": "The saboteur redirects medical ships toward a dead corridor. Nessa copies Brannic's manual correction and saves the convoy, proving she can act from trust rather than defiance.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0018",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0015",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0021",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0023",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0028",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0030",
-                                    "sequence": 1
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0013",
-                            "act": 2,
-                            "order": 13,
-                            "summary": "Brannic Confesses",
-                            "synopsis": "Brannic admits he sealed the old route before Nessa's father could return. Nessa's anger finally has a target, but the confession also explains why Brannic has spent years preserving forbidden maps.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0008",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0003",
-                                    "sequence": 100
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0014",
-                            "act": 2,
-                            "order": 14,
-                            "summary": "Maps Without Forgiveness",
-                            "synopsis": "Nessa refuses to forgive Brannic and still takes his charts. The relationship shifts from emotional judgment to practical dependence, which is the only kind of trust they can manage under pressure.",
-                            "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
-                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0011",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0018",
-                                    "sequence": 1
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0015",
-                            "act": 2,
-                            "order": 15,
-                            "summary": "Gravity Loss",
-                            "synopsis": "The lower ring loses gravity during family boarding. Talia gives Nessa command of civilian pilots because the station needs someone who will move faster than the council can vote.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0011",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0018",
-                                    "sequence": 2
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0016",
-                            "act": 2,
-                            "order": 16,
-                            "summary": "The Private Lane Offer",
-                            "synopsis": "Pike offers the council a private lane in exchange for control of the key. His bargain exposes the moral shape of the crisis: survival bought by exclusion will destroy the colony even if ships escape.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0011",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0023",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0030",
-                                    "sequence": 2
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0017",
-                            "act": 2,
-                            "order": 17,
-                            "summary": "Ledger Trace",
-                            "synopsis": "Nessa traces the duplicate key to Pike's convoy ledger. Instead of shouting her innocence, she follows the evidence step by step and lets the record corner him.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0022",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0025",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0011",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0029",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0032",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0004",
-                                    "sequence": 99
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0018",
-                            "act": 3,
-                            "order": 18,
-                            "summary": "Relay Overload",
-                            "synopsis": "Pike overloads the relay and traps Brannic inside the control spine. The sabotage stops being political and becomes immediate: the only person who understands the drift is now locked inside the failing machine.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0010",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0004",
-                                    "sequence": 100
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0019",
-                            "act": 3,
-                            "order": 19,
-                            "summary": "Broken Signal Lesson",
-                            "synopsis": "Brannic teaches Nessa through a signal that keeps cutting out. He cannot give her proof, only rhythm, memory, and the courage to recognize a pattern before it resolves.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0017",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0025",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0029",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0032",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0018",
-                                    "sequence": 3
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0004",
-                                    "sequence": 101
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0020",
-                            "act": 3,
-                            "order": 20,
-                            "summary": "Nessa Powers Down",
-                            "synopsis": "Nessa turns off the clean instruments and listens for the pulse. Her defining change is quiet rather than spectacular: she stops trying to prove herself and lets the ship drift into the route.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0012",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0021",
-                            "act": 3,
-                            "order": 21,
-                            "summary": "First Wave Crossing",
-                            "synopsis": "The first refugee wave follows Nessa through the unstable gate. The colony sees that the forbidden route works, and scattered factions begin acting like one convoy.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0019",
-                                    "sequence": 0
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0022",
-                            "act": 3,
-                            "order": 22,
-                            "summary": "Shock Front",
-                            "synopsis": "A shock front knocks Nessa away from the lane. Her old instinct is to fight the controls, but the new route demands restraint while everyone watches.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0017",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0019",
-                                    "sequence": 1
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0023",
-                            "act": 3,
-                            "order": 23,
-                            "summary": "Hold Formation",
-                            "synopsis": "Talia orders the convoy to hold instead of scatter. The public story turns when the fleet chooses trust over individual escape, buying Nessa the seconds she needs.",
-                            "setting": "Lower ring, convoy lanes, and the failing control spine.",
-                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0012",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0019",
-                                    "sequence": 2
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0024",
-                            "act": 3,
-                            "order": 24,
-                            "summary": "Manual Lock",
-                            "synopsis": "Brannic releases the lock from inside the control spine. He accepts the risk he once avoided, giving Nessa the opening her father never received.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0012",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0019",
-                                    "sequence": 3
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0025",
-                            "act": 3,
-                            "order": 25,
-                            "summary": "Harbor Nine Breaks",
-                            "synopsis": "The last convoy clears as Harbor Nine tears free of its moorings. The old home is lost, but the people escape with a shared route and a shared account of what happened.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0024",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0026",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0031",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0033",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0022",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0025",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0032",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0005",
-                                    "sequence": 99
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0026",
-                            "act": 3,
-                            "order": 26,
-                            "summary": "Return Run",
-                            "synopsis": "Nessa turns back for Brannic instead of taking the broadcast victory. She chooses relationship over reputation, proving her peace no longer depends on being publicly vindicated.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0024",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0026",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0033",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0005",
-                                    "sequence": 100
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0027",
-                            "act": 3,
-                            "order": 27,
-                            "summary": "Pike's Empty Lane",
-                            "synopsis": "Pike reaches his private lane and finds no one willing to follow. His failure is social before it is tactical: a route built for exclusion has no future colony inside it.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0012",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0005",
-                                    "sequence": 101
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0028",
-                            "act": 3,
-                            "order": 28,
-                            "summary": "Shared Coordinates",
-                            "synopsis": "Nessa and Brannic combine their data into a stable route map. The rescue becomes more than survival when their shared coordinates can help other frontier stations before they face the same collapse.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0012",
-                                    "sequence": 0
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0026",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0033",
-                                    "sequence": 2
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0032",
-                                    "sequence": 3
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0005",
-                                    "sequence": 102
-                                }
-                            ]
-                        },
-                        {
-                            "id": "moment_anon_0029",
-                            "act": 4,
-                            "order": 29,
-                            "summary": "The Real Name",
-                            "synopsis": "Nessa files her father's route under its original call sign. The record changes from accusation to inheritance, allowing her to carry the past without performing for it.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": []
-                        },
-                        {
-                            "id": "moment_anon_0030",
-                            "act": 4,
-                            "order": 30,
-                            "summary": "New Pilots",
-                            "synopsis": "Nessa begins training pilots on the route no one trusted. The story ends with a new discipline: fast action grounded in trust, memory, and responsibility to the people still waiting at the next gate.",
-                            "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
-                            "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
-                            "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
-                            "storybeats": [
-                                {
-                                    "storybeat_id": "beat_anon_0031",
-                                    "sequence": 1
-                                },
-                                {
-                                    "storybeat_id": "beat_anon_0033",
-                                    "sequence": 3
-                                }
-                            ]
-                        }
                     ]
                 }
+            }
+        ],
+        "moments": [
+            {
+                "id": "moment_anon_0001",
+                "act": 1,
+                "order": 1,
+                "summary": "The False Beacon",
+                "synopsis": "A distress beacon wakes Harbor Nine and claims the Aster Gate is already tearing open. Nessa Holt is first to launch, but the signal repeats too perfectly, suggesting someone wants the station to panic before the real collapse begins.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0006"
+                    },
+                    {
+                        "sequence": 99,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0001"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0002",
+                "act": 1,
+                "order": 2,
+                "summary": "The Grounding Order",
+                "synopsis": "Captain Talia Merrow grounds all civilian ships while the council argues over evacuation priority. Nessa sees families locked behind procedure and begins treating the official chain of command as another obstacle to outrun.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0006"
+                    },
+                    {
+                        "sequence": 100,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0001"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0003",
+                "act": 1,
+                "order": 3,
+                "summary": "The Mining Skiff",
+                "synopsis": "A damaged skiff drifts into the debris lane outside the gate. Nessa breaks formation, rescues the miners, and gives Pike the first evidence he needs to paint her as reckless.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0013"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0006"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0004",
+                "act": 1,
+                "order": 4,
+                "summary": "Brannic Names the Drift",
+                "synopsis": "Brannic Orso recognizes the gate distortion from the disaster that ruined him. His warning forces the council to choose between listening to a disgraced navigator or protecting the official story of the old collapse.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0014"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0013"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0005",
+                "act": 1,
+                "order": 5,
+                "summary": "The Duplicate Key",
+                "synopsis": "A gate key turns up inside a relief container marked for medical supplies. Nessa and Talia realize someone has been preparing a private escape route while the public evacuation stalls.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 1 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0016"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0020"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0027"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0006",
+                "act": 1,
+                "order": 6,
+                "summary": "The Early Convoy",
+                "synopsis": "A priority convoy jumps without clearance and tears one of the outer relays loose. The mistake closes several safe routes, proving the evacuation is being destroyed by privilege as much as by physics.",
+                "setting": "Harbor Nine command ring and outer relay lanes.",
+                "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0021"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0028"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0014"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0016"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0020"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0027"
+                    },
+                    {
+                        "sequence": 99,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0002"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0007",
+                "act": 1,
+                "order": 7,
+                "summary": "Pike Points at Nessa",
+                "synopsis": "Corven Pike uses the station feed to blame Nessa for the stolen key. Nessa nearly answers with another unauthorized flight, but Brannic stops her long enough to ask who benefits from making her look guilty.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0015"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0007"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0016"
+                    },
+                    {
+                        "sequence": 100,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0002"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0008",
+                "act": 2,
+                "order": 8,
+                "summary": "The Old Route",
+                "synopsis": "Brannic shows Nessa the route her father tried to fly during the first collapse. Nessa hears, for the first time, that her father may have been following a real pattern rather than fleeing command.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0023"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0009"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0030"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0009",
+                "act": 2,
+                "order": 9,
+                "summary": "Lower Ring Riot",
+                "synopsis": "Miners discover their families were moved behind corporate passengers. Talia loses control of the boarding lines, and the public conflict becomes a fight over who counts as worth saving.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0009"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0010",
+                "act": 2,
+                "order": 10,
+                "summary": "The Silent Lane Test",
+                "synopsis": "Nessa and Brannic slip behind the gate to test the unlisted route. Their ship nearly disappears in static, but Nessa glimpses a repeating pulse that matches her father's final transmission.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 2 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0009"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0011",
+                "act": 2,
+                "order": 11,
+                "summary": "The Hidden Count",
+                "synopsis": "Talia admits the council has fewer exits than it claimed. The evacuation can no longer be managed as public reassurance; it has to become a desperate search for any viable lane.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0009"
+                    },
+                    {
+                        "sequence": 99,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0003"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0012",
+                "act": 2,
+                "order": 12,
+                "summary": "Medical Ships in the Dark",
+                "synopsis": "The saboteur redirects medical ships toward a dead corridor. Nessa copies Brannic's manual correction and saves the convoy, proving she can act from trust rather than defiance.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0018"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0015"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0021"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0023"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0028"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0030"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0013",
+                "act": 2,
+                "order": 13,
+                "summary": "Brannic Confesses",
+                "synopsis": "Brannic admits he sealed the old route before Nessa's father could return. Nessa's anger finally has a target, but the confession also explains why Brannic has spent years preserving forbidden maps.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0008"
+                    },
+                    {
+                        "sequence": 100,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0003"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0014",
+                "act": 2,
+                "order": 14,
+                "summary": "Maps Without Forgiveness",
+                "synopsis": "Nessa refuses to forgive Brannic and still takes his charts. The relationship shifts from emotional judgment to practical dependence, which is the only kind of trust they can manage under pressure.",
+                "setting": "Evacuation docks, council chamber, and the hidden route behind the Aster Gate.",
+                "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0011"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0018"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0015",
+                "act": 2,
+                "order": 15,
+                "summary": "Gravity Loss",
+                "synopsis": "The lower ring loses gravity during family boarding. Talia gives Nessa command of civilian pilots because the station needs someone who will move faster than the council can vote.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 3 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0011"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0018"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0016",
+                "act": 2,
+                "order": 16,
+                "summary": "The Private Lane Offer",
+                "synopsis": "Pike offers the council a private lane in exchange for control of the key. His bargain exposes the moral shape of the crisis: survival bought by exclusion will destroy the colony even if ships escape.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0011"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0023"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0030"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0017",
+                "act": 2,
+                "order": 17,
+                "summary": "Ledger Trace",
+                "synopsis": "Nessa traces the duplicate key to Pike's convoy ledger. Instead of shouting her innocence, she follows the evidence step by step and lets the record corner him.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0022"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0025"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0011"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0029"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0032"
+                    },
+                    {
+                        "sequence": 99,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0004"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0018",
+                "act": 3,
+                "order": 18,
+                "summary": "Relay Overload",
+                "synopsis": "Pike overloads the relay and traps Brannic inside the control spine. The sabotage stops being political and becomes immediate: the only person who understands the drift is now locked inside the failing machine.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0010"
+                    },
+                    {
+                        "sequence": 100,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0004"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0019",
+                "act": 3,
+                "order": 19,
+                "summary": "Broken Signal Lesson",
+                "synopsis": "Brannic teaches Nessa through a signal that keeps cutting out. He cannot give her proof, only rhythm, memory, and the courage to recognize a pattern before it resolves.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0017"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0025"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0029"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0032"
+                    },
+                    {
+                        "sequence": 3,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0018"
+                    },
+                    {
+                        "sequence": 101,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0004"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0020",
+                "act": 3,
+                "order": 20,
+                "summary": "Nessa Powers Down",
+                "synopsis": "Nessa turns off the clean instruments and listens for the pulse. Her defining change is quiet rather than spectacular: she stops trying to prove herself and lets the ship drift into the route.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 4 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0012"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0021",
+                "act": 3,
+                "order": 21,
+                "summary": "First Wave Crossing",
+                "synopsis": "The first refugee wave follows Nessa through the unstable gate. The colony sees that the forbidden route works, and scattered factions begin acting like one convoy.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0019"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0022",
+                "act": 3,
+                "order": 22,
+                "summary": "Shock Front",
+                "synopsis": "A shock front knocks Nessa away from the lane. Her old instinct is to fight the controls, but the new route demands restraint while everyone watches.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0017"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0019"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0023",
+                "act": 3,
+                "order": 23,
+                "summary": "Hold Formation",
+                "synopsis": "Talia orders the convoy to hold instead of scatter. The public story turns when the fleet chooses trust over individual escape, buying Nessa the seconds she needs.",
+                "setting": "Lower ring, convoy lanes, and the failing control spine.",
+                "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0012"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0019"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0024",
+                "act": 3,
+                "order": 24,
+                "summary": "Manual Lock",
+                "synopsis": "Brannic releases the lock from inside the control spine. He accepts the risk he once avoided, giving Nessa the opening her father never received.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0012"
+                    },
+                    {
+                        "sequence": 3,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0019"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0025",
+                "act": 3,
+                "order": 25,
+                "summary": "Harbor Nine Breaks",
+                "synopsis": "The last convoy clears as Harbor Nine tears free of its moorings. The old home is lost, but the people escape with a shared route and a shared account of what happened.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 5 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0024"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0026"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0031"
+                    },
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0033"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0022"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0025"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0032"
+                    },
+                    {
+                        "sequence": 99,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0005"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0026",
+                "act": 3,
+                "order": 26,
+                "summary": "Return Run",
+                "synopsis": "Nessa turns back for Brannic instead of taking the broadcast victory. She chooses relationship over reputation, proving her peace no longer depends on being publicly vindicated.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0024"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0026"
+                    },
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0033"
+                    },
+                    {
+                        "sequence": 100,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0005"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0027",
+                "act": 3,
+                "order": 27,
+                "summary": "Pike's Empty Lane",
+                "synopsis": "Pike reaches his private lane and finds no one willing to follow. His failure is social before it is tactical: a route built for exclusion has no future colony inside it.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0012"
+                    },
+                    {
+                        "sequence": 101,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0005"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0028",
+                "act": 3,
+                "order": 28,
+                "summary": "Shared Coordinates",
+                "synopsis": "Nessa and Brannic combine their data into a stable route map. The rescue becomes more than survival when their shared coordinates can help other frontier stations before they face the same collapse.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0012"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0026"
+                    },
+                    {
+                        "sequence": 2,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0033"
+                    },
+                    {
+                        "sequence": 3,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0032"
+                    },
+                    {
+                        "sequence": 102,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0005"
+                    }
+                ],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0029",
+                "act": 4,
+                "order": 29,
+                "summary": "The Real Name",
+                "synopsis": "Nessa files her father's route under its original call sign. The record changes from accusation to inheritance, allowing her to carry the past without performing for it.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [],
+                "storypoints": []
+            },
+            {
+                "id": "moment_anon_0030",
+                "act": 4,
+                "order": 30,
+                "summary": "New Pilots",
+                "synopsis": "Nessa begins training pilots on the route no one trusted. The story ends with a new discipline: fast action grounded in trust, memory, and responsibility to the people still waiting at the next gate.",
+                "setting": "Aster Gate crossing, refugee convoy, and the new frontier route.",
+                "timing": "During evacuation hour 6 of the final Harbor Nine crisis.",
+                "imperatives": "Move the convoy, protect the vulnerable, expose the sabotage, and decide whether trust can arrive before certainty.",
+                "storybeats": [
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0031"
+                    },
+                    {
+                        "sequence": 3,
+                        "narrative_id": "narrative_anon_0001",
+                        "storybeat_id": "beat_anon_0033"
+                    }
+                ],
+                "storypoints": []
             }
         ]
     }

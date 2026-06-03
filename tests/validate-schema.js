@@ -13,6 +13,7 @@ const validFixtures = [
   '../examples/ideation-beginner.json',
   '../examples/complete-space-adventure-storyform.json',
   '../examples/complete-storyform-template.json',
+  '../examples/cross-narrative-moments.json',
   '../examples/storypoint-throughline-empty-perspectives.json',
   '../examples/storypoint-throughline-both-refs.json'
 ];

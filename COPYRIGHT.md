@@ -25,7 +25,7 @@ diff --git a/insider-threat-ncp.json b/insider-threat-ncp.json
 index c4e7f2a..a6b8d3f 100644
 --- a/insider-threat-ncp.json
 +++ b/insider-threat-ncp.json
-@@ -32,6 +32,14 @@
+@@ -32,6 +32,22 @@
          "moments": [
 +          {
 +            "id": "fe8a8863-866d-411d-8d2d-8fb30876abfc",
@@ -33,7 +33,21 @@ index c4e7f2a..a6b8d3f 100644
 +            "synopsis": "Alex meets Miriam, visibly distressed and accusing her staff of betrayal. Alex remains tight-lipped.",
 +            "setting": "Miriam’s private office, late evening.",
 +            "timing": "After hours, amid rising company tensions.",
-+            "audience_experiential_pov": "third-person limited",
++            "audience_experiential_pov": "third_person_limited",
++            "storybeats": [
++              {
++                "sequence": 0,
++                "narrative_id": "narrative_insider_threat",
++                "storybeat_id": "beat_ceo_confrontation"
++              }
++            ],
++            "storypoints": [
++              {
++                "sequence": 0,
++                "narrative_id": "narrative_insider_threat",
++                "storypoint_id": "storypoint_objective_story_symptom"
++              }
++            ]
 +          }
          ]
 ```

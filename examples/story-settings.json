@@ -24,20 +24,21 @@
                     "storybeats": []
                 },
                 "storytelling": {
-                    "overviews": [],
-                    "moments": [
-                        {
-                            "id": "moment_archive_return",
-                            "summary": "The detective returns to the archive.",
-                            "synopsis": "A second visit to the archive reframes the old evidence as a personal warning.",
-                            "setting": "The same archive room, now colder and less familiar.",
-                            "setting_id": "setting_precinct_archive",
-                            "timing": "After midnight.",
-                            "imperatives": "Show that the shared place has taken on new meaning.",
-                            "storybeats": []
-                        }
-                    ]
+                    "overviews": []
                 }
+            }
+        ],
+        "moments": [
+            {
+                "id": "moment_archive_return",
+                "summary": "The detective returns to the archive.",
+                "synopsis": "A second visit to the archive reframes the old evidence as a personal warning.",
+                "setting": "The same archive room, now colder and less familiar.",
+                "setting_id": "setting_precinct_archive",
+                "timing": "After midnight.",
+                "imperatives": "Show that the shared place has taken on new meaning.",
+                "storybeats": [],
+                "storypoints": []
             }
         ]
     }

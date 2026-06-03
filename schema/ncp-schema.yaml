@@ -1,6 +1,7 @@
 "$schema": http://json-schema.org/draft-07/schema#
 title: Narrative Context Protocol Schema
-description: A standardized protocol for structuring narrative elements in a complete story for use in multi-agentic systems.
+description: A standardized protocol for structuring narrative elements in a complete
+    story for use in multi-agentic systems.
 type: object
 properties:
     schema_version:
@@ -24,7 +25,9 @@ properties:
                 pattern: "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
             settings:
                 type: array
-                description: Optional story-level setting glossary. Each entry is a stable, referenceable place or environment that Moments may identify with setting_id while retaining free-text setting prose.
+                description: Optional story-level setting glossary. Each entry is
+                    a stable, referenceable place or environment that Moments may
+                    identify with setting_id while retaining free-text setting prose.
                 items:
                     type: object
                     properties:
@@ -42,7 +45,8 @@ properties:
                     additionalProperties: false
             ideation:
                 type: object
-                description: Optional pre-narrative ideation threads for exploratory and beginner workflows.
+                description: Optional pre-narrative ideation threads for exploratory
+                    and beginner workflows.
                 properties:
                     character:
                         type: array
@@ -70,7 +74,9 @@ properties:
                 type: array
                 items:
                     type: object
-                    description: 'A narrative is a Dramatica storyform: a single, complete argument structure within the story, expressed through subtext and storytelling layers.'
+                    description: 'A narrative is a Dramatica storyform: a single,
+                        complete argument structure within the story, expressed through
+                        subtext and storytelling layers.'
                     properties:
                         id:
                             type: string
@@ -78,7 +84,8 @@ properties:
                             type: string
                         status:
                             type: string
-                            description: Optional narrative lifecycle state. When omitted, consumers may treat as complete.
+                            description: Optional narrative lifecycle state. When
+                                omitted, consumers may treat as complete.
                             enum:
                             - candidate
                             - draft
@@ -247,7 +254,10 @@ properties:
                                                     "$ref": "#/$defs/perspective_link"
                                             throughline:
                                                 type: string
-                                                description: Optional throughline label for grouping and round-trip stability when perspective refs are absent.
+                                                description: Optional throughline
+                                                    label for grouping and round-trip
+                                                    stability when perspective refs
+                                                    are absent.
                                                 enum:
                                                 - Objective Story
                                                 - Main Character
@@ -282,7 +292,10 @@ properties:
                                                 "$ref": "#/$defs/stable_id"
                                             appreciation:
                                                 type: string
-                                                description: Optional derived structural label, typically throughline + scope + sequence (for example, Objective Story Signpost 1).
+                                                description: Optional derived structural
+                                                    label, typically throughline +
+                                                    scope + sequence (for example,
+                                                    Objective Story Signpost 1).
                                             scope:
                                                 type: string
                                                 enum:
@@ -294,7 +307,8 @@ properties:
                                                 minimum: 1
                                             throughline:
                                                 type: string
-                                                description: Optional throughline label for grouping.
+                                                description: Optional throughline
+                                                    label for grouping.
                                             narrative_function:
                                                 "$ref": "#/$defs/canonical_narrative_function"
                                             summary:
@@ -373,84 +387,8 @@ properties:
                                         - summary
                                         - storytelling
                                         additionalProperties: false
-                                moments:
-                                    type: array
-                                    items:
-                                        type: object
-                                        properties:
-                                            id:
-                                                type: string
-                                            summary:
-                                                type: string
-                                            synopsis:
-                                                type: string
-                                            setting:
-                                                type: string
-                                            setting_id:
-                                                "$ref": "#/$defs/setting_id"
-                                                description: Optional reference to a story.settings[] entry for this Moment. Use with setting to avoid repeating shared place details while preserving the Moment-specific setting prose.
-                                            timing:
-                                                type: string
-                                            imperatives:
-                                                type: string
-                                            act:
-                                                type: integer
-                                                minimum: 1
-                                            order:
-                                                type: integer
-                                                minimum: 0
-                                            maximum_steps:
-                                                type: integer
-                                                minimum: 1
-                                            fabric:
-                                                type: array
-                                                items:
-                                                    type: object
-                                                    properties:
-                                                        type:
-                                                            type: string
-                                                            enum:
-                                                            - space
-                                                            - time
-                                                        limit:
-                                                            type: integer
-                                                    required:
-                                                    - type
-                                                    - limit
-                                                    additionalProperties: false
-                                            audience_experiential_pov:
-                                                type: string
-                                                enum:
-                                                - first_person_central
-                                                - first_person_peripheral
-                                                - second_person
-                                                - third_person_limited
-                                                - third_person_objective
-                                                - third_person_omniscient
-                                            storybeats:
-                                                type: array
-                                                items:
-                                                    type: object
-                                                    properties:
-                                                        sequence:
-                                                            type: integer
-                                                        storybeat_id:
-                                                            "$ref": "#/$defs/stable_id"
-                                                    required:
-                                                    - sequence
-                                                    - storybeat_id
-                                                    additionalProperties: false
-                                        required:
-                                        - summary
-                                        - synopsis
-                                        - setting
-                                        - timing
-                                        - imperatives
-                                        - storybeats
-                                        additionalProperties: false
                             required:
                             - overviews
-                            - moments
                             additionalProperties: false
                     required:
                     - id
@@ -458,11 +396,19 @@ properties:
                     - subtext
                     - storytelling
                     additionalProperties: false
+            moments:
+                type: array
+                description: Canonical story-level storytelling units. Moments should
+                    live on story.moments[] so they can relate Storybeats and Storypoints
+                    across one or more narratives.
+                items:
+                    "$ref": "#/$defs/story_moment"
         required:
         - id
         - title
         - logline
         - created_at
+        - moments
         - narratives
         additionalProperties: false
 required:
@@ -482,16 +428,20 @@ additionalProperties: false
             pattern: "^(?:story|narrative|beat)_[A-Za-z0-9][A-Za-z0-9_-]*$"
     perspective_id:
         type: string
-        description: Opaque identifier for a perspective. Plain UUIDs are fine; type prefixes are not required.
+        description: Opaque identifier for a perspective. Plain UUIDs are fine; type
+            prefixes are not required.
     player_id:
         type: string
-        description: Opaque identifier for a player. Plain UUIDs are fine; type prefixes are not required.
+        description: Opaque identifier for a player. Plain UUIDs are fine; type prefixes
+            are not required.
     overview_id:
         type: string
-        description: Opaque identifier for an overview. Plain UUIDs are fine; type prefixes are not required.
+        description: Opaque identifier for an overview. Plain UUIDs are fine; type
+            prefixes are not required.
     setting_id:
         type: string
-        description: Opaque identifier for a story-level setting. Plain UUIDs are fine; setting_ prefixes are optional.
+        description: Opaque identifier for a story-level setting. Plain UUIDs are
+            fine; setting_ prefixes are optional.
     perspective_link:
         type: object
         properties:
@@ -1139,3 +1089,112 @@ additionalProperties: false
         - Work
         - Worry
         - Worth
+    story_moment:
+        type: object
+        properties:
+            id:
+                type: string
+            summary:
+                type: string
+            synopsis:
+                type: string
+            setting:
+                type: string
+            setting_id:
+                "$ref": "#/$defs/setting_id"
+                description: Optional reference to a story.settings[] entry for this
+                    Moment. Use with setting to avoid repeating shared place details
+                    while preserving the Moment-specific setting prose.
+            timing:
+                type: string
+            imperatives:
+                type: string
+            act:
+                type: integer
+                minimum: 1
+            order:
+                type: integer
+                minimum: 0
+            maximum_steps:
+                type: integer
+                minimum: 1
+            fabric:
+                type: array
+                items:
+                    type: object
+                    properties:
+                        type:
+                            type: string
+                            enum:
+                            - space
+                            - time
+                        limit:
+                            type: integer
+                    required:
+                    - type
+                    - limit
+                    additionalProperties: false
+            audience_experiential_pov:
+                type: string
+                enum:
+                - first_person_central
+                - first_person_peripheral
+                - second_person
+                - third_person_limited
+                - third_person_objective
+                - third_person_omniscient
+            storybeats:
+                type: array
+                items:
+                    type: object
+                    properties:
+                        sequence:
+                            type: integer
+                        storybeat_id:
+                            "$ref": "#/$defs/stable_id"
+                        narrative_id:
+                            type: string
+                            description: The id of the narrative that owns the referenced
+                                Storybeat.
+                    required:
+                    - sequence
+                    - narrative_id
+                    - storybeat_id
+                    additionalProperties: false
+                description: Ordered references to narrative Storybeats touched by
+                    this Moment. Each reference is qualified with narrative_id because
+                    story-level Moments can span multiple narratives.
+            storypoints:
+                type: array
+                description: Ordered references to narrative Storypoints illustrated,
+                    invoked, or turned by this Moment. Each reference is qualified
+                    with narrative_id because story-level Moments can span multiple
+                    narratives.
+                items:
+                    type: object
+                    properties:
+                        sequence:
+                            type: integer
+                        narrative_id:
+                            type: string
+                            description: The id of the narrative that owns the referenced
+                                Storypoint.
+                        storypoint_id:
+                            type: string
+                    required:
+                    - sequence
+                    - narrative_id
+                    - storypoint_id
+                    additionalProperties: false
+        required:
+        - summary
+        - synopsis
+        - setting
+        - timing
+        - imperatives
+        - storybeats
+        - storypoints
+        additionalProperties: false
+        description: A story-level storytelling unit such as an act, scene, chapter,
+            sequence, level, or comparable audience-facing unit. Story-level Moments
+            can reference Storybeats and Storypoints from one or more narratives.

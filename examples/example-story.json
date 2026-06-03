@@ -145,28 +145,30 @@
                             "summary": "Mystery pacing with thriller turns built on memory and regret.",
                             "storytelling": "Each reveal tightens the emotional stakes as the genre shifts between introspection and pursuit."
                         }
-                    ],
-                    "moments": [
-                        {
-                            "id": "moment_001",
-                            "act": 1,
-                            "order": 1,
-                            "maximum_steps": 3,
-                            "summary": "The inciting discovery",
-                            "synopsis": "John uncovers an old case file that hints at deeper connections to his own past.",
-                            "setting": "A dimly lit precinct archive room.",
-                            "setting_id": "setting_precinct_archive",
-                            "timing": "Late night, after hours.",
-                            "imperatives": "Investigate the link before the evidence disappears.",
-                            "storybeats": [
-                                {
-                                    "sequence": 1,
-                                    "storybeat_id": "beat_001"
-                                }
-                            ]
-                        }
                     ]
                 }
+            }
+        ],
+        "moments": [
+            {
+                "id": "moment_001",
+                "act": 1,
+                "order": 1,
+                "maximum_steps": 3,
+                "summary": "The inciting discovery",
+                "synopsis": "John uncovers an old case file that hints at deeper connections to his own past.",
+                "setting": "A dimly lit precinct archive room.",
+                "setting_id": "setting_precinct_archive",
+                "timing": "Late night, after hours.",
+                "imperatives": "Investigate the link before the evidence disappears.",
+                "storybeats": [
+                    {
+                        "sequence": 1,
+                        "narrative_id": "narrative_001",
+                        "storybeat_id": "beat_001"
+                    }
+                ],
+                "storypoints": []
             }
         ]
     }

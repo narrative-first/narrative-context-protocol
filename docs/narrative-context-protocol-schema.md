@@ -12,6 +12,7 @@ Use this page when implementing import/export, validation, and cross-tool interc
 
 - A shared envelope for transporting narrative context (`schema_version` + `story`).
 - A consistent separation of `subtext` and `storytelling` per narrative.
+- Canonical story-level `moments` that can reference Storybeats and Storypoints across narratives.
 - Closed canonical narrative shapes, so extra keys are rejected unless a shape explicitly allows extensions.
 - Canonical enums for `appreciation`, `narrative_function`, `dynamic`, and `vector`.
 - Optional custom mapping fields that preserve canonical meaning.
@@ -47,6 +48,7 @@ Legacy exports are not part of canonical validation.
             "plot": [],
             "genre": []
         },
+        "moments": [],
         "narratives": []
     }
 }
@@ -59,12 +61,64 @@ Required top-level fields:
 
 Required `story` fields:
 
-- `id`, `title`, `logline`, `created_at`, `narratives`
+- `id`, `title`, `logline`, `created_at`, `moments`, `narratives`
 
 Optional `story` fields:
 
 - `genre` (concise story label)
 - `ideation` (pre-narrative beginner/exploratory concept threads)
+
+## Story Moments
+
+`story.moments[]` is the canonical home for audience-facing storytelling units such as scenes, acts, chapters, sequences, or levels. Moments belong to the story because storytelling units often carry structural material from more than one formal narrative.
+
+For example, one scene might advance a public evacuation narrative while also turning a mentor-student relationship narrative. Keeping that scene in `story.moments[]` lets the Moment reference both narratives without duplicating the scene or forcing one narrative to own it.
+
+Required keys per item:
+
+- `summary`, `synopsis`, `setting`, `timing`, `imperatives`, `storybeats`, `storypoints`
+
+Optional keys:
+
+- `id`, `setting_id`, `act`, `order`, `maximum_steps`, `fabric`, `audience_experiential_pov`
+
+`storybeats` is an ordered list of narrative-qualified Storybeat references:
+
+```json
+"storybeats": [
+    {
+        "sequence": 0,
+        "narrative_id": "narrative_evacuation",
+        "storybeat_id": "beat_evac_signpost_2"
+    },
+    {
+        "sequence": 1,
+        "narrative_id": "narrative_mentor_student",
+        "storybeat_id": "beat_mentor_signpost_2"
+    }
+]
+```
+
+`storypoints` is an ordered list of narrative-qualified Storypoint references:
+
+```json
+"storypoints": [
+    {
+        "sequence": 0,
+        "narrative_id": "narrative_evacuation",
+        "storypoint_id": "storypoint_evac_goal"
+    },
+    {
+        "sequence": 1,
+        "narrative_id": "narrative_mentor_student",
+        "storypoint_id": "storypoint_mentor_issue"
+    }
+]
+```
+
+`setting` remains the Moment-specific free-text description. `setting_id` may reference a `story.settings[]` entry when the Moment occurs in a reusable story-level setting.
+
+Canonical payloads should not contain `narratives[].storytelling.moments[]`. Moments have one home: `story.moments[]`.
 
 ## Ideation Model (Optional Beginner Layer)
 
@@ -277,10 +331,9 @@ When `appreciation` is present on a Storybeat, it should restate the structural 
 
 ## Storytelling Model
 
-`storytelling` contains two required arrays:
+`storytelling` contains one required array:
 
 - `overviews`
-- `moments`
 
 ### Overviews
 
@@ -297,27 +350,6 @@ IDs are opaque strings. Plain UUIDs are fine; type prefixes are optional.
 
 Canonical exporters should emit those exact Title Case values.
 Importers/normalizers may accept legacy inputs such as `logline`, `genre`, `blended_throughlines`, `Premise Overview`, and `Four Throughlines Extraction`, but they should normalize those values before schema validation or export.
-
-### Moments
-
-Required keys per item:
-
-- `summary`, `synopsis`, `setting`, `timing`, `imperatives`, `storybeats`
-
-Optional keys:
-
-- `id`, `setting_id`, `act`, `order`, `maximum_steps`, `fabric`, `audience_experiential_pov`
-
-`setting` remains the Moment-specific free-text description. `setting_id` may reference a `story.settings[]` entry when the Moment occurs in a reusable story-level setting.
-
-`storybeats` inside a moment is an ordered reference list:
-
-```json
-"storybeats": [
-    { "sequence": 0, "storybeat_id": "beat_abc123" },
-    { "sequence": 1, "storybeat_id": "beat_def456" }
-]
-```
 
 ## Canonical Terminology Sources
 

@@ -18,6 +18,7 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
     "plot": [],
     "genre": []
   },
+  "moments": [],
   "narratives": [
     {
         "id": "narrative_AbnHJ147",
@@ -31,8 +32,7 @@ This clear distinction encourages narrative depth alongside flexibility, allowin
             "dynamics": []
         },
         "storytelling": {
-            "overviews": [],
-            "moments": []
+            "overviews": []
         }
     }
   ]
@@ -56,6 +56,7 @@ The highest-level object representing the entire story, containing its metadata 
       "plot": [],
       "genre": []
     },
+    "moments": [],
     "narratives": [],
     "created_at": "2025-02-05T14:30:00Z"
   }
@@ -71,7 +72,7 @@ The highest-level object representing the entire story, containing its metadata 
 - Each domain is an array of lightweight nodes requiring only `id` and `summary`.
 - Nodes remain open/extensible so creators and LLM workflows can attach additional metadata without breaking schema compatibility.
 
-This layer informs narratives as projects mature, while keeping strict structural meaning in `narratives[].subtext` and `narratives[].storytelling`.
+This layer informs narratives as projects mature, while keeping strict structural meaning in `narratives[].subtext`, `narratives[].storytelling`, and story-level `story.moments[]`.
 
 For open-source adopters, this creates a shared on-ramp: communities can exchange early creative concepts in a common format without forcing immediate commitment to full Dramatica Storyform structure, while still preserving interoperability with canonical narrative objects.
 
@@ -127,6 +128,40 @@ This structure provides both depth (meaning) and flexibility (presentation) with
   "story": {
     "id": "story_123e4567",
     "title": "The Journey Within",
+    "moments": [
+      {
+        "id": "moment_gate_lockdown",
+        "summary": "The gate locks down.",
+        "synopsis": "The public evacuation crisis and a private relationship rupture happen in the same audience-facing scene.",
+        "setting": "The transit gate concourse.",
+        "timing": "Minutes before the final convoy window closes.",
+        "imperatives": "Carry both the external evacuation turn and the personal relationship turn.",
+        "storybeats": [
+          {
+            "sequence": 0,
+            "narrative_id": "narrative_AbnHJ147",
+            "storybeat_id": "beat_public_crisis"
+          },
+          {
+            "sequence": 1,
+            "narrative_id": "narrative_MnT90210",
+            "storybeat_id": "beat_private_rupture"
+          }
+        ],
+        "storypoints": [
+          {
+            "sequence": 0,
+            "narrative_id": "narrative_AbnHJ147",
+            "storypoint_id": "storypoint_public_goal"
+          },
+          {
+            "sequence": 1,
+            "narrative_id": "narrative_MnT90210",
+            "storypoint_id": "storypoint_relationship_issue"
+          }
+        ]
+      }
+    ],
     "narratives": [
       {
         "id": "narrative_AbnHJ147",
@@ -140,8 +175,7 @@ This structure provides both depth (meaning) and flexibility (presentation) with
           "dynamics": []
         },
         "storytelling": {
-          "overviews": [],
-          "moments": []
+          "overviews": []
         }
       }
     ]
@@ -194,7 +228,11 @@ Overviews deliver high-level storytelling components, such as Throughline descri
 **Why?** Overviews help authors clearly communicate their narrative's essential themes and structural direction, ensuring audiences can effortlessly follow and deeply connect with the story.
 
 ## Moments  
-Moments organize storytelling into narrative units like acts, scenes, chapters, or sequences. Each Moment includes a concise synopsis and structured references linking to associated Storybeats, providing clear narrative structure and aiding audience comprehension and engagement.
+Moments organize storytelling into narrative units like acts, scenes, chapters, sequences, or levels. Canonical Moments live on `story.moments[]`, not inside a single narrative, because a storytelling unit belongs to the audience-facing story and can carry material from more than one narrative at the same time. A scene can turn the public Objective Story, illustrate a private Relationship Story issue, and echo a Main Character Storypoint without becoming three separate scenes.
+
+Each story-level Moment includes a concise synopsis and narrative-qualified references to associated Storybeats and Storypoints. The `narrative_id` on each reference preserves which formal narrative owns the structural element while allowing the Moment to gather them into one storytelling unit.
+
+Canonical payloads should not contain `narratives[].storytelling.moments[]`. Moments have one home: `story.moments[]`.
 
 **Why?** Structuring storytelling through Moments ensures narratives are approachable and engaging, helping audiences intuitively grasp story progression and emotional dynamics.
 
@@ -423,6 +461,8 @@ Surface-level narrative elements that quickly orient the audience, such as Logli
   
 Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and Levels—that help structure the narrative temporally. These units can vary in scale and can be flexibly defined to organize narrative flow in any specific context. 
 
+Canonical Moments live directly on `story.moments[]`. This makes them story-level storytelling units: they can reference Storybeats and Storypoints from any narrative in the story instead of being trapped inside one narrative's `storytelling` object.
+
 ```json
 "moments": [
   {
@@ -438,9 +478,33 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
       { "type": "space", "limit": 10 }
     ],
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "beat_123456" },
-      { "sequence": 1, "storybeat_id": "beat_789012" },
-      { "sequence": 2, "storybeat_id": "beat_345678" }
+      {
+        "sequence": 0,
+        "narrative_id": "narrative_public_crisis",
+        "storybeat_id": "beat_123456"
+      },
+      {
+        "sequence": 1,
+        "narrative_id": "narrative_private_reckoning",
+        "storybeat_id": "beat_789012"
+      },
+      {
+        "sequence": 2,
+        "narrative_id": "narrative_public_crisis",
+        "storybeat_id": "beat_345678"
+      }
+    ],
+    "storypoints": [
+      {
+        "sequence": 0,
+        "narrative_id": "narrative_public_crisis",
+        "storypoint_id": "storypoint_public_goal"
+      },
+      {
+        "sequence": 1,
+        "narrative_id": "narrative_private_reckoning",
+        "storypoint_id": "storypoint_private_issue"
+      }
     ]
   },
   {
@@ -455,8 +519,23 @@ Organizational narrative units—such as Acts, Scenes, Sequences, Chapters, and 
       { "type": "space", "limit": 20 }
     ],
     "storybeats": [
-      { "sequence": 0, "storybeat_id": "beat_987654" },
-      { "sequence": 1, "storybeat_id": "beat_654321" }
+      {
+        "sequence": 0,
+        "narrative_id": "narrative_public_crisis",
+        "storybeat_id": "beat_987654"
+      },
+      {
+        "sequence": 1,
+        "narrative_id": "narrative_public_crisis",
+        "storybeat_id": "beat_654321"
+      }
+    ],
+    "storypoints": [
+      {
+        "sequence": 0,
+        "narrative_id": "narrative_public_crisis",
+        "storypoint_id": "storypoint_public_revelation"
+      }
     ]
   }
 ]

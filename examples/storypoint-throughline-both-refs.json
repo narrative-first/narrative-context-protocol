@@ -40,10 +40,10 @@
                     "storybeats": []
                 },
                 "storytelling": {
-                    "overviews": [],
-                    "moments": []
+                    "overviews": []
                 }
             }
-        ]
+        ],
+        "moments": []
     }
 }
