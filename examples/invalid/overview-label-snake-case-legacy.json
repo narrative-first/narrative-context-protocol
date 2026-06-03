@@ -25,10 +25,10 @@
                             "summary": "A test overview.",
                             "storytelling": "Legacy snake_case labels should be normalized before validation."
                         }
-                    ],
-                    "moments": []
+                    ]
                 }
             }
-        ]
+        ],
+        "moments": []
     }
 }

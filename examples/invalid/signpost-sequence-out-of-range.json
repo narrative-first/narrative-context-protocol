@@ -83,23 +83,25 @@
                             "summary": "",
                             "storytelling": ""
                         }
-                    ],
-                    "moments": [
-                        {
-                            "summary": "",
-                            "synopsis": "",
-                            "setting": "",
-                            "timing": "",
-                            "imperatives": "",
-                            "storybeats": [
-                                {
-                                    "sequence": 0,
-                                    "storybeat_id": "beat_invalid_001"
-                                }
-                            ]
-                        }
                     ]
                 }
+            }
+        ],
+        "moments": [
+            {
+                "summary": "",
+                "synopsis": "",
+                "setting": "",
+                "timing": "",
+                "imperatives": "",
+                "storybeats": [
+                    {
+                        "sequence": 0,
+                        "narrative_id": "narrative_invalid_001",
+                        "storybeat_id": "beat_invalid_001"
+                    }
+                ],
+                "storypoints": []
             }
         ]
     }

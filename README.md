@@ -24,6 +24,8 @@ By clearly delineating narrative structure (Subtext) from presentation (Storytel
 
 NCP also includes an optional `story.ideation` layer (`character`, `theme`, `plot`, `genre`) so creators can capture early concepts before committing to full storyform structure.
 
+Storytelling Moments live at `story.moments[]` so scenes, chapters, sequences, and levels can reference Storybeats and Storypoints across multiple narratives without duplicating the storytelling unit.
+
 ---
 
 ### Authorship, AI, and Creative Intent
@@ -67,6 +69,7 @@ Use [/VALIDATION.md](/VALIDATION.md) for validating your own NCP files and CI se
 ## Templates
 
 - [Complete Storyform template](/examples/complete-storyform-template.json): blank-slate NCP fixture with canonical Storypoint Appreciations excluding `Event` and `Progression` labels, plus Signpost-only Storybeats (no Progression/Event Storybeats). `narrative_function` is intentionally omitted so teams can fill in only what they need.
+- [Cross-narrative Moments](/examples/cross-narrative-moments.json): story-level Moment fixture showing one scene referencing Storybeats and Storypoints from two different narratives.
 
 ## For Adopters (Self-Serve)
 

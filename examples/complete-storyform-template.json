@@ -1398,10 +1398,10 @@
                     ]
                 },
                 "storytelling": {
-                    "overviews": [],
-                    "moments": []
+                    "overviews": []
                 }
             }
-        ]
+        ],
+        "moments": []
     }
 }

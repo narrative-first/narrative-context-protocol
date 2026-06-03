@@ -2,7 +2,10 @@
 
 ## Recent Schema Updates
 
-- Added optional `story.settings[]` entries for reusable story-level Settings and optional `narratives[].storytelling.moments[].setting_id` references so Moments can point at a shared Setting while preserving free-text `setting`.
+- Moved canonical Moments to required `story.moments[]` so storytelling units belong to the story and can reference Storybeats and Storypoints across multiple narratives.
+- Added narrative-qualified `story.moments[].storybeats[]` and `story.moments[].storypoints[]` references, requiring `narrative_id` on each referenced structural element.
+- Removed `narratives[].storytelling.moments[]` so canonical payloads have one unambiguous Moment home.
+- Added optional `story.settings[]` entries for reusable story-level Settings and optional Moment `setting_id` references so Moments can point at a shared Setting while preserving free-text `setting`.
 - Added a canonical story settings example and refreshed validation fixtures so canonical Storybeats omit legacy `signpost` keys.
 - Added optional `subtext.storybeats[].appreciation` as a derived interoperability field based on `throughline + scope + sequence`.
 - Clarified that Storybeat importers should derive the appreciation identity when the field is omitted so lighter-weight payloads remain compatible.

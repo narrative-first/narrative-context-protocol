@@ -25,10 +25,10 @@
                             "summary": "A test overview.",
                             "storytelling": "Legacy overview labels should be normalized before validation."
                         }
-                    ],
-                    "moments": []
+                    ]
                 }
             }
-        ]
+        ],
+        "moments": []
     }
 }
