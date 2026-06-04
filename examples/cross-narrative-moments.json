@@ -54,6 +54,14 @@
                             "summary": "The relationship turns on whether past instruction still deserves trust.",
                             "storytelling": "The student repeats the mentor's words back as accusation and plea.",
                             "perspectives": []
+                        },
+                        {
+                            "id": "storypoint_mentor_counterpoint",
+                            "appreciation": "Relationship Story Counterpoint",
+                            "illustration": "improvising a new answer the lesson never covered",
+                            "summary": "The paired counterpoint weighs invention against the trusted instruction.",
+                            "storytelling": "The mentor watches the student abandon the script and try something untaught.",
+                            "perspectives": []
                         }
                     ],
                     "storybeats": [

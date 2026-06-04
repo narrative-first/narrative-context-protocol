@@ -502,6 +502,7 @@ additionalProperties: false
         - Influence Character Benchmark
         - Influence Character Concern
         - Influence Character Condition
+        - Influence Character Counterpoint
         - Influence Character Critical Flaw
         - Influence Character Domain
         - Influence Character Event 1
@@ -609,6 +610,7 @@ additionalProperties: false
         - Main Character Benchmark
         - Main Character Concern
         - Main Character Condition
+        - Main Character Counterpoint
         - Main Character Critical Flaw
         - Main Character Domain
         - Main Character Event 1
@@ -719,6 +721,7 @@ additionalProperties: false
         - Objective Story Catalyst
         - Objective Story Concern
         - Objective Story Condition
+        - Objective Story Counterpoint
         - Objective Story Domain
         - Objective Story Event 1
         - Objective Story Event 10
@@ -819,6 +822,7 @@ additionalProperties: false
         - Relationship Story Catalyst
         - Relationship Story Concern
         - Relationship Story Condition
+        - Relationship Story Counterpoint
         - Relationship Story Domain
         - Relationship Story Event 1
         - Relationship Story Event 10
