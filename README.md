@@ -56,7 +56,7 @@ In 2025, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwr
 
 Begin by reading the complete [Specification](/SPECIFICATION.md)
 
-For AI and tool consumers, read [NCP Semantic Grounding](/NCP_SEMANTIC_GROUNDING.md) before interpreting Dramatica-informed fields. It explains how to preserve term boundaries, avoid generic-storytelling substitutions, and keep Subtext separate from Storytelling without turning the open protocol into a replacement for Dramatica analysis.
+For AI and tool consumers, read [NCP Semantic Grounding](/NCP_SEMANTIC_GROUNDING.md) before interpreting Dramatica-informed fields. It explains how to preserve term boundaries, avoid generic-storytelling substitutions, and keep Subtext separate from Storytelling without treating the schema as a replacement for Dramatica analysis.
 
 Install validation dependencies and run fixture checks:
 
