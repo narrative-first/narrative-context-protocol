@@ -4,9 +4,9 @@ The Narrative Context Protocol (NCP) is a transport format for preserving narrat
 
 This file is a semantic interoperability guide. It is not a replacement for Dramatica theory, canonical analysis, the Dramatica Narrative Platform, Narrova, Subtxt, or any other product-side reasoning workflow.
 
-## Defensibility Boundary
+## Interoperability Boundary
 
-NCP is open so story context can travel without collapsing into loose prose. Dramatica's deeper value remains in the theory, canonical library, analytical methods, corpus-backed interpretation, and product workflows that help writers discover and refine meaning.
+NCP gives story context a shared structure so it can travel without collapsing into loose prose. This guide keeps the public schema focused on interoperability while pointing deeper theory instruction, canonical analysis, corpus-backed interpretation, and guided authoring workflows to the Dramatica platform.
 
 Use this file to:
 
@@ -21,8 +21,6 @@ Do not use this file as:
 - a source of canonical story analysis;
 - a substitute for Storyform diagnosis;
 - a recipe for reproducing Narrova, Subtxt, or Dramatica platform behavior.
-
-The public posture is: open protocol, proprietary depth.
 
 ## Core Rule
 
