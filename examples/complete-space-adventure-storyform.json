@@ -110,6 +110,13 @@
                             "storytelling": "A false beacon, a stolen gate key, a convoy jump, and a manual lock attempt each trigger the next escalation. The story advances because people act under pressure, not because they sit with a decision."
                         },
                         {
+                            "id": "dyn_anon_0009",
+                            "dynamic": "midpoint_story_driver",
+                            "vector": "action",
+                            "summary": "Nessa manually jumps the damaged convoy through the unstable gate.",
+                            "storytelling": "At the midpoint, Nessa commits the convoy to an untested route. The action exposes the sabotage, strands the remaining ships, and forces every faction to respond to the gate network's collapse."
+                        },
+                        {
                             "id": "dyn_anon_0006",
                             "dynamic": "story_limit",
                             "vector": "optionlock",

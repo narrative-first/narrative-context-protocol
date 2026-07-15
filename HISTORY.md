@@ -2,6 +2,7 @@
 
 ## Recent Schema Updates
 
+- Added five named Story Driver Dynamic identifiers: `initial_story_driver`, `second_story_driver`, `midpoint_story_driver`, `fourth_story_driver`, and `concluding_story_driver`. They use the same `action` or `decision` vector as the singular `story_driver` Dynamic and are not Storybeats.
 - Moved canonical Moments to required `story.moments[]` so storytelling units belong to the story and can reference Storybeats and Storypoints across multiple narratives.
 - Added narrative-qualified `story.moments[].storybeats[]` and `story.moments[].storypoints[]` references, requiring `narrative_id` on each referenced structural element.
 - Removed `narratives[].storytelling.moments[]` so canonical payloads have one unambiguous Moment home.

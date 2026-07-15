@@ -237,6 +237,11 @@ Canonical `dynamic` values:
 - `problem_solving_style`
 - `story_limit`
 - `story_driver`
+- `initial_story_driver`
+- `second_story_driver`
+- `midpoint_story_driver`
+- `fourth_story_driver`
+- `concluding_story_driver`
 - `story_outcome`
 - `story_judgment`
 
