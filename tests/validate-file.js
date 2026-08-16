@@ -22,8 +22,8 @@ const legacyAjv = new Ajv({ allErrors: true, strict: false });
 const validateLegacy = legacyAjv.compile(readSchema('schema/ncp-schema.json'));
 
 const modernAjv = new Ajv2020({ allErrors: true, strict: false });
-modernAjv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/);
-modernAjv.addFormat('uri', /^[a-z][a-z0-9+.-]*:\/\//i);
+modernAjv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}t\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:z|[+-]\d{2}:\d{2})$/i);
+modernAjv.addFormat('uri', /^[a-z][a-z0-9+.-]*:[^\s]*$/i);
 const validateCore = modernAjv.compile(readSchema('core/ncp-core-schema.json'));
 
 function formatErrors(errors) {

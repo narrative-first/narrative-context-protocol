@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://narrativecontextprotocol.org/core/ncp-core-schema.json",
+    "$id": "https://narrativecontextprotocol.com/core/ncp-core-schema.json",
     "title": "Narrative Context Protocol Core",
-    "description": "Narrative-system-neutral envelope for transporting narrative context, authorial intent, provenance, profiles, extensions, and certification metadata.",
+    "description": "Narrative-system-neutral envelope for transporting narrative context, authorial intent, provenance, profiles, and extensions.",
     "type": "object",
     "additionalProperties": false,
     "required": [

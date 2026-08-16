@@ -16,8 +16,8 @@ function formatErrors(errors) {
 
 function compile2020(relativePath) {
   const ajv = new Ajv2020({ allErrors: true, strict: false });
-  ajv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/);
-  ajv.addFormat('uri', /^[a-z][a-z0-9+.-]*:\/\//i);
+  ajv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}t\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:z|[+-]\d{2}:\d{2})$/i);
+  ajv.addFormat('uri', /^[a-z][a-z0-9+.-]*:[^\s]*$/i);
   return ajv.compile(readJson(relativePath));
 }
 
@@ -47,7 +47,9 @@ const checks = [
   ...legacyValidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: true, layer: 'legacy schema' })),
   ...legacyInvalidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: false, layer: 'legacy schema' })),
   { fixture: 'examples/core/minimal-ncp.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
-  { fixture: 'examples/core/invalid-missing-story.json', validate: validateCore, expected: false, layer: 'NCP Core schema' }
+  { fixture: 'examples/core/portable-reference.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/invalid-missing-story.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/invalid-reference-uri.json', validate: validateCore, expected: false, layer: 'NCP Core schema' }
 ];
 
 let failures = 0;
