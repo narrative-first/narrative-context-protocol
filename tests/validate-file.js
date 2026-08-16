@@ -1,19 +1,30 @@
 const Ajv = require('ajv');
+const Ajv2020 = require('ajv/dist/2020');
 const fs = require('fs');
 const path = require('path');
 
 const args = process.argv.slice(2);
+const repoRoot = path.join(__dirname, '..');
+const structuralNotice = 'NOTICE: NCP schema validation is structural only. It does not determine whether a document contains a complete, coherent, or valid Dramatica Storyform.';
+
+console.log(structuralNotice);
 
 if (args.length === 0) {
   console.error('Usage: node tests/validate-file.js <file1.json> [file2.json ...]');
   process.exit(1);
 }
 
-const repoRoot = path.join(__dirname, '..');
-const schemaPath = path.join(repoRoot, 'schema/ncp-schema.json');
-const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-const ajv = new Ajv({ allErrors: true, strict: false });
-const validate = ajv.compile(schema);
+function readSchema(relativePath) {
+  return JSON.parse(fs.readFileSync(path.join(repoRoot, relativePath), 'utf8'));
+}
+
+const legacyAjv = new Ajv({ allErrors: true, strict: false });
+const validateLegacy = legacyAjv.compile(readSchema('schema/ncp-schema.json'));
+
+const modernAjv = new Ajv2020({ allErrors: true, strict: false });
+modernAjv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}t\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:z|[+-]\d{2}:\d{2})$/i);
+modernAjv.addFormat('uri', /^[a-z][a-z0-9+.-]*:[^\s]*$/i);
+const validateCore = modernAjv.compile(readSchema('core/ncp-core-schema.json'));
 
 function formatErrors(errors) {
   return (errors || [])
@@ -21,13 +32,22 @@ function formatErrors(errors) {
     .join('; ');
 }
 
+function validatorFor(data) {
+  if (data && typeof data === 'object' && data.ncp_version) {
+    return { name: 'NCP Core schema', validate: validateCore };
+  }
+
+  if (data && typeof data === 'object' && data.schema_version) {
+    return { name: 'frozen legacy NCP schema', validate: validateLegacy };
+  }
+
+  return null;
+}
+
 let failures = 0;
 
 for (const inputPath of args) {
-  const targetPath = path.isAbsolute(inputPath)
-    ? inputPath
-    : path.resolve(process.cwd(), inputPath);
-
+  const targetPath = path.isAbsolute(inputPath) ? inputPath : path.resolve(process.cwd(), inputPath);
   let data;
 
   try {
@@ -38,16 +58,26 @@ for (const inputPath of args) {
     continue;
   }
 
-  const ok = validate(data);
+  const selected = validatorFor(data);
 
-  if (ok) {
-    console.log(`PASS ${inputPath}`);
+  if (!selected) {
+    failures += 1;
+    console.error(`FAIL ${inputPath}: unable to select a schema; expected ncp_version or schema_version`);
+    continue;
+  }
+
+  if (selected.validate(data)) {
+    console.log(`PASS ${selected.name} ${inputPath}`);
   } else {
     failures += 1;
-    console.error(`FAIL ${inputPath}: ${formatErrors(validate.errors)}`);
+    console.error(`FAIL ${selected.name} ${inputPath}: ${formatErrors(selected.validate.errors)}`);
   }
 }
 
 if (failures > 0) {
   process.exitCode = 1;
+} else {
+  console.log('NCP schema validation passed.');
 }
+
+console.log(structuralNotice);

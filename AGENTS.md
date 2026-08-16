@@ -1,9 +1,9 @@
 # Repository Guidelines
 
-This repository is the open-source Dramatica storyform (Narrative Context Protocol) intended for capturing and preserving authorial intent across mediums. It is not a standalone app—treat it as the reference schema and examples for anyone building tools on top of NCP.
+This repository is the open Narrative Context Protocol interchange standard for transporting narrative context and authorial intent across mediums. It is not a Dramatica implementation or standalone app. Treat NCP Core, profiles, extensions, serializations, and bindings as separately governed layers.
 
 ## Project Structure & Module Organization
-- Core schema lives in `schema/ncp-schema.json` with a YAML twin in `schema/ncp-schema.yaml`. Keep both in sync when making changes.
+- Prospective Core schema lives in `core/ncp-core-schema.json`. The files in `schema/` are frozen legacy combined artifacts; keep their JSON/YAML twins in sync if a compatibility correction is legally and semantically approved.
 - Examples used for validation are in `examples/` (e.g., `example-story.json`, `example-mapping.json`).
 - Formal reference docs sit in `SPECIFICATION.md` and `docs/`, with terminology notes under `docs/terminology/`.
 - Lightweight automated checks reside in `tests/`; update or add scripts there when extending coverage.
@@ -16,13 +16,13 @@ This repository is the open-source Dramatica storyform (Narrative Context Protoc
 ## Coding Style & Naming Conventions
 - JSON/YAML: 4-space indentation, no tabs; keep keys in snake_case to align with current schema fields.
 - File naming: use hyphenated lowercase for documents (`example-story.json`) and numeric prefixes for ordered docs (`docs/terminology/01.perspectives.md`).
-- Schema updates should mirror between JSON and YAML; regenerate both before committing.
+- Do not add Dramatica relationships, rules, algorithms, mappings, or diagnostics. Keep profiles and extensions outside Core and respect namespace governance.
 - Write concise descriptions inside schema entries; avoid schema-breaking renames unless documented in `HISTORY.md`.
 
 ## Testing Guidelines
-- Add a representative sample under `examples/` whenever you extend the schema; wire it into a validation script in `tests/`.
+- Add a representative synthetic sample under the matching `examples/` subdirectory whenever you extend an open schema; wire it into a validation script in `tests/`.
 - For breaking or optional fields, include both positive and negative cases to guard intent.
-- Capture validation output in your PR description (e.g., `node tests/validate-schema.js` → “Narrative JSON is valid!”).
+- Capture validation output in your PR description as “NCP schema validation passed.” Never imply that structural validation certifies a Dramatica Storyform.
 
 ## Commit & Pull Request Guidelines
 - Follow the repo’s short, action-first commit style (e.g., `fix: ...`, `updates: ...`). Keep one concern per commit.
