@@ -1,0 +1,48 @@
+{
+    "ncp_version": "3.0.0-rc.1",
+    "document": {
+        "id": "ncp_document_attested_001",
+        "created_at": "2026-08-16T12:00:00Z"
+    },
+    "story": {
+        "id": "story_attested_001"
+    },
+    "profiles": [
+        {
+            "namespace": "dramatica:",
+            "profile_version": "1.0.0-rc.1",
+            "schema": "https://narrativecontextprotocol.com/profiles/dramatica/1.0.0-rc.1/profile-schema.json"
+        }
+    ],
+    "attestations": [
+        {
+            "id": "attestation_001",
+            "kind": "profile-semantic-validation",
+            "profile_namespace": "dramatica:",
+            "profile_version": "1.0.0-rc.1",
+            "semantic_model_version": "example-dsm-version",
+            "subject_hash": "sha256:example-only",
+            "issued_at": "2026-08-16T12:00:00Z",
+            "issuer": {
+                "system": "example-validator",
+                "value": "validator_001"
+            },
+            "status": {
+                "completeness": "issuer-defined-example",
+                "consistency": "issuer-defined-example"
+            },
+            "signed_record": "example-only"
+        }
+    ],
+    "payloads": {
+        "dramatica:": {
+            "namespace": "dramatica:",
+            "profile_version": "1.0.0-rc.1",
+            "dsm_version": "example-dsm-version",
+            "storyform": {
+                "id": "storyform_invalid",
+                "fields": {}
+            }
+        }
+    }
+}

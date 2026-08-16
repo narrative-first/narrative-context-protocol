@@ -21,7 +21,9 @@ npm run validate:schema
 npm run validate:file -- examples/core/minimal-ncp.json
 ```
 
-The validator selects the NCP Core schema for documents with `ncp_version`, the Dramatica profile transport schema for standalone `dramatica:` profile payloads, and the frozen legacy schema for documents with `schema_version`.
+The validator selects the NCP Core schema for documents with `ncp_version`, the Dramatica profile transport schema for standalone `dramatica:` profile payloads, and the frozen legacy schema for documents with `schema_version`. When a Core document carries a recognized `dramatica:` payload, the validator reports Core and profile structural results separately.
+
+The Dramatica profile schema checks the published story, narrative, Subtext, Storytelling, and Moment field names; required nesting; basic types; canonical enum membership; references; and sequence bounds. Those are transport constraints, not proof that the selected values form a valid Storyform.
 
 ## Dramatica semantic validation
 

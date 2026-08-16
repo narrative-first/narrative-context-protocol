@@ -18,11 +18,11 @@ The Dramatica Storyform Profile is NCP's foundational profile and the original n
 
 Foundational does not mean required. NCP Core remains narrative-system-neutral, and documents may use other profiles, extensions, or Core alone.
 
-The public profile defines transport fields, identifiers, basic data types, and an opaque Storyform payload. Publishing or implementing that transport contract does not grant access to the Dramatica Semantic Model or reproduce the intelligence needed to create, complete, resolve, diagnose, semantically validate, or certify a Storyform.
+The public profile preserves the complete previously published story, narratives, Subtext, Storytelling, and Moment representation. It includes transport fields, identifiers, basic data types, canonical term lists and definitions, direct Holistic/Linear and character-framed mappings, and semantic-preservation guidance. Publishing or implementing that transport contract does not reproduce the intelligence needed to determine valid combinations, create, complete, resolve, diagnose, semantically validate, or certify a Storyform.
 
 ## Dramatica Semantic Model
 
-The intended NCP 3 boundary recognizes the Dramatica Semantic Model—including its semantic relationships, constraints, valid combinations, algorithms, diagnosis, completion, resolution, and validation technology—as proprietary Dramatica technology maintained by The Dramatica Co. It is not part of open NCP Core.
+The intended NCP 3 boundary recognizes the operational Dramatica Semantic Model—including the rules governing valid combinations and structural configurations, private matrices, algorithms, diagnosis, completion, resolution, and validation technology—as proprietary Dramatica technology maintained by The Dramatica Co. It is not part of open NCP Core or implemented by the public profile.
 
 An author or studio retains its creative story information. Transporting that information in NCP does not make NCP Core the source of Dramatica semantic meaning.
 

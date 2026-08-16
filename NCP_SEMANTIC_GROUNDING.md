@@ -1,14 +1,5 @@
-# Legacy Semantic Grounding Notice
+# NCP Semantic Grounding
 
-Earlier versions of this document contained detailed Dramatica terminology, mappings, normalization guidance, and AI inference instructions. That material requires semantic and legal review before reuse in a future public profile and is not part of the NCP 3.0.0-rc.1 normative documentation.
+The public semantic-interoperability guidance for the Dramatica profile now lives at [`profiles/dramatica/semantic-interoperability.md`](profiles/dramatica/semantic-interoperability.md).
 
-NCP is a transport standard. It does not define the Dramatica Semantic Model or instruct software or AI systems how to infer, generate, resolve, diagnose, complete, or semantically validate a Dramatica Storyform.
-
-For safe interchange:
-
-- preserve supplied `dramatica:` data without semantic reinterpretation;
-- do not infer missing Dramatica structure from prose or production metadata;
-- treat schema validation as structural only; and
-- use a Dramatica semantic system outside this repository for semantic operations.
-
-Previously published versions remain available through repository history and existing releases. This notice does not withdraw prior grants or change an existing license notice.
+The guide documents terminology, preservation rules, framing mappings, and safe interchange behavior. It does not implement Storyform generation, completion, resolution, diagnosis, semantic validation, or certification.

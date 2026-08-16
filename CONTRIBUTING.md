@@ -8,11 +8,11 @@ Read the [candidate contribution policy](governance/contribution-policy.md) and 
 
 During the 3.0.0-rc.1 review, do not submit:
 
-- new Dramatica relationships, algorithms, structural rules, model logic, diagnostics, or semantic mappings;
-- changes to the meaning of canonical Dramatica fields;
+- additions or changes to canonical Dramatica terms, definitions, mappings, structural constraints, or field meanings without profile-maintainer approval;
+- Storyform generation, valid-combination, completion, resolution, diagnosis, semantic-validation, or certification logic;
 - interactive, game-engine, production, or alternative-framework concepts inside the Dramatica profile;
 - changes to existing license notices; or
-- Storyform generation, valid-combination, completion, resolution, diagnosis, or semantic-validation logic.
+- private Dramatica model or product implementation details.
 
 Substantial or Dramatica-specific contribution handling remains pending review. Open an issue before submitting such material.
 

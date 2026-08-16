@@ -24,9 +24,37 @@ function compile2020(relativePath) {
 console.log(structuralNotice);
 
 const legacyAjv = new Ajv({ allErrors: true, strict: false });
-const validateLegacy = legacyAjv.compile(readJson('schema/ncp-schema.json'));
+const legacySchema = readJson('schema/ncp-schema.json');
+const dramaticaProfileSchema = readJson('profiles/dramatica/profile-schema.json');
+const validateLegacy = legacyAjv.compile(legacySchema);
 const validateCore = compile2020('core/ncp-core-schema.json');
-const validateDramaticaProfile = compile2020('profiles/dramatica/profile-schema.json');
+const profileAjv = new Ajv({ allErrors: true, strict: false });
+const validateDramaticaProfile = profileAjv.compile(dramaticaProfileSchema);
+
+function asDramaticaProfile(document) {
+  return {
+    namespace: 'dramatica:',
+    profile_version: '1.0.0-rc.1',
+    dsm_version: 'example-dsm-version',
+    storyform: document.story
+  };
+}
+
+function stripAnnotations(value) {
+  if (Array.isArray(value)) {
+    return value.map(stripAnnotations);
+  }
+
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value)
+        .filter(([key]) => !['$schema', '$id', '$comment', 'title', 'description'].includes(key))
+        .map(([key, child]) => [key, stripAnnotations(child)])
+    );
+  }
+
+  return value;
+}
 
 const legacyValidFixtures = [
   'examples/example-story.json',
@@ -47,6 +75,8 @@ const legacyInvalidFixtures = fs.readdirSync(invalidDir)
 const checks = [
   ...legacyValidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: true, layer: 'legacy schema' })),
   ...legacyInvalidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: false, layer: 'legacy schema' })),
+  ...legacyValidFixtures.map((fixture) => ({ fixture, data: asDramaticaProfile(readJson(fixture)), validate: validateDramaticaProfile, expected: true, layer: 'Dramatica profile compatibility' })),
+  ...legacyInvalidFixtures.map((fixture) => ({ fixture, data: asDramaticaProfile(readJson(fixture)), validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile compatibility' })),
   { fixture: 'examples/core/minimal-ncp.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
   { fixture: 'examples/core/portable-reference.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
   { fixture: 'examples/core/attested-profile.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
@@ -55,13 +85,14 @@ const checks = [
   { fixture: 'examples/core/invalid-attestation.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
   { fixture: 'examples/core/invalid-version.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
   { fixture: 'examples/dramatica-profile/existing-storyform.json', validate: validateDramaticaProfile, expected: true, layer: 'Dramatica profile transport schema' },
-  { fixture: 'examples/dramatica-profile/invalid-profile-version.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' }
+  { fixture: 'examples/dramatica-profile/invalid-profile-version.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' },
+  { fixture: 'examples/dramatica-profile/invalid-opaque-fields.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' }
 ];
 
 let failures = 0;
 
 for (const check of checks) {
-  const ok = check.validate(readJson(check.fixture));
+  const ok = check.validate(check.data || readJson(check.fixture));
 
   if (ok !== check.expected) {
     failures += 1;
@@ -70,6 +101,34 @@ for (const check of checks) {
   } else {
     console.log(`PASS ${check.layer} ${check.fixture}`);
   }
+}
+
+const profileStoryShapeMatchesLegacy =
+  JSON.stringify(stripAnnotations(dramaticaProfileSchema.properties.storyform)) === JSON.stringify(stripAnnotations(legacySchema.properties.story)) &&
+  JSON.stringify(stripAnnotations(dramaticaProfileSchema.$defs)) === JSON.stringify(stripAnnotations(legacySchema.$defs));
+
+if (!profileStoryShapeMatchesLegacy) {
+  failures += 1;
+  console.error('FAIL Dramatica profile transport parity: storyform structure diverges from the previously published story structure');
+} else {
+  console.log('PASS Dramatica profile transport parity with the previously published story structure');
+}
+
+const attestedProfile = readJson('examples/core/attested-profile.json').payloads['dramatica:'];
+if (!validateDramaticaProfile(attestedProfile)) {
+  failures += 1;
+  console.error(`FAIL nested Dramatica profile payload examples/core/attested-profile.json: ${formatErrors(validateDramaticaProfile.errors)}`);
+} else {
+  console.log('PASS nested Dramatica profile payload examples/core/attested-profile.json');
+}
+
+const invalidProfileEnvelope = readJson('examples/core/profile-invalid-dramatica-payload.json');
+const invalidProfilePayload = invalidProfileEnvelope.payloads['dramatica:'];
+if (!validateCore(invalidProfileEnvelope) || validateDramaticaProfile(invalidProfilePayload)) {
+  failures += 1;
+  console.error('FAIL layered validation fixture must pass Core and fail the declared Dramatica profile');
+} else {
+  console.log('PASS layered validation distinguishes Core conformance from invalid Dramatica profile structure');
 }
 
 const embeddedOmc = readJson('bindings/omc/examples/embedded-ncp.json');
@@ -92,7 +151,7 @@ if (externalOmc.domain !== 'narrativecontextprotocol.com' || externalOmc.namespa
 if (failures > 0) {
   process.exitCode = 1;
 } else {
-  console.log(`NCP schema validation passed (${checks.length + 2} structural fixture checks).`);
+  console.log(`NCP schema validation passed (${checks.length + 5} structural fixture checks).`);
 }
 
 console.log(structuralNotice);
