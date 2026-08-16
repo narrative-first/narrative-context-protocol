@@ -14,7 +14,7 @@ NCP does not define the Dramatica Semantic Model and does not reproduce a Storyf
 
 This branch defines the proposed layered NCP 3 architecture for public technical review. The release candidate covers Core, JSON serialization, profiles, extensions, bindings, structural validation, and migration behavior.
 
-This candidate publishes the intended [licensing and commercial-access boundary](governance/licensing.md), including how adopters obtain licensed Dramatica validation and certification capabilities. Exact prospective license, contributor-agreement, trademark, and certification-mark terms remain [pending counsel review](PENDING_REVIEW.md). Existing license notices and releases are unchanged.
+This candidate publishes the intended [licensing and commercial-access boundary](governance/licensing.md), including how adopters obtain licensed Dramatica validation and certification capabilities. Exact prospective license, contributor-agreement, trademark, and certification-mark terms remain [pending counsel review](PENDING_REVIEW.md). The `LICENSE.md` preamble now describes NCP as an interchange standard while preserving the MIT grant text; existing releases and repository history remain unchanged.
 
 ## Architecture
 

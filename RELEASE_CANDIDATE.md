@@ -22,7 +22,7 @@ This candidate is intended for public interoperability review before a final NCP
 - final service, SDK, profile, trademark, compatibility-mark, and certification terms;
 - Dramatica semantic rules, relationships, algorithms, valid combinations, generation, completion, resolution, diagnosis, or implementation details.
 
-Existing releases, repository history, and license notices are unchanged.
+The current license preamble is updated to reflect the layered interoperability architecture while preserving the MIT grant text. Existing releases and repository history are unchanged.
 
 ## Review questions
 

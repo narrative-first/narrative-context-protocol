@@ -10,7 +10,7 @@
 - Freezes the legacy combined schema and replaces detailed terminology pages with review notices while preserving prior versions in Git history and existing releases.
 - Publishes the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary while leaving operative license, contributor, trademark, and certification-mark terms pending counsel review.
 
-This candidate changes the proposed NCP architecture. It does not rewrite prior releases or change their license notices.
+This candidate changes the proposed NCP architecture and updates the current license preamble to remove the legacy product positioning. The MIT grant text, prior releases, and repository history remain unchanged.
 
 > Entries below describe previously published combined-schema releases. They are preserved as historical records and are not normative definitions of the NCP 3 architecture.
 

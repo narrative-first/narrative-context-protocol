@@ -6,7 +6,7 @@ Status: NCP 3.0.0-rc.1 policy boundary for public review. This page explains wha
 
 NCP Core is intended to remain an openly adoptable interoperability standard. It defines the narrative-system-neutral envelope, declarations, references, provenance, attestations, packaging, and interchange rules.
 
-The repository's existing license notice and previously published releases remain unchanged. Counsel will confirm the final prospective license notice for new NCP 3 Core specifications and schemas.
+The current `LICENSE.md` preamble identifies NCP as an interchange standard and separates it from the Dramatica Semantic Model. The MIT grant text, previously published releases, and repository history remain unchanged. Counsel will confirm any further prospective license text for NCP 3 Core specifications and schemas.
 
 ## Reference serialization and validation code
 
