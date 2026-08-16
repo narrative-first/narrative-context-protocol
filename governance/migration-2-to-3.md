@@ -7,8 +7,8 @@ NCP 2.x documents use a combined envelope containing both interchange and narrat
 1. Create a new Core document with `ncp_version` set to `3.0.0-rc.1`.
 2. Preserve the source document and story identifiers, title, authorship, timestamps, and external references.
 3. Declare each narrative-system profile and workflow extension used by the source document.
-4. Copy supplied narrative-system fields into the matching namespaced payload without renaming, deriving, normalizing, or completing them.
-5. Convert story-level moments and contribution history only when the mapping is direct and lossless; otherwise preserve the source reference and record the unresolved migration note in provenance.
+4. Copy the complete supplied legacy `story` object into `payloads["dramatica:"].storyform` without renaming, deriving, normalizing, or completing it.
+5. Copy story identity fields into the Core `story` envelope and preserve Story-level Moments inside the Dramatica profile representation. The Core and profile story IDs should match.
 6. Record the source NCP version, migration time, tool identity, and target component versions in `document.provenance`.
 7. Run NCP Core and selected profile transport schemas separately.
 
@@ -43,15 +43,19 @@ NCP 2.x documents use a combined envelope containing both interchange and narrat
             "profile_version": "1.0.0-rc.1",
             "dsm_version": "source-declared-version",
             "storyform": {
-                "id": "preserved_storyform_id",
-                "fields": {}
+                "id": "preserved_story_id",
+                "title": "Preserved title",
+                "logline": "Preserved logline",
+                "created_at": "2026-08-16T12:00:00Z",
+                "moments": [],
+                "narratives": []
             }
         }
     }
 }
 ```
 
-An empty `fields` object in this example is not a complete Storyform. It illustrates envelope placement only.
+The abbreviated example shows envelope placement. A real migration copies the complete legacy `story` object—including settings, ideation, every narrative's Subtext and Storytelling, and Story-level Moments—without loss. Empty `narratives` passes structural validation but does not represent a complete or semantically valid Dramatica Storyform.
 
 ## Semantic migration
 

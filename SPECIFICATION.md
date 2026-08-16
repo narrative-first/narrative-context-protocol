@@ -12,7 +12,7 @@ This document defines the layered architecture. The normative Core transport det
 
 The implementation-independent semantic system containing Dramatica concepts, terminology, relationships, classifications, constraints, rules, algorithms, valid structural combinations, and Storyform architecture.
 
-The Dramatica Semantic Model is the proprietary narrative intelligence that gives Dramatica Storyform data its structural meaning. It is maintained by The Dramatica Co., separately from NCP, and is not defined or licensed by NCP Core or the public transport profile.
+The Dramatica Semantic Model is the licensed narrative intelligence that determines valid configurations and gives Dramatica Storyform data its structural meaning. It is maintained separately from NCP and is not implemented by NCP Core or the public transport profile.
 
 ### 1.2 Dramatica Storyform
 
@@ -20,9 +20,9 @@ A particular configuration or instance of the Dramatica Semantic Model represent
 
 ### 1.3 Dramatica Storyform Profile
 
-An NCP profile identifying the fields, identifiers, data types, and transport conventions required to preserve and exchange an existing Dramatica Storyform representation.
+An NCP profile identifying the complete published story, narrative, Subtext, Storytelling, and Moment structure required to preserve and exchange Dramatica-oriented story information. It includes stable identifiers, data types, canonical term lists and definitions, direct interoperability mappings, and structural transport constraints.
 
-The public profile treats Storyform fields as opaque transport data. It does not publish rules for generating, resolving, diagnosing, completing, or semantically validating a Storyform. See [`profiles/dramatica/`](profiles/dramatica/).
+The public profile makes its interchange representation understandable and lossless. It does not implement the valid-combination logic, private structural matrices, algorithms, or product intelligence used to generate, resolve, diagnose, complete, semantically validate, or certify a Storyform. See [`profiles/dramatica/`](profiles/dramatica/).
 
 The Dramatica Storyform Profile is NCP's foundational profile: NCP began as a way to preserve and exchange Dramatica Storyforms across applications. It remains the reference example of the profile architecture, but it is not required by NCP Core.
 

@@ -4,6 +4,9 @@ on:
   pull_request:
   push:
     paths:
+      - 'core/**'
+      - 'profiles/**'
+      - 'bindings/**'
       - 'schema/**'
       - 'examples/**'
       - 'tests/**'

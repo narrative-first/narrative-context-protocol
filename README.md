@@ -4,17 +4,19 @@
 
 Narrative Context Protocol is an open format for transporting narrative context, authorial intent, provenance, and structured story information across tools and workflows.
 
-NCP can carry information produced by multiple narrative systems through separately governed profiles. Its foundational profile is the [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md), maintained by The Dramatica Co. and the original narrative-system profile around which NCP interoperability was developed. The profile represents an existing Storyform for exchange; it does not define the semantic system that creates or interprets one.
+NCP can carry information produced by multiple narrative systems through separately governed profiles. Its foundational profile is the [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md), maintained by The Dramatica Co. and the original narrative-system profile around which NCP interoperability was developed. The public profile preserves the complete previously published story, narratives, Subtext, Storytelling, and Moment representation together with the terminology needed to understand it. It does not implement the semantic intelligence that creates, completes, resolves, validates, or certifies a Storyform.
 
 Foundational does not mean mandatory. NCP Core is narrative-system-neutral, and an NCP document may use Dramatica, another declared profile, extensions only, or Core alone.
 
-NCP does not define the Dramatica Semantic Model and does not reproduce a Storyform engine, algorithms, structural relationships, diagnostic processes, or semantic validation technology. It is not a replacement for Dramatica software, analysis, or validation.
+NCP does not implement the Dramatica Semantic Model's valid-combination logic, Storyform engine, private structural matrices, diagnostic processes, or semantic validation technology. It is not a replacement for Dramatica software, analysis, or validation.
 
 ## 3.0.0-rc.1 review candidate
 
-This branch defines the proposed layered NCP 3 architecture for public technical review. The release candidate covers Core, JSON serialization, profiles, extensions, bindings, structural validation, and migration behavior.
+This candidate defines the proposed layered NCP 3 architecture for public technical review. The release candidate covers Core, JSON serialization, profiles, extensions, bindings, structural validation, and migration behavior.
 
 This candidate publishes the intended [licensing and commercial-access boundary](governance/licensing.md), including how adopters obtain licensed Dramatica validation and certification capabilities. Exact prospective license, contributor-agreement, trademark, and certification-mark terms remain [pending counsel review](PENDING_REVIEW.md). The `LICENSE.md` preamble now describes NCP as an interchange standard while preserving the MIT grant text; existing releases and repository history remain unchanged.
+
+Read [Why NCP 3.0](RELEASE_CANDIDATE.md#why-ncp-30) for the release narrative, architecture progression, public-versus-licensed boundary, and recommended product language.
 
 ## Architecture
 
@@ -23,7 +25,7 @@ This candidate publishes the intended [licensing and commercial-access boundary]
 | [NCP Core](core/specification.md) | Narrative-system-neutral identifiers, authorship, provenance, versions, profile references, Storytelling Moments, contributions, opaque attestations, and interchange rules |
 | [Profiles](profiles/README.md) | Separately versioned transport contracts for information produced by a narrative system |
 | [Extensions](extensions/README.md) | Separately named workflow or application data that does not alter Core or another profile |
-| [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md) | A minimal transport contract for an existing Dramatica Storyform representation |
+| [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md) | The complete public transport structure, terminology, and preservation guidance for Dramatica-oriented story information |
 | [JSON serialization](serialization/json/README.md) | The current machine-readable representation of NCP data |
 | [Bindings](bindings/README.md) | Ways to embed or reference NCP in another standard or workflow |
 
@@ -41,7 +43,7 @@ NCP schema validation checks JSON structure, required fields, identifier formats
 
 > NCP schema validation confirms that a document is structurally well-formed. It does not determine whether the document represents a complete, coherent, or valid Dramatica Storyform.
 
-Dramatica semantic validation and certification are licensed capabilities supplied outside this repository through Dramatica. NCP can transport the resulting attestation, but the open schema does not create, resolve, diagnose, certify, or semantically validate a Storyform.
+The Dramatica profile schema validates its published field names, nesting, required values, enums, references, and basic transport constraints. Dramatica semantic validation and certification are licensed capabilities supplied outside this repository through Dramatica. NCP can transport the resulting attestation, but the public schema does not create, resolve, diagnose, certify, or semantically validate a Storyform.
 
 ## Dramatica licensing and certification
 
@@ -86,16 +88,16 @@ See the [Developer Documentation](docs/developer-documentation.md) for implement
 
 ```text
 core/                         NCP Core schema and specification
-profiles/dramatica/           Dramatica transport profile and semantic boundary
+profiles/dramatica/           Complete public Dramatica profile, terminology, and semantic boundary
 extensions/                   Separately governed extension placeholders
 bindings/omc/                 NCP-OMC transport binding and examples
 serialization/json/           JSON serialization documentation
 governance/                   Namespace, conformance, versioning, and licensing boundary
 examples/core/                Narrative-neutral Core examples
-examples/dramatica-profile/   Simple Dramatica transport examples
+examples/dramatica-profile/   Full and negative Dramatica profile examples
 examples/omc-binding/         OMC binding example index
 schema/                       Frozen legacy combined schema for compatibility
-docs/terminology/             Review notices for previously published material
+docs/terminology/             Compatibility pointers to Dramatica profile terminology
 tests/                        Open structural validation tools
 ```
 

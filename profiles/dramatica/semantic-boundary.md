@@ -1,22 +1,25 @@
-# Dramatica Semantic Boundary
+# Dramatica Profile and Intelligence Boundary
 
-The public Dramatica Storyform Profile describes transport, not Dramatica intelligence.
+The public Dramatica Storyform Profile describes the complete interchange representation and the terminology needed to understand and preserve it. Licensed Dramatica intelligence determines how to create, combine, resolve, evaluate, and certify that information.
 
 ## Included in the profile
 
-- stable envelope field names;
-- identifiers and basic data types;
-- declared profile and semantic-model versions;
-- opaque preservation of an existing Storyform representation; and
+- the complete published story, narratives, Subtext, Storytelling, and Story-level Moment structure;
+- stable field names, identifiers, basic data types, enums, and transport constraints;
+- Perspectives, Appreciations, Narrative Functions, Dynamics, Vectors, and their public definitions;
+- direct Holistic/Linear, character-framed, and legacy terminology mappings used for interoperability;
+- semantic-preservation guidance for consuming tools;
+- declared profile and semantic-model versions; and
 - references to external validation attestations.
 
 ## Outside NCP and the public profile
 
 - Storyform generation and valid-combination logic;
-- semantic relationships, structural matrices, and algorithms;
+- private structural matrices, resolution rules, and algorithms that determine valid configurations;
 - diagnosis, disambiguation, completion, and resolution logic;
-- transformation or derivation rules;
-- corpus-backed interpretation and advanced coaching; and
+- automated inference, transformation, or derivation logic that creates or changes a Storyform;
+- corpus-backed interpretation and advanced coaching;
+- semantic validation and certification technology; and
 - product implementation details.
 
 Official Dramatica intelligence is accessed through licensed Dramatica services or engines outside this repository. Service interfaces may expose operations such as:

@@ -3,7 +3,11 @@
     "profile_version": "1.0.0",
     "dsm_version": "example-dsm-version",
     "storyform": {
-        "id": "storyform_wrong_profile_version",
-        "fields": {}
+        "id": "storyform_invalid_version",
+        "title": "Invalid profile version",
+        "logline": "This fixture is structurally complete except for its profile version.",
+        "created_at": "2026-08-16T12:00:00Z",
+        "moments": [],
+        "narratives": []
     }
 }

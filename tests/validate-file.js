@@ -20,12 +20,13 @@ function readSchema(relativePath) {
 
 const legacyAjv = new Ajv({ allErrors: true, strict: false });
 const validateLegacy = legacyAjv.compile(readSchema('schema/ncp-schema.json'));
+const profileAjv = new Ajv({ allErrors: true, strict: false });
+const validateDramaticaProfile = profileAjv.compile(readSchema('profiles/dramatica/profile-schema.json'));
 
 const modernAjv = new Ajv2020({ allErrors: true, strict: false });
 modernAjv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}t\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:z|[+-]\d{2}:\d{2})$/i);
 modernAjv.addFormat('uri', /^[a-z][a-z0-9+.-]*:[^\s]*$/i);
 const validateCore = modernAjv.compile(readSchema('core/ncp-core-schema.json'));
-const validateDramaticaProfile = modernAjv.compile(readSchema('profiles/dramatica/profile-schema.json'));
 
 function validateExternalOmc(data) {
   const reference = data && data.value && data.value.ncp_document;
@@ -43,6 +44,22 @@ function formatErrors(errors) {
   return (errors || [])
     .map((error) => `${error.instancePath || '/'} ${error.message}`)
     .join('; ');
+}
+
+function validateRecognizedProfiles(document, inputPath) {
+  const payload = document && document.payloads && document.payloads['dramatica:'];
+
+  if (!payload) {
+    return true;
+  }
+
+  if (!validateDramaticaProfile(payload)) {
+    console.error(`FAIL Dramatica profile transport schema ${inputPath}: ${formatErrors(validateDramaticaProfile.errors)}`);
+    return false;
+  }
+
+  console.log(`PASS Dramatica profile transport schema ${inputPath}`);
+  return true;
 }
 
 function validatorFor(data) {
@@ -91,8 +108,14 @@ for (const inputPath of args) {
     continue;
   }
 
-  if (selected.validate(selected.value || data)) {
+  const selectedData = selected.value || data;
+
+  if (selected.validate(selectedData)) {
     console.log(`PASS ${selected.name} ${inputPath}`);
+
+    if ((selected.name === 'NCP Core schema' || selected.name === 'NCP-OMC embedded fragment') && !validateRecognizedProfiles(selectedData, inputPath)) {
+      failures += 1;
+    }
   } else {
     failures += 1;
     console.error(`FAIL ${selected.name} ${inputPath}: ${formatErrors(selected.validate.errors)}`);

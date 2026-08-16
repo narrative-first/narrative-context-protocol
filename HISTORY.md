@@ -3,11 +3,11 @@
 ## 3.0.0-rc.1 — Layered interoperability review candidate
 
 - Separates narrative-neutral NCP Core from narrative-system profiles, extensions, serializations, and bindings.
-- Adds a minimal opaque Dramatica Storyform transport profile without generation, relationship, completion, diagnosis, or semantic-validation logic.
+- Adds a complete public Dramatica Storyform transport profile preserving the previously published story, narratives, Subtext, Storytelling, Moments, terminology, and direct interoperability mappings without generation, valid-combination, completion, diagnosis, or semantic-validation logic.
 - Adds generic attestation transport while keeping semantic meaning outside Core.
 - Adds the NCP-OMC 1.0.0-rc.1 binding for OMC 2.8 Custom Data Blocks and resolvable references.
 - Adds explicit schema-versus-semantic validation language and a 2.x-to-3.0 migration guide.
-- Freezes the legacy combined schema and replaces detailed terminology pages with review notices while preserving prior versions in Git history and existing releases.
+- Freezes the legacy combined schema for compatibility and moves its detailed Dramatica terminology and semantic-interoperability references into the separately governed public Dramatica profile.
 - Publishes the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary while leaving operative license, contributor, trademark, and certification-mark terms pending counsel review.
 
 This candidate changes the proposed NCP architecture and updates the current license preamble to remove the legacy product positioning. The MIT grant text, prior releases, and repository history remain unchanged.
@@ -68,4 +68,4 @@ Together, this dedicated group is charting a forward-looking path, passionately 
 
 ⸻
 
-For canonical terminology updates, refer to the files under [/docs/terminology/](/docs/terminology/).
+For current public profile terminology, refer to [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/).

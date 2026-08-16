@@ -1,0 +1,9 @@
+{
+    "namespace": "dramatica:",
+    "profile_version": "1.0.0-rc.1",
+    "dsm_version": "example-dsm-version",
+    "storyform": {
+        "id": "storyform_opaque_fields_are_no_longer_enough",
+        "fields": {}
+    }
+}

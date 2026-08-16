@@ -5,7 +5,9 @@
         "created_at": "2026-08-16T12:00:00Z"
     },
     "story": {
-        "id": "story_attested_001"
+        "id": "story_123e4567-e89b-12d3-a456-426614174000",
+        "title": "Echoes of the Past",
+        "logline": "A hardened detective uncovers clues linking a cold case to his own haunting history."
     },
     "profiles": [
         {
@@ -40,10 +42,176 @@
             "profile_version": "1.0.0-rc.1",
             "dsm_version": "example-dsm-version",
             "storyform": {
-                "id": "storyform_attested_001",
-                "fields": {
-                    "transport_note": "Opaque example payload"
-                }
+                "id": "story_123e4567-e89b-12d3-a456-426614174000",
+                "title": "Echoes of the Past",
+                "genre": "Mystery Thriller",
+                "logline": "A hardened detective uncovers clues linking a cold case to his own haunting history.",
+                "created_at": "2025-12-01T12:34:56Z",
+                "settings": [
+                    {
+                        "id": "setting_precinct_archive",
+                        "name": "Precinct Archive",
+                        "description": "A dimly lit archive room where old case files preserve institutional memory and unresolved history."
+                    }
+                ],
+                "ideation": {
+                    "character": [
+                        {
+                            "id": "idea_char_001",
+                            "summary": "A detective whose methodical control hides unresolved personal guilt.",
+                            "title": "Lead Character Core",
+                            "notes": "Potentially pairs with a foil who embraces uncertainty.",
+                            "tags": [
+                                "protagonist",
+                                "trauma"
+                            ]
+                        }
+                    ],
+                    "theme": [
+                        {
+                            "id": "idea_theme_001",
+                            "summary": "Control versus vulnerability as a path to truth.",
+                            "title": "Theme Thread",
+                            "tags": [
+                                "identity",
+                                "truth"
+                            ]
+                        }
+                    ],
+                    "plot": [
+                        {
+                            "id": "idea_plot_001",
+                            "summary": "A reopened cold case escalates into a personal reckoning.",
+                            "title": "Plot Spine"
+                        }
+                    ],
+                    "genre": [
+                        {
+                            "id": "idea_genre_001",
+                            "summary": "Neo-noir mystery with psychological thriller pressure.",
+                            "title": "Genre Blend"
+                        }
+                    ]
+                },
+                "narratives": [
+                    {
+                        "id": "narrative_001",
+                        "title": "Central Narrative",
+                        "status": "draft",
+                        "subtext": {
+                            "perspectives": [
+                                {
+                                    "id": "12345678-1234-1234-1234-123456789012",
+                                    "author_structural_pov": "i",
+                                    "summary": "John Marlowe",
+                                    "storytelling": "John is a seasoned detective whose past is as mysterious as the cases he solves."
+                                }
+                            ],
+                            "players": [
+                                {
+                                    "id": "abcdef12-3456-7890-abcd-ef1234567890",
+                                    "name": "Detective John Marlowe",
+                                    "role": "Main Character",
+                                    "visual": "A rumpled trench coat and tired eyes that miss nothing.",
+                                    "audio": "Measured speech with an edge of impatience.",
+                                    "summary": "A dedicated detective haunted by unresolved cases.",
+                                    "bio": "A veteran investigator whose professional discipline masks unresolved personal grief.",
+                                    "storytelling": "John exudes a stoic demeanor, masking the inner turmoil of his past.",
+                                    "motivations": [
+                                        {
+                                            "narrative_function": "Consider",
+                                            "illustration": "weighing every lead against the emotional cost of reopening old wounds",
+                                            "storytelling": "John keeps circling the evidence, unable to separate the current case from his unresolved history."
+                                        }
+                                    ],
+                                    "perspectives": [
+                                        {
+                                            "perspective_id": "12345678-1234-1234-1234-123456789012"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "dynamics": [
+                                {
+                                    "id": "dynamic_00112233-4455-6677-8899-aabbccddeeff",
+                                    "dynamic": "story_outcome",
+                                    "vector": "success",
+                                    "summary": "The case concludes with John uncovering the truth.",
+                                    "storytelling": "A climactic moment of revelation that ties together past and present."
+                                }
+                            ],
+                            "storypoints": [
+                                {
+                                    "id": "storypoint_11223344-5566-7788-99aa-bbccddeeff00",
+                                    "appreciation": "Main Character Symptom",
+                                    "narrative_function": "Consider",
+                                    "illustration": "John ponders over a crucial piece of evidence.",
+                                    "summary": "A turning point in the investigation where personal history intersects with the case.",
+                                    "storytelling": "The discovery of an old photograph sparks memories and hidden truths.",
+                                    "perspectives": [
+                                        {
+                                            "perspective_id": "12345678-1234-1234-1234-123456789012"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "storybeats": [
+                                {
+                                    "id": "beat_001",
+                                    "scope": "signpost",
+                                    "sequence": 2,
+                                    "throughline": "Main Character",
+                                    "narrative_function": "Preconscious",
+                                    "summary": "A moment where the past resurfaces, influencing his current investigation.",
+                                    "storytelling": "A blend of present-day tension and haunting memories creates a surreal experience.",
+                                    "perspectives": [
+                                        {
+                                            "perspective_id": "12345678-1234-1234-1234-123456789012"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "storytelling": {
+                            "overviews": [
+                                {
+                                    "id": "12345678-1234-1234-1234-123456789010",
+                                    "label": "Logline",
+                                    "summary": "A dark and atmospheric mystery unfolds in a rain-soaked city.",
+                                    "storytelling": "The narrative juxtaposes gritty realism with introspective flashbacks."
+                                },
+                                {
+                                    "id": "12345678-1234-1234-1234-123456789011",
+                                    "label": "Genre",
+                                    "summary": "Mystery pacing with thriller turns built on memory and regret.",
+                                    "storytelling": "Each reveal tightens the emotional stakes as the genre shifts between introspection and pursuit."
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "moments": [
+                    {
+                        "id": "moment_001",
+                        "act": 1,
+                        "order": 1,
+                        "maximum_steps": 3,
+                        "summary": "The inciting discovery",
+                        "synopsis": "John uncovers an old case file that hints at deeper connections to his own past.",
+                        "setting": "A dimly lit precinct archive room.",
+                        "setting_id": "setting_precinct_archive",
+                        "timing": "Late night, after hours.",
+                        "imperatives": "Investigate the link before the evidence disappears.",
+                        "storybeats": [
+                            {
+                                "sequence": 1,
+                                "narrative_id": "narrative_001",
+                                "storybeat_id": "beat_001"
+                            }
+                        ],
+                        "storypoints": []
+                    }
+                ]
             }
         }
     }

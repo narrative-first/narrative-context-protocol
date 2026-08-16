@@ -6,8 +6,8 @@ NCP welcomes review and proposals for narrative-system-neutral Core transport, J
 
 During this release-candidate review:
 
-- do not add Dramatica relationships, algorithms, structural rules, model logic, diagnostic instructions, or semantic mappings;
-- do not change the meaning of canonical Dramatica fields;
+- do not add or change canonical Dramatica terms, definitions, mappings, structural constraints, or field meanings without Dramatica profile-maintainer approval;
+- do not add Storyform generation, valid-combination, completion, resolution, diagnosis, semantic-validation, or certification logic;
 - do not add interactive, game-engine, production, or alternative-framework concepts directly to the Dramatica Storyform Profile;
 - do not change or remove previously published license notices; and
 - preserve repository history and existing releases.
