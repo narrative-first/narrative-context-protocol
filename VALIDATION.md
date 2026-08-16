@@ -1,106 +1,46 @@
-# NCP Validation Guide
+# Validation
 
-Use this guide to validate Narrative Context Protocol JSON payloads against the canonical schema.
+NCP 3 separates structural schema validation from narrative-system semantic validation.
 
-## First-Time Adopter Checklist
+## NCP schema validation
 
-If you discovered NCP and want to validate your own payload quickly, follow this exact sequence:
+Open, self-service schema validation answers questions such as:
 
-1. Clone this repository.
-2. Run:
-```bash
-npm install
-```
-3. Validate your file:
-```bash
-npm run validate:file -- /path/to/your-ncp.json
-```
-4. Treat any `FAIL` output as blocking.
-5. Re-run until you get `PASS`.
+- Is the input valid JSON?
+- Are required NCP fields present?
+- Are identifiers and timestamps formatted correctly?
+- Does the document conform to the selected Core or profile transport schema?
 
-## Local Setup
+> NCP schema validation confirms that a document is structurally well-formed. It does not determine whether the document represents a complete, coherent, or valid Dramatica Storyform.
+
+Run the repository checks:
 
 ```bash
 npm install
-```
-
-## Validate This Repository's Fixtures
-
-```bash
 npm run validate:schema
+npm run validate:file -- examples/core/minimal-ncp.json
 ```
 
-This validates:
+The validator selects the NCP Core schema for documents with `ncp_version`, the Dramatica profile transport schema for standalone `dramatica:` profile payloads, and the frozen legacy schema for documents with `schema_version`.
 
-- `/examples/example-story.json`
-- `/examples/ideation-beginner.json`
-- `/examples/complete-space-adventure-storyform.json`
-- `/examples/complete-storyform-template.json`
-- Expected failures in `/examples/invalid/*.json`
+## Dramatica semantic validation
 
-## Validate Your Own NCP File(s)
+Dramatica semantic validation answers different questions, including whether a Storyform is complete, internally consistent, or valid for a particular semantic-model version, and whether a partial Storyform can be completed or resolved.
 
-```bash
-npm run validate:file -- /absolute/or/relative/path/to/your-ncp.json
-```
+Those questions require a licensed Dramatica semantic system outside NCP Core and the public profile. This repository contains no generation, valid-combination, completion, resolution, diagnosis, certification, or semantic-validation engine.
 
-You can pass multiple files:
+Candidate external service operations are documented non-normatively in the [Dramatica semantic boundary](profiles/dramatica/semantic-boundary.md). They are not required for NCP schema conformance.
 
-```bash
-npm run validate:file -- ./my-story.json ./their-story.json
-```
+Active Dramatica subscribers can use the authenticated [Dramatica MCP](https://platform.dramatica.com/docs/resources/connect-chatgpt-mcp). To obtain or discuss licensed semantic validation, signed Storyform certification, SDK access, studio integration, or secure private deployment, visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
 
-The command returns non-zero on failure, which makes it CI-friendly.
+## Transported attestations
 
-## Using NCP Validation In Your Own Repository
+An external validator can issue an attestation containing a profile namespace and version, semantic-model version, subject hash, timestamp, issuer, opaque status values, and optional signed record.
 
-If you do not want to run validation from this repository, copy these files into your own project:
+NCP Core validates only the attestation's transport shape. It does not verify the signature, endorse the issuer, interpret status fields, or establish semantic validity.
 
-- `/schema/ncp-schema.json`
-- `/tests/validate-file.js`
+## Required result language
 
-Then install Ajv and run:
+Validator pages, command-line output, CI logs, and pull requests should say **“NCP schema validation passed.”** They must not abbreviate a schema-only result to “Storyform valid.”
 
-```bash
-npm install ajv
-node tests/validate-file.js /path/to/your-ncp.json
-```
-
-For continuous enforcement, add the GitHub Actions workflow below.
-
-## Timestamp Rule (`created_at`)
-
-NCP requires `story.created_at` to be an ISO-8601 UTC timestamp in this form:
-
-- `YYYY-MM-DDTHH:MM:SSZ`
-- Example: `2025-12-01T12:34:56Z`
-
-## GitHub Actions (Reference)
-
-If another repository stores NCP files, use this workflow pattern:
-
-```yaml
-name: Validate NCP
-
-on:
-  pull_request:
-  push:
-
-jobs:
-  validate-ncp:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - run: npm ci
-      - run: npm run validate:file -- path/to/your-ncp.json
-```
-
-## Adoption Recommendations
-
-- Pin the schema version (`schema_version`) in your payloads.
-- Validate NCP during pull requests and before release builds.
-- Keep canonical keys even when using custom mapping namespaces.
-- Use the synthetic complete fixture when you need a rich reference example without crossing public IP boundaries.
+The service boundary and access route are part of `3.0.0-rc.1`. Exact commercial terms, certification-mark rules, and compatibility claims remain subject to counsel review.

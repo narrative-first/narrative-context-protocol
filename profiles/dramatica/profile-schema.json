@@ -1,0 +1,48 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://narrativecontextprotocol.com/profiles/dramatica/1.0.0-rc.1/profile-schema.json",
+    "title": "Dramatica Storyform Transport Profile",
+    "description": "The foundational NCP profile and minimal transport contract for an already-created Dramatica Storyform representation. It does not encode the Dramatica Semantic Model or semantic validation rules.",
+    "$comment": "The Dramatica Storyform Profile is maintained by The Dramatica Co. Its foundational status does not make it mandatory for NCP Core documents.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "namespace",
+        "profile_version",
+        "dsm_version",
+        "storyform"
+    ],
+    "properties": {
+        "namespace": {
+            "const": "dramatica:"
+        },
+        "profile_version": {
+            "const": "1.0.0-rc.1"
+        },
+        "dsm_version": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Semantic-model version declared by the system that produced the representation."
+        },
+        "storyform": {
+            "type": "object",
+            "description": "An existing Storyform representation. Field meanings are external to NCP Core and this structural schema.",
+            "additionalProperties": false,
+            "required": [
+                "id",
+                "fields"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "fields": {
+                    "type": "object",
+                    "description": "Opaque Dramatica field values preserved without inference, normalization, completion, or semantic validation.",
+                    "additionalProperties": true
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,19 @@
 # History
 
+## 3.0.0-rc.1 — Layered interoperability review candidate
+
+- Separates narrative-neutral NCP Core from narrative-system profiles, extensions, serializations, and bindings.
+- Adds a minimal opaque Dramatica Storyform transport profile without generation, relationship, completion, diagnosis, or semantic-validation logic.
+- Adds generic attestation transport while keeping semantic meaning outside Core.
+- Adds the NCP-OMC 1.0.0-rc.1 binding for OMC 2.8 Custom Data Blocks and resolvable references.
+- Adds explicit schema-versus-semantic validation language and a 2.x-to-3.0 migration guide.
+- Freezes the legacy combined schema and replaces detailed terminology pages with review notices while preserving prior versions in Git history and existing releases.
+- Publishes the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary while leaving operative license, contributor, trademark, and certification-mark terms pending counsel review.
+
+This candidate changes the proposed NCP architecture and updates the current license preamble to remove the legacy product positioning. The MIT grant text, prior releases, and repository history remain unchanged.
+
+> Entries below describe previously published combined-schema releases. They are preserved as historical records and are not normative definitions of the NCP 3 architecture.
+
 ## Recent Schema Updates
 
 - Added five named Story Driver Dynamic identifiers: `initial_story_driver`, `second_story_driver`, `midpoint_story_driver`, `fourth_story_driver`, and `concluding_story_driver`. They use the same `action` or `decision` vector as the singular `story_driver` Dynamic and are not Storybeats.

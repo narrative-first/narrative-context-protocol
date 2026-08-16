@@ -1,8 +1,8 @@
 # MIT License  
 
-The **Narrative Context Protocol (NCP)**—the open-source Dramatica storyform schema—is stewarded by **Narrative First, Inc.™** in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California (USC)**. For inquiries, collaboration, or further information, please contact **support@dramatica.com**.
+The **Narrative Context Protocol (NCP)** is an open, application-independent interchange standard for transporting narrative context, authorial intent, provenance, and structured story information across tools and workflows. NCP is stewarded by **The Dramatica Co.** in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California (USC)**. For inquiries, contact **support@dramatica.com**.
 
-The NCP schema and file format are openly distributed under the **MIT License**, ensuring free and unrestricted adoption, modification, and use by the community.
+The NCP materials covered by this notice are distributed under the **MIT License** below. NCP Core does not define or license the Dramatica Semantic Model, which is not implemented by this repository. The public Dramatica Storyform Profile is a transport contract; licensed Dramatica semantic capabilities are described in [`governance/licensing.md`](governance/licensing.md).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  
 

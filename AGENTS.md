@@ -3,14 +3,14 @@
 This repository is the open Narrative Context Protocol interchange standard for transporting narrative context and authorial intent across mediums. It is not a Dramatica implementation or standalone app. Treat NCP Core, profiles, extensions, serializations, and bindings as separately governed layers.
 
 ## Project Structure & Module Organization
-- Prospective Core schema lives in `core/ncp-core-schema.json`. The files in `schema/` are frozen legacy combined artifacts; keep their JSON/YAML twins in sync if a compatibility correction is legally and semantically approved.
+- NCP 3 Core lives in `core/ncp-core-schema.json`. The files in `schema/` are frozen legacy combined artifacts; keep their JSON/YAML twins in sync only for an approved compatibility correction.
 - Examples used for validation are in `examples/` (e.g., `example-story.json`, `example-mapping.json`).
 - Formal reference docs sit in `SPECIFICATION.md` and `docs/`, with terminology notes under `docs/terminology/`.
 - Lightweight automated checks reside in `tests/`; update or add scripts there when extending coverage.
 
 ## Build, Test, and Development Commands
 - Install runtime deps locally (Node 18+ recommended): `npm install ajv` (or `pnpm add ajv`) before running tests.
-- Validate examples against the schema: ensure `tests/validate-schema.js` points to `schema/ncp-schema.json`, then run `node tests/validate-schema.js`.
+- Validate legacy, Core, profile, and binding fixtures with `node tests/validate-schema.js`.
 - When adding a new validation script, prefer Node-based runners kept in `tests/` and commit them alongside any new fixtures.
 
 ## Coding Style & Naming Conventions
