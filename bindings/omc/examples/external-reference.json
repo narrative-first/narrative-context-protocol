@@ -1,0 +1,11 @@
+{
+    "domain": "narrativecontextprotocol.com",
+    "namespace": "ncp:",
+    "schema": "https://narrativecontextprotocol.com/core/3.0.0-rc.1/ncp-core-schema.json",
+    "value": {
+        "ncp_document": {
+            "id": "ncp_document_omc_001",
+            "uri": "https://example.invalid/ncp/ncp_document_omc_001.json"
+        }
+    }
+}

@@ -26,6 +26,7 @@ console.log(structuralNotice);
 const legacyAjv = new Ajv({ allErrors: true, strict: false });
 const validateLegacy = legacyAjv.compile(readJson('schema/ncp-schema.json'));
 const validateCore = compile2020('core/ncp-core-schema.json');
+const validateDramaticaProfile = compile2020('profiles/dramatica/profile-schema.json');
 
 const legacyValidFixtures = [
   'examples/example-story.json',
@@ -48,8 +49,13 @@ const checks = [
   ...legacyInvalidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: false, layer: 'legacy schema' })),
   { fixture: 'examples/core/minimal-ncp.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
   { fixture: 'examples/core/portable-reference.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/attested-profile.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
   { fixture: 'examples/core/invalid-missing-story.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
-  { fixture: 'examples/core/invalid-reference-uri.json', validate: validateCore, expected: false, layer: 'NCP Core schema' }
+  { fixture: 'examples/core/invalid-reference-uri.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/invalid-attestation.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/invalid-version.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
+  { fixture: 'examples/dramatica-profile/existing-storyform.json', validate: validateDramaticaProfile, expected: true, layer: 'Dramatica profile transport schema' },
+  { fixture: 'examples/dramatica-profile/invalid-profile-version.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' }
 ];
 
 let failures = 0;
@@ -66,10 +72,27 @@ for (const check of checks) {
   }
 }
 
+const embeddedOmc = readJson('bindings/omc/examples/embedded-ncp.json');
+if (embeddedOmc.domain !== 'narrativecontextprotocol.com' || embeddedOmc.namespace !== 'ncp:' || !validateCore(embeddedOmc.value)) {
+  failures += 1;
+  console.error(`FAIL NCP-OMC binding embedded fragment: ${formatErrors(validateCore.errors)}`);
+} else {
+  console.log('PASS NCP-OMC binding embedded fragment');
+}
+
+const externalOmc = readJson('bindings/omc/examples/external-reference.json');
+const externalReference = externalOmc.value && externalOmc.value.ncp_document;
+if (externalOmc.domain !== 'narrativecontextprotocol.com' || externalOmc.namespace !== 'ncp:' || !externalReference || !externalReference.id || !/^[a-z][a-z0-9+.-]*:\/\//i.test(externalReference.uri || '')) {
+  failures += 1;
+  console.error('FAIL NCP-OMC binding external-reference fragment');
+} else {
+  console.log('PASS NCP-OMC binding external-reference fragment');
+}
+
 if (failures > 0) {
   process.exitCode = 1;
 } else {
-  console.log(`NCP schema validation passed (${checks.length} structural fixture checks).`);
+  console.log(`NCP schema validation passed (${checks.length + 2} structural fixture checks).`);
 }
 
 console.log(structuralNotice);

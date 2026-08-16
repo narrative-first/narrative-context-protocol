@@ -1,0 +1,21 @@
+{
+    "ncp_version": "3.0.0-rc.1",
+    "document": {
+        "id": "ncp_document_invalid_attestation",
+        "created_at": "2026-08-16T12:00:00Z"
+    },
+    "story": {
+        "id": "story_invalid_attestation"
+    },
+    "attestations": [
+        {
+            "id": "attestation_missing_subject_hash",
+            "kind": "profile-semantic-validation",
+            "issued_at": "2026-08-16T12:00:00Z",
+            "issuer": {
+                "system": "example-validator",
+                "value": "validator_001"
+            }
+        }
+    ]
+}

@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://narrativecontextprotocol.com/core/ncp-core-schema.json",
-    "title": "Narrative Context Protocol Core",
-    "description": "Narrative-system-neutral envelope for transporting narrative context, authorial intent, provenance, profiles, and extensions.",
+    "$id": "https://narrativecontextprotocol.com/core/3.0.0-rc.1/ncp-core-schema.json",
+    "title": "Narrative Context Protocol Core 3.0.0-rc.1",
+    "description": "Narrative-system-neutral envelope for transporting narrative context, authorial intent, provenance, profiles, extensions, and opaque attestations.",
     "type": "object",
     "additionalProperties": false,
     "required": [
@@ -12,8 +12,7 @@
     ],
     "properties": {
         "ncp_version": {
-            "type": "string",
-            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+            "const": "3.0.0-rc.1"
         },
         "document": {
             "$ref": "#/$defs/document"
@@ -45,6 +44,13 @@
             "type": "array",
             "items": {
                 "$ref": "#/$defs/contribution"
+            }
+        },
+        "attestations": {
+            "type": "array",
+            "description": "Opaque validation or certification records supplied by external systems. Core validates their transport shape but does not interpret or endorse them.",
+            "items": {
+                "$ref": "#/$defs/attestation"
             }
         },
         "payloads": {
@@ -280,6 +286,58 @@
                 },
                 "summary": {
                     "type": "string"
+                }
+            }
+        },
+        "attestation": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "id",
+                "kind",
+                "subject_hash",
+                "issued_at",
+                "issuer"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "kind": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "profile_namespace": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*:$"
+                },
+                "profile_version": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "semantic_model_version": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "subject_hash": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "issued_at": {
+                    "$ref": "#/$defs/timestamp"
+                },
+                "issuer": {
+                    "$ref": "#/$defs/reference"
+                },
+                "status": {
+                    "type": "object",
+                    "description": "Profile- or issuer-defined status values. NCP Core does not interpret these fields.",
+                    "additionalProperties": true
+                },
+                "signed_record": {
+                    "type": "string",
+                    "description": "An issuer-defined signed record or detached signature representation."
                 }
             }
         }

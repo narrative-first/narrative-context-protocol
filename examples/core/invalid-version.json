@@ -1,0 +1,10 @@
+{
+    "ncp_version": "3.0.0",
+    "document": {
+        "id": "ncp_document_wrong_version",
+        "created_at": "2026-08-16T12:00:00Z"
+    },
+    "story": {
+        "id": "story_wrong_version"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "namespace": "dramatica:",
+    "profile_version": "1.0.0",
+    "dsm_version": "example-dsm-version",
+    "storyform": {
+        "id": "storyform_wrong_profile_version",
+        "fields": {}
+    }
+}

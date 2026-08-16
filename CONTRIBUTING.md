@@ -1,30 +1,37 @@
-# Contributing to the Narrative Context Protocol (NCP)
+# Contributing to Narrative Context Protocol
 
-## Overview
-The **Narrative Context Protocol (NCP)** is the open-source Dramatica storyform schema for preserving authorial intent across film, television, theatre, novels, games, and interactive experiences. This repository is the reference implementation for the schema and examples—there is no standalone app here.
+Narrative Context Protocol is an open, application-independent interchange standard. This release candidate welcomes technical review of Core transport, JSON serialization, bindings, examples, documentation, and separately named extensions.
 
-## How to Contribute
-We welcome contributions that improve the schema, examples, documentation, and validation tooling. Proposed changes should maintain cross-medium applicability and keep JSON/YAML definitions in sync.
+Read the [candidate contribution policy](governance/contribution-policy.md) and [namespace policy](governance/namespaces.md) before opening a change.
 
-### Example Fixture Policy
-- Keep schema-valid interchange fixtures in `/examples/` (and `/examples/invalid/` for expected-failure tests).
-- Prefer synthetic original fixtures for rich complete examples so public samples avoid licensed-story IP boundaries.
-- Update `tests/validate-schema.js` whenever fixture coverage changes.
-- Run `npm run validate:schema` before opening a PR.
+## Current scope freeze
 
-## Governance & Review
-NCP was developed in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California** and is stewarded by **Narrative First** (The Dramatica Co.). Core maintainers lead reviews and incorporate community and partner feedback.
+During the 3.0.0-rc.1 review, do not submit:
 
-### 1. Submitting Issues & Proposals
-- File ideas and bugs in the **Issues** tab with clear context, motivation, and sample payloads when possible.
-- For schema changes, note any backward compatibility considerations and update relevant examples.
+- new Dramatica relationships, algorithms, structural rules, model logic, diagnostics, or semantic mappings;
+- changes to the meaning of canonical Dramatica fields;
+- interactive, game-engine, production, or alternative-framework concepts inside the Dramatica profile;
+- changes to existing license notices; or
+- Storyform generation, valid-combination, completion, resolution, diagnosis, or semantic-validation logic.
 
-### 2. Review Process
-- Narrative First maintainers perform technical and editorial reviews.
-- Community discussion is encouraged; consensus on cross-medium impact is prioritized.
+Substantial or Dramatica-specific contribution handling remains pending review. Open an issue before submitting such material.
 
-### 3. Licensing
-- Contributions fall under the **MIT License**.
-- By contributing, you agree to open access and broad adoption of the schema.
+## Appropriate review contributions
 
-For more details, visit [Narrative First](https://narrativefirst.com).
+- corrections and clarifications to narrative-neutral Core transport;
+- JSON serialization and structural-schema tooling;
+- simple synthetic examples;
+- separately named third-party profiles and extensions;
+- bindings that reference another standard without duplicating or redefining it; and
+- accessibility, spelling, link, and non-semantic documentation improvements.
+
+## Pull-request process
+
+1. Identify the affected layer and namespace.
+2. Explain backward-compatibility and migration impact.
+3. Use synthetic fixtures and four-space JSON indentation.
+4. Add positive and negative structural checks for schema changes.
+5. Run `npm run validate:schema`.
+6. Report the result as **NCP schema validation**, not semantic validation.
+
+This candidate does not define new contributor license or agreement terms. See [Pending Review Topics](PENDING_REVIEW.md).

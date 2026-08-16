@@ -1,0 +1,11 @@
+{
+    "namespace": "dramatica:",
+    "profile_version": "1.0.0-rc.1",
+    "dsm_version": "example-dsm-version",
+    "storyform": {
+        "id": "storyform_001",
+        "fields": {
+            "transport_note": "Existing Storyform fields are preserved without inference or semantic validation by NCP Core."
+        }
+    }
+}

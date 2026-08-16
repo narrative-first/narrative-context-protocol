@@ -1,0 +1,25 @@
+{
+    "domain": "narrativecontextprotocol.com",
+    "namespace": "ncp:",
+    "schema": "https://narrativecontextprotocol.com/core/3.0.0-rc.1/ncp-core-schema.json",
+    "value": {
+        "ncp_version": "3.0.0-rc.1",
+        "document": {
+            "id": "ncp_document_omc_001",
+            "created_at": "2026-08-16T12:00:00Z"
+        },
+        "story": {
+            "id": "story_omc_001",
+            "external_references": [
+                {
+                    "system": "omc",
+                    "value": "creative_work_001",
+                    "entity_type": "CreativeWork"
+                }
+            ]
+        },
+        "profiles": [],
+        "extensions": [],
+        "payloads": {}
+    }
+}

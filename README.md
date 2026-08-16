@@ -1,137 +1,96 @@
 # Narrative Context Protocol (NCP)
 
-**A Standardized Schema for Transporting Authorial Intent Across Multi-Agentic Systems**
+**An open, application-independent interchange standard for narrative context**
 
-**Narrative Context Protocol (NCP)** is an open, standardized JSON schema explicitly designed to transport and preserve authorial intent across diverse multi-agent storytelling systems. Developed through collaboration with the **Entertainment Technology Center** at the **University of Southern California**, NCP reliably captures and conveys narrative context, artistic voice, and thematic coherence across platforms, mediums, and autonomous agents.
+Narrative Context Protocol is an open format for transporting narrative context, authorial intent, provenance, and structured story information across tools and workflows.
 
-This repository publishes the open Dramatica storyform schema for film, television, theatre, novels, games, and interactive experiences. Treat it as the canonical reference for holding narrative context (the author’s intent) across mediums and for building your own tools—there is no standalone app here.
+NCP can carry information produced by multiple narrative systems through separately governed profiles. One such profile is the [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md). The profile represents an existing Storyform for exchange; it does not define the semantic system that creates or interprets one.
 
-NCP is curated by **The Dramatica Co.**—the merger of **Write Bros. Inc.** and **Narrative First Inc.**—as the open-source edition of the Dramatica® storyform. By placing the canonical Dramatica structure in a permissive repository, the project ensures that anyone can study, implement, and extend the model without gatekeeping.
+NCP does not define the Dramatica Semantic Model and does not reproduce a Storyform engine, algorithms, structural relationships, diagnostic processes, or semantic validation technology. It is not a replacement for Dramatica software, analysis, or validation.
 
-At its core, NCP provides a **structured yet adaptable schema**, ensuring narratives retain their logical consistency and emotional depth, even when interpreted or extended by numerous interacting agents. By encoding narrative elements into clear, universally understood representations, NCP maintains the original intent of the author throughout dynamic, distributed narrative environments.
+## 3.0.0-rc.1 review candidate
 
-NCP is transport-focused: it standardizes how storyform context is represented so different tools can exchange the same structural intent without semantic drift.
+This branch defines the proposed layered NCP 3 architecture for public technical review. The release candidate covers Core, JSON serialization, profiles, extensions, bindings, structural validation, and migration behavior.
 
-Built upon proven narrative theories and driven by emerging advancements in AI storytelling, NCP simplifies and standardizes complex narrative exchanges. It empowers storytellers, technologists, and creative communities in film, gaming, literature, interactive media, and generative AI environments to collaborate freely—without sacrificing coherence, authenticity, or the original author's vision.
+Licensing, contributor-agreement, trademark, certification-authority, and profile-ownership terms are outside this candidate and remain [pending review](PENDING_REVIEW.md). Existing license notices and releases are unchanged.
 
----
+## Architecture
 
-## Purpose and Philosophy
+| Layer | Responsibility |
+| --- | --- |
+| [NCP Core](core/specification.md) | Narrative-system-neutral identifiers, authorship, provenance, versions, profile references, Storytelling Moments, contributions, opaque attestations, and interchange rules |
+| [Profiles](profiles/README.md) | Separately versioned transport contracts for information produced by a narrative system |
+| [Extensions](extensions/README.md) | Separately named workflow or application data that does not alter Core or another profile |
+| [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md) | A minimal transport contract for an existing Dramatica Storyform representation |
+| [JSON serialization](serialization/json/README.md) | The current machine-readable representation of NCP data |
+| [Bindings](bindings/README.md) | Ways to embed or reference NCP in another standard or workflow |
 
-As storytelling mediums evolve rapidly, maintaining a structured yet adaptable narrative model becomes increasingly vital. NCP meets this challenge by providing a comprehensive yet adaptable framework that supports narrative coherence while accommodating the complexities and dynamic requirements of modern storytelling methodologies.
+JSON is only a serialization. It is not NCP itself, a Dramatica Storyform, or the Dramatica Semantic Model.
 
-By clearly delineating narrative structure (Subtext) from presentation (Storytelling), NCP preserves authorial intent while enabling adaptable delivery across diverse storytelling platforms.
+## Interoperability first
 
-NCP also includes an optional `story.ideation` layer (`character`, `theme`, `plot`, `genre`) so creators can capture early concepts before committing to full storyform structure.
+NCP is designed so narrative context remains portable and attributable as a project moves among writing tools, production systems, archives, AI workflows, and industry standards. Consumers can preserve unknown declared namespaces without understanding their semantics.
 
-Storytelling Moments live at `story.moments[]` so scenes, chapters, sequences, and levels can reference Storybeats and Storypoints across multiple narratives without duplicating the storytelling unit.
+Third-party narrative systems and workflow concepts belong in separately named profiles or extensions. They do not change NCP Core or the meaning of `dramatica:` fields.
 
----
+## Validation is layer-specific
 
-### Authorship, AI, and Creative Intent
+NCP schema validation checks JSON structure, required fields, identifier formats, and conformance to a selected schema version.
 
-As AI-driven storytelling rapidly evolves, crucial questions emerge about authorship, originality, and rights. NCP addresses these concerns transparently, embedding authorial intent within its structure, ensuring creators' original decisions remain clearly documented and respected.
+> NCP schema validation confirms that a document is structurally well-formed. It does not determine whether the document represents a complete, coherent, or valid Dramatica Storyform.
 
-By borrowing concepts familiar to collaborative software development—such as transparent tracking of narrative revisions and collaborative decision-making—NCP preserves the integrity and clarity of each author's contributions. This open and collaborative approach safeguards authorship while fostering creativity and innovation.
+Dramatica semantic validation is a separate capability supplied outside this repository. NCP can transport an opaque validation attestation, but the open schema does not create, resolve, diagnose, or semantically validate a Storyform.
 
-With NCP, the often informal process of giving and receiving notes transforms into a clearly documented system. **Creators' decisions are recorded, attributed, and protected, preserving the integrity and originality of their contributions.** By maintaining authorial intent at its core, NCP not only safeguards authorship but also provides a robust and respectful foundation for collaborative storytelling in an increasingly AI-driven creative environment.
+See [Validation](VALIDATION.md), [Conformance](governance/conformance.md), and the [Dramatica semantic boundary](profiles/dramatica/semantic-boundary.md).
 
----
+## NCP-OMC Binding
 
-## Key Features  
-✅ **Open Dramatica Storyform** – Direct access to the canonical Dramatica® model for community use.  
-✅ **Open-Source Standard** – Available for use, modification, and integration into various storytelling platforms.  
-✅ **Scalable Narrative Structure** – A flexible yet structured approach to narrative construction, complete with clearly defined key components.  
-✅ **Beginner Ideation Layer** – Optional free-flow concept nodes for `character`, `theme`, `plot`, and `genre` before formal narrative authoring.  
-✅ **Industry-Wide Adoption** – Designed for use across film, gaming, AI, and interactive fiction.     
-✅ **Writer Protections** – Captures authorial intent, ensuring clear attribution and rights tracking.  
-✅ **Extensible & Customizable:** Ships with canonical Dramatica® terminology while supporting mappings to frameworks like the Hero’s Journey, Save the Cat!, and more...  
-✅ **Interoperability:** Easily exchange narrative data between platforms.
+The [NCP-OMC Binding](bindings/omc/omc-binding.md) describes two integration patterns:
 
-## Write Brothers and Narrative First
+- embed an NCP document in an OMC Custom Data Block; or
+- carry a resolvable reference to an external NCP document.
 
-In 2025, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwriter—joined forces with **Narrative First**. This merger combines decades of story-development expertise with cutting-edge AI narrative research to deliver the **Subtxt/Dramatica platform**, a state-of-the-art system for generative storytelling. The unified platform powers NCP implementations, ensuring structured stories and rich authorial metadata for AI workflows.
+Production objects, breakdowns, schedules, assets, and workflow state remain in OMC. NCP carries narrative context and references those objects when needed.
 
-## Getting Started
+```text
+Dramatica Semantic Model
+    -> Dramatica Storyform
+    -> Dramatica Storyform Profile
+    -> NCP document
+    -> OMC workflow
+```
 
-Begin by reading the complete [Specification](/SPECIFICATION.md)
+This sequence describes transport dependencies, not a transfer of semantic definitions.
 
-For AI and tool consumers, read [NCP Semantic Grounding](/NCP_SEMANTIC_GROUNDING.md) before interpreting Dramatica-informed fields. It explains how to preserve term boundaries, avoid generic-storytelling substitutions, and keep Subtext separate from Storytelling without treating the schema as a replacement for Dramatica analysis.
-
-Install validation dependencies and run fixture checks:
+## Developer quickstart
 
 ```bash
 npm install
 npm run validate:schema
+npm run validate:file -- examples/core/minimal-ncp.json
 ```
 
-`examples/example-mapping.json` is a mapping fragment example, not a full schema document.
-Use [/VALIDATION.md](/VALIDATION.md) for validating your own NCP files and CI setup.
+Every validation command reports that its result is structural only.
 
-## Templates
+See the [Developer Documentation](docs/developer-documentation.md) for implementation guidance.
 
-- [Complete Storyform template](/examples/complete-storyform-template.json): blank-slate NCP fixture with canonical Storypoint Appreciations excluding `Event` and `Progression` labels, plus Signpost-only Storybeats (no Progression/Event Storybeats). `narrative_function` is intentionally omitted so teams can fill in only what they need.
-- [Cross-narrative Moments](/examples/cross-narrative-moments.json): story-level Moment fixture showing one scene referencing Storybeats and Storypoints from two different narratives.
+## Repository structure
 
-## For Adopters (Self-Serve)
-
-If you found this repository and want to validate your own NCP JSON, do this:
-
-1. Clone this repo and run:
-```bash
-npm install
-```
-2. Validate your file directly against the canonical schema:
-```bash
-npm run validate:file -- /path/to/your-ncp.json
-```
-3. If validation fails, fix the reported fields and run the same command again.
-4. If you maintain your own repository, copy the CI pattern from `/VALIDATION.md` so every PR validates NCP automatically.
-
-## Repository Structure
-```
-narrative-context-protocol/
-├── README.md
-├── SPECIFICATION.md
-├── COPYRIGHT.md
-├── CONTRIBUTING.md
-├── HISTORY.md
-├── LICENSE.md
-├── NCP_SEMANTIC_GROUNDING.md
-├── schema/
-│   ├── ncp-schema.json
-│   └── ncp-schema.yaml
-├── examples/
-│   ├── example-story.json
-│   ├── ideation-beginner.json
-│   ├── complete-space-adventure-storyform.json
-│   ├── complete-storyform-template.json
-│   ├── example-mapping.json
-│   ├── invalid/
-│   │   ├── ideation-missing-domain.json
-│   │   ├── ideation-node-missing-summary.json
-│   │   ├── narrative-status-invalid.json
-│   │   └── signpost-sequence-out-of-range.json
-├── docs/
-│   ├── terminology/
-│   │   ├── 01.perspectives.md
-│   │   ├── 02.appreciations-of-narrative.md
-│   │   ├── 03.narrative-functions.md
-│   │   ├── 04.dynamics.md
-│   │   ├── 05.vectors.md
-│   │   └── 10.dramatica-translation.md
-│   └── narrative-context-protocol-schema.md
-├── tests/
-│   └── validate-schema.js
-└── .gitignore
+```text
+core/                         NCP Core schema and specification
+profiles/dramatica/           Dramatica transport profile and semantic boundary
+extensions/                   Separately governed extension placeholders
+bindings/omc/                 NCP-OMC transport binding and examples
+serialization/json/           JSON serialization documentation
+governance/                   Technical namespace, conformance, and versioning policy
+examples/core/                Narrative-neutral Core examples
+examples/dramatica-profile/   Simple Dramatica transport examples
+examples/omc-binding/         OMC binding example index
+schema/                       Frozen legacy combined schema for compatibility
+docs/terminology/             Review notices for previously published material
+tests/                        Open structural validation tools
 ```
 
-## Licensing & Governance  
+The files in `schema/` are the frozen legacy combined schema. They remain available for existing integrations and release-history preservation, but they are not the NCP 3 layered architecture.
 
-NCP is released under the **MIT License** (see [LICENSE.md](LICENSE.md)) to maintain openness while ensuring proper attribution.  
-
-The development and refinement of NCP are **stewarded by The Dramatica Co.**, aligning the open-source model with the official Dramatica® tooling roadmap. Contributions and modifications are encouraged, and governance policies are outlined in [CONTRIBUTING.md](CONTRIBUTING.md).  
-
-For further information, collaboration, or licensing inquiries, contact **The Dramatica Co.** at **support@narrativefirst.com**
-
-Happy storytelling!
+For questions about this review candidate, contact **support@dramatica.com**.
