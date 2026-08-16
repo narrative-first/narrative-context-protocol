@@ -1,63 +1,73 @@
 const Ajv = require('ajv');
+const Ajv2020 = require('ajv/dist/2020');
 const fs = require('fs');
 const path = require('path');
 
-const ajv = new Ajv({ allErrors: true, strict: false });
-const schemaPath = path.join(__dirname, '../schema/ncp-schema.json');
-const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
-const validate = ajv.compile(schema);
-
-const validFixtures = [
-  '../examples/example-story.json',
-  '../examples/story-settings.json',
-  '../examples/ideation-beginner.json',
-  '../examples/complete-space-adventure-storyform.json',
-  '../examples/complete-storyform-template.json',
-  '../examples/cross-narrative-moments.json',
-  '../examples/storypoint-throughline-empty-perspectives.json',
-  '../examples/storypoint-throughline-both-refs.json'
-];
-
-const invalidDir = path.join(__dirname, '../examples/invalid');
-const invalidFixtures = fs.existsSync(invalidDir)
-  ? fs.readdirSync(invalidDir).filter((name) => name.endsWith('.json')).map((name) => `../examples/invalid/${name}`)
-  : [];
+const repoRoot = path.join(__dirname, '..');
+const structuralNotice = 'NOTICE: NCP schema validation is structural only. It does not determine whether a document contains a complete, coherent, or valid Dramatica Storyform.';
 
 function readJson(relativePath) {
-  const fullPath = path.join(__dirname, relativePath);
-  return JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+  return JSON.parse(fs.readFileSync(path.join(repoRoot, relativePath), 'utf8'));
 }
 
 function formatErrors(errors) {
   return (errors || []).map((error) => `${error.instancePath || '/'} ${error.message}`).join('; ');
 }
 
-let failures = 0;
-
-for (const fixture of validFixtures) {
-  const data = readJson(fixture);
-  const ok = validate(data);
-  if (!ok) {
-    failures += 1;
-    console.error(`FAIL valid fixture ${fixture}: ${formatErrors(validate.errors)}`);
-  } else {
-    console.log(`PASS valid fixture ${fixture}`);
-  }
+function compile2020(relativePath) {
+  const ajv = new Ajv2020({ allErrors: true, strict: false });
+  ajv.addFormat('date-time', /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?Z$/);
+  ajv.addFormat('uri', /^[a-z][a-z0-9+.-]*:\/\//i);
+  return ajv.compile(readJson(relativePath));
 }
 
-for (const fixture of invalidFixtures) {
-  const data = readJson(fixture);
-  const ok = validate(data);
-  if (ok) {
+console.log(structuralNotice);
+
+const legacyAjv = new Ajv({ allErrors: true, strict: false });
+const validateLegacy = legacyAjv.compile(readJson('schema/ncp-schema.json'));
+const validateCore = compile2020('core/ncp-core-schema.json');
+
+const legacyValidFixtures = [
+  'examples/example-story.json',
+  'examples/story-settings.json',
+  'examples/ideation-beginner.json',
+  'examples/complete-space-adventure-storyform.json',
+  'examples/complete-storyform-template.json',
+  'examples/cross-narrative-moments.json',
+  'examples/storypoint-throughline-empty-perspectives.json',
+  'examples/storypoint-throughline-both-refs.json'
+];
+
+const invalidDir = path.join(repoRoot, 'examples/invalid');
+const legacyInvalidFixtures = fs.readdirSync(invalidDir)
+  .filter((name) => name.endsWith('.json'))
+  .map((name) => `examples/invalid/${name}`);
+
+const checks = [
+  ...legacyValidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: true, layer: 'legacy schema' })),
+  ...legacyInvalidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: false, layer: 'legacy schema' })),
+  { fixture: 'examples/core/minimal-ncp.json', validate: validateCore, expected: true, layer: 'NCP Core schema' },
+  { fixture: 'examples/core/invalid-missing-story.json', validate: validateCore, expected: false, layer: 'NCP Core schema' }
+];
+
+let failures = 0;
+
+for (const check of checks) {
+  const ok = check.validate(readJson(check.fixture));
+
+  if (ok !== check.expected) {
     failures += 1;
-    console.error(`FAIL invalid fixture ${fixture}: expected schema validation to fail`);
+    const detail = check.expected ? formatErrors(check.validate.errors) : 'expected schema validation to fail';
+    console.error(`FAIL ${check.layer} ${check.fixture}: ${detail}`);
   } else {
-    console.log(`PASS invalid fixture ${fixture}`);
+    console.log(`PASS ${check.layer} ${check.fixture}`);
   }
 }
 
 if (failures > 0) {
   process.exitCode = 1;
 } else {
-  console.log(`Schema validation checks passed (${validFixtures.length} valid + ${invalidFixtures.length} invalid fixtures).`);
+  console.log(`NCP schema validation passed (${checks.length} structural fixture checks).`);
 }
+
+console.log(structuralNotice);

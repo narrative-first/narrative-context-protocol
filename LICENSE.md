@@ -1,6 +1,6 @@
 # MIT License  
 
-The **Narrative Context Protocol (NCP)**—the open-source Dramatica storyform schema—is stewarded by **Narrative First, Inc.™** in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California (USC)**. For inquiries, collaboration, or further information, please contact **support@narrativefirst.com**.
+The **Narrative Context Protocol (NCP)**—the open-source Dramatica storyform schema—is stewarded by **Narrative First, Inc.™** in collaboration with the **Entertainment Technology Center (ETC) at the University of Southern California (USC)**. For inquiries, collaboration, or further information, please contact **support@dramatica.com**.
 
 The NCP schema and file format are openly distributed under the **MIT License**, ensuring free and unrestricted adoption, modification, and use by the community.
 

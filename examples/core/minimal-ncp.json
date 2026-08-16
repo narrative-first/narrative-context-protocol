@@ -1,0 +1,23 @@
+{
+    "ncp_version": "0.0.0-development",
+    "document": {
+        "id": "ncp_document_001",
+        "created_at": "2026-08-15T12:00:00Z",
+        "authorship": [
+            {
+                "id": "author_001",
+                "name": "Example Author",
+                "role": "author"
+            }
+        ]
+    },
+    "story": {
+        "id": "story_001",
+        "title": "A Portable Story"
+    },
+    "profiles": [],
+    "extensions": [],
+    "storytelling_moments": [],
+    "contributions": [],
+    "payloads": {}
+}
