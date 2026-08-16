@@ -2,7 +2,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://narrativecontextprotocol.com/profiles/dramatica/1.0.0-rc.1/profile-schema.json",
     "title": "Dramatica Storyform Transport Profile",
-    "description": "Minimal transport contract for an already-created Dramatica Storyform representation. It does not encode the Dramatica Semantic Model or semantic validation rules.",
+    "description": "The foundational NCP profile and minimal transport contract for an already-created Dramatica Storyform representation. It does not encode the Dramatica Semantic Model or semantic validation rules.",
+    "$comment": "The Dramatica Storyform Profile is maintained by The Dramatica Co. Its foundational status does not make it mandatory for NCP Core documents.",
     "type": "object",
     "additionalProperties": false,
     "required": [

@@ -12,7 +12,7 @@ This document defines the layered architecture. The normative Core transport det
 
 The implementation-independent semantic system containing Dramatica concepts, terminology, relationships, classifications, constraints, rules, algorithms, valid structural combinations, and Storyform architecture.
 
-The Dramatica Semantic Model is not defined by NCP Core or the public Dramatica transport profile. Questions of ownership, licensing, official status, and certification authority are outside this technical release candidate and remain pending review.
+The Dramatica Semantic Model is the proprietary narrative intelligence that gives Dramatica Storyform data its structural meaning. It is maintained by The Dramatica Co., separately from NCP, and is not defined or licensed by NCP Core or the public transport profile.
 
 ### 1.2 Dramatica Storyform
 
@@ -23,6 +23,8 @@ A particular configuration or instance of the Dramatica Semantic Model represent
 An NCP profile identifying the fields, identifiers, data types, and transport conventions required to preserve and exchange an existing Dramatica Storyform representation.
 
 The public profile treats Storyform fields as opaque transport data. It does not publish rules for generating, resolving, diagnosing, completing, or semantically validating a Storyform. See [`profiles/dramatica/`](profiles/dramatica/).
+
+The Dramatica Storyform Profile is NCP's foundational profile: NCP began as a way to preserve and exchange Dramatica Storyforms across applications. It remains the reference example of the profile architecture, but it is not required by NCP Core.
 
 ### 1.4 NCP Core
 
@@ -87,6 +89,12 @@ Core can carry opaque attestations. An attestation identifies its kind, subject 
 
 See [`VALIDATION.md`](VALIDATION.md) and [`governance/conformance.md`](governance/conformance.md).
 
+### 4.1 Licensed Dramatica capabilities
+
+Creation, completion, resolution, diagnosis, semantic validation, and certification of a Dramatica Storyform require Dramatica intelligence outside this repository. Active subscribers may access Dramatica through its authenticated MCP service. Organizations needing certification, SDK access, studio integration, or private deployment should use [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
+
+NCP transports the request context and resulting attestation. It does not grant the service license, implement the engine, or make a schema-valid document an officially validated Storyform.
+
 ## 5. Compatibility
 
 NCP 1.x and 2.x used a combined schema. Those artifacts remain in [`schema/`](schema/) for compatibility and release-history preservation.
@@ -99,4 +107,4 @@ See [`governance/versioning.md`](governance/versioning.md).
 
 NCP 3 namespaces are explicit so independent systems can coexist without semantic drift. The technical reservation and change process is described in [`governance/namespaces.md`](governance/namespaces.md).
 
-This candidate does not establish new legal terms. The excluded topics are listed in [`PENDING_REVIEW.md`](PENDING_REVIEW.md).
+The intended licensing and commercial-access boundary is described in [`governance/licensing.md`](governance/licensing.md). Exact prospective terms and marks remain subject to counsel review as listed in [`PENDING_REVIEW.md`](PENDING_REVIEW.md).

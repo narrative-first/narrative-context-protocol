@@ -29,7 +29,7 @@ This inventory classifies Dramatica-related public material for the NCP 3.0.0-rc
 | `bindings/omc/` | Appropriate for a public binding | Embeds or references NCP without importing profile semantics into OMC. |
 | `tests/validate-schema.js`, `tests/validate-file.js` | Appropriate for public tooling | Structural validation only; every result includes the semantic disclaimer. |
 | `LICENSE.md` | Existing legal notice | Preserved unchanged in RC1 pending counsel review; its legacy architecture description is not normative for NCP 3. |
-| `governance/licensing.md` | Requires counsel review | Draft intentionally excluded from RC1. |
+| `governance/licensing.md` | Appropriate as an RC policy boundary | Publishes the intended open-Core, foundational-profile, and licensed-Dramatica access boundary; operative terms remain subject to counsel review. |
 | `governance/contributor-agreement-template.md` | Requires counsel review | Draft intentionally excluded from RC1. |
 
 ## Do not publish in NCP

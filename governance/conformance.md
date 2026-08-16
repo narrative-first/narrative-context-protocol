@@ -16,6 +16,8 @@ A profile may define additional transport requirements. Profile schema conforman
 
 Core validates an attestation's transport shape only. It does not verify its signature, endorse its issuer, interpret its status values, or establish semantic correctness.
 
+For a Dramatica Storyform, semantic validation or certification must come from a licensed Dramatica service or engine. Access and integration inquiries route through [Dramatica.com](https://dramatica.com/) or **support@dramatica.com**.
+
 ## Required labels
 
 Tools and reports must label structural results as “NCP schema validation” or name the exact profile transport schema tested. The unqualified phrase “valid Storyform” must not be used for a schema-only result.

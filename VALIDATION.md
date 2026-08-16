@@ -27,9 +27,11 @@ The validator selects the NCP Core schema for documents with `ncp_version`, the 
 
 Dramatica semantic validation answers different questions, including whether a Storyform is complete, internally consistent, or valid for a particular semantic-model version, and whether a partial Storyform can be completed or resolved.
 
-Those questions require a Dramatica semantic system outside NCP Core and the public profile. This repository contains no generation, valid-combination, completion, resolution, diagnosis, or semantic-validation engine.
+Those questions require a licensed Dramatica semantic system outside NCP Core and the public profile. This repository contains no generation, valid-combination, completion, resolution, diagnosis, certification, or semantic-validation engine.
 
 Candidate external service operations are documented non-normatively in the [Dramatica semantic boundary](profiles/dramatica/semantic-boundary.md). They are not required for NCP schema conformance.
+
+Active Dramatica subscribers can use the authenticated [Dramatica MCP](https://platform.dramatica.com/docs/resources/connect-chatgpt-mcp). To obtain or discuss licensed semantic validation, signed Storyform certification, SDK access, studio integration, or secure private deployment, visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
 
 ## Transported attestations
 
@@ -41,4 +43,4 @@ NCP Core validates only the attestation's transport shape. It does not verify th
 
 Validator pages, command-line output, CI logs, and pull requests should say **“NCP schema validation passed.”** They must not abbreviate a schema-only result to “Storyform valid.”
 
-Service availability, deployment models, commercial terms, certification authority, and compatibility claims remain outside `3.0.0-rc.1` pending review.
+The service boundary and access route are part of `3.0.0-rc.1`. Exact commercial terms, certification-mark rules, and compatibility claims remain subject to counsel review.

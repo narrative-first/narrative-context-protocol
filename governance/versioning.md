@@ -35,4 +35,4 @@ See the [2.x to 3.0 migration guide](migration-2-to-3.md).
 
 RC components may change before `3.0.0`. Every change after RC1 must document its compatibility impact and update affected examples and tests. Existing 1.x and 2.x tags and artifacts remain unchanged.
 
-Licensing, contribution, trademark, compatibility-mark, and certification-authority terms are not release blockers for public technical review because they are expressly outside this RC package; they must be resolved before a final release claims those policies.
+The intended licensing and commercial-access boundary is included for public RC review. Exact license text, contribution terms, trademark rules, compatibility marks, and certification-mark terms must be resolved before the final release relies on them as operative policy.

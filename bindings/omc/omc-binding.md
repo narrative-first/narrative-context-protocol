@@ -43,7 +43,7 @@ See [`examples/external-reference.json`](examples/external-reference.json).
 - NCP carries the portable narrative-context envelope and namespace declarations represented in the NCP document.
 - A declared NCP profile supplies the meaning of its own payload.
 - OMC consumers may inspect an NCP attestation as transported metadata, but NCP Core does not establish its authority or semantic correctness.
-- Applications requiring Storyform creation, resolution, diagnosis, completion, or semantic validation use a system outside this repository.
+- Applications requiring Storyform creation, resolution, diagnosis, completion, semantic validation, or certification use licensed Dramatica capabilities. Visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
 
 Broken-down scripts, production objects, schedules, tasks, participants, assets, and workflow data should remain in OMC. NCP references those objects using Core external references rather than duplicating the production model.
 

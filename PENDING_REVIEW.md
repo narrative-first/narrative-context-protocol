@@ -1,12 +1,13 @@
 # Pending Review Topics
 
-The `3.0.0-rc.1` package is a technical interoperability review candidate. It does not define new licensing, contributor-agreement, trademark, certification-authority, or Dramatica-profile ownership terms. Those topics remain under review.
+The `3.0.0-rc.1` package is a technical interoperability review candidate. It publishes the intended [licensing and commercial-access boundary](governance/licensing.md): NCP Core is open interoperability, the Dramatica Storyform Profile is NCP's foundational but optional profile, and semantic validation and certification are licensed Dramatica capabilities available through [Dramatica.com](https://dramatica.com/).
 
-Existing license notices, repository history, and previously published releases are unchanged. The following draft documents are intentionally not included in this candidate:
+Exact prospective license text, contributor-agreement terms, trademark rules, compatibility marks, and certification-mark language remain under counsel review.
 
-- prospective licensing terms;
+Existing license notices, repository history, and previously published releases are unchanged. The following operative legal documents are intentionally not included in this candidate:
+
 - a contributor-agreement template; and
-- trademark, compatibility-mark, and certification-authority policy.
+- final service, SDK, profile, trademark, compatibility-mark, and certification terms.
 
 `LICENSE.md` includes previously published descriptive wording about the legacy combined architecture. It is preserved unchanged and is not a normative definition of the NCP 3 architecture. Revising that legal notice remains pending review.
 

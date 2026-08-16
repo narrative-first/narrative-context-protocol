@@ -8,7 +8,7 @@
 - Adds the NCP-OMC 1.0.0-rc.1 binding for OMC 2.8 Custom Data Blocks and resolvable references.
 - Adds explicit schema-versus-semantic validation language and a 2.x-to-3.0 migration guide.
 - Freezes the legacy combined schema and replaces detailed terminology pages with review notices while preserving prior versions in Git history and existing releases.
-- Excludes prospective licensing terms, a contributor-agreement template, and trademark or certification-authority policy pending review.
+- Publishes the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary while leaving operative license, contributor, trademark, and certification-mark terms pending counsel review.
 
 This candidate changes the proposed NCP architecture. It does not rewrite prior releases or change their license notices.
 

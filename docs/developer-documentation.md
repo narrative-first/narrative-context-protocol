@@ -36,6 +36,8 @@ The validator selects a schema by document shape and labels the selected layer. 
 
 Do not add third-party or workflow concepts to the `dramatica:` profile. Do not publish Dramatica inference, generation, relationship, diagnosis, completion, resolution, or semantic-validation logic.
 
+The Dramatica Storyform Profile is NCP's foundational profile but is not required by Core. Developers who need licensed Dramatica semantic validation, certification, MCP, SDK, studio integration, or private deployment should start at [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
+
 ## Bind NCP to another workflow
 
 A binding identifies whether NCP is embedded or externally referenced, how its schema and version are declared, which system remains authoritative for external objects, and which validation layers apply.

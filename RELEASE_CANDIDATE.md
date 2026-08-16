@@ -11,15 +11,15 @@ This candidate is intended for public interoperability review before a final NCP
 - JSON serialization guidance;
 - NCP-OMC Binding 1.0.0-rc.1;
 - namespace, conformance, versioning, and migration mechanics;
+- the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary;
+- access routes for Dramatica MCP, validation, certification, SDK, studio, and private deployment;
 - structural validators and synthetic examples; and
 - frozen-legacy and semantic-boundary notices.
 
 ## Intentionally excluded
 
-- prospective licensing terms;
 - contributor-agreement terms;
-- trademark and compatibility-mark policy;
-- certification-authority policy;
+- final service, SDK, profile, trademark, compatibility-mark, and certification terms;
 - Dramatica semantic rules, relationships, algorithms, valid combinations, generation, completion, resolution, diagnosis, or implementation details.
 
 Existing releases, repository history, and license notices are unchanged.
@@ -32,5 +32,7 @@ Existing releases, repository history, and license notices are unchanged.
 4. Are schema and semantic validation results impossible to confuse?
 5. Can OMC embed or reference NCP without duplicating production data?
 6. Are version and migration boundaries explicit enough for early implementers?
+7. Is it clear that Dramatica is NCP's foundational profile without being required by Core?
+8. Is the route from open NCP transport to licensed Dramatica validation and certification clear?
 
 Report feedback in a GitHub issue and identify the affected layer, namespace, and candidate component version.
