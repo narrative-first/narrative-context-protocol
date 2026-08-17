@@ -9,7 +9,7 @@ The profile transports the complete previously published Dramatica-oriented stor
 - the profile namespace and version;
 - the semantic-model version declared by the producing system;
 - story identity, title, logline, settings, and optional ideation;
-- one or more narratives, each representing a Dramatica Storyform through distinct Subtext and Storytelling layers;
+- one or more narratives, each representing a Dramatica Storyform through distinct `subtext` and `storytelling` layers;
 - Perspectives, Players, Dynamics, Storypoints, Storybeats, and Overviews;
 - Story-level Moments that may reference structural material from multiple narratives; and
 - the published identifiers, term lists, basic definitions, direct mappings, data types, and structural constraints needed for lossless interchange.
@@ -18,7 +18,7 @@ The public profile explains what its transported fields and values mean. It rema
 
 ## Transport rules
 
-1. Preserve supplied story, narrative, Subtext, Storytelling, Moment, field, and value information without unrequested reinterpretation.
+1. Preserve supplied story, narrative, `subtext`, `storytelling`, Moment, field, and value information without unrequested reinterpretation.
 2. Do not infer missing fields from prose or other profile values.
 3. Do not normalize, derive, complete, resolve, diagnose, or validate the Storyform during schema-only processing.
 4. Record the producing tool and migration activity in Core provenance when available.
@@ -39,4 +39,4 @@ Profile schema validation checks the published field names, nesting, required va
 
 The public profile preserves Storyform data; licensed Dramatica services provide the intelligence that creates, completes, resolves, diagnoses, semantically validates, and certifies it. Active subscribers may use the [Dramatica MCP](https://platform.dramatica.com/docs/resources/connect-chatgpt-mcp). For certification, SDK, studio, or private-deployment access, visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
 
-The intended licensing boundary is described in [`governance/licensing.md`](../../governance/licensing.md). Exact prospective terms and marks remain pending counsel review.
+The boundary between open profile material, licensed Dramatica capabilities, and mark permissions is described in [Licensing and Commercial Access](../../governance/licensing.md).

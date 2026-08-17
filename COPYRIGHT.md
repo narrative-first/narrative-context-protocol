@@ -1,151 +1,50 @@
-# COPYRIGHT
+# Authorship, Provenance, and Rights
 
-We’re entering a world where authorship isn't diminished but amplified by artificial intelligence. In this AI-driven age, issues of copyright, provenance, and attribution are increasingly crucial, reinforcing—not weakening—the essential role of the author. Drawing from decades of creative storytelling experience across animation, film, and television, our team recognizes the nuances and sensitivities inherent to the creative writing process. Rather than viewing AI as a threat, we see it as an unprecedented opportunity to clearly define, track, and protect authorship, codifying the essential value that original creators bring to storytelling.
+Narrative Context Protocol helps systems preserve who contributed narrative information, when a document changed, and where imported material came from. These records support attribution, audit, and collaboration as stories move among people, applications, AI systems, and production workflows.
 
-Picture a brainstorming session in an imaginary writer's room for a new thriller set in a corporate espionage scenario called *Insider Threat*. Of course, the film is hypothetical (and might already be perfect!), but let’s use it as a creative example. Imagine someone pitching a new interaction between Alex, a junior analyst, and Miriam, the paranoid CEO:
+NCP does not determine copyright ownership, work-for-hire status, originality, permission, or eligibility for legal protection. Those questions depend on applicable law, contracts, organizational policy, and evidence outside the protocol.
 
-## Pitch (Initial Storytelling Idea - Contributor: Alex Bennett):
+## What NCP can record
 
-> “So, Alex is unexpectedly called into Miriam’s office late at night. Miriam’s clearly losing it—jumpy and suspicious, fixated on uncovering who leaked details of her secret merger deal. Alex stays completely silent, giving away nothing.”
+NCP Core provides separate structures for:
 
-## Committing to the Process
+- document authorship;
+- contribution history;
+- timestamped provenance events;
+- references to source systems and external records; and
+- attestations issued by identified external authorities.
 
-This initial storytelling pitch is captured within the Narrative Context Protocol object for the film, clearly providing attribution to the original contributor. Typically, the earliest creative ideas start here, within this more surface-level storytelling space. Then, as the narrative evolves and the story's underlying structure is refined, other contributors can deepen and clarify these initial concepts. Each contribution is explicitly tracked through commits to the repository, transparently demonstrating how every individual's ideas meaningfully shape the narrative's development, while ensuring clear authorship attribution throughout the entire creative process.
+The Core schema defines the transport shape of these records. It does not verify a person's identity, decide whether a contribution is original, or establish that an attribution or rights claim is legally valid.
 
-## Initial Commit (Storytelling Moment - Alex Bennett):
+## Implementer guidance
 
-```diff
-commit a1b2c3d4
-Author: Alex Bennett <alex.bennett@example.com>
-Date:   Thu Jul 17 10:15:42 2025 -0700
+An implementation should:
 
-    feat(storytelling): Initial idea for CEO confrontation scene
+1. use stable identifiers for authors and contributors;
+2. preserve supplied names, roles, timestamps, and source references without silently reassigning them;
+3. record transformations, migrations, imports, and AI-assisted operations as provenance events when they change the document representation;
+4. distinguish a contributor record from a claim of copyright ownership;
+5. reference an authoritative rights-management system instead of copying its complete data model into NCP; and
+6. retain unknown provenance and contribution records when forwarding a document.
 
-diff --git a/insider-threat-ncp.json b/insider-threat-ncp.json
-index c4e7f2a..a6b8d3f 100644
---- a/insider-threat-ncp.json
-+++ b/insider-threat-ncp.json
-@@ -32,6 +32,22 @@
-         "moments": [
-+          {
-+            "id": "fe8a8863-866d-411d-8d2d-8fb30876abfc",
-+            "summary": "Alex is urgently summoned by Miriam, whose paranoia about an internal leak is escalating.",
-+            "synopsis": "Alex meets Miriam, visibly distressed and accusing her staff of betrayal. Alex remains tight-lipped.",
-+            "setting": "Miriam’s private office, late evening.",
-+            "timing": "After hours, amid rising company tensions.",
-+            "audience_experiential_pov": "third_person_limited",
-+            "storybeats": [
-+              {
-+                "sequence": 0,
-+                "narrative_id": "narrative_insider_threat",
-+                "storybeat_id": "beat_ceo_confrontation"
-+              }
-+            ],
-+            "storypoints": [
-+              {
-+                "sequence": 0,
-+                "narrative_id": "narrative_insider_threat",
-+                "storypoint_id": "storypoint_objective_story_symptom"
-+              }
-+            ]
-+          }
-         ]
+Do not infer legal ownership from edit count, commit order, tool usage, or the presence of an authorship entry. If a workflow requires verified identity, consent, licensing, or rights clearance, connect the NCP document to the system responsible for that decision.
+
+## Minimal authorship example
+
+```json
+{
+    "document": {
+        "id": "ncp_document_001",
+        "created_at": "2026-08-15T12:00:00Z",
+        "authorship": [
+            {
+                "id": "author_001",
+                "name": "Example Author",
+                "role": "author"
+            }
+        ]
+    }
+}
 ```
 
-But then, what happens when Sam jumps in, and riffs off of Alex’s initial idea, building out the conflict even more?
-
-## Second Pitch (Enhanced Conflict - Contributor: Sam Carter):
-
-> “Exactly! And what if Miriam’s paranoia starts affecting the entire company? Employees become anxious and suspicious of each other, frantically covering their tracks. Now the office is a hotbed of mistrust and tension, with everyone desperately pointing fingers elsewhere. Alex tries to stay calm, subtly redirecting Miriam’s suspicions away from himself and his allies by suggesting other potential leaks. But Miriam pushes harder, becoming more paranoid by the second. Alex skillfully deflects attention and tries to remain unnoticed.”
-
-Great addition, Sam! But how does authorship play out in this scenario?
-
-## Semantic Extraction (Using Narrative Context Protocol):
-
-Because we already have a Storyform for this narrative, we can **semantically extract Sam’s idea** to see if it fits within the existing structure. If it does, we then place his contributions into the appropriate parts of the Storyform and attribute them accordingly:
-
-* **Objective Story Symptom (Pursuit)**
-
-  * Illustration of Pursuit: “Miriam relentlessly pursues phantom leaks, fostering company-wide paranoia.”
-  * Storytelling: “The CEO’s fixation on potential betrayals creates widespread instability and suspicion in the office.”
-* **Objective Story Response (Avoid)**
-
-  * Illustration of Avoid: “Employees react by avoiding suspicion, leading to further mistrust.”
-  * Storytelling: “Employees’ efforts to deflect suspicion unintentionally heighten anxiety. Alex subtly directs Miriam’s suspicion away from himself, maintaining careful neutrality.”
-
-## Enhanced Conflict Contribution by Sam Carter (explicit subtext added):
-
-Here, we can begin to see Sam's contribution to the process, as well as how it affects Alex's original idea for the scene.
-
-```diff
-commit d4c3b2a1
-Author: Sam Carter <sam.carter@example.com>
-Date:   Thu Jul 17 12:33:28 2025 -0700
-
-    feat(subtext): Added Objective Story Symptom & Response to CEO/Alex scene
-
-diff --git a/insider-threat-ncp.json b/insider-threat-ncp.json
-index a6b8d3f..e1f7c9d 100644
---- a/insider-threat-ncp.json
-+++ b/insider-threat-ncp.json
-@@ -18,7 +18,19 @@
-           "storypoints": [
-+            {
-+              "context": "objective_story",
-+              "appreciation": "symptom",
-+              "narrative_function": "pursuit",                       
-+              "illustration": "relentless pursuit of imaginary betrayals",
-+              "storytelling": "Miriam’s obsessive hunt for a non-existent traitor spreads paranoia."
-+            },
-+            {
-+              "context": "objective_story",
-+              "appreciation": "response",
-+              "narrative_function": "avoid",                       
-+              "illustration": "steering suspicion away",
-+              "storytelling": "Employees and Alex actively deflect suspicion, creating a tense atmosphere."
-+            }
-         ],
-```
-
-Even Carl jumps in:
-
-> “Hey, maybe Alex panics and says something ridiculous like, ‘It was me, Miriam! I leaked it!’ to protect someone else. Totally out of character—but desperation could do that, right?”
-
-Alright, so it's not the greatest idea—but you can see how it could still fit within the narrative structure. And with NCP, we have a track record of commits to refer back to if we decide to rollback some of these ideas in the future.
-
-```diff
-commit g5c3b2a1
-Author: Carl Knolls <carl.knolls@example.com>
-Date:   Thu Jul 17 14:47:28 2025 -0700
-
-    feat(subtext): Developed OS Response further in station scene
-
-diff --git a/aster-gate-ncp.json b/aster-gate-ncp.json
-index e1f7c9d..r2k8b7e 100644
---- a/aster-gate-ncp.json
-+++ b/aster-gate-ncp.json
-@@ -18,7 +18,19 @@
-             {
-               "id": "04fc7292-abf6-4754-8d0f-d0fe66c5dd05",
-               "context": "objective_story",
-               "appreciation": "response",
-               "narrative_function": "avoid",
--              "illustration": "steering something",
--              "summary": "Station crews actively steer suspicion away from the damaged relay team, creating a pervasive atmosphere of mistrust and caution.",
--              "storytelling": "Pike's escalating suspicion compels crews to cautiously cover their tracks and deflect blame. Nessa redirects Pike's attention away from Brannic and the repair team, maintaining a subtle but constant effort to keep the evacuation route alive.",
-+              "illustration": "being obviously preventative",
-+              "summary": "Nessa comes off super-suspicious as she tries to deflect Pike's attention away from Brannic.",
-+              "storytelling": "In response, Nessa obviously implicates herself while trying to prevent Pike from finding the repair crew. It has the reverse effect, and Pike's suspicion leads him straight to the control spine.",
-               "perspectives": [
-             {
-               "id": "edff489e-cd00-4520-b6ff-2f66dba28a2e"
-             }
-```
-
-With the NCP we now possess **a meaningful chronicle of the story development process**: including exactly who contributed each idea, how ideas were developed or discarded, and insight into the collaborative storytelling process. The NCP approach gives us exceptional clarity about attribution and provenance.
-
----
-
-## Attribution and Provenance
-
-In traditional storytelling, determining who deserves credit for a creative contribution can often be confusing and stressful, especially in collaborative environments influenced by AI-generated content. With Narrative Context Protocol, these existential worries about authorship and copyright are significantly alleviated. It’s easy to clearly track every person’s contributions, ensuring everyone is meaningfully included in the authorship process without getting lost in the complexities of AI-driven storytelling. Through the Narrative Context Protocol, we leverage AI to seamlessly attribute each contribution precisely and transparently.
+See the [NCP Core specification](core/specification.md), [Core JSON Schema](core/ncp-core-schema.json), and [minimal Core example](examples/core/minimal-ncp.json) for the complete transport contract.

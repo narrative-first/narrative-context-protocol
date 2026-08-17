@@ -1,27 +1,43 @@
-# Contribution Policy for 3.0.0-rc.1
+# Contribution Policy
 
-NCP welcomes review and proposals for narrative-system-neutral Core transport, JSON serialization, examples, bindings, documentation, and independently named extensions.
+NCP welcomes proposals that improve interoperable transport while preserving clear ownership of Core, profiles, extensions, serializations, and bindings.
 
-## Scope freeze
+## Accepted scope
 
-During this release-candidate review:
+Contributions may address:
 
-- do not add or change canonical Dramatica terms, definitions, mappings, structural constraints, or field meanings without Dramatica profile-maintainer approval;
-- do not add Storyform generation, valid-combination, completion, resolution, diagnosis, semantic-validation, or certification logic;
-- do not add interactive, game-engine, production, or alternative-framework concepts directly to the Dramatica Storyform Profile;
-- do not change or remove previously published license notices; and
-- preserve repository history and existing releases.
+- narrative-system-neutral Core transport;
+- JSON serialization;
+- structural schemas and validation tooling;
+- synthetic examples and negative fixtures;
+- bindings to external standards and workflows;
+- independently named profiles and extensions; and
+- documentation, accessibility, and migration guidance.
 
-Appropriate RC feedback includes structural-schema defects, unclear layer boundaries, portability concerns, versioning and migration issues, JSON serialization problems, and OMC binding interoperability questions.
+## Maintained and third-party namespaces
 
-Substantial or Dramatica-specific contribution handling remains under review for this release candidate. Open an issue before submitting such material. Do not include proprietary, confidential, or third-party material in a proposal.
+Changes to NCP Core and maintained namespaces must identify compatibility impact, migration behavior, and structural validation coverage. Changes to the official `dramatica:` profile require approval from its maintainer, The Dramatica Co.
 
-## Pull requests
+Third-party narrative systems and workflows should define their own namespaces. A mapping may reference another system, but it must not silently redefine fields or semantics owned by that system.
 
-1. Identify the affected layer and namespace.
-2. Explain compatibility and migration impact.
-3. Use synthetic examples.
-4. Add positive and negative structural validation coverage when changing a schema.
-5. Report successful checks as “NCP schema validation passed.”
+## Material that cannot be accepted
 
-Legal contributor terms are outside this technical candidate. See [`PENDING_REVIEW.md`](../PENDING_REVIEW.md).
+Do not submit:
+
+- proprietary Dramatica generation, valid-combination, completion, resolution, diagnosis, semantic-validation, or certification logic;
+- private structural matrices, algorithms, corpora, or product implementation details;
+- interactive, production, or alternative-framework concepts placed directly inside the Dramatica Storyform Profile;
+- confidential, personal, or restricted production information; or
+- third-party material without permission to contribute it.
+
+## Proposal and review process
+
+1. Open an issue for a new namespace, substantial schema change, or Dramatica-specific proposal.
+2. Identify the affected layer, namespace, and component version.
+3. Explain compatibility and migration impact.
+4. Use synthetic examples.
+5. Add positive and negative structural coverage for schema changes.
+6. Run `npm run validate:schema`.
+7. Report success as **NCP schema validation passed**.
+
+Maintainers may request a separate namespace, narrower scope, migration plan, or additional interoperability evidence before accepting a proposal.

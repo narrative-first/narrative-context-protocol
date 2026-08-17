@@ -5,7 +5,7 @@ description: Practical implementation guide for preserving and exchanging the co
 
 # Dramatica Storyform Profile Schema Reference
 
-This document explains the public [`profile-schema.json`](profile-schema.json). The profile preserves the complete story, narratives, Subtext, Storytelling, and Story-level Moments structure previously published by NCP.
+This document explains the public [`profile-schema.json`](profile-schema.json). The profile preserves the complete story, narratives, `subtext`, `storytelling`, and Story-level Moments structure previously published by NCP.
 
 Use this page when implementing Dramatica-profile import, export, structural validation, and cross-tool interchange. Structural profile validation does not generate, complete, resolve, diagnose, semantically validate, or certify a Storyform.
 
@@ -194,7 +194,7 @@ Each item in `storyform.narratives[]` contains:
 Both objects are required.
 If `status` is omitted, consumers may treat the narrative as `complete`.
 
-## Subtext Model
+## `subtext` model
 
 `subtext` contains five required arrays:
 

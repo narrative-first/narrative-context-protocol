@@ -22,4 +22,4 @@ Every accepted change to a maintained namespace identifies:
 
 Consumers should preserve unknown declared namespaces and payloads where practical rather than reinterpreting or deleting them.
 
-This technical reservation prevents semantic drift. The intended licensing and commercial boundary is documented in [`licensing.md`](licensing.md); exact trademark, compatibility-mark, and certification terms remain [pending counsel review](../PENDING_REVIEW.md).
+This technical reservation prevents semantic drift. The boundary between open interchange, maintained namespaces, licensed services, and mark permissions is documented in [Licensing and Commercial Access](licensing.md).

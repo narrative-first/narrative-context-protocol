@@ -10,7 +10,7 @@ NCP schema validation confirms that a document is structurally well-formed. It d
 
 ## Profile conformance
 
-A profile may define additional transport requirements. The Dramatica profile schema checks the published story, narrative, Subtext, Storytelling, and Moment structure; required fields and nesting; basic types; enums; references; and sequence bounds. Profile schema conformance remains structural unless a separately identified semantic validator reports a semantic result.
+A profile may define additional transport requirements. The Dramatica profile schema checks the published story, narrative, `subtext`, `storytelling`, and Moment structure; required fields and nesting; basic types; enums; references; and sequence bounds. Profile schema conformance remains structural unless a separately identified semantic validator reports a semantic result.
 
 ## Attestation conformance
 

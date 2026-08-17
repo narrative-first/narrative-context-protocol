@@ -20,7 +20,7 @@ A particular configuration or instance of the Dramatica Semantic Model represent
 
 ### 1.3 Dramatica Storyform Profile
 
-An NCP profile identifying the complete published story, narrative, Subtext, Storytelling, and Moment structure required to preserve and exchange Dramatica-oriented story information. It includes stable identifiers, data types, canonical term lists and definitions, direct interoperability mappings, and structural transport constraints.
+An NCP profile identifying the complete published story, narrative, `subtext`, `storytelling`, and Moment structure required to preserve and exchange Dramatica-oriented story information. It includes stable identifiers, data types, canonical term lists and definitions, direct interoperability mappings, and structural transport constraints.
 
 The public profile makes its interchange representation understandable and lossless. It does not implement the valid-combination logic, private structural matrices, algorithms, or product intelligence used to generate, resolve, diagnose, complete, semantically validate, or certify a Storyform. See [`profiles/dramatica/`](profiles/dramatica/).
 
@@ -103,8 +103,8 @@ Migration to NCP 3 creates a Core envelope and moves narrative-system-specific i
 
 See [`governance/versioning.md`](governance/versioning.md).
 
-## 6. Candidate governance
+## 6. Governance
 
 NCP 3 namespaces are explicit so independent systems can coexist without semantic drift. The technical reservation and change process is described in [`governance/namespaces.md`](governance/namespaces.md).
 
-The intended licensing and commercial-access boundary is described in [`governance/licensing.md`](governance/licensing.md). Exact prospective terms and marks remain subject to counsel review as listed in [`PENDING_REVIEW.md`](PENDING_REVIEW.md).
+The public licensing and commercial-access boundary is described in [`governance/licensing.md`](governance/licensing.md). Release-candidate stability and feedback guidance are described in [`RELEASE_STATUS.md`](RELEASE_STATUS.md).

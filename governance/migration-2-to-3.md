@@ -55,7 +55,7 @@ NCP 2.x documents use a combined envelope containing both interchange and narrat
 }
 ```
 
-The abbreviated example shows envelope placement. A real migration copies the complete legacy `story` object—including settings, ideation, every narrative's Subtext and Storytelling, and Story-level Moments—without loss. Empty `narratives` passes structural validation but does not represent a complete or semantically valid Dramatica Storyform.
+The abbreviated example shows envelope placement. A real migration copies the complete legacy `story` object—including settings, ideation, every narrative's `subtext` and `storytelling` data, and Story-level Moments—without loss. Empty `narratives` passes structural validation but does not represent a complete or semantically valid Dramatica Storyform.
 
 ## Semantic migration
 

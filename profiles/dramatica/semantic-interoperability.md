@@ -31,15 +31,15 @@ When working with NCP, preserve the difference between structural meaning and ex
 - `storyform.moments[]` carries Story-level units of presentation that may reference Storybeats and Storypoints across one or more narratives.
 - `storyform.ideation` carries early creative material before a formal Storyform exists.
 
-An AI system may summarize, adapt, or extend Storytelling, but it should not silently rewrite Subtext. If a model is uncertain whether prose implies a structural change, it should mark the uncertainty instead of overwriting the Storyform.
+An AI system may summarize, adapt, or extend `storytelling`, but it should not silently rewrite `subtext`. If a model is uncertain whether prose implies a structural change, it should mark the uncertainty instead of overwriting the Storyform.
 
 ## Semantic Grounding Table
 
 | Term | Common Misunderstanding | NCP Grounding |
 |------|-------------------------|---------------|
 | Storyform | A plot outline, beat sheet, or genre template. | The structural argument that organizes the story's meaning. Storyform data belongs in `narratives[].subtext`, not in loose prose summaries. |
-| Subtext | Hidden symbolism or thematic flavor. | The deeper intended meaning carried by Perspectives, Storypoints, Storybeats, Players, and Dynamics. |
-| Storytelling | Any story data. | The expressive presentation of the underlying meaning: scenes, overviews, prose, imagery, style, and audience-facing material. |
+| `subtext` | Hidden symbolism or thematic flavor. | The deeper intended meaning carried by Perspectives, Storypoints, Storybeats, Players, and Dynamics. |
+| `storytelling` | Any story data. | The expressive presentation of the underlying meaning: scenes, overviews, prose, imagery, style, and audience-facing material. |
 | Story | A single plotline. | The top-level creative work. A Story can contain one or more narratives and Story-level Moments. |
 | Narrative | Any summary of events. | A coherent structural argument inside the Story. Most works have one central narrative, but NCP allows multiple narratives when the Story contains distinct structural arguments. |
 | Perspective | A character opinion or camera angle. | A structural point of view on conflict. NCP recognizes Objective Story, Main Character, Influence Character, and Relationship Story Perspectives. |
@@ -170,7 +170,7 @@ Better inference:
 This Player appears to pursue the Story Goal. The NCP does not yet identify the personal point of view, so Main Character should remain unset or marked uncertain.
 ```
 
-### Do not rewrite Subtext from Storytelling alone
+### Do not rewrite `subtext` from `storytelling` alone
 
 Storytelling can imply possible structure, but implication is not confirmation. If a scene summary seems to contradict a Storypoint, preserve the existing structural field and record a candidate note instead of overwriting the NCP object.
 
@@ -212,7 +212,7 @@ When an AI system cannot determine whether a field is structural or expressive, 
 
 ## Layer-Safe Update Patterns
 
-### Safe: add Storytelling without changing Subtext
+### Safe: add `storytelling` without changing `subtext`
 
 ```text
 Add a Moment synopsis, setting, timing, or prose note that expresses an existing Storybeat.
@@ -257,7 +257,7 @@ This is unsafe because the model may flatten the Storyform into generic plot, th
 When giving an NCP file to an AI system, include a grounding instruction like this:
 
 ```text
-Read this NCP file as structured narrative context. Preserve the distinction between Subtext and Storytelling. Do not infer or rewrite Storyform fields from prose alone. Treat Objective Story, Main Character, Influence Character, and Relationship Story as Dramatica Perspectives, not generic character roles. Treat Holistic and character-framed terms such as Character Intentions, Character Repercussions, Dissonance, Relief, Friction, and Accommodation as declared affordance labels for structural appreciations, not casual synonyms. If structural meaning is uncertain, keep the existing field unchanged and mark the uncertainty rather than overwriting the NCP.
+Read this NCP file as structured narrative context. Preserve the distinction between structural `subtext` data and expressive `storytelling` data. Do not infer or rewrite Storyform fields from prose alone. Treat Objective Story, Main Character, Influence Character, and Relationship Story as Dramatica Perspectives, not generic character roles. Treat Holistic and character-framed terms such as Character Intentions, Character Repercussions, Dissonance, Relief, Friction, and Accommodation as declared affordance labels for structural appreciations, not casual synonyms. If structural meaning is uncertain, keep the existing field unchanged and mark the uncertainty rather than overwriting the NCP.
 ```
 
 ## Public And Product Boundaries
@@ -287,7 +287,7 @@ The goal is to help every tool preserve meaning while making clear that preservi
 
 Before an NCP-producing or NCP-consuming tool writes data, check:
 
-- Does this change affect Subtext, Storytelling, Moments, or Ideation?
+- Does this change affect `subtext`, `storytelling`, Moments, or Ideation?
 - Is the tool preserving canonical Dramatica terminology?
 - Is the tool treating Holistic and character-framed labels as declared affordances rather than separate structural models?
 - Is the tool treating Main Character, Influence Character, Objective Story, and Relationship Story as Perspectives instead of generic roles?
