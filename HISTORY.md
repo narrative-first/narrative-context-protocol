@@ -1,71 +1,101 @@
 # History
 
-## 3.0.0-rc.1 — Layered interoperability review candidate
+Narrative Context Protocol grew from early iterations involving **Paul Bennun, George Gerba, Hank Gerba, Chris Huntley, and Jim Hull**, with support from the Entertainment Technology Center at the University of Southern California. Together, they helped establish the central question that continues to guide NCP: how can a story carry its underlying narrative context and authorial intent from one tool, system, or production workflow to another?
+
+Hank Gerba's white paper, [*“Narrative Context Protocol: An Author-Centric Storytelling Framework for Generative AI,”*](https://arxiv.org/pdf/2503.04844) documented the importance of preserving authorial intent as narrative work moves through generative systems. Paul Bennun and George Gerba helped shape the original initiative and its practical industry ambitions. Chris Huntley contributed to earlier iterations of the work, and Jim Hull connected the developing protocol to a complete, working Storyform representation drawn from Subtxt and the Dramatica platform.
+
+## From UCM to NCP
+
+The project began under the working name **Universal Character Model (UCM)**. Its scope soon expanded beyond characters, and early public repository material used **Universal Narrative Model (UNM)** to describe a portable model for story structure, storytelling, authorship, and contribution history.
+
+When Jim Hull joined the effort, he saw that the larger opportunity was not another universal theory or application-specific model. The industry needed a protocol capable of making the underlying structure and intent of a narrative apparent across otherwise unrelated systems.
+
+In spring 2025, Jim reframed and renamed the project **Narrative Context Protocol (NCP)**. The name was a deliberate, tongue-in-cheek nod to the rapid rise of Model Context Protocol at the time, but it also described the real purpose of the work: narrative systems needed a common way to exchange context, not merely another JSON file or closed application model.
+
+## The combined NCP and Subtxt model
+
+The first public NCP releases combined the interchange protocol with the Storyform-oriented data model used by Subtxt. NCP represented both the structural material beneath a story—called `subtext` in the schema—and the Storytelling through which that structure was expressed. It also carried multiple narratives, Storytelling Moments, authorial intent, provenance, and contribution history.
+
+With **NCP 2.0**, Jim sought to make the properties of a Storyform, as conveyed by Subtxt, openly available for interchange. The complete NCP schema corresponded directly to how stories and Storyforms were persisted within the application at that time. Subtxt has since become an essential part of the Dramatica Narrative Platform.
+
+That decision gave implementers a concrete and unusually complete narrative interchange model. It also meant that the public protocol and its foundational Dramatica representation appeared to be a single layer. As adoption and interest grew, that coupling made it difficult to extend NCP for other narrative systems and workflows without implying that every NCP document was a Dramatica Storyform—or that NCP itself implemented Dramatica intelligence.
+
+## NCP 3.0: protocol, profiles, and bindings
+
+NCP 3.0 separates those responsibilities while preserving the complete public interchange structure introduced by earlier releases:
+
+```text
+Narrative Context Protocol
+    ├── NCP Core
+    ├── Dramatica Storyform Profile
+    ├── other narrative profiles
+    ├── workflow extensions
+    ├── JSON and other serializations
+    └── OMC and other bindings
+```
+
+**NCP Core** is the narrative-system-neutral envelope for identity, provenance, authorial intent, profile declarations, Storytelling Moments, attestations, and interchange. **Profiles** describe how information from a particular narrative system is represented. **Extensions** add separately governed workflow information. **Bindings** describe how NCP travels through standards such as the MovieLabs Ontology for Media Creation (OMC).
+
+The **Dramatica Storyform Profile** is NCP's foundational profile because NCP grew from a working Storyform representation and because that representation demonstrates the value of preserving a strong underlying narrative structure. The public profile retains the complete story, narratives, Subtxt, Storytelling, Moments, terminology, definitions, and direct mappings needed to understand and transport existing information.
+
+Foundational does not mean mandatory. NCP Core does not require Dramatica, and other narrative systems can participate through their own separately governed profiles without changing either Core or the meaning of the Dramatica profile.
+
+## Structural validation and Storyform validation
+
+NCP 3.0 makes an important distinction between two kinds of trust.
+
+**NCP and profile schema validation** are public and available in this repository. They verify that a document is structurally well-formed: its JSON is valid, required fields are present, identifiers and references are shaped correctly, and a declared profile follows its published transport schema.
+
+**Dramatica semantic validation** determines whether the transported choices constitute a complete, coherent, and valid Dramatica Storyform. Creation, completion, resolution, diagnosis, semantic validation, and certification depend on the licensed Dramatica Semantic Model and remain outside NCP itself. They are available through Dramatica's MCP, API, SDK, hosted services, and licensed private deployments. Visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com** to obtain access.
+
+Keeping those capabilities separate:
+
+- keeps NCP Core open, portable, and independent of any one narrative system;
+- lets implementers preserve and exchange Storyform information without having to reproduce the Dramatica engine;
+- prevents a structurally valid JSON document from being mistaken for a semantically valid Storyform;
+- gives applications a versioned and authoritative source for validation, completion, diagnosis, and certification;
+- allows the Dramatica Semantic Model to evolve without forcing unrelated NCP implementations to embed its private rules or algorithms;
+- protects the stable meaning of the Dramatica profile from incompatible third-party changes;
+- supports hosted, studio, enterprise, secure, and walled-garden deployment requirements; and
+- sustains the specialist research, engineering, and stewardship required to keep Dramatica intelligence consistent and trustworthy.
+
+Authors and studios retain their creative story information. NCP makes that information portable. Licensed Dramatica intelligence determines whether a represented structure is a valid Dramatica Storyform and can return an attestation that NCP transports to other systems.
+
+## Dramatica's foundation
+
+The Dramatica® Theory of Story was developed by Chris Huntley and Melanie Anne Phillips in the early 1990s and documented in their 1994 book, *Dramatica: A New Theory of Story*. Its model of a story as a structured argument observed through multiple perspectives provides the intellectual and practical foundation for the Dramatica Storyform Profile.
+
+The public profile documents the representation used for interchange. The licensed Dramatica Semantic Model supplies the relationships, constraints, valid structural combinations, algorithms, and semantic intelligence that make a Storyform authoritative.
+
+## Stewardship today
+
+As of February 2026, **Jim Hull and Narrative First steward the Narrative Context Protocol**. Narrative First operates the Dramatica platform through **The Dramatica Company LLC**, bringing the open interoperability work of NCP and the authoritative commercial intelligence of Dramatica into a clear, sustainable relationship.
+
+This current stewardship builds on the project's collaborative origins and continues its enduring goal: preserving the author's narrative intent as stories move across tools, technologies, and production workflows.
+
+## Release chronology
+
+### 3.0.0-rc.1 — Layered interoperability review candidate
 
 - Separates narrative-neutral NCP Core from narrative-system profiles, extensions, serializations, and bindings.
-- Adds a complete public Dramatica Storyform transport profile preserving the previously published story, narratives, Subtext, Storytelling, Moments, terminology, and direct interoperability mappings without generation, valid-combination, completion, diagnosis, or semantic-validation logic.
-- Adds generic attestation transport while keeping semantic meaning outside Core.
+- Establishes the complete public Dramatica Storyform Profile as NCP's foundational, but optional, narrative-system profile.
+- Preserves the previously published story, narratives, Subtxt, Storytelling, Moments, terminology, definitions, and direct interoperability mappings without publishing Storyform-generation, valid-combination, completion, diagnosis, or semantic-validation logic.
+- Adds generic attestation transport while keeping the meaning and production of semantic results outside Core.
 - Adds the NCP-OMC 1.0.0-rc.1 binding for OMC 2.8 Custom Data Blocks and resolvable references.
-- Adds explicit schema-versus-semantic validation language and a 2.x-to-3.0 migration guide.
-- Freezes the legacy combined schema for compatibility and moves its detailed Dramatica terminology and semantic-interoperability references into the separately governed public Dramatica profile.
-- Publishes the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary while leaving operative license, contributor, trademark, and certification-mark terms pending counsel review.
+- Distinguishes open structural validation from licensed Dramatica semantic validation and certification.
+- Freezes the legacy combined schema for compatibility and documents migration from NCP 2.x.
+- Publishes the intended open-Core, foundational-profile, and licensed-Dramatica boundary while leaving final operative license, contributor, trademark, and certification-mark terms pending counsel review.
 
 This candidate changes the proposed NCP architecture and updates the current license preamble to remove the legacy product positioning. The MIT grant text, prior releases, and repository history remain unchanged.
 
-> Entries below describe previously published combined-schema releases. They are preserved as historical records and are not normative definitions of the NCP 3 architecture.
+### 2.0.0 — Complete combined Storyform interchange model
 
-## Recent Schema Updates
+- Published the complete story and Storyform persistence structure used by Subtxt as a combined NCP schema.
+- Supported multiple narratives and story-level Storytelling Moments with narrative-qualified Storybeat and Storypoint references.
+- Added reusable story settings, ideation domains, narrative status, and richer structural templates.
+- Published Dramatica-oriented terminology, definitions, Dynamics, Vectors, direct mappings, and semantic-preservation guidance.
+- Tightened structural validation for canonical fields, labels, references, and closed narrative shapes.
 
-- Added five named Story Driver Dynamic identifiers: `initial_story_driver`, `second_story_driver`, `midpoint_story_driver`, `fourth_story_driver`, and `concluding_story_driver`. They use the same `action` or `decision` vector as the singular `story_driver` Dynamic and are not Storybeats.
-- Moved canonical Moments to required `story.moments[]` so storytelling units belong to the story and can reference Storybeats and Storypoints across multiple narratives.
-- Added narrative-qualified `story.moments[].storybeats[]` and `story.moments[].storypoints[]` references, requiring `narrative_id` on each referenced structural element.
-- Removed `narratives[].storytelling.moments[]` so canonical payloads have one unambiguous Moment home.
-- Added optional `story.settings[]` entries for reusable story-level Settings and optional Moment `setting_id` references so Moments can point at a shared Setting while preserving free-text `setting`.
-- Added a canonical story settings example and refreshed validation fixtures so canonical Storybeats omit legacy `signpost` keys.
-- Added optional `subtext.storybeats[].appreciation` as a derived interoperability field based on `throughline + scope + sequence`.
-- Clarified that Storybeat importers should derive the appreciation identity when the field is omitted so lighter-weight payloads remain compatible.
-- Clarified that canonical Storybeat objects do not expose a `signpost` key; any internal grouping should be derived from structural scope, sequence, and parent relationships.
-- Closed the primary canonical narrative shapes so unexpected keys now fail validation unless a shape explicitly supports extension metadata.
-- Clarified that Perspective, Player, and Overview IDs are opaque strings. Plain UUIDs are acceptable and type prefixes are optional.
-- Canonicalized overview labels to the exact Title Case enum values `Logline`, `Genre`, and `Blended Throughlines`.
-- Clarified that import/normalization layers may still accept legacy overview labels such as `logline`, `genre`, `blended_throughlines`, `Premise Overview`, and `Four Throughlines Extraction`, but canonical export/validation now requires the Title Case enum.
-- Added an optional `story.ideation` object for pre-narrative concept development, with required domains `character`, `theme`, `plot`, and `genre` whenever `ideation` is present.
-- Added lightweight shared ideation node validation requiring `id` and `summary`, with open metadata for beginner and LLM-assisted workflows.
-- Added optional `narratives[].status` with canonical values `candidate`, `draft`, and `complete` to represent potential or in-progress narratives without splitting data into separate arrays.
-- Made `subtext.storypoints[].narrative_function` and `subtext.storybeats[].narrative_function` optional so blank-slate templates can omit narrative function assignment until later authoring.
-- Preserved backward compatibility for existing stories by keeping `story.ideation` optional and retaining `story.genre` as a concise top-level story label.
+The 2.0 schema remains available as a frozen compatibility artifact. NCP 3 preserves its Storyform-oriented transport structure through the Dramatica Storyform Profile rather than treating it as NCP Core.
 
-## Recent Canonical Terminology Updates
-
-- Renamed the perspective storypoints `Main Character Evolution` and `Influence Character Evolution` to `MC Steadfast Expression` and `OC Steadfast Expression` to avoid collision with the `Character Evolution` Audience Experience Dynamic added in Fall 2025.
-- Added Character-framing Storypoint Appreciations as canonical-valid labels: Character Intentions, Character Repercussions, Character Adaptations, Character Affectations, Character Engagements, Character Perks, Character Pressures, and Character Forebodings.
-- Clarified that these labels normalize to the original linear-focused appreciation families for interoperability (centered on Story Goal and Story Consequence).
-- Clarified usage guidance: linear stories use linear-focused appreciations, while holistic stories may use either linear-focused or Character-framing appreciations.
-
-## The Dramatica Theory of Story
-
-Originally developed by Chris Huntley and Melanie Anne Phillips in the early 1990s, the Dramatica® Theory of Story offered a groundbreaking approach to narrative structure, emphasizing the interplay of multiple perspectives to create cohesive and resonant storytelling experiences. Launched in 1993 and comprehensively documented in their seminal 1994 book, *“Dramatica: A New Theory of Story,”* it introduced an objective model of narrative defining clear, measurable dynamics underpinning every compelling story.
-
-By mapping relationships between characters, plot elements, and thematic concerns, Dramatica established itself as a unique and influential framework. Narrative Context Protocol (NCP) builds directly upon this legacy, refining and extending these foundational concepts to embrace modern advancements in AI-driven storytelling.
-
-## Evolution & Development of Narrative Context Protocol (NCP)
-
-Narrative Context Protocol (NCP) was developed as a next-generation schema for multi-agentic systems, designed to enhance narrative consistency, scalability, and AI-driven storytelling capabilities.
-
-**Version 1.0 of NCP** mirrors the robust API framework available within Narrative First’s Subtxt/Dramatica platform. Engineered for narrative precision and innovative AI-driven storytelling, the Subtxt/Dramatica platform encapsulates an objective, measurable approach to narrative structure.
-
-Narrative First chose to openly share this schema, driven by the belief that storytelling should be accessible and transparent to everyone. By opening the "code" behind narrative structure, the goal is to foster creativity, collaboration, and innovation across all storytelling communities.
-
-## The NCP Project at ETC/USC
-
-Narrative Context Protocol (NCP) is driven by an extraordinary team of visionaries and narrative experts dedicated to revolutionizing storytelling through technology and innovation. Funded by USC’s Entertainment Technology Center (ETC), the project benefits from the strategic leadership of Executive Producer Paul Bennun, whose extensive experience at the intersection of entertainment and technology shapes the project's ambitious vision.
-
-Project Lead George Gerba, renowned for his pioneering approach to narrative technologies, oversees the implementation and evolution of NCP, ensuring the protocol remains both groundbreaking and practical for contemporary narrative artists.
-
-Narrative theorist Hank Gerba further enriches the project with his profound understanding of narrative structures and generative AI. His influential white paper, [*"NARRATIVE CONTEXT PROTOCOL: AN AUTHOR-CENTRIC STORYTELLING FRAMEWORK FOR GENERATIVE AI,"*](https://arxiv.org/pdf/2503.04844) has become a cornerstone for those exploring the powerful intersection of storytelling and artificial intelligence.
-
-Together, this dedicated group is charting a forward-looking path, passionately committed to empowering authors and creators with cutting-edge tools designed to amplify human creativity and narrative ingenuity in the rapidly evolving landscape of AI storytelling.
-
-⸻
-
-For current public profile terminology, refer to [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/).
+For the current architecture, see the [NCP 3.0 review guide](RELEASE_CANDIDATE.md). For current public Dramatica terminology, see [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/). For the validation boundary and licensed access routes, see [Validation](VALIDATION.md) and [Licensing and Commercial Access](governance/licensing.md).
