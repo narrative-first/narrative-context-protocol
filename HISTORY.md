@@ -36,7 +36,7 @@ Narrative Context Protocol
 
 **NCP Core** is the narrative-system-neutral envelope for identity, provenance, authorial intent, profile declarations, Storytelling Moments, attestations, and interchange. **Profiles** describe how information from a particular narrative system is represented. **Extensions** add separately governed workflow information. **Bindings** describe how NCP travels through standards such as the MovieLabs Ontology for Media Creation (OMC).
 
-The **Dramatica Storyform Profile** is NCP's foundational profile because NCP grew from a working Storyform representation and because that representation demonstrates the value of preserving a strong underlying narrative structure. The public profile retains the complete story, narratives, Subtxt, Storytelling, Moments, terminology, definitions, and direct mappings needed to understand and transport existing information.
+The **Dramatica Storyform Profile** is NCP's foundational profile because NCP grew from a working Storyform representation and because that representation demonstrates the value of preserving a strong underlying narrative structure. The public profile retains the complete story, narratives, `subtext`, `storytelling`, Moments, terminology, definitions, and direct mappings needed to understand and transport existing information.
 
 Foundational does not mean mandatory. NCP Core does not require Dramatica, and other narrative systems can participate through their own separately governed profiles without changing either Core or the meaning of the Dramatica profile.
 
@@ -75,18 +75,18 @@ This current stewardship builds on the project's collaborative origins and conti
 
 ## Release chronology
 
-### 3.0.0-rc.1 — Layered interoperability review candidate
+### 3.0.0-rc.1 — Layered interoperability release candidate
 
 - Separates narrative-neutral NCP Core from narrative-system profiles, extensions, serializations, and bindings.
 - Establishes the complete public Dramatica Storyform Profile as NCP's foundational, but optional, narrative-system profile.
-- Preserves the previously published story, narratives, Subtxt, Storytelling, Moments, terminology, definitions, and direct interoperability mappings without publishing Storyform-generation, valid-combination, completion, diagnosis, or semantic-validation logic.
+- Preserves the previously published story, narratives, `subtext`, `storytelling`, Moments, terminology, definitions, and direct interoperability mappings without publishing Storyform-generation, valid-combination, completion, diagnosis, or semantic-validation logic.
 - Adds generic attestation transport while keeping the meaning and production of semantic results outside Core.
 - Adds the NCP-OMC 1.0.0-rc.1 binding for OMC 2.8 Custom Data Blocks and resolvable references.
 - Distinguishes open structural validation from licensed Dramatica semantic validation and certification.
 - Freezes the legacy combined schema for compatibility and documents migration from NCP 2.x.
-- Publishes the intended open-Core, foundational-profile, and licensed-Dramatica boundary while leaving final operative license, contributor, trademark, and certification-mark terms pending counsel review.
+- Publishes the boundary between open Core, the foundational Dramatica profile, separately licensed Dramatica capabilities, and mark permissions.
 
-This candidate changes the proposed NCP architecture and updates the current license preamble to remove the legacy product positioning. The MIT grant text, prior releases, and repository history remain unchanged.
+This candidate introduces the layered NCP architecture and updates the current license preamble to describe NCP as an interchange standard. The MIT grant text, prior releases, and repository history remain unchanged.
 
 ### 2.0.0 — Complete combined Storyform interchange model
 
@@ -98,4 +98,4 @@ This candidate changes the proposed NCP architecture and updates the current lic
 
 The 2.0 schema remains available as a frozen compatibility artifact. NCP 3 preserves its Storyform-oriented transport structure through the Dramatica Storyform Profile rather than treating it as NCP Core.
 
-For the current architecture, see the [NCP 3.0 review guide](RELEASE_CANDIDATE.md). For current public Dramatica terminology, see [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/). For the validation boundary and licensed access routes, see [Validation](VALIDATION.md) and [Licensing and Commercial Access](governance/licensing.md).
+For the current architecture, see the [NCP 3.0 release-candidate overview](RELEASE_CANDIDATE.md). For current public Dramatica terminology, see [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/). For the validation boundary and licensed access routes, see [Validation](VALIDATION.md) and [Licensing and Commercial Access](governance/licensing.md).

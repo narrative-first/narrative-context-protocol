@@ -1,37 +1,30 @@
 # Contributing to Narrative Context Protocol
 
-Narrative Context Protocol is an open, application-independent interchange standard. This release candidate welcomes technical review of Core transport, JSON serialization, bindings, examples, documentation, and separately named extensions.
+Narrative Context Protocol welcomes focused improvements to open interchange, documentation, examples, bindings, validation tooling, and independently governed profiles or extensions.
 
-Read the [candidate contribution policy](governance/contribution-policy.md) and [namespace policy](governance/namespaces.md) before opening a change.
+Read the [Contribution Policy](governance/contribution-policy.md) and [Namespace Governance](governance/namespaces.md) before opening a pull request.
 
-## Current scope freeze
-
-During the 3.0.0-rc.1 review, do not submit:
-
-- additions or changes to canonical Dramatica terms, definitions, mappings, structural constraints, or field meanings without profile-maintainer approval;
-- Storyform generation, valid-combination, completion, resolution, diagnosis, semantic-validation, or certification logic;
-- interactive, game-engine, production, or alternative-framework concepts inside the Dramatica profile;
-- changes to existing license notices; or
-- private Dramatica model or product implementation details.
-
-Substantial or Dramatica-specific contribution handling remains pending review. Open an issue before submitting such material.
-
-## Appropriate review contributions
+## Good contribution candidates
 
 - corrections and clarifications to narrative-neutral Core transport;
 - JSON serialization and structural-schema tooling;
-- simple synthetic examples;
-- separately named third-party profiles and extensions;
-- bindings that reference another standard without duplicating or redefining it; and
-- accessibility, spelling, link, and non-semantic documentation improvements.
+- synthetic positive and negative examples;
+- bindings that reference another standard without duplicating or redefining it;
+- separately named third-party profiles and extensions; and
+- accessibility, spelling, links, and non-semantic documentation improvements.
 
-## Pull-request process
+Changes to the official `dramatica:` profile require Dramatica profile-maintainer approval. Propose substantial or Dramatica-specific changes in a GitHub issue before preparing a pull request.
 
-1. Identify the affected layer and namespace.
-2. Explain backward-compatibility and migration impact.
-3. Use synthetic fixtures and four-space JSON indentation.
+Do not submit confidential information, third-party material you cannot license, or proprietary Dramatica generation, valid-combination, completion, resolution, diagnosis, semantic-validation, certification, or product implementation logic.
+
+## Pull-request checklist
+
+1. Identify the affected layer, namespace, and component version.
+2. Explain compatibility and migration impact.
+3. Use synthetic fixtures with four-space JSON indentation.
 4. Add positive and negative structural checks for schema changes.
 5. Run `npm run validate:schema`.
-6. Report the result as **NCP schema validation**, not semantic validation.
+6. Report successful checks as **NCP schema validation passed**, not **Storyform valid**.
+7. Keep the pull request focused on one concern.
 
-This candidate does not define new contributor license or agreement terms. See [Pending Review Topics](PENDING_REVIEW.md).
+Open a [GitHub issue](https://github.com/narrative-first/narrative-context-protocol/issues) when the appropriate namespace, compatibility path, or maintainer is unclear.

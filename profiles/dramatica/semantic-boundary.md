@@ -4,7 +4,7 @@ The public Dramatica Storyform Profile describes the complete interchange repres
 
 ## Included in the profile
 
-- the complete published story, narratives, Subtext, Storytelling, and Story-level Moment structure;
+- the complete published story, narratives, `subtext`, `storytelling`, and Story-level Moment structure;
 - stable field names, identifiers, basic data types, enums, and transport constraints;
 - Perspectives, Appreciations, Narrative Functions, Dynamics, Vectors, and their public definitions;
 - direct Holistic/Linear, character-framed, and legacy terminology mappings used for interoperability;
@@ -37,4 +37,4 @@ An external result can be represented by a Core attestation containing a profile
 
 Active subscribers may access Dramatica through the authenticated [Dramatica MCP](https://platform.dramatica.com/docs/resources/connect-chatgpt-mcp). Hosted access, SDKs, Storyform certification, studio integration, and secure private deployments are licensed Dramatica capabilities. Visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com** to obtain or discuss access.
 
-Exact commercial terms, certification-mark rules, and compatibility claims remain subject to counsel review.
+Service access, certification-mark permissions, and compatibility claims are governed separately from the public profile. See [Licensing and Commercial Access](../../governance/licensing.md).

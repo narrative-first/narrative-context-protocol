@@ -1,26 +1,16 @@
-# NCP 3.0.0-rc.1 Review Guide
+# NCP 3.0.0-rc.1 Release Candidate
 
-This candidate is intended for public interoperability review before a final NCP 3.0.0 release.
+NCP 3.0.0-rc.1 is available for public interoperability review. This release candidate introduces a layered architecture for exchanging narrative context while preserving the complete Dramatica Storyform representation established by earlier versions of NCP.
 
 ## Why NCP 3.0
 
-NCP 3.0 takes the previously combined NCP/Subtext story model and establishes it as the foundational Dramatica Storyform Profile within a broader, narrative-system-neutral interoperability architecture.
+Earlier NCP releases combined the protocol envelope with the NCP/Subtxt Storyform model. NCP 3.0 separates those responsibilities so that the protocol can support Dramatica and other narrative systems without treating any one system as a requirement for basic interchange.
 
-The public Dramatica profile preserves the complete Storyform-oriented interchange structure, terminology, definitions, and mappings. NCP Core provides the independent envelope around it, allowing narrative context to move through OMC and other workflows and to support additional profiles and extensions without altering or requiring Dramatica.
+[NCP Core](core/specification.md) defines the narrative-system-neutral envelope. Profiles describe narrative information from a particular system, while extensions and bindings connect NCP documents to specialized workflows. The [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md) remains NCP's foundational profile and preserves the previously published Storyform structure, terminology, definitions, and mappings.
 
-Dramatica is foundational to NCP's history and profile architecture, but it is not mandatory for every NCP document. Other narrative systems can participate through separately governed profiles.
-
-The public profile explains how existing Dramatica information is represented and transported. The licensed Dramatica Semantic Model and its intelligence create, complete, resolve, diagnose, semantically validate, and certify a Storyform. Those capabilities are obtained through Dramatica's MCP, API, SDK, or licensed private services.
-
-Authors and studios retain their creative story information. The Dramatica Co. provides the authoritative licensed intelligence that determines whether that information constitutes a valid Dramatica Storyform.
-
-## Architecture progression
+This architecture allows an implementation to exchange narrative context through NCP Core without understanding Dramatica. Implementations that work with Dramatica can use the Dramatica Storyform Profile without changing the Core protocol.
 
 ```text
-Previously:
-Combined NCP/Subtext Storyform model
-
-NCP 3.0:
 Narrative Context Protocol
     ├── NCP Core
     ├── Dramatica Storyform Profile
@@ -29,9 +19,11 @@ Narrative Context Protocol
     └── OMC and other bindings
 ```
 
-NCP is the complete interoperability architecture. NCP Core is its narrative-system-neutral foundation. The Dramatica Storyform Profile is foundational, separately versioned, and optional for Core conformance.
+NCP refers to the complete interoperability architecture. NCP Core is its narrative-system-neutral foundation. The Dramatica Storyform Profile is foundational, separately versioned, and optional for Core conformance.
 
-## Public and licensed boundary
+## Open interchange and licensed Dramatica intelligence
+
+The public Dramatica Storyform Profile defines how Dramatica information is represented, preserved, and transported. It does not reproduce the rules or intelligence that determine whether a collection of choices forms a valid Dramatica Storyform.
 
 ```text
 Public Dramatica profile:
@@ -42,9 +34,11 @@ Creation + completion + resolution + diagnosis
 + semantic validation + certification
 ```
 
-The public material shows implementers what information exists and how to preserve it. Licensed Dramatica intelligence answers how those choices form a valid Storyform.
+The licensed Dramatica Semantic Model provides Storyform creation, completion, resolution, diagnosis, semantic validation, and certification through Dramatica's MCP, API, SDK, and private services. Structural schema validation confirms that an NCP document is well formed; it does not certify the document as a valid Dramatica Storyform. See [Validation](VALIDATION.md) for the distinction.
 
-## Product language
+Authors and studios retain their creative story information. The Dramatica Co. provides the authoritative licensed intelligence used to determine whether that information constitutes a valid Dramatica Storyform.
+
+## Recommended terminology
 
 | Context | Preferred term |
 | --- | --- |
@@ -57,7 +51,7 @@ The public material shows implementers what information exists and how to preser
 | Licensed access to that intelligence | Dramatica MCP, API, SDK, or private service |
 | The MovieLabs integration | NCP-OMC Binding |
 
-The Dramatica platform should normally call the authoring object a **Storyform**. It should use **NCP document** at import, export, interchange, and integration boundaries. It should never use **DSM** as another name for the profile: the profile is the public representation, while the DSM is the licensed intelligence operating on that representation.
+The Dramatica platform should normally call the authoring object a **Storyform**. It should use **NCP document** at import, export, interchange, and integration boundaries. It should not use **DSM** as another name for the profile: the profile is the public representation, while the DSM is the licensed intelligence operating on that representation.
 
 ```text
 Writer creates a Storyform
@@ -67,39 +61,41 @@ Writer creates a Storyform
     -> OMC or another workflow embeds or references it
 ```
 
-## Included for review
+## What this release candidate includes
 
-- narrative-neutral NCP Core schema and specification;
+- the narrative-neutral NCP Core schema and specification;
 - independent profile and extension architecture;
-- Dramatica Storyform Profile 1.0.0-rc.1 with the complete previously published story structure, terminology dictionaries, direct mappings, and semantic-preservation guidance;
+- Dramatica Storyform Profile 1.0.0-rc.1, including the complete previously published story structure, terminology dictionaries, direct mappings, and semantic-preservation guidance;
 - generic validation-attestation transport;
 - JSON serialization guidance;
-- NCP-OMC Binding 1.0.0-rc.1;
-- namespace, conformance, versioning, and migration mechanics;
-- the intended open-Core, foundational-profile, and licensed-Dramatica commercial boundary;
+- [NCP-OMC Binding 1.0.0-rc.1](bindings/omc/omc-binding.md);
+- namespace, conformance, versioning, and migration guidance;
+- documented boundaries between open interchange and licensed Dramatica intelligence;
 - access routes for Dramatica MCP, validation, certification, SDK, studio, and private deployment;
 - structural validators and synthetic examples; and
-- frozen-legacy compatibility artifacts and a clear public-profile-versus-licensed-intelligence boundary.
+- frozen legacy artifacts for compatibility with earlier NCP documents.
 
-## Intentionally excluded
+## What NCP does not provide
 
-- contributor-agreement terms;
-- final service, SDK, profile, trademark, compatibility-mark, and certification terms;
-- Dramatica valid-combination logic, private structural matrices, generation algorithms, completion and resolution logic, diagnosis, semantic-validation technology, certification technology, or product implementation details.
+NCP defines how narrative context is represented and exchanged. It does not include Dramatica's valid-combination logic, private structural matrices, generation algorithms, completion or resolution logic, diagnostic methods, semantic-validation technology, certification technology, or product implementation details.
 
-The current license preamble is updated to reflect the layered interoperability architecture while preserving the MIT grant text. Existing releases and repository history are unchanged.
+The release candidate also does not grant rights to Dramatica trademarks, compatibility marks, certification marks, hosted services, SDKs, or private deployments. Those offerings have separate terms. See [Licensing and Commercial Access](governance/licensing.md) for the current public boundary.
 
-## Review questions
+Existing NCP releases and repository history remain unchanged.
 
-1. Can a Core-only implementation exchange narrative context without knowing Dramatica?
-2. Are profile and extension payloads cleanly isolated from Core?
-3. Does the Dramatica profile preserve the complete existing representation and make its terminology understandable without recreating the engine that determines valid Storyforms?
-4. Are schema and semantic validation results impossible to confuse?
-5. Can OMC embed or reference NCP without duplicating production data?
-6. Are version and migration boundaries explicit enough for early implementers?
-7. Is it clear that Dramatica is NCP's foundational profile without being required by Core?
-8. Is the route from open NCP transport to licensed Dramatica validation and certification clear?
+## How to review the candidate
 
-Report feedback in a GitHub issue and identify the affected layer, namespace, and candidate component version.
+Reviewers may wish to consider whether:
+
+1. a Core-only implementation can exchange narrative context without knowing Dramatica;
+2. profile and extension payloads are cleanly isolated from Core;
+3. the Dramatica profile preserves the existing representation and explains its terminology without recreating the licensed engine that determines valid Storyforms;
+4. structural schema validation and Dramatica semantic validation are clearly distinguished;
+5. OMC can embed or reference NCP without duplicating production data;
+6. version and migration boundaries are clear enough for early implementers;
+7. Dramatica's role as NCP's foundational profile is clear without making it a Core requirement; and
+8. the path from open NCP interchange to licensed Dramatica validation and certification is understandable.
+
+Please report feedback in a [GitHub issue](https://github.com/narrative-first/narrative-context-protocol/issues) and identify the affected layer, namespace, and release-candidate component version.
 
 OMC means the MovieLabs Ontology for Media Creation.
