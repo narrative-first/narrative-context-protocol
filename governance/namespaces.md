@@ -2,11 +2,11 @@
 
 Namespaces prevent one narrative system or workflow from silently changing another.
 
-## Candidate reservations
+## Maintained namespaces and candidate reservations
 
 - `ncp:` identifies NCP Core vocabulary maintained through the NCP change process.
 - `dramatica:` identifies NCP's foundational Dramatica Storyform Profile, maintained by The Dramatica Co. Changes to the official profile require its approval.
-- `ncp-script:` identifies the optional [Script extension technical draft](../extensions/script/README.md), version `0.1.0-draft`. It does not change Core or profile requirements.
+- `ncp-script:` identifies the optional [Script extension](../extensions/script/README.md), version `1.0.0`. It does not change Core or profile requirements.
 - `ncp-interactive:` and `ncp-production:` are reserved candidate extension namespaces. They remain outside `dramatica:`.
 
 Third parties may create separately named and governed profiles or extensions, including mappings such as `hero-journey:` or `save-the-cat:`. A mapping remains a mapping and must not redefine fields in another namespace.

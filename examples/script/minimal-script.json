@@ -11,14 +11,14 @@
     "extensions": [
         {
             "namespace": "ncp-script:",
-            "version": "0.1.0-draft",
-            "schema": "https://narrativecontextprotocol.com/extensions/script/0.1.0-draft/script-schema.json"
+            "version": "1.0.0",
+            "schema": "https://narrativecontextprotocol.com/extensions/script/1.0.0/script-schema.json"
         }
     ],
     "payloads": {
         "ncp-script:": {
             "namespace": "ncp-script:",
-            "version": "0.1.0-draft",
+            "version": "1.0.0",
             "scope": {
                 "label": "Complete one-scene screenplay",
                 "kind": "full_work",

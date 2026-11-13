@@ -28,7 +28,7 @@ See the [Developer Documentation](docs/developer-documentation.md) for implement
 | --- | --- |
 | [NCP Core](core/specification.md) | Narrative-system-neutral identifiers, authorship, provenance, versions, declarations, references, contributions, attestations, and interchange rules |
 | [Profiles](profiles/README.md) | Separately versioned transport contracts for information produced by a narrative system |
-| [Extensions](extensions/README.md) | Separately named application or workflow data that does not alter Core or another profile |
+| [Extensions](extensions/README.md) | Optional [Script 1.0.0](extensions/script/README.md) and separately named workflow data that do not alter Core or another profile |
 | [Dramatica Storyform Profile](profiles/dramatica/transport-guidance.md) | Public transport structure, terminology, and preservation guidance for Dramatica-oriented story information |
 | [JSON serialization](serialization/json/README.md) | The machine-readable JSON representation of NCP data |
 | [Bindings](bindings/README.md) | Ways to embed or reference NCP in another standard or workflow |

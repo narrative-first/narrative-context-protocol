@@ -103,3 +103,7 @@ For the current architecture, see the [NCP 3.0 release-candidate overview](RELEA
 ## Optional Script extension technical draft
 
 Adds `ncp-script:` version `0.1.0-draft` for source-anchored screenplay storytelling, independently of Storyform completeness. Includes Shawshank scene inventory, synthetic positive/negative conformance checks, and an explicit OMC storytelling/production boundary. Core, the Dramatica profile and frozen legacy schemas are unchanged.
+
+## Script extension 1.0.0
+
+Stabilizes the optional Script contract and reference checks, including unambiguous coordinates, page bounds, source attribution, scope orientation and nonempty accounted-for captures. Adds mixed interior/exterior labels and printed revision-page labels. Freezes `0.1.0-draft` for backward-compatible reads and preserves all existing Core, profile and combined schemas.

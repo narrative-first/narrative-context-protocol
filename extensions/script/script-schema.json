@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://narrativecontextprotocol.com/extensions/script/0.1.0-draft/script-schema.json",
-    "title": "NCP Script Extension 0.1.0-draft",
+    "$id": "https://narrativecontextprotocol.com/extensions/script/1.0.0/script-schema.json",
+    "title": "NCP Script Extension 1.0.0",
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -294,7 +294,8 @@
                     "interior_exterior": {
                         "enum": [
                             "INT",
-                            "EXT"
+                            "EXT",
+                            "INT/EXT"
                         ]
                     },
                     "location_label": {
@@ -576,7 +577,7 @@
             "const": "ncp-script:"
         },
         "version": {
-            "const": "0.1.0-draft"
+            "const": "1.0.0"
         }
     },
     "required": [
@@ -588,7 +589,7 @@
         "blocks",
         "entities"
     ],
-    "description": "Optional theory-neutral screenplay source, ordered storytelling and evidence-backed associations. Structural transport only.",
+    "description": "Optional, independently versioned screenplay storytelling transport. Schema and local-reference conformance do not certify source accuracy or Storyform semantics.",
     "$defs": {
         "source_span": {
             "type": "object",
@@ -607,7 +608,11 @@
                             "minimum": 1
                         },
                         "printed_page": {
-                            "type": "integer",
+                            "type": [
+                                "string",
+                                "integer"
+                            ],
+                            "minLength": 1,
                             "minimum": 1
                         },
                         "line": {
@@ -642,7 +647,11 @@
                             "minimum": 1
                         },
                         "printed_page": {
-                            "type": "integer",
+                            "type": [
+                                "string",
+                                "integer"
+                            ],
+                            "minLength": 1,
                             "minimum": 1
                         },
                         "line": {
@@ -706,5 +715,30 @@
                 "value"
             ]
         }
-    }
+    },
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "scope": {
+                        "properties": {
+                            "capture_status": {
+                                "const": "extracted_text_accounted_for"
+                            }
+                        }
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "units": {
+                        "minItems": 1
+                    },
+                    "blocks": {
+                        "minItems": 1
+                    }
+                }
+            }
+        }
+    ]
 }

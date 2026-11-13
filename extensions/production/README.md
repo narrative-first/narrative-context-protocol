@@ -8,4 +8,4 @@ Production objects, breakdowns, schedules, tasks, assets, participants, and work
 
 NCP 3.0.0-rc.1 reserves `ncp-production:` as an example extension namespace. An implementation must not claim conformance to an `ncp-production:` schema until a separately versioned schema and conformance policy are published.
 
-The separate [`ncp-script:` draft](../script/README.md) can carry a screenplay storytelling snapshot with source evidence. It does not make production schedules, casting, assets or operational breakdowns part of NCP.
+The separate [`ncp-script:` extension](../script/README.md) can carry a screenplay storytelling snapshot with source evidence. It does not make production schedules, casting, assets or operational breakdowns part of NCP.

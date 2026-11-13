@@ -49,4 +49,4 @@ The service boundary and access route are documented in [Licensing and Commercia
 
 ## Optional Script extension
 
-`npm run validate:script` checks the draft `ncp-script:` schema and local reference invariants. `validate:file` performs these checks separately when the Core document declares that extension. Existing documents without it retain their current behavior. See [Script conformance](extensions/script/README.md#conformance-and-compatibility).
+`npm run validate:script` checks the stable and frozen-draft `ncp-script:` schemas and local reference invariants. `validate:file` performs these checks separately when the Core document declares that extension. Existing documents without it retain their current behavior. See [Script conformance](extensions/script/README.md#conformance-and-compatibility).
