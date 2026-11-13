@@ -1,0 +1,710 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://narrativecontextprotocol.com/extensions/script/0.1.0-draft/script-schema.json",
+    "title": "NCP Script Extension 0.1.0-draft",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "scope": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "label": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "kind": {
+                    "enum": [
+                        "full_work",
+                        "partial_work"
+                    ]
+                },
+                "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "first_unit_id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "last_unit_id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "excluded_following_heading": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "boundary_status": {
+                    "enum": [
+                        "proposed",
+                        "accepted"
+                    ]
+                },
+                "capture_status": {
+                    "enum": [
+                        "incomplete",
+                        "extracted_text_accounted_for"
+                    ]
+                },
+                "transcription_status": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "structural_links_status": {
+                    "enum": [
+                        "none",
+                        "proposed",
+                        "reviewed"
+                    ]
+                },
+                "human_review_status": {
+                    "enum": [
+                        "not_reviewed",
+                        "in_progress",
+                        "reviewed"
+                    ]
+                }
+            },
+            "required": [
+                "label",
+                "kind",
+                "source_id",
+                "capture_status",
+                "human_review_status"
+            ]
+        },
+        "sources": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "filename": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "media_type": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "title": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "edition": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "pdf_page_count": {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+                    "extractor": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "extraction_sha256": {
+                        "type": "string",
+                        "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "covered_printed_pages": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "covered_pdf_pages": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "raw_extract_reference": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "system": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "value": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "entity_type": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "uri": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [
+                            "system",
+                            "value"
+                        ]
+                    },
+                    "provenance_note": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "content_reference": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "system": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "value": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "entity_type": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "uri": {
+                                "type": "string",
+                                "format": "uri"
+                            }
+                        },
+                        "required": [
+                            "system",
+                            "value"
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "filename",
+                    "media_type",
+                    "sha256",
+                    "extractor"
+                ]
+            },
+            "minItems": 1
+        },
+        "units": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "order": {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+                    "kind": {
+                        "enum": [
+                            "scene",
+                            "subscene",
+                            "montage"
+                        ]
+                    },
+                    "heading": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "source": {
+                        "$ref": "#/$defs/source_span"
+                    },
+                    "summary": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "summary_status": {
+                        "enum": [
+                            "proposed",
+                            "accepted"
+                        ]
+                    },
+                    "block_ids": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "observations": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "additionalProperties": false,
+                            "properties": {
+                                "entity_id": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "block_id": {
+                                    "type": "string",
+                                    "minLength": 1
+                                },
+                                "mode": {
+                                    "enum": [
+                                        "text_mention",
+                                        "speaker_cue",
+                                        "on_screen",
+                                        "off_screen"
+                                    ]
+                                },
+                                "status": {
+                                    "enum": [
+                                        "proposed",
+                                        "accepted",
+                                        "rejected"
+                                    ]
+                                },
+                                "delivery": {
+                                    "enum": [
+                                        "voiceover",
+                                        "offscreen",
+                                        "unspecified"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity_id",
+                                "block_id",
+                                "mode",
+                                "status"
+                            ]
+                        }
+                    },
+                    "parent_unit_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "interior_exterior": {
+                        "enum": [
+                            "INT",
+                            "EXT"
+                        ]
+                    },
+                    "location_label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "time_label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "year_label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "location_entity_id": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "order",
+                    "kind",
+                    "heading",
+                    "source",
+                    "block_ids"
+                ]
+            }
+        },
+        "blocks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "unit_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "kind": {
+                        "enum": [
+                            "whitespace",
+                            "page_number",
+                            "heading",
+                            "transition",
+                            "continuation_marker",
+                            "character_cue",
+                            "parenthetical",
+                            "dialogue",
+                            "unattributed_text",
+                            "action"
+                        ]
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "source": {
+                        "$ref": "#/$defs/source_span"
+                    },
+                    "speaker_label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "content_reference": {
+                        "$ref": "#/$defs/reference"
+                    }
+                },
+                "required": [
+                    "id",
+                    "unit_id",
+                    "kind",
+                    "source"
+                ],
+                "anyOf": [
+                    {
+                        "required": [
+                            "text"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "content_reference"
+                        ]
+                    }
+                ]
+            }
+        },
+        "entities": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "kind": {
+                        "enum": [
+                            "character",
+                            "location",
+                            "object",
+                            "animal",
+                            "group"
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "aliases": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "resolution_status": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "kind",
+                    "label"
+                ]
+            }
+        },
+        "relations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "from_unit_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "to_unit_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "kind": {
+                        "enum": [
+                            "payoff",
+                            "causal",
+                            "reported_consequence",
+                            "explanation",
+                            "visual_echo"
+                        ]
+                    },
+                    "status": {
+                        "enum": [
+                            "proposed",
+                            "accepted",
+                            "rejected"
+                        ]
+                    },
+                    "rationale": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "evidence_block_ids": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    }
+                },
+                "required": [
+                    "id",
+                    "from_unit_id",
+                    "to_unit_id",
+                    "kind",
+                    "status",
+                    "rationale"
+                ]
+            }
+        },
+        "structural_links": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "unit_id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "target": {
+                        "$ref": "#/$defs/reference"
+                    },
+                    "relation": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "status": {
+                        "enum": [
+                            "proposed",
+                            "accepted",
+                            "rejected"
+                        ]
+                    },
+                    "rationale": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "evidence_block_ids": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    }
+                },
+                "required": [
+                    "id",
+                    "unit_id",
+                    "target",
+                    "relation",
+                    "status",
+                    "rationale",
+                    "evidence_block_ids"
+                ]
+            }
+        },
+        "review_issues": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "severity": {
+                        "enum": [
+                            "review",
+                            "gap",
+                            "error"
+                        ]
+                    },
+                    "unit_ids": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "minLength": 1
+                        }
+                    },
+                    "description": {
+                        "type": "string",
+                        "minLength": 1
+                    }
+                },
+                "required": [
+                    "id",
+                    "severity",
+                    "unit_ids",
+                    "description"
+                ]
+            }
+        },
+        "namespace": {
+            "const": "ncp-script:"
+        },
+        "version": {
+            "const": "0.1.0-draft"
+        }
+    },
+    "required": [
+        "namespace",
+        "version",
+        "scope",
+        "sources",
+        "units",
+        "blocks",
+        "entities"
+    ],
+    "description": "Optional theory-neutral screenplay source, ordered storytelling and evidence-backed associations. Structural transport only.",
+    "$defs": {
+        "source_span": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "source_id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "start": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "pdf_page": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "printed_page": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "line": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "paragraph": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "required": [],
+                    "anyOf": [
+                        {
+                            "required": [
+                                "line"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "paragraph"
+                            ]
+                        }
+                    ]
+                },
+                "end": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "pdf_page": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "printed_page": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "line": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "paragraph": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "required": [],
+                    "anyOf": [
+                        {
+                            "required": [
+                                "line"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "paragraph"
+                            ]
+                        }
+                    ]
+                },
+                "coordinate_system": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "required": [
+                "source_id",
+                "start",
+                "end",
+                "coordinate_system"
+            ]
+        },
+        "reference": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "system": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "value": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "entity_type": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "uri": {
+                    "type": "string",
+                    "format": "uri"
+                }
+            },
+            "required": [
+                "system",
+                "value"
+            ]
+        }
+    }
+}

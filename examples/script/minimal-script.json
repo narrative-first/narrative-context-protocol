@@ -1,0 +1,97 @@
+{
+    "ncp_version": "3.0.0-rc.1",
+    "document": {
+        "id": "script-example",
+        "created_at": "2026-11-12T00:00:00Z"
+    },
+    "story": {
+        "id": "night-ferry",
+        "title": "The Night Ferry"
+    },
+    "extensions": [
+        {
+            "namespace": "ncp-script:",
+            "version": "1.0.0",
+            "schema": "https://narrativecontextprotocol.com/extensions/script/1.0.0/script-schema.json"
+        }
+    ],
+    "payloads": {
+        "ncp-script:": {
+            "namespace": "ncp-script:",
+            "version": "1.0.0",
+            "scope": {
+                "label": "Complete one-scene screenplay",
+                "kind": "full_work",
+                "source_id": "source-1",
+                "capture_status": "extracted_text_accounted_for",
+                "human_review_status": "not_reviewed"
+            },
+            "sources": [
+                {
+                    "id": "source-1",
+                    "filename": "night-ferry.txt",
+                    "media_type": "text/plain",
+                    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                    "extractor": "example-lines-v1"
+                }
+            ],
+            "units": [
+                {
+                    "id": "scene-1",
+                    "order": 1,
+                    "kind": "scene",
+                    "heading": "EXT. FERRY - NIGHT",
+                    "source": {
+                        "source_id": "source-1",
+                        "coordinate_system": "text-lines-v1",
+                        "start": {
+                            "line": 1
+                        },
+                        "end": {
+                            "line": 2
+                        }
+                    },
+                    "block_ids": [
+                        "block-1",
+                        "block-2"
+                    ]
+                }
+            ],
+            "blocks": [
+                {
+                    "id": "block-1",
+                    "unit_id": "scene-1",
+                    "kind": "heading",
+                    "text": "EXT. FERRY - NIGHT",
+                    "source": {
+                        "source_id": "source-1",
+                        "coordinate_system": "text-lines-v1",
+                        "start": {
+                            "line": 1
+                        },
+                        "end": {
+                            "line": 1
+                        }
+                    }
+                },
+                {
+                    "id": "block-2",
+                    "unit_id": "scene-1",
+                    "kind": "action",
+                    "text": "Mara ties the last rope as the ferry leaves.",
+                    "source": {
+                        "source_id": "source-1",
+                        "coordinate_system": "text-lines-v1",
+                        "start": {
+                            "line": 2
+                        },
+                        "end": {
+                            "line": 2
+                        }
+                    }
+                }
+            ],
+            "entities": []
+        }
+    }
+}

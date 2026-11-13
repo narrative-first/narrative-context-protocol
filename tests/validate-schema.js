@@ -155,3 +155,5 @@ if (failures > 0) {
 }
 
 console.log(structuralNotice);
+
+require('./validate-script');

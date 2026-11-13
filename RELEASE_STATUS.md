@@ -28,3 +28,7 @@ NCP does not define service contracts, SDK agreements, enterprise deployment ter
 ## Provide feedback
 
 Open a [GitHub issue](https://github.com/narrative-first/narrative-context-protocol/issues) and identify the affected layer, namespace, component version, and interoperability impact.
+
+## Script extension
+
+The optional [Script extension](extensions/script/README.md) is stable at `1.0.0`, independently of Core’s release-candidate status. `0.1.0-draft` remains a frozen compatibility input. Script conformance covers transport and local references, not transcription accuracy, human approval or narrative-system validity.

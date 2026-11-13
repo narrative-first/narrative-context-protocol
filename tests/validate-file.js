@@ -3,6 +3,8 @@ const Ajv2020 = require('ajv/dist/2020');
 const fs = require('fs');
 const path = require('path');
 
+const { scriptErrors } = require('./script-contract');
+
 const args = process.argv.slice(2);
 const repoRoot = path.join(__dirname, '..');
 const structuralNotice = 'NOTICE: NCP schema validation is structural only. It does not determine whether a document contains a complete, coherent, or valid Dramatica Storyform.';
@@ -112,6 +114,13 @@ for (const inputPath of args) {
 
   if (selected.validate(selectedData)) {
     console.log(`PASS ${selected.name} ${inputPath}`);
+    if (selected.name === 'NCP Core schema' || selected.name === 'NCP-OMC embedded fragment') {
+      const errors = scriptErrors(selectedData);
+      if (errors.length) {
+        failures += 1;
+        console.error(`FAIL Script extension ${inputPath}: ${errors.join('; ')}`);
+      }
+    }
 
     if ((selected.name === 'NCP Core schema' || selected.name === 'NCP-OMC embedded fragment') && !validateRecognizedProfiles(selectedData, inputPath)) {
       failures += 1;

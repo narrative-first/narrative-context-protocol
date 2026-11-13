@@ -1,0 +1,156 @@
+[
+    {
+        "name": "ambiguous line and paragraph coordinates",
+        "changes": {
+            "units.0.source.start.paragraph": 1,
+            "units.0.source.end.paragraph": 2
+        }
+    },
+    {
+        "name": "unpaired physical PDF page",
+        "changes": {
+            "blocks.0.source.end.pdf_page": 1
+        }
+    },
+    {
+        "name": "PDF coordinate system without physical pages",
+        "changes": {
+            "units.0.source.coordinate_system": "pdf-layout-lines-v1"
+        }
+    },
+    {
+        "name": "paragraphs labeled as text lines",
+        "changes": {
+            "blocks.0.source.start": {
+                "paragraph": 1
+            },
+            "blocks.0.source.end": {
+                "paragraph": 1
+            }
+        }
+    },
+    {
+        "name": "cross-source block attribution",
+        "changes": {
+            "sources.1": {
+                "id": "source-2",
+                "filename": "night-ferry.txt",
+                "media_type": "text/plain",
+                "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "extractor": "example-lines-v1"
+            },
+            "blocks.0.source.source_id": "source-2"
+        }
+    },
+    {
+        "name": "reversed scope endpoints",
+        "changes": {
+            "units.1": {
+                "id": "scene-2",
+                "order": 2,
+                "kind": "scene",
+                "heading": "EXT. FERRY - NIGHT",
+                "source": {
+                    "source_id": "source-1",
+                    "coordinate_system": "text-lines-v1",
+                    "start": {
+                        "line": 3
+                    },
+                    "end": {
+                        "line": 3
+                    }
+                },
+                "block_ids": [
+                    "block-3"
+                ]
+            },
+            "blocks.2": {
+                "id": "block-3",
+                "unit_id": "scene-2",
+                "kind": "action",
+                "text": "Mara ties the last rope as the ferry leaves.",
+                "source": {
+                    "source_id": "source-1",
+                    "coordinate_system": "text-lines-v1",
+                    "start": {
+                        "line": 3
+                    },
+                    "end": {
+                        "line": 3
+                    }
+                }
+            },
+            "scope.first_unit_id": "scene-2",
+            "scope.last_unit_id": "scene-1"
+        }
+    },
+    {
+        "name": "character used as scene location",
+        "changes": {
+            "entities.0": {
+                "id": "character-1",
+                "kind": "character",
+                "label": "Mara"
+            },
+            "units.0.location_entity_id": "character-1"
+        }
+    },
+    {
+        "name": "empty capture reported complete",
+        "changes": {
+            "units": [],
+            "blocks": []
+        }
+    },
+    {
+        "name": "PDF anchor beyond source page count",
+        "changes": {
+            "sources.0.pdf_page_count": 1,
+            "blocks.0.source.coordinate_system": "pdf-layout-lines-v1",
+            "blocks.0.source.start.pdf_page": 2,
+            "blocks.0.source.end.pdf_page": 2
+        }
+    },
+    {
+        "name": "reversed covered PDF range",
+        "changes": {
+            "sources.0.covered_pdf_pages": [
+                5,
+                1
+            ]
+        }
+    },
+    {
+        "name": "covered range exceeds PDF page count",
+        "changes": {
+            "sources.0.pdf_page_count": 2,
+            "sources.0.covered_pdf_pages": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "name": "covered range is not an enumeration",
+        "changes": {
+            "sources.0.covered_pdf_pages": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "name": "anchor lies outside captured section",
+        "changes": {
+            "sources.0.pdf_page_count": 3,
+            "sources.0.covered_pdf_pages": [
+                1,
+                1
+            ],
+            "blocks.0.source.coordinate_system": "pdf-layout-lines-v1",
+            "blocks.0.source.start.pdf_page": 2,
+            "blocks.0.source.end.pdf_page": 2
+        }
+    }
+]
