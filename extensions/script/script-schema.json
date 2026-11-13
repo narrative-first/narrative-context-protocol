@@ -119,16 +119,26 @@
                     "covered_printed_pages": {
                         "type": "array",
                         "items": {
-                            "type": "integer",
+                            "type": [
+                                "string",
+                                "integer"
+                            ],
+                            "minLength": 1,
                             "minimum": 1
-                        }
+                        },
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "description": "Inclusive first and last page endpoints, not an enumeration of pages."
                     },
                     "covered_pdf_pages": {
                         "type": "array",
                         "items": {
                             "type": "integer",
                             "minimum": 1
-                        }
+                        },
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "description": "Inclusive first and last page endpoints, not an enumeration of pages."
                     },
                     "raw_extract_reference": {
                         "type": "object",

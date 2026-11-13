@@ -12,7 +12,7 @@ The [versioned repository schema](1.0.0/script-schema.json) is authoritative for
 
 ## Source and coverage
 
-Each source identifies an exact edition by SHA-256 and records its extractor. Extraction hashes identify the text derivative separately. The source can include inline block text or resolvable external content references. References identify material; they do not prove that the consumer has obtained or verified it.
+Each source identifies an exact edition by SHA-256 and records its extractor. Extraction hashes identify the text derivative separately. The source can include inline block text or resolvable external content references. References identify material; they do not prove that the consumer has obtained or verified it. Optional `covered_pdf_pages` and `covered_printed_pages` are inclusive `[first, last]` endpoints, not page enumerations. Physical endpoints must be ordered, fall within any declared PDF page count, and contain all physical page anchors for that source. Printed labels are descriptive and are not used for ordering.
 
 `scope.kind` distinguishes `full_work` from `partial_work`. `capture_status: extracted_text_accounted_for` means the declared extracted text is accounted for, including unresolved blocks. It is not proof of an accurate PDF transcription, a complete released-film representation, structural completeness, or human approval. Known missing pages or source content require `incomplete` and a `gap` review issue. A consumer unable to resolve external source content must report that limit and must not claim it read the source.
 

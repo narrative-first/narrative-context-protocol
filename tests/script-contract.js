@@ -45,6 +45,12 @@ function scriptReferenceErrors(payload) {
   index(payload.relations || [], 'relation');
   index(payload.structural_links || [], 'association');
   index(payload.review_issues || [], 'review issue');
+  if (stable) {
+    for (const source of sources.values()) {
+      const range = source.covered_pdf_pages;
+      if (range && (range[0] > range[1] || source.pdf_page_count !== undefined && range[1] > source.pdf_page_count)) fail('Invalid covered physical PDF page range.');
+    }
+  }
   const position = p => [p.pdf_page || 0, p.paragraph || p.line];
   const checkSpan = span => {
     if (!sources.has(span.source_id)) fail(`Unknown anchor source: ${span.source_id}`);
@@ -61,6 +67,8 @@ function scriptReferenceErrors(payload) {
       if (span.coordinate_system === 'fdx-paragraphs-v1' && (!paragraph || page)) fail('FDX anchors require paragraphs without PDF pages.');
       const count = sources.get(span.source_id)?.pdf_page_count;
       if (count !== undefined && page && point.pdf_page > count) fail('Source anchor exceeds the PDF page count.');
+      const range = sources.get(span.source_id)?.covered_pdf_pages;
+      if (range && page && (point.pdf_page < range[0] || point.pdf_page > range[1])) fail('Source anchor falls outside the captured PDF page range.');
     }
     if (('pdf_page' in span.start) !== ('pdf_page' in span.end)) fail('Source anchors must pair physical PDF pages.');
   };
