@@ -99,3 +99,7 @@ This candidate introduces the layered NCP architecture and updates the current l
 The 2.0 schema remains available as a frozen compatibility artifact. NCP 3 preserves its Storyform-oriented transport structure through the Dramatica Storyform Profile rather than treating it as NCP Core.
 
 For the current architecture, see the [NCP 3.0 release-candidate overview](RELEASE_CANDIDATE.md). For current public Dramatica terminology, see [`profiles/dramatica/terminology/`](profiles/dramatica/terminology/). For the validation boundary and licensed access routes, see [Validation](VALIDATION.md) and [Licensing and Commercial Access](governance/licensing.md).
+
+## Optional Script extension technical draft
+
+Adds `ncp-script:` version `0.1.0-draft` for source-anchored screenplay storytelling, independently of Storyform completeness. Includes Shawshank scene inventory, synthetic positive/negative conformance checks, and an explicit OMC storytelling/production boundary. Core, the Dramatica profile and frozen legacy schemas are unchanged.

@@ -7,3 +7,5 @@ Production-specific narrative references that are not already represented by an 
 Production objects, breakdowns, schedules, tasks, assets, participants, and workflow state should generally remain in a production model such as MovieLabs OMC. NCP should reference those records where needed instead of duplicating them.
 
 NCP 3.0.0-rc.1 reserves `ncp-production:` as an example extension namespace. An implementation must not claim conformance to an `ncp-production:` schema until a separately versioned schema and conformance policy are published.
+
+The separate [`ncp-script:` draft](../script/README.md) can carry a screenplay storytelling snapshot with source evidence. It does not make production schedules, casting, assets or operational breakdowns part of NCP.

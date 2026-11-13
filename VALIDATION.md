@@ -46,3 +46,7 @@ NCP Core validates only the attestation's transport shape. It does not verify th
 Validator pages, command-line output, CI logs, and pull requests should say **“NCP schema validation passed.”** They must not abbreviate a schema-only result to “Storyform valid.”
 
 The service boundary and access route are documented in [Licensing and Commercial Access](governance/licensing.md). Service access and mark permissions are governed separately from NCP schema conformance.
+
+## Optional Script extension
+
+`npm run validate:script` checks the draft `ncp-script:` schema and local reference invariants. `validate:file` performs these checks separately when the Core document declares that extension. Existing documents without it retain their current behavior. See [Script conformance](extensions/script/README.md#conformance-and-compatibility).

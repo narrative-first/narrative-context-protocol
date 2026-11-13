@@ -6,6 +6,7 @@ on:
     paths:
       - 'core/**'
       - 'profiles/**'
+      - 'extensions/**'
       - 'bindings/**'
       - 'schema/**'
       - 'examples/**'

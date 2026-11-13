@@ -45,7 +45,7 @@ See [`examples/external-reference.json`](examples/external-reference.json).
 - OMC consumers may inspect an NCP attestation as transported metadata, but NCP Core does not establish its authority or semantic correctness.
 - Applications requiring Storyform creation, resolution, diagnosis, completion, semantic validation, or certification use licensed Dramatica capabilities. Visit [Dramatica.com](https://dramatica.com/) or contact **support@dramatica.com**.
 
-Broken-down scripts, production objects, schedules, tasks, participants, assets, and workflow data should remain in OMC. NCP references those objects using Core external references rather than duplicating the production model.
+Production breakdown records, production objects, schedules, tasks, participants, assets, and workflow data remain authoritative in OMC. The optional [Script extension draft](../../extensions/script/README.md) may carry a source-anchored storytelling snapshot of a screenplay, including scenes and dialogue/action observations. That snapshot does not replace OMC production records. NCP references production objects using Core external references rather than duplicating the production model.
 
 ## Example status
 
