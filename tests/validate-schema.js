@@ -112,7 +112,10 @@ for (const check of checks) {
 
 const profileDefinitionsWithLegacyTerms = {
   ...dramaticaProfileSchema.$defs,
-  canonical_appreciation: legacySchema.$defs.canonical_appreciation
+  canonical_appreciation: {
+    ...dramaticaProfileSchema.$defs.canonical_appreciation,
+    enum: legacySchema.$defs.canonical_appreciation.enum
+  }
 };
 const profileStoryShapeMatchesLegacy =
   JSON.stringify(stripAnnotations(dramaticaProfileSchema.properties.storyform)) === JSON.stringify(stripAnnotations(legacySchema.properties.story)) &&
