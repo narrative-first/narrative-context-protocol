@@ -50,3 +50,7 @@ The service boundary and access route are documented in [Licensing and Commercia
 ## Optional Script extension
 
 `npm run validate:script` checks the stable and frozen-draft `ncp-script:` schemas and local reference invariants. `validate:file` performs these checks separately when the Core document declares that extension. Existing documents without it retain their current behavior. See [Script conformance](extensions/script/README.md#conformance-and-compatibility).
+
+## Script Content extension
+
+`npm run validate:script-content` validates the content-oriented `ncp-script-content:` extension, including IDs, ordering, local references, and dual dialogue. The full fixture suite includes it; `validate:file` checks it in Core documents and embedded Core fragments. See [Script Content](extensions/script-content/README.md). These checks establish transport conformance, not a complete or valid Storyform.

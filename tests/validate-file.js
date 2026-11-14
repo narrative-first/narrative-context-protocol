@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { scriptErrors } = require('./script-contract');
+const { scriptContentErrors } = require('../tools/script-content');
 
 const args = process.argv.slice(2);
 const repoRoot = path.join(__dirname, '..');
@@ -115,7 +116,7 @@ for (const inputPath of args) {
   if (selected.validate(selectedData)) {
     console.log(`PASS ${selected.name} ${inputPath}`);
     if (selected.name === 'NCP Core schema' || selected.name === 'NCP-OMC embedded fragment') {
-      const errors = scriptErrors(selectedData);
+      const errors = [...scriptErrors(selectedData), ...scriptContentErrors(selectedData)];
       if (errors.length) {
         failures += 1;
         console.error(`FAIL Script extension ${inputPath}: ${errors.join('; ')}`);

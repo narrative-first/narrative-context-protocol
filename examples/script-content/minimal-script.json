@@ -1,0 +1,101 @@
+{
+    "ncp_version": "3.0.0-rc.1",
+    "document": {
+        "id": "script-content-example",
+        "created_at": "2026-11-12T00:00:00Z"
+    },
+    "story": {
+        "id": "night-ferry",
+        "title": "The Night Ferry"
+    },
+    "extensions": [
+        {
+            "namespace": "ncp-script-content:",
+            "version": "1.0.0",
+            "schema": "https://narrativecontextprotocol.com/extensions/script-content/1.0.0/script-content-schema.json"
+        }
+    ],
+    "payloads": {
+        "ncp-script-content:": {
+            "namespace": "ncp-script-content:",
+            "version": "1.0.0",
+            "scenes": [
+                {
+                    "id": "scene-station",
+                    "order": 1,
+                    "blocks": [
+                        {
+                            "id": "heading",
+                            "order": 1,
+                            "type": "scene_heading",
+                            "text": "INT. STATION - NIGHT"
+                        },
+                        {
+                            "id": "action",
+                            "order": 2,
+                            "type": "action",
+                            "text": "Rain tracks across the empty platform.\nA clock stops."
+                        },
+                        {
+                            "id": "cue",
+                            "order": 3,
+                            "type": "character",
+                            "text": "MARA"
+                        },
+                        {
+                            "id": "aside",
+                            "order": 4,
+                            "type": "parenthetical",
+                            "text": "(quietly)"
+                        },
+                        {
+                            "id": "speech",
+                            "order": 5,
+                            "type": "dialogue",
+                            "text": "We still have time."
+                        },
+                        {
+                            "id": "simultaneous",
+                            "order": 6,
+                            "type": "dual_dialogue",
+                            "left": [
+                                {
+                                    "id": "left-cue",
+                                    "order": 1,
+                                    "type": "character",
+                                    "text": "MARA"
+                                },
+                                {
+                                    "id": "left-speech",
+                                    "order": 2,
+                                    "type": "dialogue",
+                                    "text": "Run!"
+                                }
+                            ],
+                            "right": [
+                                {
+                                    "id": "right-cue",
+                                    "order": 1,
+                                    "type": "character",
+                                    "text": "SOL"
+                                },
+                                {
+                                    "id": "right-speech",
+                                    "order": 2,
+                                    "type": "dialogue",
+                                    "text": "Wait!"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cut",
+                            "order": 7,
+                            "type": "transition",
+                            "text": "CUT TO:"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

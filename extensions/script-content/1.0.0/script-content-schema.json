@@ -1,0 +1,160 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://narrativecontextprotocol.com/extensions/script-content/1.0.0/script-content-schema.json",
+    "title": "NCP Script Content 1.0.0",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "namespace",
+        "version",
+        "scenes"
+    ],
+    "properties": {
+        "namespace": {
+            "const": "ncp-script-content:"
+        },
+        "version": {
+            "const": "1.0.0"
+        },
+        "scenes": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                    "id",
+                    "order",
+                    "blocks"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "minLength": 1
+                    },
+                    "order": {
+                        "type": "integer",
+                        "minimum": 1
+                    },
+                    "blocks": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {
+                            "$ref": "#/$defs/block"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "$defs": {
+        "text_block": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "id",
+                "order",
+                "type",
+                "text"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "minLength": 1
+                },
+                "order": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "type": {
+                    "enum": [
+                        "scene_heading",
+                        "action",
+                        "character",
+                        "dialogue",
+                        "parenthetical",
+                        "transition",
+                        "lyrics",
+                        "section",
+                        "synopsis",
+                        "note",
+                        "boneyard",
+                        "title_page"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "minLength": 1
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "type": {
+                                "enum": [
+                                    "scene_heading",
+                                    "character",
+                                    "transition",
+                                    "section",
+                                    "synopsis"
+                                ]
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "text": {
+                                "pattern": "^[^\\r\\n]+$"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "speech": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+                "$ref": "#/$defs/text_block"
+            }
+        },
+        "block": {
+            "oneOf": [
+                {
+                    "$ref": "#/$defs/text_block"
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "id",
+                        "order",
+                        "type",
+                        "left",
+                        "right"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "minLength": 1
+                        },
+                        "order": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "type": {
+                            "const": "dual_dialogue"
+                        },
+                        "left": {
+                            "$ref": "#/$defs/speech"
+                        },
+                        "right": {
+                            "$ref": "#/$defs/speech"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
