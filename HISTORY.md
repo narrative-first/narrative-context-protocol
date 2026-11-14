@@ -107,3 +107,7 @@ Adds `ncp-script:` version `0.1.0-draft` for source-anchored screenplay storytel
 ## Script extension 1.0.0
 
 Stabilizes the optional Script contract and reference checks, including unambiguous coordinates, page bounds, source attribution, scope orientation and nonempty accounted-for captures. Adds mixed interior/exterior labels and printed revision-page labels. Freezes `0.1.0-draft` for backward-compatible reads and preserves all existing Core, profile and combined schemas.
+
+## Script Content extension 1.0.0
+
+The optional `ncp-script-content:` extension makes ordered scene and content nodes the default screenplay exchange representation, also called NCP Scripts 2. It omits PDF layout/provenance machinery while preserving stable links and Fountain content. The existing source-oriented Script extension remains separately versioned and compatible. See [Script Content](extensions/script-content/README.md) for the rationale, migration boundary, and force-free Fountain export limitations.
