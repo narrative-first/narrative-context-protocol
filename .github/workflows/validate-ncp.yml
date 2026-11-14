@@ -11,6 +11,7 @@ on:
       - 'schema/**'
       - 'examples/**'
       - 'tests/**'
+      - 'tools/**'
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/validate-ncp.yml'
