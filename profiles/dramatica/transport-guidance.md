@@ -25,7 +25,7 @@ The public profile explains what its transported fields and values mean. It rema
 5. Carry external validation results as Core attestations referencing `dramatica:` and the applicable profile and semantic-model versions.
 6. Place interactive, production, or alternative-framework data in separate namespaces.
 
-The JSON transport schema is [`profile-schema.json`](profile-schema.json). Its `storyform` object preserves the complete `story` shape of the previously published combined schema, including canonical transport enums and record relationships. The profile wrapper supplies `namespace`, `profile_version`, and the producing system's `dsm_version`.
+The JSON transport schema is [`profile-schema.json`](profile-schema.json). Its `storyform` object preserves the complete `story` shape of the previously published combined schema, including canonical transport enums and record relationships. The profile wrapper supplies `namespace`, `profile_version`, and the producing system's `dsm_version`. The RC profile adds the current scoped Holistic labels and full Steadfast Expression labels to the accepted Appreciation vocabulary while retaining every previously published label. Frozen legacy combined schemas remain unchanged. Accepted Holistic values must be exported and imported without replacement by their older structural counterparts.
 
 The [schema reference](schema-reference.md), [terminology dictionaries](terminology/README.md), and [semantic-interoperability guide](semantic-interoperability.md) document the public representation. They are part of the Dramatica profile, not NCP Core.
 

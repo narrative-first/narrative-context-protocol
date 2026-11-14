@@ -79,7 +79,7 @@ Holistic and character-framed terminology is an affordance layer, not a second c
 Core rule:
 
 ```text
-Store or transmit the canonical structural meaning, and preserve the selected affordance label as presentation or requested framing when the schema or workflow supports it.
+Store and transmit the supplied canonical-valid Appreciation label unchanged. Structural counterparts explain the label's meaning; they are not instructions to rename it during validation, export, or migration.
 ```
 
 Do not let affordance labels create synonym drift. A tool may display a friendlier label, but it should still know which structural appreciation it is carrying.
@@ -103,7 +103,7 @@ AI consumers should not treat these as softer, less precise alternatives. They a
 
 ### Throughline Pressure Affordances
 
-For Holistic or character-framed presentation, the Problem / Solution / Symptom / Response family may be displayed with these labels:
+The profile accepts all four Holistic labels directly in `appreciation`, qualified by Objective Story, Main Character, Influence Character, or Relationship Story. These 16 scoped labels are canonical-valid transport values, alongside the existing Character-framing labels. No translation to Problem, Condition, Solution, Adjustment, Symptom, Resistance, Response, or Flow is required:
 
 | Character-Framed Label | Structural Counterpart | Example Scoped Label |
 |------------------------|------------------------|----------------------|
@@ -114,33 +114,28 @@ For Holistic or character-framed presentation, the Problem / Solution / Symptom 
 
 These labels should always remain scoped to a Perspective or Throughline when used in prose or UI. `Main Character Dissonance` and `Objective Story Dissonance` are not interchangeable just because both use the word `Dissonance`.
 
-### Recommended Alias Shape
+### Preserved Appreciation Shape
 
-When a producer wants to preserve both the structural field and the active label, prefer an explicit shape like this:
+Transmit the complete scoped label directly in a standard Storypoint record:
 
 ```json
 {
+    "id": "point_main_character_dissonance",
     "throughline": "Main Character",
-    "appreciation": "Dissonance",
-    "canonical_appreciation": "Problem",
-    "framing_lens": "character",
-    "narrative_function": "Chaos"
+    "appreciation": "Main Character Dissonance",
+    "narrative_function": "Chaos",
+    "illustration": "conflicting responsibilities",
+    "summary": "The mismatch remains unresolved.",
+    "storytelling": "She tries to meet two incompatible obligations.",
+    "perspectives": []
 }
 ```
 
-For Objective Story appreciations:
+Character Intentions, Character Repercussions, Character Adaptations, Character Affectations, Character Engagements, Character Perks, Character Pressures, and Character Forebodings are also accepted directly. A conforming producer does not need `canonical_appreciation`, `framing_lens`, custom fields, or an extension to carry these names.
 
-```json
-{
-    "throughline": "Objective Story",
-    "appreciation": "Character Intentions",
-    "canonical_appreciation": "Story Goal",
-    "framing_lens": "character",
-    "narrative_function": "Obtaining"
-}
-```
+Main Character Steadfast Expression and Influence Character Steadfast Expression are accepted as full labels. Historical MC and OC Steadfast Expression labels remain accepted for compatibility; consumers must not rewrite an accepted label merely to use another accepted spelling.
 
-If a schema version does not support the extra metadata fields, keep the canonical-valid `appreciation` value and preserve the requested framing in tool metadata, notes, or the surrounding workflow rather than inventing new structural fields.
+The [Holistic Storypoints example](../../examples/dramatica-profile/holistic-storypoints.json) exercises all 26 current labels. Schema validation checks their representation without changing their values.
 
 ### Affordance Guardrails
 
@@ -149,7 +144,7 @@ If a schema version does not support the extra metadata fields, keep the canonic
 - Do not infer Holistic Problem-Solving Style merely because Character-framed labels are present.
 - Do not translate `Dissonance` into generic anxiety, conflict, or mood.
 - Do not translate `Accommodation` into surrender, compromise, or niceness unless the actual Storytelling supports that expression.
-- Preserve exact spelling for canonical labels. `Accommodation` is valid; `Accomodation` is a typo to normalize, not a new term.
+- Preserve exact spelling for canonical labels. `Accommodation` is valid; `Accomodation` is a typo and is not a canonical-valid transport value.
 - If a tool cannot resolve an affordance label to a structural counterpart, it should keep the existing data unchanged and ask for clarification.
 
 ## AI Interpretation Rules
@@ -200,7 +195,7 @@ Partial NCP updates are common. An omitted field does not mean "delete this fiel
 
 ### Preserve canonical terms
 
-Use canonical Dramatica vocabulary when representing structural fields. If an older export uses legacy NCP labels, translate them to the Dramatica term before contributing or normalizing data.
+Use canonical Dramatica vocabulary when representing structural fields. Preserve every label accepted by the declared profile. Historical names and current Holistic names can coexist in the accepted vocabulary without rewriting supplied values.
 
 ### Treat affordance labels as declared aliases
 

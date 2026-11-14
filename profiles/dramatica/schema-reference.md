@@ -372,6 +372,12 @@ Canonical sets are versioned in two places:
   - [`terminology/04.dynamics.md`](terminology/04.dynamics.md)
   - [`terminology/05.vectors.md`](terminology/05.vectors.md)
 
+## Holistic Appreciations
+
+The `appreciation` enum accepts Dissonance, Relief, Friction, and Accommodation qualified by each of the four Throughlines: Objective Story, Main Character, Influence Character, and Relationship Story. It also accepts Character Intentions, Character Repercussions, Character Adaptations, Character Affectations, Character Engagements, Character Perks, Character Pressures, and Character Forebodings, plus the full Main Character Steadfast Expression and Influence Character Steadfast Expression labels.
+
+These are first-class values. Preserve them exactly during export, import, and validation. They do not require custom fields, a normalization step, or replacement by legacy terms. Unqualified `Dissonance` and misspelled `Accomodation` are not accepted Appreciation values. See the [complete Holistic fixture](../../examples/dramatica-profile/holistic-storypoints.json).
+
 ## Custom Mapping Guidance
 
 Use custom fields to map alternate terminology while preserving canonical keys.

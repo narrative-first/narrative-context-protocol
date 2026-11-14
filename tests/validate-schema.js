@@ -85,9 +85,16 @@ const checks = [
   { fixture: 'examples/core/invalid-attestation.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
   { fixture: 'examples/core/invalid-version.json', validate: validateCore, expected: false, layer: 'NCP Core schema' },
   { fixture: 'examples/dramatica-profile/existing-storyform.json', validate: validateDramaticaProfile, expected: true, layer: 'Dramatica profile transport schema' },
+  { fixture: 'examples/dramatica-profile/holistic-storypoints.json', validate: validateDramaticaProfile, expected: true, layer: 'Holistic Appreciation preservation' },
   { fixture: 'examples/dramatica-profile/invalid-profile-version.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' },
   { fixture: 'examples/dramatica-profile/invalid-opaque-fields.json', validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' }
 ];
+
+for (const appreciation of ['Dissonance', 'Main Character Accomodation', 'Unknown Appreciation']) {
+  const data = readJson('examples/dramatica-profile/holistic-storypoints.json');
+  data.storyform.narratives[0].subtext.storypoints[0].appreciation = appreciation;
+  checks.push({ fixture: `unsupported Appreciation: ${appreciation}`, data, validate: validateDramaticaProfile, expected: false, layer: 'Dramatica profile transport schema' });
+}
 
 let failures = 0;
 
@@ -103,15 +110,20 @@ for (const check of checks) {
   }
 }
 
+const profileDefinitionsWithLegacyTerms = {
+  ...dramaticaProfileSchema.$defs,
+  canonical_appreciation: legacySchema.$defs.canonical_appreciation
+};
 const profileStoryShapeMatchesLegacy =
   JSON.stringify(stripAnnotations(dramaticaProfileSchema.properties.storyform)) === JSON.stringify(stripAnnotations(legacySchema.properties.story)) &&
-  JSON.stringify(stripAnnotations(dramaticaProfileSchema.$defs)) === JSON.stringify(stripAnnotations(legacySchema.$defs));
+  JSON.stringify(stripAnnotations(profileDefinitionsWithLegacyTerms)) === JSON.stringify(stripAnnotations(legacySchema.$defs)) &&
+  legacySchema.$defs.canonical_appreciation.enum.every((label) => dramaticaProfileSchema.$defs.canonical_appreciation.enum.includes(label));
 
 if (!profileStoryShapeMatchesLegacy) {
   failures += 1;
-  console.error('FAIL Dramatica profile transport parity: storyform structure diverges from the previously published story structure');
+  console.error('FAIL Dramatica profile transport parity: story structure or previously published Appreciation support diverges');
 } else {
-  console.log('PASS Dramatica profile transport parity with the previously published story structure');
+  console.log('PASS Dramatica profile transport parity, retaining legacy Appreciations alongside current labels');
 }
 
 const attestedProfile = readJson('examples/core/attested-profile.json').payloads['dramatica:'];
