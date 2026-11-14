@@ -1,0 +1,289 @@
+{
+    "namespace": "dramatica:",
+    "profile_version": "1.0.0-rc.1",
+    "dsm_version": "example-dsm-version",
+    "storyform": {
+        "id": "story_holistic",
+        "title": "A Shared Station",
+        "logline": "A station crew adjusts to changing responsibilities.",
+        "created_at": "2026-11-14T12:00:00Z",
+        "narratives": [
+            {
+                "id": "narrative_holistic",
+                "title": "The station crew",
+                "subtext": {
+                    "perspectives": [],
+                    "players": [],
+                    "dynamics": [],
+                    "storypoints": [
+                        {
+                            "id": "point_holistic_1",
+                            "appreciation": "Character Intentions",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Intentions remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_2",
+                            "appreciation": "Character Repercussions",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Repercussions remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_3",
+                            "appreciation": "Character Adaptations",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Adaptations remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_4",
+                            "appreciation": "Character Affectations",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Affectations remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_5",
+                            "appreciation": "Character Engagements",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Engagements remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_6",
+                            "appreciation": "Character Perks",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Perks remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_7",
+                            "appreciation": "Character Pressures",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Pressures remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_8",
+                            "appreciation": "Character Forebodings",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Character Forebodings remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_9",
+                            "appreciation": "Objective Story Dissonance",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Objective Story Dissonance remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_10",
+                            "appreciation": "Objective Story Relief",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Objective Story Relief remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_11",
+                            "appreciation": "Objective Story Friction",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Objective Story Friction remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_12",
+                            "appreciation": "Objective Story Accommodation",
+                            "throughline": "Objective Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Objective Story Accommodation remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_13",
+                            "appreciation": "Main Character Dissonance",
+                            "throughline": "Main Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Main Character Dissonance remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_14",
+                            "appreciation": "Main Character Relief",
+                            "throughline": "Main Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Main Character Relief remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_15",
+                            "appreciation": "Main Character Friction",
+                            "throughline": "Main Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Main Character Friction remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_16",
+                            "appreciation": "Main Character Accommodation",
+                            "throughline": "Main Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Main Character Accommodation remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_17",
+                            "appreciation": "Influence Character Dissonance",
+                            "throughline": "Influence Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Influence Character Dissonance remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_18",
+                            "appreciation": "Influence Character Relief",
+                            "throughline": "Influence Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Influence Character Relief remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_19",
+                            "appreciation": "Influence Character Friction",
+                            "throughline": "Influence Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Influence Character Friction remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_20",
+                            "appreciation": "Influence Character Accommodation",
+                            "throughline": "Influence Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Influence Character Accommodation remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_21",
+                            "appreciation": "Relationship Story Dissonance",
+                            "throughline": "Relationship Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Relationship Story Dissonance remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_22",
+                            "appreciation": "Relationship Story Relief",
+                            "throughline": "Relationship Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Relationship Story Relief remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_23",
+                            "appreciation": "Relationship Story Friction",
+                            "throughline": "Relationship Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Relationship Story Friction remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_24",
+                            "appreciation": "Relationship Story Accommodation",
+                            "throughline": "Relationship Story",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Relationship Story Accommodation remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_25",
+                            "appreciation": "Main Character Steadfast Expression",
+                            "throughline": "Main Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Main Character Steadfast Expression remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        },
+                        {
+                            "id": "point_holistic_26",
+                            "appreciation": "Influence Character Steadfast Expression",
+                            "throughline": "Influence Character",
+                            "narrative_function": "Control",
+                            "illustration": "holding the station together",
+                            "summary": "Influence Character Steadfast Expression remains the authored label.",
+                            "storytelling": "The station crew adjusts its routines as the balance of responsibility shifts.",
+                            "perspectives": []
+                        }
+                    ],
+                    "storybeats": []
+                },
+                "storytelling": {
+                    "overviews": []
+                }
+            }
+        ],
+        "moments": []
+    }
+}

@@ -111,3 +111,9 @@ Stabilizes the optional Script contract and reference checks, including unambigu
 ## Script Content extension 1.0.0
 
 The optional `ncp-script-content:` extension makes ordered scene and content nodes the default screenplay exchange representation, also called NCP Scripts 2. It omits PDF layout/provenance machinery while preserving stable links and Fountain content. The existing source-oriented Script extension remains separately versioned and compatible. See [Script Content](extensions/script-content/README.md) for the rationale, migration boundary, and force-free Fountain export limitations.
+
+## Holistic Appreciation preservation
+
+The Dramatica Storyform Profile 1.0.0-rc.1 accepts Dissonance, Relief, Friction, and Accommodation scoped to each of the four Throughlines, alongside its eight existing Character-framing Appreciations. The full Main Character Steadfast Expression and Influence Character Steadfast Expression names are accepted as well. These values are transported unchanged, without conversion to older structural labels or additional alias metadata.
+
+This is an additive correction to the release-candidate profile vocabulary: all previously accepted labels and the story structure remain valid. NCP Core, frozen 1.x/2.x schemas, and existing release artifacts are unchanged. Producers and consumers using an earlier RC schema snapshot need the updated profile vocabulary to exchange these names directly.
