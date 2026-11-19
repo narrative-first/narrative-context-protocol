@@ -256,7 +256,7 @@ Canonical `vector` values:
 - `stop`, `start`
 - `do_er`, `be_er`
 - `linear`, `holistic`
-- `optionlock`, `timelock`
+- `options`, `time`
 - `action`, `decision`
 - `success`, `failure`
 - `good`, `bad`

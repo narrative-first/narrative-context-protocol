@@ -31,7 +31,16 @@ const validateCore = compile2020('core/ncp-core-schema.json');
 const profileAjv = new Ajv({ allErrors: true, strict: false });
 const validateDramaticaProfile = profileAjv.compile(dramaticaProfileSchema);
 
+function currentVector(value) {
+  return value === 'optionlock' ? 'options' : value === 'timelock' ? 'time' : value;
+}
+
 function asDramaticaProfile(document) {
+  for (const narrative of document.story?.narratives || []) {
+    for (const dynamic of narrative.subtext?.dynamics || []) {
+      if (dynamic.dynamic === 'story_limit') dynamic.vector = currentVector(dynamic.vector);
+    }
+  }
   return {
     namespace: 'dramatica:',
     profile_version: '1.0.0-rc.1',
@@ -72,7 +81,13 @@ const legacyInvalidFixtures = fs.readdirSync(invalidDir)
   .filter((name) => name.endsWith('.json'))
   .map((name) => `examples/invalid/${name}`);
 
+const limitChecks = ['options', 'time', 'optionlock', 'timelock'].map((vector) => {
+  const data = readJson('examples/dramatica-profile/existing-storyform.json');
+  data.storyform.narratives[0].subtext.dynamics[0].vector = vector;
+  return { fixture: `Story Limit ${vector}`, data, validate: validateDramaticaProfile, expected: ['options', 'time'].includes(vector), layer: 'Dramatica profile' };
+});
 const checks = [
+  ...limitChecks,
   ...legacyValidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: true, layer: 'legacy schema' })),
   ...legacyInvalidFixtures.map((fixture) => ({ fixture, validate: validateLegacy, expected: false, layer: 'legacy schema' })),
   ...legacyValidFixtures.map((fixture) => ({ fixture, data: asDramaticaProfile(readJson(fixture)), validate: validateDramaticaProfile, expected: true, layer: 'Dramatica profile compatibility' })),
@@ -117,8 +132,11 @@ const profileDefinitionsWithLegacyTerms = {
     enum: legacySchema.$defs.canonical_appreciation.enum
   }
 };
+const legacyStoryWithCurrentVectors = structuredClone(legacySchema.properties.story);
+const vector = legacyStoryWithCurrentVectors.properties.narratives.items.properties.subtext.properties.dynamics.items.properties.vector;
+vector.enum = vector.enum.map(currentVector);
 const profileStoryShapeMatchesLegacy =
-  JSON.stringify(stripAnnotations(dramaticaProfileSchema.properties.storyform)) === JSON.stringify(stripAnnotations(legacySchema.properties.story)) &&
+  JSON.stringify(stripAnnotations(dramaticaProfileSchema.properties.storyform)) === JSON.stringify(stripAnnotations(legacyStoryWithCurrentVectors)) &&
   JSON.stringify(stripAnnotations(profileDefinitionsWithLegacyTerms)) === JSON.stringify(stripAnnotations(legacySchema.$defs)) &&
   legacySchema.$defs.canonical_appreciation.enum.every((label) => dramaticaProfileSchema.$defs.canonical_appreciation.enum.includes(label));
 
