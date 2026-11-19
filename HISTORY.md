@@ -4,6 +4,10 @@ Narrative Context Protocol grew from early iterations involving **Paul Bennun, G
 
 Hank Gerba's white paper, [*“Narrative Context Protocol: An Author-Centric Storytelling Framework for Generative AI,”*](https://arxiv.org/pdf/2503.04844) documented the importance of preserving authorial intent as narrative work moves through generative systems. Paul Bennun and George Gerba helped shape the original initiative and its practical industry ambitions. Chris Huntley contributed to earlier iterations of the work, and Jim Hull connected the developing protocol to a complete, working Storyform representation drawn from Subtxt and the Dramatica platform.
 
+## Story Limit vocabulary
+
+The Dramatica profile uses `options` and `time` for Story Limit. When converting an older document, map `optionlock` to `options` and `timelock` to `time`. The frozen combined schema still describes the values used by those documents.
+
 ## From UCM to NCP
 
 The project began under the working name **Universal Character Model (UCM)**. Its scope soon expanded beyond characters, and early public repository material used **Universal Narrative Model (UNM)** to describe a portable model for story structure, storytelling, authorship, and contribution history.

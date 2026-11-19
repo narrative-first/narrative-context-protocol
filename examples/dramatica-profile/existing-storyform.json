@@ -14,7 +14,15 @@
                 "subtext": {
                     "perspectives": [],
                     "players": [],
-                    "dynamics": [],
+                    "dynamics": [
+                        {
+                            "id": "limit_evacuation",
+                            "dynamic": "story_limit",
+                            "vector": "options",
+                            "summary": "Each road closure removes an evacuation route.",
+                            "storytelling": "When the final road closes, the evacuees have to board the ferry."
+                        }
+                    ],
                     "storypoints": [
                         {
                             "id": "storypoint_evac_goal",
